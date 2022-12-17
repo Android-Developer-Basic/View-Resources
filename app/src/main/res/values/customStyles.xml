@@ -20,7 +20,7 @@
         <item name="android:background">?attr/toolbarBackground</item>
         <item name="navigationIcon">@drawable/arrow_back</item>
         <item name="navigationIconTint">?attr/iconBackgroundColor</item>
-        <item name="titleTextColor">?attr/iconBackgroundColor</item>
+        <item name="titleTextColor">@color/light_background</item>
         <item name="titleTextAppearance">@style/H6</item>
     </style>
 
