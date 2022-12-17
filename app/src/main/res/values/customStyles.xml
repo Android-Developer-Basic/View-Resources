@@ -13,4 +13,15 @@
     <style name="Caption">
         <item name="android:textSize">12sp</item>
     </style>
+
+    <style name="CustomToolbarStyle" parent="Widget.Material3.Toolbar">
+        <item name="android:layout_height">?attr/toolbarSize</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">?attr/toolbarBackground</item>
+        <item name="navigationIcon">@drawable/arrow_back</item>
+        <item name="navigationIconTint">?attr/iconBackgroundColor</item>
+        <item name="titleTextColor">?attr/iconBackgroundColor</item>
+        <item name="titleTextAppearance">@style/H6</item>
+    </style>
+
 </resources>

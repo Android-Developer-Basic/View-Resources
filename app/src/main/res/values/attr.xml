@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dimension -->
+    <attr name="toolbarSize" format="dimension" />
+
+    <!-- Color -->
+    <attr name="appBackground" format="color" />
+    <attr name="toolbarBackground" format="color" />
+    <attr name="iconBackgroundColor" format="color" />
+
+</resources>
