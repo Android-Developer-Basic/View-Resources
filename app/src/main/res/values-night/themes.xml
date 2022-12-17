@@ -11,6 +11,13 @@
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme here. -->
+        <item name="secondaryButtonColor">@color/street_blue</item>
+        <item name="secondaryTextColor">@color/material_dynamic_neutral100</item>
+        <item name="cartButtonColor">@color/lime</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="orderTotalColor">@color/gold</item>
+        <item name="buttonRegisterColor">@color/street_blue</item>
     </style>
 </resources>

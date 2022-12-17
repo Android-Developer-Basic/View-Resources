@@ -7,4 +7,9 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="lime">#00FF00</color>
+    <color name="royal_blue">#4169E1</color>
+    <color name="classic_red">#FF0000</color>
+    <color name="street_blue">#4682B4</color>
+    <color name="gold">#FFD700</color>
 </resources>

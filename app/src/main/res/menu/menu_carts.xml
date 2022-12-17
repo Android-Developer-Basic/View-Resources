@@ -1,0 +1,13 @@
+
+
+    <menu xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:yourapp="http://schemas.android.com/apk/res-auto">
+        <item
+            android:title="Favorite"
+            android:icon="@drawable/ic_baseline_loyalty_24"
+            yourapp:showAsAction="ifRoom"/>
+        <item
+            android:title="Edit"
+            android:icon="@drawable/ic_baseline_more_vert_24"
+            yourapp:showAsAction="ifRoom"/>
+    </menu>

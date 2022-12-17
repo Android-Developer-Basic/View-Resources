@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">View &amp; Resources</string>
+    <string name="name">Name</string>
+
 </resources>
