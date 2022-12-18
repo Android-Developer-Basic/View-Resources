@@ -162,7 +162,9 @@
 
     <com.google.android.material.button.MaterialButton
         style="@style/CustomRegisterButtonStyle"
+        android:backgroundTint="?attr/buttonBackgroundColor"
         android:text="@string/register"
+        android:layout_margin="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

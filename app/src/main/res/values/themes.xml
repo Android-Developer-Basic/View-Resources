@@ -29,5 +29,7 @@
         <item name="textColor">@color/light_main</item>
         <item name="buttonBackgroundColor">@color/light_secondary</item>
         <item name="buttonTextColor">@color/light_background</item>
+        <item name="dialogButtonColor">@color/light_primary</item>
+        <item name="resetButtonColor">@color/light_primary</item>
     </style>
 </resources>

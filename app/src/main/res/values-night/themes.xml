@@ -29,5 +29,7 @@
         <item name="textColor">@color/dark_main</item>
         <item name="buttonBackgroundColor">@color/dark_primary</item>
         <item name="buttonTextColor">@color/dark_background</item>
+        <item name="dialogButtonColor">@color/dark_primary</item>
+        <item name="resetButtonColor">@color/dark_main</item>
     </style>
 </resources>
