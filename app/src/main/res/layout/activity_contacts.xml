@@ -11,6 +11,7 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="?attr/toolbarBackground"
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.appbar.MaterialToolbar
@@ -162,9 +163,9 @@
 
     <com.google.android.material.button.MaterialButton
         style="@style/CustomRegisterButtonStyle"
+        android:layout_margin="16dp"
         android:backgroundTint="?attr/buttonBackgroundColor"
         android:text="@string/register"
-        android:layout_margin="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

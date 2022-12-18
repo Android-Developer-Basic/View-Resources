@@ -31,5 +31,11 @@
         <item name="buttonTextColor">@color/dark_background</item>
         <item name="dialogButtonColor">@color/dark_primary</item>
         <item name="resetButtonColor">@color/dark_main</item>
+        <item name="itemsInCartColor">@color/dark_secondary</item>
+        <item name="cartToolBarColor">@color/dark_background</item>
+        <item name="closeIconColor">@color/dark_icon</item>
+        <item name="totalTextColor">@color/dark_tretiary</item>
+        <item name="walletIconColor">@color/dark_background</item>
+        <item name="walletButtonColor">@color/dark_secondary</item>
     </style>
 </resources>
