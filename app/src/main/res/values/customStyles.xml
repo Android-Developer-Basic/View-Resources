@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Typography -->
+    <style name="H6">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="Body1">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">?attr/textColor</item>
+    </style>
+
+    <style name="Body2">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Button">
+        <item name="android:textSize">14sp</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <style name="Caption">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">?attr/textColor</item>
+    </style>
+
+    <style name="CustomToolbarStyle" parent="Widget.Material3.Toolbar">
+        <item name="android:layout_height">?attr/toolbarHeight</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="navigationIcon">@drawable/arrow_back</item>
+        <item name="navigationIconTint">?attr/toolbarIconColor</item>
+        <item name="titleTextColor">@color/light_background</item>
+        <item name="titleTextAppearance">@style/H6</item>
+    </style>
+
+    <style name="CustomTextInputStyle" parent="@style/Widget.Material3.TextInputLayout.FilledBox">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">?attr/textInputHeight</item>
+        <item name="android:layout_marginStart">?attr/marginSide</item>
+        <item name="android:layout_marginEnd">?attr/marginSide</item>
+        <item name="android:layout_marginTop">?attr/marginTop</item>
+        <item name="boxBackgroundColor">?attr/textBoxBackgroundColor</item>
+        <item name="endIconTint">?attr/textInputIconColor</item>
+        <item name="hintTextAppearance">@style/Body1</item>
+    </style>
+
+    <style name="CustomDropDownMenuStyle" parent="Widget.Material3.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">?attr/textInputHeight</item>
+        <item name="android:layout_marginTop">?attr/marginTop</item>
+        <item name="boxBackgroundColor">?attr/textBoxBackgroundColor</item>
+    </style>
+
+    <style name="CustomRegisterButtonStyle" parent="@style/Widget.Material3.Button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">?attr/buttonTextColor</item>
+        <item name="android:textAppearance">@style/Button</item>
+        <item name="cornerRadius">4dp</item>
+        <item name="elevation">2dp</item>
+    </style>
+
+    <style name="CustomDialogTextInputStyle" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">18dp</item>
+        <item name="android:layout_marginStart">24dp</item>
+        <item name="android:layout_marginEnd">24dp</item>
+        <item name="android:textAppearance">@style/Body1</item>
+    </style>
+
+    <style name="CustomImageStyle">
+        <item name="android:background">@color/dark_icon</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+    </style>
+
+    <style name="CustomTextViewStyle">
+        <item name="android:textAppearance">@style/Body1</item>
+        <item name="android:textColor">?attr/textColor</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+    </style>
+
+    <style name="CustomCaptionTextStyle">
+        <item name="android:textAppearance">@style/Caption</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">16dp</item>
+    </style>
+</resources>
