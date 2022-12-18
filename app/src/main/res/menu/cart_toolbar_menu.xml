@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:icon="@drawable/loyalty"
-        android:iconTint="?attr/iconBackgroundColor"
+        android:iconTint="?attr/toolbarIconColor"
         android:title="@string/loyalty"
         app:showAsAction="ifRoom" />
 

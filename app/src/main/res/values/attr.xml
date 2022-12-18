@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Dimension -->
-    <attr name="toolbarSize" format="dimension" />
+    <attr name="toolbarHeight" format="dimension" />
+    <attr name="textInputHeight" format="dimension" />
     <attr name="marginTop" format="dimension" />
     <attr name="marginSide" format="dimension" />
     <attr name="marginBottom" format="dimension" />
@@ -9,6 +10,11 @@
     <!-- Color -->
     <attr name="appBackground" format="color" />
     <attr name="toolbarBackground" format="color" />
-    <attr name="iconBackgroundColor" format="color" />
+    <attr name="toolbarIconColor" format="color" />
+    <attr name="textBoxBackgroundColor" format="color" />
+    <attr name="textInputIconColor" format="color" />
+    <attr name="textColor" format="color" />
+    <attr name="buttonBackgroundColor" format="color"/>
+    <attr name="buttonTextColor" format="color" />
 
 </resources>

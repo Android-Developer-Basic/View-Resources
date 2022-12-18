@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:icon="@drawable/search"
-        android:iconTint="?attr/iconBackgroundColor"
+        android:iconTint="?attr/toolbarIconColor"
         android:title="@string/search"
         app:showAsAction="ifRoom" />
 

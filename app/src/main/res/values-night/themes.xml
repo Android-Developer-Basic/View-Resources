@@ -12,11 +12,22 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">@color/dark_background</item>
         <!-- Customize your theme here. -->
+        <item name="fontFamily">@font/roboto_medium</item>
+
+        <item name="toolbarHeight">56dp</item>
+        <item name="textInputHeight">54dp</item>
+        <item name="marginTop">24dp</item>
+        <item name="marginSide">16dp</item>
+        <item name="marginBottom">16dp</item>
+
         <item name="appBackground">@color/dark_background</item>
         <item name="colorControlNormal">@color/dark_icon</item>
-        <item name="fontFamily">@font/roboto_medium</item>
-        <item name="toolbarSize">56dp</item>
         <item name="toolbarBackground">@color/dark_shade</item>
-        <item name="iconBackgroundColor">@color/dark_icon</item>
+        <item name="toolbarIconColor">@color/dark_icon</item>
+        <item name="textBoxBackgroundColor">@color/dark_shade</item>
+        <item name="textInputIconColor">@color/dark_icon</item>
+        <item name="textColor">@color/dark_main</item>
+        <item name="buttonBackgroundColor">@color/dark_primary</item>
+        <item name="buttonTextColor">@color/dark_background</item>
     </style>
 </resources>

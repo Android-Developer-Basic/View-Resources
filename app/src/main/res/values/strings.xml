@@ -3,4 +3,22 @@
     <string name="search">Search</string>
     <string name="more">more</string>
     <string name="loyalty">Loyalty</string>
+    <string name="name">Name</string>
+    <string name="register">register</string>
+    <string name="phone_number">Phone number</string>
+    <string name="select">Select</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="zip">Zip</string>
+    <string name="state">State</string>
+    <string name="birthday">Birthday</string>
+    <string name="notes">Notes</string>
+
+    <string-array name="select_items">
+        <item>Item 1</item>
+        <item>Item 2</item>
+        <item>Item 3</item>
+        <item>Item 4</item>
+        <item>Item 5</item>
+    </string-array>
 </resources>
