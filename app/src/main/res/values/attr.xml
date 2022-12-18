@@ -2,6 +2,9 @@
 <resources>
     <!-- Dimension -->
     <attr name="toolbarSize" format="dimension" />
+    <attr name="marginTop" format="dimension" />
+    <attr name="marginSide" format="dimension" />
+    <attr name="marginBottom" format="dimension" />
 
     <!-- Color -->
     <attr name="appBackground" format="color" />
