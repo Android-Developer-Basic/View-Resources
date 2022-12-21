@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">View &amp; Resources</string>
+    <string name="sign_in_tab_txt">Sign In</string>
+    <string name="register_tab_txt">Register</string>
+    <string name="e_mail_hint">E-mail</string>
+    <string name="password_hint">Password</string>
+    <string name="reset_password_txt">Reset my password</string>
+    <string name="sign_in_btn_txt">SIGN IN</string>
 </resources>
