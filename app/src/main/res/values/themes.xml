@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Theme.ViewResources" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimary">@color/royal_blue</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
@@ -11,6 +11,18 @@
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme here. -->
+        <item name="android:textColor">@color/black</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="secondaryButtonColor">@color/royal_blue</item>
+        <item name="secondaryTextColor">@color/material_dynamic_neutral10</item>
+        <item name="cartButtonColor">@color/material_dynamic_neutral10</item>
+        <item name="orderTotalColor">@color/material_dynamic_neutral10</item>
+        <item name="buttonRegisterColor">@color/lime</item>
+    </style>
+
+    <style name="myChildMaterial" parent = "Widget.MaterialComponents.TextInputEditText.OutlinedBox.Dense">
+
     </style>
 </resources>
