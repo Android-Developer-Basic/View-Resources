@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">View &amp; Resources</string>
     <string name="sign_in_tab_txt">Sign In</string>
     <string name="register_tab_txt">Register</string>
@@ -6,4 +6,20 @@
     <string name="password_hint">Password</string>
     <string name="reset_password_txt">Reset my password</string>
     <string name="sign_in_btn_txt">SIGN IN</string>
+    <string name="name_hint_txt">Name</string>
+    <string name="phone_number_hint">Phone number</string>
+    <string name="select_hint">Select</string>
+    <string name="address_hint">Address</string>
+    <string name="state_hint">State</string>
+    <string name="zip_hint">Zip</string>
+    <string name="birthday_hint">Birthday</string>
+    <string name="notes_hint">Notes</string>
+    <string name="register_btn_txt">REGISTER</string>
+    <string name="pay_now_btn_txt">Pay now</string>
+    <string name="tax_field_txt">Tax</string>
+    <string name="tax_value_field">value</string>
+    <string name="tax_field">Tax</string>
+    <string name="shipping_field">Shipping</string>
+    <string name="subtotal_field">Subtotal</string>
+    <string name="your_order_total_txt">Your order total</string>
 </resources>

@@ -6,56 +6,47 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <androidx.constraintlayout.helper.widget.Flow
-        android:id="@+id/flow"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="24dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="24dp"
-        app:constraint_referenced_ids="signIn_tab,register_tab"
-        app:flow_horizontalStyle="spread_inside"
-        app:layout_constraintBottom_toTopOf="@+id/email_input"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
         android:id="@+id/signIn_tab"
         style="@style/Widget.Material3.Button.TextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/sign_in_tab_txt"
-        android:textSize="20sp"
-        android:textFontWeight="500"
-        android:lineHeight="28sp"
+        android:layout_marginStart="@dimen/gap_large"
+        android:layout_marginTop="18dp"
         android:fontFamily="sans-serif"
-        android:textColor="@color/sign_in" />
+        android:lineHeight="28sp"
+        android:text="@string/sign_in_tab_txt"
+        android:textColor="?ActivityDialogSignIn"
+        android:textFontWeight="500"
+        android:textSize="@dimen/text_size_medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/register_tab"
         style="@style/Widget.Material3.Button.TextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/register_tab_txt"
-        android:textSize="14sp"
-        android:textFontWeight="500"
-        android:lineHeight="28sp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="@dimen/gap_large"
         android:fontFamily="sans-serif"
-        android:textColor="@color/register" />
+        android:lineHeight="28sp"
+        android:text="@string/register_tab_txt"
+        android:textColor="@color/register"
+        android:textFontWeight="500"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/email_input"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginHorizontal="24dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="@dimen/gap_large"
+        android:layout_marginTop="@dimen/gap_large"
         android:hint="@string/e_mail_hint"
-        app:layout_constraintTop_toBottomOf="@id/flow"
-        tools:layout_editor_absoluteX="24dp">
+        app:layout_constraintTop_toBottomOf="@id/register_tab">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -67,7 +58,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="8dp"
-        android:layout_marginHorizontal="24dp"
+        android:layout_marginHorizontal="@dimen/gap_large"
         android:hint="@string/password_hint"
         app:layout_constraintTop_toBottomOf="@id/email_input">
 
@@ -80,8 +71,8 @@
         android:id="@+id/reset_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginTop="@dimen/gap_large"
+        android:layout_marginEnd="@dimen/gap_large"
         android:textSize="12sp"
         android:textColor="@color/register"
         android:text="@string/reset_password_txt"
@@ -90,15 +81,12 @@
 
     <Button
         android:id="@+id/sign_in_btn"
-        style="@style/Widget.Material3.Button.ElevatedButton"
+        style="@style/ActivitySignInBtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginHorizontal="@dimen/gap_large"
+        android:layout_marginTop="@dimen/gap_large"
         android:text="@string/sign_in_btn_txt"
-        android:backgroundTint="@color/register"
-        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/reset_password" />
