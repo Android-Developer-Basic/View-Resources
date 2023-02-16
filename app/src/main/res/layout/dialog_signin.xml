@@ -46,7 +46,7 @@
             android:layout_marginEnd="@dimen/dimen_20"
             android:hint="@string/e_mail"
             android:textColorHint="?attr/CartTV_mainColor"
-            app:boxStrokeColor="?attr/Dialog_ShadeColor"
+            app:boxStrokeColor="?attr/box"
             app:hintTextColor="?attr/CartTV_mainColor" >
 
             <com.google.android.material.textfield.TextInputEditText
@@ -67,7 +67,7 @@
             android:layout_marginEnd="@dimen/dimen_20"
             android:hint="@string/password"
             android:textColorHint="?attr/CartTV_mainColor"
-            app:boxStrokeColor="?attr/Dialog_ShadeColor"
+            app:boxStrokeColor="?attr/box"
             app:hintTextColor="?attr/CartTV_mainColor"
             app:boxCornerRadiusTopStart="@dimen/dimen_4">
 
@@ -90,7 +90,7 @@
             android:textSize="@dimen/text_size_4"
             android:fontFamily="@font/roboto"
             android:letterSpacing="0.02"
-            android:textColor="?attr/Dialog_ResetTV"
+            android:textColor="?attr/reset"
             android:layout_marginTop="@dimen/dimen_18"
             android:layout_marginEnd="@dimen/dimen_24">
 

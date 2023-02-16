@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.ViewResources" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.ViewResources" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">#4FB8FF</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -13,19 +13,20 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
         <item name="PrimaryColor">#272727</item>
-        <item name="BackgroundColor">#121212</item>
-        <item name="ShadeColor">#272727</item>
+        <item name="BackgroundColor">#292828</item>
+        <item name="ShadeColor">#8F8E8E</item>
         <item name="SecondaryColor">#4FB8FF</item>
         <item name="IconsColor">#888888</item>
         <item name="MainColor">#E0E0E0</item>
         <item name="TopAppIconColor">#888888</item>
         <item name="Cart_Secondary_color">#89ED5B</item>
         <item name="CartTV_mainColor">#E0E0E0</item>
-        <item name="CartTV_Close_btn">#888888</item>
+        <item name="close">#888888</item>
         <item name="Cart_LabelTV">#FFD76F</item>
-        <item name="Cart_btn_pay_ic">#121212</item>
+        <item name="pay">#121212</item>
         <item name="Dialog_PrimaryColor">#4FB8FF</item>
-        <item name="Dialog_ResetTV">#E0E0E0</item>
+        <item name="reset">#E0E0E0</item>
         <item name="Dialog_ShadeColor">#888888</item>
+        <item name="box">#ACABAB</item>
     </style>
 </resources>

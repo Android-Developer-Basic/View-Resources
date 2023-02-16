@@ -342,6 +342,7 @@
             android:paddingTop="@dimen/dimen_16"
             android:paddingEnd="@dimen/dimen_16"
             android:src="@drawable/ic_baseline_close_24"
+
             tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
             android:contentDescription="@string/todo1" />
 
@@ -433,7 +434,7 @@
     android:textColor="?attr/BackgroundColor"
     android:textAllCaps="false"
     app:icon="@drawable/ic_baseline_account_balance_wallet_24"
-    app:iconTint="?attr/Cart_btn_pay_ic"
+    app:iconTint="?attr/pay"
     android:backgroundTint="?attr/Cart_Secondary_color" >
 
 </com.google.android.material.button.MaterialButton>
