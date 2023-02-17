@@ -19,6 +19,7 @@
         android:layout_height="?attr/actionBarSize"
         app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
         app:title="Cart"
+        app:menu="@menu/cart_menu"
         app:titleTextColor="?attr/MainColor"
         style="@style/textFont20sp"/>
 
