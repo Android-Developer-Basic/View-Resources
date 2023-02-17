@@ -1,6 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/sign_in"
+            style="@style/textFont20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_24"
+            android:layout_marginTop="@dimen/dimen_18"
+            android:text="@string/sign_in"
+            android:textColor="?attr/CartTV_mainColor">
+
+        </com.google.android.material.textview.MaterialTextView>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/register"
+            style="@style/textFont14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register"
+            android:textAllCaps="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="?attr/Dialog_PrimaryColor"
+            android:layout_marginTop="@dimen/dimen_24"
+            android:layout_marginEnd="@dimen/dimen_20">
+
+        </com.google.android.material.textview.MaterialTextView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sign_in"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:layout_marginStart="@dimen/dimen_20"
+            android:layout_marginEnd="@dimen/dimen_20"
+            android:hint="@string/e_mail"
+            android:textColorHint="?attr/CartTV_mainColor"
+            app:boxStrokeColor="?attr/box"
+            app:hintTextColor="?attr/CartTV_mainColor" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email"
+            android:layout_marginStart="@dimen/dimen_20"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:layout_marginEnd="@dimen/dimen_20"
+            android:hint="@string/password"
+            android:textColorHint="?attr/CartTV_mainColor"
+            app:boxStrokeColor="?attr/box"
+            app:hintTextColor="?attr/CartTV_mainColor"
+            app:boxCornerRadiusTopStart="@dimen/dimen_4">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/reset"
+            style="@style/textFont12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reset_password"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/password"
+            android:textSize="@dimen/text_size_4"
+            android:fontFamily="@font/roboto"
+            android:letterSpacing="0.02"
+            android:textColor="?attr/reset"
+            android:layout_marginTop="@dimen/dimen_18"
+            android:layout_marginEnd="@dimen/dimen_24">
+
+        </com.google.android.material.textview.MaterialTextView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button"
+            style="@style/BtnFont14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reset"
+            android:text="@string/sign_in"
+            android:textColor="?attr/BackgroundColor"
+            app:cornerRadius="@dimen/dimen_4"
+            android:backgroundTint="?attr/Dialog_PrimaryColor"
+            android:layout_marginStart="@dimen/dimen_24"
+            android:layout_marginEnd="@dimen/dimen_24"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:layout_marginBottom="@dimen/dimen_16">
+
+        </com.google.android.material.button.MaterialButton>
+
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
