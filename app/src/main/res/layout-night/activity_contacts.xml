@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ContactsActivity">
+    android:layout_height="match_parent">
 
     <Button
         android:id="@+id/filledButton"
@@ -13,7 +12,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:backgroundTint="#2ECC71"
+        android:backgroundTint="#4FB8FF"
         android:text="@string/Button_register"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,12 +30,13 @@
         app:endIconMode="custom"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:hint="@string/TextHintName"
+        android:textColorHint="@color/textColorHintNight"
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/TextHintName"
             android:typeface="sans" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -49,14 +49,15 @@
         android:layout_marginEnd="16dp"
         app:endIconDrawable="@drawable/phone"
         app:endIconMode="custom"
+        android:hint="@string/phone_number_text_hint"
+        android:textColorHint="@color/textColorHintNight"
         app:layout_constraintEnd_toStartOf="@+id/Select"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Name">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/phone_number_text_hint" />
+            android:layout_height="wrap_content"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -68,6 +69,8 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
+        android:textColorHint="@color/textColorHintNight"
+        android:hint="@string/select_text_hint"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Name">
 
@@ -75,7 +78,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:width="104dp"
-            android:hint="@string/select_text_hint"
             android:inputType="none"
             android:scrollbarSize="16sp"
             android:textSize="16sp"
@@ -92,6 +94,8 @@
         android:layout_marginEnd="16dp"
         app:endIconDrawable="@drawable/map_marker"
         app:endIconMode="custom"
+        android:textColorHint="@color/textColorHintNight"
+        android:hint="@string/address_text_hint"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Phone_number">
@@ -99,7 +103,6 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/address_text_hint"
             tools:ignore="TouchTargetSizeCheck" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -112,6 +115,8 @@
         android:layout_marginTop="25dp"
         android:layout_marginEnd="16dp"
         app:endIconDrawable="@drawable/calendar"
+        android:textColorHint="@color/textColorHintNight"
+        android:hint="@string/birthday_text_hint"
         app:endIconMode="custom"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -120,8 +125,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/birthday_text_hint" />
+            android:layout_height="wrap_content"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -132,6 +136,8 @@
         android:layout_marginTop="25dp"
         android:layout_marginEnd="16dp"
         app:endIconDrawable="@drawable/pencil"
+        android:textColorHint="@color/textColorHintNight"
+        android:hint="@string/notes_text_hint"
         app:endIconMode="custom"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -140,16 +146,14 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/notes_text_hint" />
+            android:layout_height="wrap_content"/>
     </com.google.android.material.textfield.TextInputLayout>
 
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/topAppBar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:layout_marginBottom="24dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -157,8 +161,8 @@
         app:layout_constraintVertical_bias="0.0"
         app:menu="@menu/menu_registr"
         app:navigationIcon="@drawable/arrow_left"
-        app:title="Contacts"
-        app:theme="@style/MyToolbarTheme">
+        app:theme="@style/MyToolbarTheme"
+        app:title="Contacts">
 
     </androidx.appcompat.widget.Toolbar>
 
@@ -179,12 +183,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textColorHint="@color/textColorHintNight"
+            android:hint="@string/city_text_hint"
             android:paddingRight="16dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/city_text_hint"
                 tools:ignore="TouchTargetSizeCheck" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -194,13 +199,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textColorHint="@color/textColorHintNight"
+            android:hint="@string/state_text_hint"
             android:paddingRight="16dp">
 
             <AutoCompleteTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:width="104dp"
-                android:hint="@string/state_text_hint"
                 android:inputType="none"
                 android:textSize="15sp"
                 app:simpleItems="@array/simple_items"
@@ -211,16 +217,18 @@
             android:id="@+id/Zip"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColorHint="@color/textColorHintNight"
+            android:hint="@string/zip_text_hint"
             android:layout_weight="1">
 
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/zip_text_hint"
                 tools:ignore="TouchTargetSizeCheck" />
         </com.google.android.material.textfield.TextInputLayout>
 
     </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
