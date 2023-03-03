@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">View &amp; Resources</string>
+    <string name="Button_register">REGISTER</string>
+    <string name="TextHintName">Name</string>
+    <string name="phone_number_text_hint">Phone number</string>
+    <string name="select_text_hint">Select</string>
+    <string name="address_text_hint">Address</string>
+    <string name="city_text_hint">City</string>
+    <string name="state_text_hint">State</string>
+    <string name="zip_text_hint">Zip</string>
+    <string name="birthday_text_hint">Birthday</string>
+    <string name="notes_text_hint">Notes</string>
+    <string name="pay_now">Pay now</string>
+    <string name="about_text">Subtotal\nShipping\nTax</string>
+<string name="price_text">36.00\n2.00\n3.50</string>
+    <string name="register">REGISTER</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_in2">SIGN IN</string>
+    <string name="reset_my_password">Reset my password</string>
+    <string name="password">Password</string>
+    <string name="e_mail">E-mail</string>
 </resources>
