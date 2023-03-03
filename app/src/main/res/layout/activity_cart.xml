@@ -16,7 +16,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:menu="@menu/menu_registr"
+        app:menu="@menu/menu_cart"
         app:navigationIcon="@drawable/arrow_left"
         app:title="Cart"
         android:theme="@style/ThemeOverlay.AppCompat.Dark"
@@ -49,6 +49,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:text="4 items in you cart"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/topAppBar" />
@@ -124,13 +125,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
-    <androidx.constraintlayout.widget.Guideline
+    <View
         android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="360dp"
-        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginBottom="240dp"
+        android:background="@drawable/dash_line"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintGuide_begin="480dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

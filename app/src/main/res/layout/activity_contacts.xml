@@ -158,7 +158,8 @@
         app:menu="@menu/menu_registr"
         app:navigationIcon="@drawable/arrow_left"
         app:title="Contacts"
-        app:theme="@style/MyToolbarTheme">
+        style="@style/MyToolbarTheme"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
     </androidx.appcompat.widget.Toolbar>
 

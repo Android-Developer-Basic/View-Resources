@@ -107,16 +107,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
-    <androidx.constraintlayout.widget.Guideline
+    <View
         android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="480dp"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
         android:layout_marginBottom="240dp"
-        android:orientation="horizontal"
+        android:background="@drawable/dash_line_dark"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintGuide_begin="542dp"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/topAppBar"
@@ -127,7 +126,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:menu="@menu/menu_registr"
+        app:menu="@menu/menu_cart"
         app:navigationIcon="@drawable/arrow_left"
         app:title="Contacts"
         app:theme="@style/MyToolbarTheme">
