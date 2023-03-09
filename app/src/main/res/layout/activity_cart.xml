@@ -6,4 +6,172 @@
     android:layout_height="match_parent"
     tools:context=".CartActivity">
 
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBarCart"
+            android:background="@color/background_appbar_cart"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+            app:title="Cart"
+            app:titleTextColor="@color/title_text_color"
+            app:menu="@menu/top_app_bar_cart"
+            style="@style/Widget.MaterialComponents.Toolbar.Primary"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/counterItemsMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="4 items in your cart"
+        android:textStyle="normal"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/order_total_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/counterItemsMessage"
+        tools:listitem="@layout/cart_item" />
+
+    <View
+        android:id="@+id/decorator"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/dotted_border"
+        app:layout_constraintTop_toBottomOf="@+id/listview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/decorator">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/order_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:layout_marginTop="24dp"
+            android:textColor="@color/order_total_color"
+            android:text="Your order total"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/decorator"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textStyle="bold"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/subtotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Subtotal"
+            app:layout_constraintTop_toBottomOf="@+id/order_total"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textStyle="normal"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/shipping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Shipping"
+            app:layout_constraintTop_toBottomOf="@+id/subtotal"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textStyle="normal"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Tax"
+            app:layout_constraintTop_toBottomOf="@+id/shipping"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textStyle="normal"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/decorator">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/order_total_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:layout_marginTop="24dp"
+            android:text="41.24"
+            android:textColor="@color/order_total_color"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/subtotal_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="36.00"
+            app:layout_constraintTop_toBottomOf="@+id/order_total_sum"
+            android:textStyle="normal"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/shipping_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:text="2.00"
+            app:layout_constraintTop_toBottomOf="@+id/subtotal_sum"
+            android:textStyle="normal"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tax_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:text="3.50"
+            app:layout_constraintTop_toBottomOf="@+id/shipping_sum"
+            android:textStyle="normal"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.Material3.Button.Icon"
+        android:text="Pay now"
+        android:textSize="20sp"
+        android:layout_width="154dp"
+        android:layout_height="56dp"
+        android:backgroundTint="@color/payNow_button"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:icon="@drawable/ic_baseline_account_balance_wallet_24"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
