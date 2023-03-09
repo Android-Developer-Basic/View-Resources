@@ -6,4 +6,242 @@
     android:layout_height="match_parent"
     tools:context=".ContactsActivity">
 
+    
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/topAppBarContactsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBarContacts"
+            android:background="@color/background_appbar_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+            app:title="Contacts"
+            app:titleTextColor="#FFFFFF"
+            app:menu="@menu/top_app_bar_contacts"
+            style="@style/Widget.MaterialComponents.Toolbar.Primary"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topAppBarContactsLayout">
+
+        <com.google.android.material.textfield.TextInputLayout
+        app:endIconMode="custom"
+        app:endIconDrawable="@drawable/account_icon"
+        app:endIconTint="#979797"
+        app:endIconContentDescription="@string/set_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24sp"
+            android:layout_marginLeft="16sp"
+            android:layout_marginRight="16sp">
+
+            <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="@string/name"
+            android:backgroundTint="@color/background_forms_contacts"
+            android:fontFamily="@font/roboto_medium"
+            android:textSize="16sp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <android.widget.LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="16sp"
+            android:layout_marginTop="25sp"
+            android:layout_marginRight="16sp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/phoneTextFieldLayout"
+                app:endIconMode="custom"
+                app:endIconDrawable="@drawable/ic_baseline_phone_24"
+                app:endIconTint="#979797"
+                app:endIconContentDescription="@string/set_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Phone"
+                    android:layout_width="233dp"
+                    android:layout_height="match_parent"
+                    android:hint="@string/phone_number"
+                    android:backgroundTint="@color/background_forms_contacts"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textSize="16sp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/selectTextFieldLayout"
+                app:endIconMode="custom"
+                app:endIconDrawable="@drawable/ic_baseline_arrow_drop_down_24"
+                app:endIconTint="#979797"
+                app:endIconContentDescription="@string/set_gender"
+                android:layout_width="wrap_content"
+                android:paddingLeft="16dp"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Select"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:hint="@string/select"
+                    android:backgroundTint="@color/background_forms_contacts"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textSize="16sp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </android.widget.LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            app:endIconMode="custom"
+            app:endIconDrawable="@drawable/ic_baseline_location_on_24"
+            app:endIconTint="#979797"
+            app:endIconContentDescription="@string/set_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25sp"
+            android:layout_marginLeft="16sp"
+            android:layout_marginRight="16sp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:hint="@string/address"
+                android:backgroundTint="@color/background_forms_contacts"
+                android:fontFamily="@font/roboto_medium"
+                android:textSize="16sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <android.widget.LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="16sp"
+            android:layout_marginTop="25sp"
+            android:layout_marginRight="16sp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/cityTextFieldLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/City"
+                    android:layout_width="114sp"
+                    android:layout_height="match_parent"
+                    android:hint="@string/city"
+                    android:backgroundTint="@color/background_forms_contacts"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textSize="16sp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/stateTextFieldLayout"
+                android:layout_width="wrap_content"
+                android:paddingLeft="16dp"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/State"
+                    android:layout_width="120sp"
+                    android:layout_height="match_parent"
+                    android:hint="@string/state"
+                    android:backgroundTint="@color/background_forms_contacts"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textSize="16sp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/zipTextFieldLayout"
+                android:layout_width="wrap_content"
+                android:paddingLeft="16dp"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Zip"
+                    android:layout_width="113sp"
+                    android:layout_height="match_parent"
+                    android:hint="@string/zip"
+                    android:backgroundTint="@color/background_forms_contacts"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textSize="16sp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </android.widget.LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            app:endIconMode="custom"
+            app:endIconDrawable="@drawable/ic_baseline_edit_calendar_24"
+            app:endIconTint="#979797"
+            app:endIconContentDescription="@string/set_birthday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25sp"
+            android:layout_marginLeft="16sp"
+            android:layout_marginRight="16sp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:hint="@string/birthday"
+                android:backgroundTint="@color/background_forms_contacts"
+                android:fontFamily="@font/roboto_medium"
+                android:textSize="16sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            app:endIconMode="custom"
+            app:endIconDrawable="@drawable/ic_baseline_create_24"
+            app:endIconTint="#979797"
+            app:endIconContentDescription="@string/create_notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25sp"
+            android:layout_marginLeft="16sp"
+            android:layout_marginRight="16sp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:hint="@string/notes"
+                android:backgroundTint="@color/background_forms_contacts"
+                android:fontFamily="@font/roboto_medium"
+                android:textSize="16sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/button_green"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="16sp"
+            android:backgroundTint="@color/register_button"
+            android:fontFamily="@font/roboto_medium"
+            android:text="REGISTER"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

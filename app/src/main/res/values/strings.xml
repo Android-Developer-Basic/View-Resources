@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">View &amp; Resources</string>
+    <string name="item_image">item_image</string>
+    <string name="delete_cross">delete_cross</string>
+    <string name="email_in_dialog">E-mail</string>
+    <string name="password_in_dialog">Password</string>
+    <string name="set_name">Set your name</string>
+    <string name="name">Name</string>
+    <string name="set_number">Set your phone number</string>
+    <string name="phone_number">Phone number</string>
+    <string name="set_gender">Set your gender</string>
+    <string name="select">Select</string>
+    <string name="set_location">Set your location</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="zip">Zip</string>
+    <string name="set_birthday">Set your birthday</string>
+    <string name="birthday">Birthday</string>
+    <string name="create_notes">Create some notes</string>
+    <string name="notes">Notes</string>
 </resources>

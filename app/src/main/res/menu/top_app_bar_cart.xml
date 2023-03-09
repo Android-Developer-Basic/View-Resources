@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/loyalty"
+        android:title="Loyalty"
+        android:icon="@drawable/ic_baseline_loyalty_24"
+        android:contentDescription="Loyalty"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/more_cart"
+        android:title="More"
+        android:icon="@drawable/ic_baseline_more_vert_24"
+        android:contentDescription="More"
+        app:showAsAction="ifRoom"/>
+
+</menu>
