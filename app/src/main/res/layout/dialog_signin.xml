@@ -1,6 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/TV_sign_in"
+            style="@style/textFont20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="18dp"
+            android:text="@string/sign_in"
+            android:textColor="?attr/CartTV_mainColor">
+
+        </com.google.android.material.textview.MaterialTextView>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/register_TV"
+            style="@style/textFont14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register"
+            android:textAllCaps="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="?attr/Dialog_PrimaryColor"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="20dp">
+
+        </com.google.android.material.textview.MaterialTextView>
+        
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ED_outlined_email"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TV_sign_in"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:hint="@string/e_mail"
+            android:textColorHint="?attr/CartTV_mainColor"
+            app:boxStrokeColor="?attr/Dialog_ShadeColor"
+            app:hintTextColor="?attr/CartTV_mainColor" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ED_outlined_password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ED_outlined_email"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:hint="@string/password"
+            android:textColorHint="?attr/CartTV_mainColor"
+            app:boxStrokeColor="?attr/Dialog_ShadeColor"
+            app:hintTextColor="?attr/CartTV_mainColor"
+            app:boxCornerRadiusTopStart="4dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/reset_TV"
+            style="@style/textFont12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reset_password"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/ED_outlined_password"
+            android:textSize="12sp"
+            android:fontFamily="@font/roboto"
+            android:letterSpacing="0.02"
+            android:textColor="?attr/Dialog_ResetTV"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="24dp">
+
+        </com.google.android.material.textview.MaterialTextView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_signIn"
+            style="@style/BtnFont14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reset_TV"
+            android:text="@string/sign_in"
+            android:textColor="?attr/BackgroundColor"
+            app:cornerRadius="4dp"
+            android:backgroundTint="?attr/Dialog_PrimaryColor"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp">
+
+        </com.google.android.material.button.MaterialButton>
+
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
