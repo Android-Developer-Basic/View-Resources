@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CustomToolbar" parent="ThemeOverlay.Material3">
+        <item name="navigationIconTint">?attr/toolbarItemsColor</item>
+        <item name="titleTextColor">?attr/toolbarTitleColor</item>
+        <item name="colorOnSurfaceVariant">?attr/toolbarTitleColor</item>
+    </style>
+
+    <style name="SignInButtonStyle" parent="">
+        <item name="backgroundTint">?attr/signInButtonBackground</item>
+        <item name="cornerRadius">4dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="textAllCaps">true</item>
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:textColor">?buttonTextColor</item>
+    </style>
+
+    <style name="RegisterButtonStyle" parent="">
+        <item name="backgroundTint">?attr/registerButtonBackground</item>
+        <item name="cornerRadius">4dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="textAllCaps">true</item>
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:textColor">?buttonTextColor</item>
+    </style>
+
+    <style name="InputLayoutStyle" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:textColorHint">?attr/inputHintText</item>
+        <item name="android:textSize">16sp</item>
+        <item name="boxStrokeColor">@color/input_layout_box</item>
+        <item name="hintTextColor">@color/input_layout_box</item>
+
+    </style>
+
+    <style name="InputCursor" parent="">
+        <item name="colorControlActivated">@color/input_layout_box</item>
+    </style>
+
+    <style name="ContactsInputLayoutStyle" parent="">
+        <item name="endIconTint">?attr/iconContactsColor</item>
+        <item name="android:textColorHint">?attr/inputHintText</item>
+        <item name="boxBackgroundColor">?attr/boxBackgroundColorContacts</item>
+    </style>
+
+    <style name="ContactsInputLayoutDropDownStyle" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu">
+        <item name="endIconTint">?attr/iconContactsColor</item>
+        <item name="android:textColorHint">?attr/inputHintText</item>
+        <item name="boxBackgroundColor">?attr/boxBackgroundColorContacts</item>
+    </style>
+
+    <style name="MainTextCart" parent="">
+        <item name="android:textSize">20sp</item>
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:textColor">?mainTextCartColor</item>
+    </style>
+
+    <style name="SubTextCart" parent="">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="PayNowButtonStyle" parent="">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="backgroundTint">?payNowButtonBackground</item>
+        <item name="iconTint">?payNowButtonIconTint</item>
+        <item name="android:textColor">?payNowButtonTextColor</item>
+
+    </style>
+
+</resources>

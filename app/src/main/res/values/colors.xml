@@ -7,4 +7,49 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+
+    <!--light-->
+    <color name="toolbar_contacts">#2980B9</color>
+    <color name="toolbar_cart">#2980B9</color>
+    <color name="toolbar_items">#FFFFFFFF</color>
+    <color name="toolbar_title">#FFFFFFFF</color>
+    <color name="button_text_color">#FFFFFF</color>
+    <color name="layout_background">#FFFFFF</color>
+    <color name="sign_in_button">#2980B9</color>
+    <color name="common_text_color">#263238</color>
+    <color name="register_text">#2980B9</color>
+    <color name="reset_text">#2980B9</color>
+    <color name="icon_contacts_color">#979797</color>
+    <color name="box_background_color_contacts">#F0F0F0</color>
+    <color name="register_button_background">#2ECC71</color>
+    <color name="main_text_cart_color">#263238</color>
+    <color name="close_icon_item_color">#E74C3C</color>
+    <color name="pay_now_button_background">#263238</color>
+    <color name="pay_now_button_icon_tint">#979797</color>
+    <color name="pay_now_button_text_color">#FFFFFF</color>
+    <color name="total_items_text_color">#263238</color>
+
+
+    <!--dark-->
+    <color name="toolbar_contacts_dark">#272727</color>
+    <color name="toolbar_cart_dark">#121211</color>
+    <color name="toolbar_items_dark">#888888</color>
+    <color name="toolbar_title_dark">#E0E0E0</color>
+    <color name="button_text_color_dark">#121212</color>
+    <color name="layout_background_dark">#121212</color>
+    <color name="sign_in_button_dark">#4FB8FF</color>
+    <color name="common_text_color_dark">#E0E0E0</color>
+    <color name="register_text_dark">#4FB8FF</color>
+    <color name="reset_text_dark">#E0E0E0</color>
+    <color name="icon_contacts_color_dark">#888888</color>
+    <color name="box_background_color_contacts_dark">#272727</color>
+    <color name="register_button_background_dark">#4FB8FF</color>
+    <color name="main_text_cart_color_dark">#FFD76F</color>
+    <color name="close_icon_item_color_dark">#888888</color>
+    <color name="pay_now_button_background_dark">#89ED5B</color>
+    <color name="pay_now_button_icon_tint_dark">#121212</color>
+    <color name="pay_now_button_text_color_dark">#121212</color>
+    <color name="total_items_text_color_dark">#89ED5B</color>
+
 </resources>
