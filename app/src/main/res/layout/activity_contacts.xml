@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ContactsActivity"
+    style="@style/Theme.ViewResources"
     android:theme="@style/Theme.ViewResources">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -15,6 +16,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+<!--        <com.google.android.material.appbar.MaterialToolbar-->
+<!--            android:id="@+id/toolBar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:navigationIcon="@drawable/arrow_back"-->
+<!--            app:navigationContentDescription="Back"-->
+<!--            app:title="Contacts"-->
+<!--            app:menu="@menu/contacts_menu"/>-->
+
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolBar"
             android:layout_width="match_parent"
@@ -22,10 +35,11 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:navigationIcon="@drawable/arrow_back"
+            app:menu="@menu/contacts_menu"
             app:navigationContentDescription="Back"
-            app:title="Contacts"
-            app:menu="@menu/contacts_menu">
+
+            app:navigationIcon="@drawable/arrow_back"
+            app:title="Contacts">
 
         </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>

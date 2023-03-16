@@ -145,6 +145,8 @@
         android:text="@string/pay_now"
         app:icon="@drawable/wallet"
         app:iconSize="24dp"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>

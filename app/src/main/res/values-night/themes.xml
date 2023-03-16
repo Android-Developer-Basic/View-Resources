@@ -16,7 +16,7 @@
     </style>
 
     <style name="RegisterButton" parent="Theme.ViewResources">
-        <item name="backgroundTint">@color/teal_200</item>
+        <item name="backgroundTint">#4FB8FF</item>
         <item name="textAllCaps">true</item>
         <item name="android:textColor">@android:color/black</item>
     </style>
@@ -24,13 +24,21 @@
     <style name="PayButton" parent="Theme.ViewResources">
         <item name="backgroundTint">@android:color/holo_green_light</item>
         <item name="android:textColor">@android:color/black</item>
-        <item name="android:radius">999dp</item>
+        <item name="cornerRadius">999dp</item>
         <item name="iconTint">@android:color/black</item>
     </style>
 
     <style name="SignInButton" parent="Theme.ViewResources">
-        <item name="backgroundTint">@color/teal_200</item>
+        <item name="backgroundTint">#4FB8FF</item>
         <item name="android:textColor">@android:color/black</item>
         <item name="textAllCaps">true</item>
+    </style>
+
+    <style name="SignInText" parent="Theme.ViewResources">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="fontFamily">Roboto</item>
+        <item name="fontStyle">normal</item>
+        <item name="fontWeight">500</item>
     </style>
 </resources>

@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Theme.ViewResources" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimary">#2980B9</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
@@ -22,15 +22,23 @@
     </style>
 
     <style name="PayButton" parent="Theme.ViewResources">
-        <item name="backgroundTint">@android:color/black</item>
+        <item name="backgroundTint">#263238</item>
         <item name="android:textColor">@android:color/white</item>
-        <item name="android:radius">999dp</item>
-        <item name="iconTint">@android:color/darker_gray</item>
+        <item name="cornerRadius">999dp</item>
+        <item name="iconTint">#979797</item>
     </style>
 
     <style name="SignInButton" parent="Theme.ViewResources">
-        <item name="backgroundTint">@color/purple_700</item>
+        <item name="backgroundTint">#2980B9</item>
         <item name="android:textColor">@android:color/white</item>
         <item name="textAllCaps">true</item>
+    </style>
+
+    <style name="SignInText" parent="Theme.ViewResources">
+        <item name="android:textColor">#263238</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="fontFamily">Roboto</item>
+        <item name="fontStyle">normal</item>
+        <item name="fontWeight">500</item>
     </style>
 </resources>
