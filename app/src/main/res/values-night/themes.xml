@@ -1,16 +1,50 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.ViewResources" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.ViewResources" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_200</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorPrimaryVariant">@color/layout_background_dark</item>
         <item name="colorOnPrimary">@color/black</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
         <item name="colorSecondaryVariant">@color/teal_200</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+
+        <!--common-->
+        <item name="layoutBackground">@color/layout_background_dark</item>
+        <item name="toolbarBackgroundContacts">@color/toolbar_contacts_dark</item>
+        <item name="toolbarBackgroundCart">@color/toolbar_cart_dark</item>
+        <item name="buttonTextColor">@color/button_text_color_dark</item>
+        <item name="toolbarItemsColor">@color/toolbar_items_dark</item>
+        <item name="toolbarTitleColor">@color/toolbar_title_dark</item>
+        <item name="iconTint">@color/toolbar_items_dark</item>
+        <item name="android:textColorSecondary">@color/toolbar_items_dark</item>
+        <item name="android:textColor">@color/common_text_color_dark</item>
+
+        <!--alert dialog-->
+        <item name="signInButtonBackground">@color/sign_in_button_dark</item>
+        <item name="inputHintText">@color/common_text_color_dark</item>
+        <item name="registerTextColor">@color/register_text_dark</item>
+        <item name="resetTextColor">@color/reset_text_dark</item>
+
+        <!--contacts-->
+        <item name="iconContactsColor">@color/icon_contacts_color_dark</item>
+        <item name="boxBackgroundColorContacts">@color/box_background_color_contacts_dark</item>
+        <item name="registerButtonBackground">@color/register_button_background_dark</item>
+
+        <!--cart-->
+        <item name="mainTextCartColor">@color/main_text_cart_color_dark</item>
+        <item name="closeIconItemColor">@color/close_icon_item_color_dark</item>
+        <item name="payNowButtonBackground">@color/pay_now_button_background_dark</item>
+        <item name="payNowButtonIconTint">@color/pay_now_button_icon_tint_dark</item>
+        <item name="payNowButtonTextColor">@color/pay_now_button_text_color_dark</item>
+        <item name="totalItemsTextColor">@color/total_items_text_color_dark</item>
+
+        <item name="textAppearanceLabelLarge">@style/TextAppearance.Material3.LabelLarge</item>
     </style>
+
+
 </resources>

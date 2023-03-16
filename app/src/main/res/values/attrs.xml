@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="toolbarItemsColor" format="color" />
+    <attr name="toolbarTitleColor" format="color" />
+    <attr name="buttonTextColor" format="color" />
+    <attr name="layoutBackground" format="color" />
+    <attr name="toolbarBackgroundContacts" format="color" />
+    <attr name="toolbarBackgroundCart" format="color" />
+    <attr name="signInButtonBackground" format="color" />
+    <attr name="inputHintText" format="color" />
+    <attr name="registerTextColor" format="color" />
+    <attr name="resetTextColor" format="color" />
+    <attr name="iconContactsColor" format="color" />
+    <attr name="boxBackgroundColorContacts" format="color" />
+    <attr name="registerButtonBackground" format="color" />
+    <attr name="mainTextCartColor" format="color"/>
+    <attr name="closeIconItemColor" format="color"/>
+
+    <attr name="totalItemsTextColor" format="color"/>
+
+    <attr name="payNowButtonBackground" format="color"/>
+    <attr name="payNowButtonIconTint" format="color"/>
+    <attr name="payNowButtonTextColor" format="color"/>
+
+
+</resources>
