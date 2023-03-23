@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding">16dp</dimen>
+    <dimen name="paddingTop">24dp</dimen>
+    <dimen name="fieldMarginVertical">26dp</dimen>
+    <dimen name="fieldMarginHorizontal">16dp</dimen>
+</resources>
