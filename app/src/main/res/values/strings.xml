@@ -19,4 +19,11 @@
     <string name="register">Register</string>
     <string name="search">Search</string>
     <string name="more">More</string>
+    <string name="tag">Tag</string>
+    <string name="items_in_your_cart">4 items in your cart</string>
+    <string name="your_order_total">Your order total</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="shipping">Shipping</string>
+    <string name="tax">Tax</string>
+    <string name="pay_now">Pay now</string>
 </resources>

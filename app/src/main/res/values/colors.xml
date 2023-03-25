@@ -9,4 +9,11 @@
     <color name="white">#FFFFFFFF</color>
     <color name="blue">#2980B9</color>
     <color name="light_green">#2ECC71</color>
+    <color name="textColor">#263238</color>
+    <color name="light_blue_400">#FF29B6F6</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="gray_400">#FFBDBDBD</color>
+    <color name="gray_600">#FF757575</color>
+    <color name="separator_color">#263238</color>
+    <color name="button_icon_color">#979797</color>
 </resources>
