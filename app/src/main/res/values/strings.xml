@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">View &amp; Resources</string>
+    <string name="title">Sign in</string>
+    <string name="label">Register</string>
+    <string name="link">Reset my password</string>
+    <string name="search">Search</string>
+    <string name="edit">Edit</string>
+    <string name="hint_phone_number">Phone number</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_select">Select</string>
+    <string name="pay_btn_text">Pay now</string>
+    <string name="register_btn_text">Register</string>
+    <string name="hint_city">City</string>
+
 </resources>

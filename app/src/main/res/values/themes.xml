@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Theme.ViewResources" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorPrimary">@color/cyan_cornflower_blue</item>
+        <item name="colorPrimaryVariant">@color/cyan_cornflower_blue</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
@@ -12,5 +12,26 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="android:textColor">@color/black</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="payButtonColor">@color/gunmetal</item>
+        <item name="registerButtonColor">@color/kiwi_green</item>
+        <item name="navigationBarIconsColor">@color/white</item>
+    </style>
+
+    <style name="totalOrderTextColor">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="deleteCrossIcon">
+        <item name="android:tint">@color/carmine_pink</item>
+    </style>
+
+    <style name="link">
+        <item name="android:textSize">12sp</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:textColor">#2980B9</item>
     </style>
 </resources>

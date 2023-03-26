@@ -12,5 +12,17 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="payButtonColor">@color/kiwi_green</item>
+        <item name="registerButtonColor">@color/jeans_blue</item>
+        <item name="crossDeleteColor">@color/taupe_grey</item>
+        <item name="navigationBarIconsColor">@color/taupe_grey</item>
+    </style>
+
+    <style name="totalOrderTextColor">
+        <item name="android:textColor">@color/dandelion_yellow</item>
+    </style>
+
+    <style name="deleteCrossIcon">
+        <item name="android:tint">@color/taupe_grey</item>
     </style>
 </resources>
