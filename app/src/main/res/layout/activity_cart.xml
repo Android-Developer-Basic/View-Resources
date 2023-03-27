@@ -146,6 +146,7 @@
             android:gravity="end"
             android:lineHeight="28sp"
             android:text="41.24"
+            android:textColor="@color/cart_total_color"
             android:textFontWeight="500"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
