@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="contacts_input_vertical_gap">25dp</dimen>
+    <dimen name="contacts_input_horizontal_gap">16dp</dimen>
+    <dimen name="border_margin">16dp</dimen>
+    <dimen name="cart_item_vertical_padding">16dp</dimen>
+    <dimen name="cart_item_vertical_gap">8dp</dimen>
+</resources>

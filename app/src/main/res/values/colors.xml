@@ -7,4 +7,31 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="top_bar_background">#2980B9</color>
+    <color name="top_bar_text">#FFFFFF</color>
+    <color name="top_bar_icon">#FFFFFF</color>
+
+    <color name="contact_action_color">#2ECC71</color>
+    <color name="contact_button_text_color">#FFFFFF</color>
+    <color name="contact_input_background">#F0F0F0</color>
+    <color name="contact_input_text_color">#263238</color>
+    <color name="contact_input_icon_color">#979797</color>
+    <color name="contact_hint_text_color">#325A43</color>
+
+    <color name="cart_action_color">#263238</color>
+    <color name="cart_button_text_color">#FFFFFF</color>
+    <color name="cart_icon_color">#979797</color>
+
+    <color name="separator_color">#3D263238</color>
+
+    <color name="dialog_background_color">#FFFFFF</color>
+    <color name="dialog_action_color">#2980B9</color>
+    <color name="dialog_button_text_color">#FFFFFF</color>
+    <color name="dialog_action_text_color">#2980B9</color>
+    <color name="dialog_hint_text_color">#263238</color>
+    <color name="dialog_outline_color">#F3F3F3</color>
+    <color name="dialog_reset_color">#2980B9</color>
+
+
 </resources>

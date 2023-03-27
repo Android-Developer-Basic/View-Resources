@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ItemView">
+        <attr name="name" format="string"/>
+        <attr name="caption" format="string"/>
+        <attr name="price" format="string"/>
+        <attr name="image" format="reference"/>
+    </declare-styleable>
+
+    <attr name="actionColor" format="color" />
+    <attr name="buttonTextColor" format="color" />
+    <attr name="inputBackground" format="color" />
+    <attr name="inputTextColor" format="color" />
+    <attr name="iconColor" format="color" />
+    <attr name="hintTextColor" format="color" />
+    <attr name="separatorColor" format="color" />
+
+    <attr name="dialogOutlineColor" format="color" />
+</resources>

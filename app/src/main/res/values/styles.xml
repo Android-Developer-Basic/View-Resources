@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="RobotoTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
+    <style name="ToolbarTextAppearance" parent="TextAppearance.Material3.LabelLarge">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="SquareButtonStyle" parent="ShapeAppearanceOverlay.Material3.Button">
+        <item name="android:backgroundTint">?attr/actionColor</item>
+        <item name="android:textColor">?attr/buttonTextColor</item>
+        <item name="cornerRadius">4dp</item>
+        <item name="android:height">40dp</item>
+        <item name="android:gravity">center</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="ContactTextInputStyle" parent="Widget.Material3.TextInputLayout.FilledBox">
+        <item name="endIconTint">?attr/iconColor</item>
+        <item name="android:textColorHint">?inputTextColor</item>
+        <item name="boxBackgroundColor">?inputBackground</item>
+        <item name="boxStrokeColor">?actionColor</item>
+        <item name="hintTextColor">?hintTextColor</item>
+        <item name="boxCornerRadiusTopEnd">4dp</item>
+        <item name="boxCornerRadiusTopStart">4dp</item>
+    </style>
+
+    <style name="ContactTextInputStyle.DropDown" parent="Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu">
+        <item name="endIconTint">?attr/iconColor</item>
+        <item name="android:textColorHint">?inputTextColor</item>
+        <item name="boxBackgroundColor">?inputBackground</item>
+        <item name="hintTextColor">?hintTextColor</item>
+        <item name="boxStrokeColor">?actionColor</item>
+        <item name="boxCornerRadiusTopEnd">4dp</item>
+        <item name="boxCornerRadiusTopStart">4dp</item>
+    </style>
+
+    <style name="ItemImageStyle" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">5%</item>
+     </style>
+
+    <style name="CartButtonStyle" parent="ShapeAppearanceOverlay.Material3.Button">
+        <item name="android:backgroundTint">?attr/actionColor</item>
+        <item name="iconTint">?attr/iconColor</item>
+        <item name="android:textColor">?attr/buttonTextColor</item>
+        <item name="cornerRadius">999dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:paddingStart">26dp</item>
+        <item name="android:paddingEnd">26dp</item>
+        <item name="iconPadding">11dp</item>
+        <item name="fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="ThemeOverlay.App.MaterialAlertDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="alertDialogStyle">@style/MaterialAlertDialog.App</item>
+    </style>
+
+    <style name="MaterialAlertDialog.App" parent="MaterialAlertDialog.Material3">
+        <item name="shapeAppearance">@style/ShapeAppearance.App.MediumComponent</item>
+        <item name="shapeAppearanceOverlay">@null</item>
+    </style>
+
+    <style name="ShapeAppearance.App.MediumComponent" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">4dp</item>
+    </style>
+
+    <style name="DialogTextInputStyle" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="android:textColorHint">?attr/hintTextColor</item>
+        <item name="boxStrokeColor">@color/dialog_input_selector</item>
+        <item name="hintTextColor">?hintTextColor</item>
+     </style>
+
+</resources>
