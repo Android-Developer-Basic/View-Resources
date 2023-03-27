@@ -34,6 +34,7 @@
         android:layout_marginBottom="8dp"
         android:lineHeight="24sp"
         android:text="4 items in your cart"
+        android:textColor="@color/cart_item_count_color"
         android:textSize="16sp" />
 
     <ScrollView
@@ -131,6 +132,7 @@
             android:layout_marginEnd="8dp"
             android:lineHeight="28sp"
             android:text="Your order total"
+            android:textColor="@color/cart_total_color"
             android:textFontWeight="500"
             android:textSize="20sp"
             app:layout_constraintEnd_toStartOf="@id/total_price"

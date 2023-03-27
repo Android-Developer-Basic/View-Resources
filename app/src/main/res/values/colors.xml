@@ -22,6 +22,8 @@
     <color name="cart_action_color">#263238</color>
     <color name="cart_button_text_color">#FFFFFF</color>
     <color name="cart_icon_color">#979797</color>
+    <color name="cart_item_count_color">#263238</color>
+    <color name="cart_total_color">#263238</color>
 
     <color name="separator_color">#3D263238</color>
 
