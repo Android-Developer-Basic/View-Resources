@@ -1,9 +1,189 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ContactsActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            style="@style/Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:menu="@menu/top_app_bar_contacts"
+            app:navigationIcon="@drawable/ic_arrow_left"
+            app:title="Contacts" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/NameTextField"
+            style="@style/ContactsTextView"
+            android:hint="@string/name"
+            app:endIconDrawable="@drawable/ic_account"
+            app:endIconMode="custom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/PhoneNumberTextField"
+            style="@style/ContactsTextView"
+            android:hint="@string/phone_number"
+            android:layout_marginEnd="20dp"
+            app:endIconDrawable="@drawable/ic_phone"
+            app:endIconMode="custom"
+            app:layout_constraintEnd_toStartOf="@+id/SelectTextField"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/NameTextField"
+            app:layout_constraintHorizontal_weight="4">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/SelectTextField"
+            style="@style/ContactsDropDown"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/PhoneNumberTextField"
+            app:layout_constraintTop_toBottomOf="@id/NameTextField"
+            app:layout_constraintTop_toTopOf="@+id/PhoneNumberTextField"
+            app:layout_constraintBottom_toBottomOf="@+id/PhoneNumberTextField"
+            app:layout_constraintHorizontal_weight="2">
+
+            <AutoCompleteTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="@string/select"
+                android:inputType="none"
+                app:simpleItems="@array/simple_items" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/AddressTextField"
+            style="@style/ContactsTextView"
+            android:hint="@string/address"
+            app:endIconDrawable="@drawable/ic_location"
+            app:endIconMode="custom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/PhoneNumberTextField">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/CitiTextField"
+            style="@style/ContactsTextView"
+            android:hint="@string/city"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/StateTextField"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/AddressTextField"
+            app:layout_constraintHorizontal_weight="1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/StateTextField"
+            style="@style/ContactsDropDown"
+            android:hint="@string/state"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintBottom_toBottomOf="@id/CitiTextField"
+            app:layout_constraintTop_toTopOf="@id/CitiTextField"
+            app:layout_constraintEnd_toStartOf="@+id/ZipTextField"
+            app:layout_constraintStart_toEndOf="@+id/CitiTextField">
+
+            <AutoCompleteTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:inputType="none"
+                app:simpleItems="@array/simple_items" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ZipTextField"
+            style="@style/ContactsTextView"
+            android:hint="@string/zip"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/StateTextField"
+            app:layout_constraintTop_toBottomOf="@id/AddressTextField">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/BirthdayTextField"
+            style="@style/ContactsTextView"
+            android:hint="@string/birthday"
+            app:endIconDrawable="@drawable/ic_calendar"
+            app:endIconMode="custom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/CitiTextField">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/NotesTextField"
+            style="@style/ContactsTextView"
+            android:hint="@string/notes"
+            app:endIconDrawable="@drawable/ic_pencil"
+            app:endIconMode="custom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/BirthdayTextField">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/RegisterButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/button_register_contacts"
+            android:textColor="@color/button_register_contacts_text"
+            android:text="@string/register"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/NotesTextField"
+            app:layout_constraintVertical_bias="1.0"
+            tools:layout_editor_absoluteX="152dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

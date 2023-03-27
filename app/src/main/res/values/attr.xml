@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="toolbarTitleColor" format="color" />
+    <attr name="toolbarIconsColor" format="color" />
+    <attr name="walletIcon" format="color" />
+    <attr name="toolbarTitleColorDark" format="color" />
+    <attr name="toolbarIconsColorDark" format="color" />
+    <attr name="toolbarBackGroundColorDark" format="color" />
+
+</resources>
