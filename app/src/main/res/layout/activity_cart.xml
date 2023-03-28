@@ -27,70 +27,80 @@
         android:id="@+id/topTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:layout_marginRight="16dp"
         android:text="@string/_4_items_in_your_cart"
         android:textSize="14sp"
         android:textColor="@color/secondText"
         app:layout_constraintTop_toBottomOf="@id/topCartBar" />
 
     <ScrollView
+        android:id="@+id/scrollViewContainer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@id/topTextView">
+        android:layout_marginBottom="52dp"
+        app:layout_constraintTop_toBottomOf="@id/topTextView"
+        app:layout_constraintBottom_toTopOf="@id/separator">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/firstImage"
-                tools:ignore="ContentDescription"
-                style="@style/CartImages"
-                android:layout_marginTop="12dp"
-                android:src="@drawable/icons8"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
 
-            <TextView
-                android:id="@+id/theTop"
-                style="@style/CartItemName"
-                android:layout_marginTop="16dp"
-                android:text="@string/on_the_top"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <ImageView
+                    android:id="@+id/firstImage"
+                    tools:ignore="ContentDescription"
+                    style="@style/CartImages"
+                    android:src="@drawable/icons8"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/textView"
-                style="@style/CartPrice"
-                android:layout_marginTop="16dp"
-                android:text="@string/us_1_50"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/theTop"
+                    style="@style/CartItemName"
+                    android:text="@string/on_the_top"
+                    app:layout_constraintBottom_toTopOf="@id/caption"
+                    app:layout_constraintEnd_toStartOf="@id/textView"
+                    app:layout_constraintStart_toEndOf="@id/firstImage"
+                    app:layout_constraintTop_toTopOf="@id/firstImage" />
 
-            <TextView
-                android:id="@+id/caption"
-                style="@style/CartCaption"
-                android:layout_marginTop="40dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/textView"
+                    style="@style/CartPrice"
+                    android:text="@string/us_1_50"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/theTop" />
 
-            <ImageView
-                android:id="@+id/closeImage"
-                tools:ignore="ContentDescription"
-                style="@style/CartCloseImage"
-                app:layout_constraintBottom_toBottomOf="@id/caption"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@id/caption" />
+                <TextView
+                    android:id="@+id/caption"
+                    style="@style/CartCaption"
+                    app:layout_constraintStart_toEndOf="@id/firstImage"
+                    app:layout_constraintBottom_toBottomOf="@id/firstImage" />
+
+                <ImageView
+                    android:id="@+id/closeImage"
+                    tools:ignore="ContentDescription"
+                    style="@style/CartCloseImage"
+                    app:layout_constraintBottom_toBottomOf="@id/caption"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/caption" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
             <ImageView
                 android:id="@+id/secondImage"
                 tools:ignore="ContentDescription"
                 style="@style/CartImages"
-                android:layout_marginTop="92dp"
                 android:src="@drawable/kenny"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -98,25 +108,25 @@
             <TextView
                 android:id="@+id/friends"
                 style="@style/CartItemName"
-                android:layout_marginTop="96dp"
                 android:text="@string/forever_friends"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintBottom_toTopOf="@id/caption2"
+                app:layout_constraintEnd_toStartOf="@id/textView2"
+                app:layout_constraintStart_toEndOf="@id/secondImage"
+                app:layout_constraintTop_toTopOf="@id/secondImage" />
 
             <TextView
                 android:id="@+id/textView2"
                 style="@style/CartPrice"
-                android:layout_marginTop="96dp"
                 android:text="@string/us_4_50"
+                app:layout_constraintStart_toEndOf="@id/friends"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="@id/friends" />
 
             <TextView
                 android:id="@+id/caption2"
                 style="@style/CartCaption"
-                android:layout_marginTop="120dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintStart_toEndOf="@id/secondImage"
+                app:layout_constraintBottom_toBottomOf="@id/secondImage" />
 
             <ImageView
                 android:id="@+id/closeImage2"
@@ -126,37 +136,42 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@id/caption2" />
 
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
             <ImageView
                 android:id="@+id/thirdImage"
                 tools:ignore="ContentDescription"
                 style="@style/CartImages"
-                android:layout_marginTop="172dp"
                 android:src="@drawable/ironman"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"/>
 
             <TextView
                 android:id="@+id/kit"
                 style="@style/CartItemName"
-                android:layout_marginTop="176dp"
                 android:text="@string/prototyping_kit"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintBottom_toTopOf="@id/caption3"
+                app:layout_constraintEnd_toStartOf="@id/textView3"
+                app:layout_constraintStart_toEndOf="@id/thirdImage"
+                app:layout_constraintTop_toTopOf="@id/thirdImage" />
 
             <TextView
                 android:id="@+id/textView3"
                 style="@style/CartPrice"
-                android:layout_marginTop="176dp"
                 android:text="@string/us_8_00"
+                app:layout_constraintStart_toEndOf="@id/kit"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="@id/kit" />
 
             <TextView
                 android:id="@+id/caption3"
                 style="@style/CartCaption"
-                android:layout_marginTop="200dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintStart_toEndOf="@id/thirdImage"
+                app:layout_constraintBottom_toBottomOf="@id/thirdImage"/>
 
             <ImageView
                 android:id="@+id/closeImage3"
@@ -166,37 +181,42 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@id/caption3" />
 
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
             <ImageView
                 android:id="@+id/fourthImage"
                 tools:ignore="ContentDescription"
                 style="@style/CartImages"
-                android:layout_marginTop="252dp"
                 android:src="@drawable/mario"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"/>
 
             <TextView
                 android:id="@+id/basket"
                 style="@style/CartItemName"
-                android:layout_marginTop="256dp"
                 android:text="@string/basket_coffee"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintBottom_toTopOf="@id/caption4"
+                app:layout_constraintEnd_toStartOf="@id/textView4"
+                app:layout_constraintStart_toEndOf="@id/fourthImage"
+                app:layout_constraintTop_toTopOf="@id/fourthImage" />
 
             <TextView
                 android:id="@+id/textView4"
                 style="@style/CartPrice"
-                android:layout_marginTop="256dp"
                 android:text="@string/us_22_00"
+                app:layout_constraintStart_toEndOf="@id/basket"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="@id/basket"/>
 
             <TextView
                 android:id="@+id/caption4"
                 style="@style/CartCaption"
-                android:layout_marginTop="280dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintStart_toEndOf="@id/fourthImage"
+                app:layout_constraintBottom_toBottomOf="@id/fourthImage"/>
 
             <ImageView
                 android:id="@+id/closeImage4"
@@ -204,19 +224,33 @@
                 style="@style/CartCloseImage"
                 app:layout_constraintBottom_toBottomOf="@id/caption4"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@id/caption4" />
+                app:layout_constraintTop_toTopOf="@id/caption4"/>
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
 
 
     </ScrollView>
 
     <View
+        android:id="@+id/separator"
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        app:layout_constraintBottom_toTopOf="@id/orderTextView"
+        android:layout_marginTop="52dp"
+        app:layout_constraintTop_toBottomOf="@id/scrollViewContainer"
         android:background="@drawable/separator"
-        android:layout_marginBottom="24dp"/>
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/largeTotalContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        app:layout_constraintTop_toBottomOf="@id/separator"
+        app:layout_constraintBottom_toTopOf="@id/smallTotalContainer"
+        >
 
     <TextView
         android:id="@+id/orderTextView"
@@ -225,26 +259,43 @@
         android:text="@string/your_order_total"
         android:textColor="@color/totalText"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"  />
+        app:layout_constraintTop_toTopOf="parent"
+
+       />
 
     <TextView
         android:id="@+id/totalTextView"
         style="@style/CartTotal"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_marginEnd="16dp"
         android:text="@string/_41_24"
         android:textColor="@color/totalText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintTop_toTopOf="@id/orderTextView"
+        />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/smallTotalContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/largeTotalContainer">
 
     <TextView
         android:id="@+id/addTextView"
         style="@style/CartAddTotal"
         android:layout_width="0dp"
+        android:layout_marginStart="16dp"
         android:text="@string/total"
         android:textColor="@color/subTotalText"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"  />
+        app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintEnd_toStartOf="@id/addPriceTextView"
+
+        />
 
     <TextView
         android:id="@+id/addPriceTextView"
@@ -255,14 +306,16 @@
         android:textColor="@color/subTotalText"
         android:textAlignment="textEnd"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintTop_toTopOf="@id/addTextView"
+         />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <Button
         style="@style/Widget.Material3.Button.ElevatedButton.Icon"
         android:id="@+id/elevatedButton"
         android:layout_width="wrap_content"
         android:layout_height="56dp"
-        android:layout_marginStart="107dp"
         android:text="@string/pay_now"
         android:textColor="@color/button_text"
         android:backgroundTint="@color/button_back"
@@ -270,6 +323,8 @@
         app:icon="@drawable/ic_wallet"
         app:iconTint="?attr/walletIcon"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/smallTotalContainer"
         app:layout_constraintBottom_toBottomOf="parent"
         />
 
