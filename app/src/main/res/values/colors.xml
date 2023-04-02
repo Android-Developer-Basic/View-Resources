@@ -1,10 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_500">#0277BD</color>
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="ToolbarTextColorL">@color/white</color>
+    <color name="ToolbarTextColorD">#E0E0E0</color>
+
+    <color name="ToolbarIconColorL">@color/white</color>
+    <color name="ToolbarIconColorD">#888888</color>
+
+    <color name="IconsColorL">#979797</color>
+    <color name="IconsColorD">@color/ToolbarIconColorD</color>
+
+    <color name="MainColorL">#263238</color>
+    <color name="MainColorD">#E0E0E0</color>
+
+    <color name="ShadeColorL">#F0F0F0</color>
+    <color name="ShadeColorD">#272727</color>
+
+    <color name="RegButtonTextColorL">@color/white</color>
+    <color name="RegButtonTextColorD">#121212</color>
+
+    <color name="RegButtonBackgroundColorL">#2ECC71</color>
+    <color name="RegButtonBackgroundColorD">#4FB8FF</color>
+
+    <color name="RemoveColorL">#E74C3C</color>
+    <color name="RemoveColorD">@color/ToolbarIconColorD</color>
+
+    <color name="TotalColorL">@color/MainColorL</color>
+    <color name="TotalColorD">#FFD76F</color>
+
+    <color name="PayButtonBackgroundColorL">@color/MainColorL</color>
+    <color name="PayButtonBackgroundColorD">#89ED5B</color>
+
+    <color name="SIRegisterColorL">#2980B9</color>
+    <color name="SIRegisterColorD">@color/RegButtonBackgroundColorD</color>
+
+    <color name="SIResetColorL">@color/SIRegisterColorL</color>
+    <color name="SIResetColorD">@color/MainColorD</color>
+
+    <color name="SISigninColorL">@color/SIRegisterColorL</color>
+    <color name="SISigninColorD">@color/RegButtonBackgroundColorD</color>
+
+    <color name="BoxStrokeColorL">@color/ShadeColorL</color>
+    <color name="BoxStrokeColorD">@color/MainColorD</color>
+
 </resources>
