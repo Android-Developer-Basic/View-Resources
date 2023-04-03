@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="ToolbarTextColor" format="color"/>
+    <attr name="ToolbarIconColor" format="color"/>
+
+    <attr name="ContactsBoxStrokeColor" format="color"/>
+    <attr name="ShadeColor" format="color"/>
+    <attr name="MainColor" format="color"/>
+    <attr name="IconColor" format="color"/>
+    <attr name="RegButtonTextColor" format="color"/>
+    <attr name="RegButtonBackgroundColor" format="color"/>
+
+    <attr name="RemoveColor" format="color"/>
+    <attr name="TotalColor" format="color"/>
+
+    <attr name="PayButtonTextColor" format="color"/>
+    <attr name="PayButtonBackgroundColor" format="color"/>
+    <attr name="PayButtonIconColor" format="color"/>
+
+    <declare-styleable name="CartItem">
+        <attr name="img_src" format="reference"/>
+        <attr name="name" format="string"/>
+        <attr name="cost" format="float"/>
+    </declare-styleable>
+
+    <attr name="BoxStrokeColor" format="color"/>
+    <attr name="SIRegisterColor" format="color"/>
+    <attr name="SIResetColor" format="color"/>
+    <attr name="SISigninColor" format="color"/>
+
+</resources>

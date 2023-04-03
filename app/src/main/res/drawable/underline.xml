@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:bottom="0dp"
+        android:left="-3dp"
+        android:right="-3dp"
+        android:top="-3dp">
+        <shape android:shape="rectangle">
+            <stroke
+                android:width="1dp"
+                android:color="?attr/ContactsBoxStrokeColor"/>
+            <solid android:color="?attr/ShadeColor"/>
+        </shape>
+    </item>
+
+    <item>
+        <vector
+            android:height="10dp"
+            android:viewportHeight="50"
+            android:viewportWidth="100"
+            android:width="10dp" xmlns:android="http://schemas.android.com/apk/res/android">
+            <path android:fillColor="?attr/IconColor"
+                android:pathData="M89,25L81,25L85,30Z"/>
+        </vector>
+
+
+    </item>
+</layer-list>

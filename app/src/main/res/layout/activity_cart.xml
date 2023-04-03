@@ -1,9 +1,175 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/id_cart"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CartActivity">
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/id_cart_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/id_cart_mtoolbar"
+            style="@style/ToolbarTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:menu="@menu/cart"
+            app:navigationIcon="@drawable/baseline_arrow_back_24"
+            app:title="@string/cart_title" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/id_all_items"
+        style="@style/CustomMediumTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="?attr/PayButtonBackgroundColor"
+        android:layout_margin="@dimen/medium_margin"
+        android:text="4 items in your cart"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <otus.gpb.homework.viewandresources.CartItemView
+                android:id="@+id/cart_item_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/medium_margin"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:img_src="@drawable/item_1"
+                app:name="On the top"
+                app:cost="1.5">
+            </otus.gpb.homework.viewandresources.CartItemView>
+
+            <otus.gpb.homework.viewandresources.CartItemView
+                android:id="@+id/cart_item_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/medium_margin"
+                app:layout_constraintTop_toBottomOf="@+id/cart_item_1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:img_src="@drawable/item_2"
+                app:name="Forever Friends"
+                app:cost="4.5">
+            </otus.gpb.homework.viewandresources.CartItemView>
+
+            <otus.gpb.homework.viewandresources.CartItemView
+                android:id="@+id/cart_item_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/medium_margin"
+                app:layout_constraintTop_toBottomOf="@+id/cart_item_2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:img_src="@drawable/item_3"
+                app:name="Prototyping Kit"
+                app:cost="8">
+            </otus.gpb.homework.viewandresources.CartItemView>
+
+            <otus.gpb.homework.viewandresources.CartItemView
+                android:id="@+id/cart_item_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/medium_margin"
+                app:layout_constraintTop_toBottomOf="@+id/cart_item_3"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:img_src="@drawable/item_4"
+                app:name="Basket {ampersand} Coffee"
+                app:cost="22">
+            </otus.gpb.homework.viewandresources.CartItemView>
+
+            <TextView
+                android:id="@+id/id_dots_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/huge_margin"
+                app:layout_constraintTop_toBottomOf="@+id/cart_item_4"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:background="@drawable/dots_line"/>
+
+            <LinearLayout
+                android:id="@+id/id_order_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/medium_margin"
+                app:layout_constraintTop_toBottomOf="@+id/id_dots_line"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/id_total_cap"
+                    style="@style/CustomTotalCart"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Your order total"/>
+
+                <TextView
+                    android:id="@+id/id_total_cost"
+                    style="@style/CustomTotalCart"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="41.24"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/id_order_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/medium_margin"
+                app:layout_constraintTop_toBottomOf="@+id/id_order_total"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/id_subtotal_cap"
+                    style="@style/CustomSubtotalCart"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Subtotal\nShipping\nTax"/>
+
+                <TextView
+                    android:id="@+id/id_subtotal_cost"
+                    style="@style/CustomSubtotalCart"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="36.00\n2.00\n3.50"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonPaw"
+                style="@style/CustomPayButton"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:text="@string/cart_pay_now"
+                app:cornerRadius="20dp"
+                android:layout_marginBottom="@dimen/medium_margin"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/id_order_detail"
+                app:layout_constraintVertical_bias="1.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</LinearLayout>

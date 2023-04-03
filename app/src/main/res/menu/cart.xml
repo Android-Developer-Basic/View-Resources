@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mi_heart"
+        android:icon="@drawable/baseline_favorite_border_24"
+        android:title="@string/mi_heart"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/cmi_more"
+        android:title="@string/mi_more"
+        app:showAsAction="never"/>
+</menu>

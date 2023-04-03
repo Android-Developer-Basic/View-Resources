@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="test"
+    android:textColor="?attr/MainColor"
+    android:textSize="@dimen/common_text_size"
+    android:letterSpacing="0.03"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:paddingStart="@dimen/medium_margin">
+</CheckedTextView>
+    <!--android:fontFamily="@font/roboto"-->

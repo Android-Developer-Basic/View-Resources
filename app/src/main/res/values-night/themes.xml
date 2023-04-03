@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.ViewResources" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.ViewResources" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_200</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -12,5 +12,43 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+
+        <item name="colorControlNormal">@color/ToolbarIconColorD</item>
+
+        <item name="backgroundColor">@color/RegButtonTextColorD</item>
+
+<!--
+        <item name="endIconTint">@color/IconsColorD</item>
+        <item name="iconTint">@color/IconsColorD</item>
+        <item name="navigationIconTint">@color/IconsColorD</item>
+        <item name="drawableTint">@color/IconsColorD</item>
+        <item name="drawableTint">@color/IconsColorD</item>
+-->
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:fontFamily">@font/roboto</item>
+
+        <item name="ToolbarTextColor">@color/ToolbarTextColorD</item>
+        <item name="ToolbarIconColor">@color/ToolbarIconColorD</item>
+
+        <item name="ContactsBoxStrokeColor">@color/MainColorL</item>
+        <item name="ShadeColor">@color/ShadeColorD</item>
+        <item name="MainColor">@color/MainColorD</item>
+        <item name="IconColor">@color/IconsColorD</item>
+
+        <item name="RegButtonTextColor">@color/RegButtonTextColorD</item>
+        <item name="RegButtonBackgroundColor">@color/RegButtonBackgroundColorD</item>
+
+        <item name="RemoveColor">@color/RemoveColorD</item>
+        <item name="TotalColor">@color/TotalColorD</item>
+
+        <item name="PayButtonTextColor">@color/RegButtonTextColorD</item>
+        <item name="PayButtonBackgroundColor">@color/PayButtonBackgroundColorD</item>
+        <item name="PayButtonIconColor">@color/RegButtonTextColorD</item>
+
+        <item name="BoxStrokeColor">@color/BoxStrokeColorD</item>
+        <item name="SIRegisterColor">@color/SIRegisterColorD</item>
+        <item name="SIResetColor">@color/SIResetColorD</item>
+        <item name="SISigninColor">@color/SISigninColorD</item>
+
     </style>
 </resources>

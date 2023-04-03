@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CustomTextInputLayout" parent="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="endIconTint">?attr/IconColor</item>
+        <item name="endIconMode">custom</item>
+        <!--<item name="fontFamily">@font/roboto</item>-->
+        <item name="android:textSize">@dimen/common_text_size</item>
+        <item name="android:letterSpacing">0.03</item>
+        <item name="android:textColor">?attr/MainColor</item>
+        <item name="android:textColorHint">?attr/MainColor</item>
+        <item name="boxBackgroundColor">?attr/ShadeColor</item>
+        <item name="boxStrokeColor">@color/contacts_textinput_color</item>
+    </style>
+
+    <style name="CustomTextInputEditText" parent="@style/Widget.MaterialComponents.TextInputEditText.FilledBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--<item name="android:fontFamily">@font/roboto</item>-->
+        <item name="android:lines">1</item>
+    </style>
+
+    <style name="RegisterTextInputLayout" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <!--<item name="fontFamily">@font/roboto</item>
+        <item name="android:textColor">?attr/MainColor</item>-->
+        <item name="android:textColorHint">?attr/MainColor</item>
+        <item name="hintTextColor">?attr/MainColor</item>
+        <item name="android:textSize">@dimen/common_text_size</item>
+        <item name="android:letterSpacing">0.03</item>
+        <item name="boxStrokeColor">@color/signin_textinput_color</item>
+    </style>
+
+
+    <style name="ToolbarTitle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <!--<item name="fontFamily">@font/roboto</item>-->
+        <item name="titleTextColor">?attr/ToolbarTextColor</item>
+        <item name="navigationIconTint">?attr/ToolbarIconColor</item>
+    </style>
+
+    <style name="CustomRegButton">
+        <item name="android:layout_margin">@dimen/medium_margin</item>
+        <item name="android:textColor">?attr/RegButtonTextColor</item>
+        <item name="android:backgroundTint">?attr/RegButtonBackgroundColor</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:letterSpacing">0.05</item>
+        <!--<item name="fontFamily">@font/roboto</item>-->
+    </style>
+
+    <style name="CustomMediumTextView" parent="@style/Widget.MaterialComponents.TextView">
+        <item name="android:textColor">?attr/MainColor</item>
+        <item name="android:textSize">@dimen/medium_text_size</item>
+        <item name="android:letterSpacing">0.02</item>
+        <!--<item name="fontFamily">@font/roboto</item>-->
+        <item name="fontWeight">400</item>
+    </style>
+
+    <style name="CustomCartItemName" parent="@style/Widget.MaterialComponents.TextView">
+        <item name="android:textColor">?attr/MainColor</item>
+        <item name="android:textSize">@dimen/common_text_size</item>
+        <item name="android:letterSpacing">0.03</item>
+        <!--<item name="fontFamily">@font/roboto</item>-->
+        <item name="fontWeight">400</item>
+    </style>
+
+    <style name="CustomCartCaptionName" parent="@style/Widget.MaterialComponents.TextView">
+        <item name="android:textColor">?attr/MainColor</item>
+        <item name="android:textSize">@dimen/small_text_size</item>
+        <item name="android:letterSpacing">0.02</item>
+        <!--<item name="fontFamily">@font/roboto</item>-->
+        <item name="fontWeight">400</item>
+    </style>
+
+    <style name="CustomTotalCart" parent="@style/Widget.MaterialComponents.TextView">
+        <item name="android:textColor">?attr/TotalColor</item>
+        <item name="android:textSize">20sp</item>
+        <!--<item name="fontFamily">@font/roboto</item>-->
+        <item name="fontWeight">500</item>
+    </style>
+
+    <style name="CustomSubtotalCart" parent="@style/Widget.MaterialComponents.TextView">
+        <item name="android:textColor">?attr/MainColor</item>
+        <item name="android:textSize">16sp</item>
+        <!--<item name="fontFamily">@font/roboto</item>-->
+        <item name="fontWeight">400</item>
+    </style>
+
+    <style name="CustomPayButton">
+        <item name="android:textColor">?attr/PayButtonTextColor</item>
+        <item name="android:backgroundTint">?attr/PayButtonBackgroundColor</item>
+        <item name="android:textSize">20sp</item>
+        <!--<item name="fontFamily">@font/roboto</item>-->
+        <item name="textAllCaps">false</item>
+        <item name="icon">@drawable/wallet_icon</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+
+</resources>
