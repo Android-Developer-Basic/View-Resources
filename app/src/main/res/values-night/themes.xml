@@ -15,6 +15,8 @@
 
         <item name="colorControlNormal">@color/ToolbarIconColorD</item>
 
+        <item name="backgroundColor">@color/RegButtonTextColorD</item>
+
 <!--
         <item name="endIconTint">@color/IconsColorD</item>
         <item name="iconTint">@color/IconsColorD</item>
@@ -28,6 +30,7 @@
         <item name="ToolbarTextColor">@color/ToolbarTextColorD</item>
         <item name="ToolbarIconColor">@color/ToolbarIconColorD</item>
 
+        <item name="ContactsBoxStrokeColor">@color/MainColorL</item>
         <item name="ShadeColor">@color/ShadeColorD</item>
         <item name="MainColor">@color/MainColorD</item>
         <item name="IconColor">@color/IconsColorD</item>

@@ -17,6 +17,8 @@
         <item name="android:textStyle">bold</item>
         <item name="android:textAppearance">@style/CustomTextAppearance</item>
         -->
+        <item name="backgroundColor">@color/white</item>
+
         <item name="fontFamily">@font/roboto</item>
         <item name="android:fontFamily">@font/roboto</item>
 
@@ -25,6 +27,7 @@
         <item name="ToolbarTextColor">@color/ToolbarTextColorL</item>
         <item name="ToolbarIconColor">@color/ToolbarIconColorL</item>
 
+        <item name="ContactsBoxStrokeColor">@color/IconsColorL</item>
         <item name="ShadeColor">@color/ShadeColorL</item>
         <item name="MainColor">@color/MainColorL</item>
         <item name="IconColor">@color/IconsColorL</item>

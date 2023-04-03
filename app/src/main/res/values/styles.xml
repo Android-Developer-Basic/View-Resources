@@ -11,6 +11,7 @@
         <item name="android:textColor">?attr/MainColor</item>
         <item name="android:textColorHint">?attr/MainColor</item>
         <item name="boxBackgroundColor">?attr/ShadeColor</item>
+        <item name="boxStrokeColor">@color/contacts_textinput_color</item>
     </style>
 
     <style name="CustomTextInputEditText" parent="@style/Widget.MaterialComponents.TextInputEditText.FilledBox">

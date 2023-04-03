@@ -3,6 +3,7 @@
     <attr name="ToolbarTextColor" format="color"/>
     <attr name="ToolbarIconColor" format="color"/>
 
+    <attr name="ContactsBoxStrokeColor" format="color"/>
     <attr name="ShadeColor" format="color"/>
     <attr name="MainColor" format="color"/>
     <attr name="IconColor" format="color"/>

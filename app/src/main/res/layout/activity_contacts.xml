@@ -125,10 +125,9 @@
                     android:layout_height="match_parent"
                     android:layout_marginStart="@dimen/small_margin"
                     android:layout_weight="4"
+                    android:background="@drawable/underline"
                     android:entries="@array/States"
-                    android:fontFamily="@font/roboto"
-                    android:spinnerMode="dropdown"
-                    android:background="@drawable/underline"/>
+                    android:spinnerMode="dropdown" />
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/id_zip"
