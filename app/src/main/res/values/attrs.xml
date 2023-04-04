@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name = "payButtonColor" format="color"/>
+    <attr name = "registerButtonColor" format="color"/>
+    <attr name = "crossDeleteColor" format="color"/>
+    <attr name = "totalOrderTextColor" format="color"/>
+    <attr name = "navigationBarIconsColor" format="color"/>
+    <attr name = "dividerColor" format="color"/>
+    <attr name = "signInBaseColor" format="color"/>
+    <attr name = "signInButtonColor" format="color"/>
+
+</resources>
