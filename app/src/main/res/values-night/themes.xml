@@ -16,6 +16,9 @@
         <item name="registerButtonColor">@color/jeans_blue</item>
         <item name="crossDeleteColor">@color/taupe_grey</item>
         <item name="navigationBarIconsColor">@color/taupe_grey</item>
+        <item name="dividerColor">@color/taupe_grey</item>
+        <item name="signInBaseColor">@color/black</item>
+        <item name="signInButtonColor">@color/jeans_blue</item>
     </style>
 
     <style name="totalOrderTextColor">
@@ -24,5 +27,11 @@
 
     <style name="deleteCrossIcon">
         <item name="android:tint">@color/taupe_grey</item>
+    </style>
+
+    <style name="link">
+        <item name="android:textSize">12sp</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:textColor">@color/taupe_grey</item>
     </style>
 </resources>

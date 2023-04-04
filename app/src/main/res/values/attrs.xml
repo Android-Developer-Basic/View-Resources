@@ -5,4 +5,8 @@
     <attr name = "crossDeleteColor" format="color"/>
     <attr name = "totalOrderTextColor" format="color"/>
     <attr name = "navigationBarIconsColor" format="color"/>
+    <attr name = "dividerColor" format="color"/>
+    <attr name = "signInBaseColor" format="color"/>
+    <attr name = "signInButtonColor" format="color"/>
+
 </resources>

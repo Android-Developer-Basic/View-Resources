@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">View &amp; Resources</string>
     <string name="title">Sign in</string>
-    <string name="label">Register</string>
+    <string name="label">REGISTER</string>
     <string name="link">Reset my password</string>
     <string name="search">Search</string>
     <string name="edit">Edit</string>

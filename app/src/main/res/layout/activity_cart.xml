@@ -261,12 +261,13 @@
     </LinearLayout>
 
     <!-- -divider -->
-    <View
+    <ImageView
         android:id="@+id/divider"
         android:layout_width="match_parent"
-        android:layout_height="1dp"
+        android:layout_height="5dp"
         android:layout_marginBottom="10dp"
-        android:background="@drawable/divider"/>
+        android:background="@drawable/dashed"
+        android:backgroundTint="?attr/dividerColor" />
 
     <!-- order info-->
     <LinearLayout
@@ -382,7 +383,7 @@
             android:layout_gravity="bottom|center"
             android:layout_marginTop="50dp"
             android:text="@string/pay_btn_text"
-            app:icon="@drawable/ic_baseline_payments_24"
+            app:icon="@drawable/ic_baseline_account_balance_wallet_24"
             app:cornerRadius="50dp"
             android:backgroundTint="?attr/payButtonColor" />
     </LinearLayout>

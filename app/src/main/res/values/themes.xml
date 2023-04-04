@@ -17,8 +17,11 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="payButtonColor">@color/gunmetal</item>
-        <item name="registerButtonColor">@color/kiwi_green</item>
+        <item name="registerButtonColor">@color/ufo_green</item>
         <item name="navigationBarIconsColor">@color/white</item>
+        <item name="dividerColor">@color/taupe_grey</item>
+        <item name="signInBaseColor">@color/white</item>
+        <item name="signInButtonColor">@color/cyan_cornflower_blue</item>
     </style>
 
     <style name="totalOrderTextColor">
@@ -32,6 +35,6 @@
     <style name="link">
         <item name="android:textSize">12sp</item>
         <item name="android:letterSpacing">0.02</item>
-        <item name="android:textColor">#2980B9</item>
+        <item name="android:textColor">@color/link_blue</item>
     </style>
 </resources>
