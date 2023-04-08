@@ -26,4 +26,9 @@
     <string name="shipping">Shipping</string>
     <string name="tax">Tax</string>
     <string name="pay_now">Pay now</string>
+    <string name="sign_in">Sign in</string>
+    <string name="email">E-mail</string>
+    <string name="email_hint">e.g. john@gmail.com</string>
+    <string name="password">Password</string>
+    <string name="reset_my_password">Reset my password</string>
 </resources>
