@@ -1,0 +1,8 @@
+<resources>
+    <declare-styleable name="CartItem">
+        <attr name="image" format="reference" />
+        <attr name="title" format="string" />
+        <attr name="caption" format="string" />
+        <attr name="price" format="string" />
+    </declare-styleable>
+</resources>

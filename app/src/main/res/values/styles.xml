@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Widget.ViewResources.Button" parent="Widget.MaterialComponents.Button">
+        <item name="materialThemeOverlay">@style/Theme.ViewResources.Button</item>
+    </style>
+
+    <style name="Theme.ViewResources.Button">
+        <!-- For filled buttons, your theme's colorPrimary provides the default background color of the component, and -->
+        <!--the text color is colorOnPrimary -->
+        <item name="colorPrimary">@color/light_green</item>
+
+    </style>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="text_color">#E0E0E0</color>
+    <color name="action_bar_icon_color">#888888</color>
+    <color name="round_button_bg_color">#89ED5B</color>
+    <color name="button_icon_color">#121212</color>
+    <color name="round_button_text_color">#121212</color>
+    <color name="cart_title_color">#89ED5B</color>
+    <color name="cart_total_color">#FFD76F</color>
+    <color name="cart_delete_tint_color">#888888</color>
+    <color name="text_small_button_color">#b8e0e0e0</color>
+</resources>
