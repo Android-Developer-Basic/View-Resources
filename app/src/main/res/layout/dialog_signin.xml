@@ -2,7 +2,8 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/colorSurface">
 
     <TextView
         android:id="@+id/title"
@@ -74,6 +75,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="textPassword"
             />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -90,7 +92,7 @@
         android:textSize="12sp"
         android:textStyle="normal"
         android:textAllCaps="false"
-        android:textColor="@color/text_button_color"
+        android:textColor="@color/text_small_button_color"
         android:minHeight="0dp"
         android:padding="0dp"
         android:insetTop="0dp"

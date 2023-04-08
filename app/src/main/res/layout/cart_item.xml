@@ -62,6 +62,7 @@
             android:src="@android:drawable/ic_delete"
             android:scaleType="fitXY"
             android:background="@null"
+            app:tint="@color/cart_delete_tint_color"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@id/caption"
             app:layout_constraintBottom_toBottomOf="@id/caption"
