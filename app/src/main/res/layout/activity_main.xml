@@ -1,36 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity"
+    >
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/cart_button"
-        android:layout_width="wrap_content"
+        style="@style/BtnFont14sp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="open cart"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="?attr/SecondaryColor"
+        android:text="@string/open_cart"
+        android:textColor="?attr/BackgroundColor"
+        app:cornerRadius="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/signin_button"
+        app:layout_constraintStart_toStartOf="@+id/signin_button"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/signin_button"
-        android:layout_width="wrap_content"
+        style="@style/BtnFont14sp"
+        android:layout_width="215dp"
         android:layout_height="wrap_content"
-        android:text="show sign in dialog"
+        android:backgroundTint="?attr/SecondaryColor"
+        android:text="@string/show_sign_in_dialog"
+        android:textColor="?attr/BackgroundColor"
+        app:cornerRadius="100dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cart_button" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/contacts_button"
-        android:layout_width="wrap_content"
+        style="@style/BtnFont14sp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="open contacts"
-        app:layout_constraintBottom_toTopOf="@+id/cart_button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_marginTop="8dp"
+        android:text="@string/open_contacts"
+        app:cornerRadius="100dp"
+        android:backgroundTint="?attr/SecondaryColor"
+        android:textColor="?attr/BackgroundColor"
+        app:layout_constraintEnd_toEndOf="@+id/signin_button"
+        app:layout_constraintStart_toStartOf="@+id/signin_button"
+        app:layout_constraintBottom_toTopOf="@+id/cart_button" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
