@@ -4,6 +4,260 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="?attr/BackgroundColor"
     tools:context=".ContactsActivity">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="?attr/PrimaryColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            style="@style/textFont20sp"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:menu="@menu/menu_bar_contacts"
+            app:navigationIcon="@drawable/arrow_left_white"
+            app:navigationIconTint="?attr/TopAppIconColor"
+            app:title="Contacts"
+            app:titleTextColor="?attr/MainColor" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toBottomOf="@id/appBarLayout">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/name_TI"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="?attr/ShadeColor"
+            android:fontFamily="@font/roboto"
+            android:hint="@string/name"
+            android:letterSpacing="0.03"
+            android:textColorHint="?attr/CartTV_mainColor"
+            app:endIconDrawable="@drawable/account"
+            app:endIconMode="custom"
+            app:endIconTint="?attr/IconsColor">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name_TI_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_Phone_Select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_TI"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/phone_TI"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="2"
+                android:backgroundTint="?attr/ShadeColor"
+                android:fontFamily="@font/roboto"
+                android:hint="@string/phone_number"
+                android:letterSpacing="0.03"
+                android:textColorHint="?attr/CartTV_mainColor"
+                app:endIconDrawable="@drawable/phone"
+                app:endIconMode="custom"
+                app:endIconTint="?attr/IconsColor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/phone_TI_ET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Select_TI"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:layout_marginTop="24dp"
+                android:layout_weight="1"
+                android:backgroundTint="?attr/ShadeColor"
+                android:fontFamily="@font/roboto"
+                android:hint="@string/select"
+                android:letterSpacing="0.03"
+                android:textColorHint="?attr/CartTV_mainColor"
+                app:endIconDrawable="@drawable/menu_down"
+                app:endIconMode="custom"
+                app:endIconTint="?attr/IconsColor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Select_TI_ET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Address_TI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear_Phone_Select"
+            android:layout_marginTop="26dp"
+            android:backgroundTint="?attr/ShadeColor"
+            android:fontFamily="@font/roboto"
+            android:hint="@string/address"
+            android:letterSpacing="0.03"
+            android:textColorHint="?attr/CartTV_mainColor"
+            app:endIconDrawable="@drawable/map_marker"
+            app:endIconMode="custom"
+            app:endIconTint="?attr/IconsColor">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Address_TI_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_City_State_Zip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Address_TI"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/City_TI"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:layout_rowWeight="@integer/material_motion_duration_medium_1"
+                android:layout_marginTop="26dp"
+                android:layout_weight="1"
+                android:backgroundTint="?attr/ShadeColor"
+                android:fontFamily="@font/roboto"
+                android:hint="@string/city"
+                android:letterSpacing="0.03"
+                android:textColorHint="?attr/CartTV_mainColor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/City_TI_ET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/State_TI"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="26dp"
+                android:layout_weight="1"
+                android:backgroundTint="?attr/ShadeColor"
+                android:fontFamily="@font/roboto"
+                android:hint="@string/state"
+                android:letterSpacing="0.03"
+                android:textColorHint="?attr/CartTV_mainColor"
+                app:endIconDrawable="@drawable/menu_down"
+                app:endIconMode="custom"
+                app:endIconTint="?attr/IconsColor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/State_TI_ET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Zip_TI"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="26dp"
+                android:layout_weight="1"
+                android:backgroundTint="?attr/ShadeColor"
+                android:fontFamily="@font/roboto"
+                android:hint="@string/zip"
+                android:letterSpacing="0.03"
+                android:textColorHint="?attr/CartTV_mainColor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Zip_TI_ET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Birthday_IT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear_layout_City_State_Zip"
+            android:layout_marginTop="26dp"
+            android:backgroundTint="?attr/ShadeColor"
+            android:fontFamily="@font/roboto"
+            android:hint="@string/birthday"
+            android:letterSpacing="0.03"
+            android:textColorHint="?attr/CartTV_mainColor"
+            app:endIconDrawable="@drawable/calendar"
+            app:endIconMode="custom"
+            app:endIconTint="?attr/IconsColor">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Birthday_IT_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Notes_IT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Birthday_IT"
+            android:layout_marginTop="26dp"
+            android:backgroundTint="?attr/ShadeColor"
+            android:hint="@string/notes"
+            android:letterSpacing="0.03"
+            android:textColorHint="?attr/CartTV_mainColor"
+            app:endIconDrawable="@drawable/pencil"
+            app:endIconMode="custom"
+            app:endIconTint="?attr/IconsColor">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Notes_IT_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </RelativeLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/register_btn"
+        style="@style/BtnFont14sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="?attr/SecondaryColor"
+        android:text="@string/register"
+        android:textColor="?attr/BackgroundColor"
+        app:cornerRadius="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </com.google.android.material.button.MaterialButton>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
