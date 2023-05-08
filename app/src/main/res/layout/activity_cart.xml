@@ -48,6 +48,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/top_counter">
 
+
         <RelativeLayout
             android:id="@+id/RL_id"
             android:layout_width="match_parent"
