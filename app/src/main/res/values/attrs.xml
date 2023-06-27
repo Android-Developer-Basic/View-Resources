@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="buttonContact" format="color"/>
+    <attr name="buttonPay" format="color"/>
+    <attr name="iconPay" format="color"/>
+    <attr name="cart_close" format="reference"/>
+</resources>

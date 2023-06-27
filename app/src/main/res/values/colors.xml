@@ -5,6 +5,14 @@
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
+    <color name="black">#121212</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="light_green">#2ECC71</color>
+    <color name="dark">#263238</color>
+    <color name="secondary_dark">#89ED5B</color>
+    <color name="iconPay_light">#979797</color>
+    <color name="iconPay_dark">#FF000000</color>
+    <color name="primary_color">#2980B9</color>
+    <color name="primary_color_dark">#4FB8FF</color>
+    <color name="red_project">#E74C3C</color>
 </resources>
