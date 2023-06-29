@@ -1,19 +1,24 @@
 package otus.gpb.homework.viewandresources.fragments
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.activity.OnBackPressedCallback
 import androidx.lifecycle.ViewModelProvider
+import otus.gpb.homework.domain.models.CartItem
+import otus.gpb.homework.viewandresources.CartAdapter
 import otus.gpb.homework.viewandresources.databinding.FragmentCartBinding
+import otus.gpb.homework.viewandresources.view_model.CartViewModel
 import otus.gpb.homework.viewandresources.view_model.MainViewModel
 
 
 class Cart : Fragment() {
     private lateinit var binding: FragmentCartBinding
     private lateinit var mainVM:MainViewModel
+    private lateinit var vm:CartViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -26,6 +31,14 @@ class Cart : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val activity = requireActivity()
+        vm = ViewModelProvider(this)[CartViewModel::class.java]
+        val cartAdapter = CartAdapter()
+        binding.cartRV.adapter = cartAdapter
+        vm.data.observe(viewLifecycleOwner){
+            Log.d("GetResInCartFrag", it.toString())
+            cartAdapter.setCartList(it)
+        }
+
         mainVM = ViewModelProvider(activity)[MainViewModel::class.java]
         val onBackClick = object : OnBackPressedCallback(true){
             override fun handleOnBackPressed() {
