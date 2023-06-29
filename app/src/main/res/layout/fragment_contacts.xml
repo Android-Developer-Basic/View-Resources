@@ -5,8 +5,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".ContactsActivity"
     android:theme="@style/mainStyle"
     >
     <androidx.appcompat.widget.Toolbar
@@ -115,10 +113,10 @@
         app:endIconDrawable="@drawable/baseline_location_on_24"
         android:hint="@string/address">
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:layout_width="match_parent"
-        android:layout_height="54dp"
-        />
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
