@@ -7,6 +7,9 @@ import kotlinx.coroutines.runBlocking
 import otus.gpb.homework.domain.models.CartItem
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import java.io.IOException
+
+
 
 class NetworkData {
 
@@ -23,7 +26,10 @@ class NetworkData {
             val res = async{
                 for (i in startIndex..endIndex) {
 
-                    list.add(api.getItemById(i))
+                    try{list.add(api.getItemById(i))}
+                    catch (e:IOException){
+                        return@async
+                    }
                     Log.d("GetRes", list.toString())
                 }
             }

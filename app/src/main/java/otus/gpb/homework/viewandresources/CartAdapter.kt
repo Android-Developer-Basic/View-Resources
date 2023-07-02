@@ -1,6 +1,5 @@
 package otus.gpb.homework.viewandresources
 
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -28,7 +27,6 @@ class CartAdapter:RecyclerView.Adapter<CartItemHolder>() {
         for(i in list.indices){
             cartList.add(list[i])
         }
-        Log.d("AdapterListSize", cartList[0].title)
         calculatePrice()
     }
 
