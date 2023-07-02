@@ -20,15 +20,15 @@ class MainActivity : AppCompatActivity() {
         vm = ViewModelProvider(this)[MainViewModel::class.java]
         vm.data.observe(this){
             when(it){
-                MainViewModel.OPEN_MAIN_FRAGMENT -> openMainFragment(MainFragment())
-                MainViewModel.OPEN_CONTACTS -> openMainFragment(Contacts())
-                MainViewModel.OPEN_CART -> openMainFragment(Cart())
+                MainViewModel.OPEN_MAIN_FRAGMENT -> openFragment(MainFragment())
+                MainViewModel.OPEN_CONTACTS -> openFragment(Contacts())
+                MainViewModel.OPEN_CART -> openFragment(Cart())
             }
         }
 
     }
 
-    private fun openMainFragment(fragment: Fragment){
+    private fun openFragment(fragment: Fragment){
         supportFragmentManager
             .beginTransaction()
             .replace(R.id.mainContainer, fragment)
