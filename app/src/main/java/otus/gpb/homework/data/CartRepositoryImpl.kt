@@ -11,7 +11,7 @@ object CartRepositoryImpl:CartRepository {
     private val data = MutableLiveData<List<CartItem>>()
     override fun getCartList(): LiveData<List<CartItem>> {
         val networkData = NetworkData()
-        data.value = networkData.getDataFromNet(1, 10)
+        data.value = networkData.getDataFromNet(3,10)
         Log.d("GetResInRepo", data.value.toString())
         return data
 

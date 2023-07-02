@@ -4,26 +4,183 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".fragments.Cart">
+    tools:context=".fragments.Cart"
+    android:theme="@style/mainCartStyle"
+    >
+   <androidx.appcompat.widget.Toolbar
+       android:id="@+id/cartToolbar"
+       android:layout_width="match_parent"
+       android:layout_height="56dp"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:title="@string/cart"
+       app:navigationIcon="@drawable/baseline_arrow_back_24"
+       >
+      <com.google.android.material.textfield.TextInputLayout
+          android:layout_width="88dp"
+          android:layout_height="wrap_content"
+          app:startIconDrawable="@drawable/baseline_loyalty_24"
+          app:endIconDrawable="@drawable/baseline_more_vert_24"
+          android:layout_gravity="end"
+          app:endIconCheckable="true"
+          app:endIconTint="@color/toolBarIconColor"
+          app:startIconCheckable="true"
+          app:startIconTint="@color/toolBarIconColor"
+          />
+
+   </androidx.appcompat.widget.Toolbar>
    <TextView
-       android:id="@+id/titleTV"
+       android:id="@+id/itemsCountTV"
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
-       android:text="Example text"
-       android:textSize="20sp"
-       app:layout_constraintTop_toTopOf="parent"
+       android:layout_marginHorizontal="16dp"
+       android:paddingTop="16dp"
+       android:paddingBottom="16dp"
+       android:textColor="@color/cartItemCountTextColor"
+       app:layout_constraintTop_toBottomOf="@id/cartToolbar"
        />
 
    <androidx.recyclerview.widget.RecyclerView
        android:id="@+id/cartRV"
        android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       tools:listitem="@layout/cart_item"
+       android:layout_height="0dp"
+       app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+       app:layout_constraintBottom_toTopOf="@id/gapView"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.0"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/itemsCountTV"
+       app:layout_constraintVertical_bias="1.0"
+       tools:listitem="@layout/cart_item" />
+
+
+   <ImageView
+       android:id="@+id/gapView"
+       android:layout_width="match_parent"
+       android:layout_height="30dp"
+       android:src="@drawable/cart_gap_drawable"
+       app:layout_constraintBottom_toTopOf="@id/totalPriceContainer"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/cartRV" />
+
+   <androidx.appcompat.widget.LinearLayoutCompat
+       android:id="@+id/totalPriceContainer"
+       android:layout_width="match_parent"
+       android:layout_height="216dp"
+       android:orientation="vertical"
+       android:paddingTop="16dp"
+       android:layout_marginHorizontal="20dp"
        app:layout_constraintStart_toStartOf="parent"
        app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintTop_toBottomOf="@id/titleTV"
        app:layout_constraintBottom_toBottomOf="parent"
-       app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-       />
+       >
+
+      <androidx.appcompat.widget.LinearLayoutCompat
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="16dp"
+          android:orientation="horizontal"
+          >
+         <androidx.appcompat.widget.AppCompatTextView
+             android:textColor="@color/cartBoldTextColor"
+             android:textStyle="bold"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="2"
+             android:text="@string/your_order"
+             />
+         <androidx.appcompat.widget.AppCompatTextView
+             android:textColor="@color/cartBoldTextColor"
+             android:textStyle="bold"
+             android:id="@+id/totalPriceTV"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:textAlignment="textEnd"
+             />
+
+      </androidx.appcompat.widget.LinearLayoutCompat>
+
+      <androidx.appcompat.widget.LinearLayoutCompat
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          >
+         <androidx.appcompat.widget.AppCompatTextView
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="2"
+             android:text="@string/subtotal"
+             />
+         <androidx.appcompat.widget.AppCompatTextView
+             android:id="@+id/subtotalTV"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:textAlignment="textEnd"
+             />
+      </androidx.appcompat.widget.LinearLayoutCompat>
+
+      <androidx.appcompat.widget.LinearLayoutCompat
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          >
+         <androidx.appcompat.widget.AppCompatTextView
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="2"
+             android:text="@string/shipping"
+             />
+         <androidx.appcompat.widget.AppCompatTextView
+             android:id="@+id/shippingTV"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:textAlignment="textEnd"
+             />
+
+      </androidx.appcompat.widget.LinearLayoutCompat>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_marginBottom="20dp"
+          >
+         <TextView
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="2"
+             android:text="@string/tax"
+             />
+         <TextView
+             android:id="@+id/taxTV"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:textAlignment="textEnd"
+             />
+
+      </LinearLayout>
+      <androidx.appcompat.widget.AppCompatButton
+          android:layout_width="154dp"
+          android:layout_height="56dp"
+          android:layout_gravity="center"
+          android:drawableStart="@drawable/baseline_account_balance_wallet_24"
+          android:text="@string/payButtonText"
+          android:textAllCaps="false"
+          android:paddingStart="25dp"
+          android:background="@drawable/pay_button_drawable"
+          android:textSize="20sp"
+          android:textStyle="bold"
+          android:textColor="@color/payButtonTextColor"
+          />
+     
+
+
+   </androidx.appcompat.widget.LinearLayoutCompat>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,6 +8,7 @@ import otus.gpb.homework.domain.models.CartItem
 
 class CartAdapter:RecyclerView.Adapter<CartItemHolder>() {
     private val cartList = mutableListOf<CartItem>()
+    private  var order = 0.0
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CartItemHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.cart_item, parent, false)
         return CartItemHolder(itemView)
@@ -28,6 +29,18 @@ class CartAdapter:RecyclerView.Adapter<CartItemHolder>() {
             cartList.add(list[i])
         }
         Log.d("AdapterListSize", cartList[0].title)
+        calculatePrice()
+    }
+
+    fun getOrder(callback:(Double)->Unit){
+        callback.invoke(order)
+    }
+
+
+    private fun calculatePrice(){
+        cartList.forEach {
+            order += it.price
+        }
 
     }
 }

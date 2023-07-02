@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--Contacts window style-->
+    <style name="mainStyle" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="textInputStyle">@style/layoutsStyle</item>
+        <item name="textInputFilledExposedDropdownMenuStyle">@style/spinnersStyle</item>
+        <item name="toolbarStyle">@style/contactsToolbarStyle</item>
+        <item name="buttonStyle">@style/registerButton</item>
+        <item name="textAppearanceSubtitle1">@style/layoutsTextStyle</item>
+    </style>
+
+    <style name="contactsToolbarStyle" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">@color/toolbar_color</item>
+        <item name="titleTextAppearance">@style/toolbarTextStyle</item>
+
+    </style>
+
+    <style name="layoutsStyle" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+        <item name="boxBackgroundColor">@color/activity_contacts_background</item>
+        <item name="endIconScaleType">center</item>
+        <item name="endIconMode">custom</item>
+        <item name="endIconTint">@color/activity_contacts_icons</item>
+    </style>
+
+    <style name="spinnersStyle" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu">
+        <item name="boxBackgroundColor">@color/activity_contacts_background</item>
+    </style>
+    <style name="registerButton">
+        <item name="android:background">@drawable/register_button</item>
+        <item name="android:textAppearance">@style/layoutsTextStyle</item>
+    </style>
+
+    <style name="toolbarTextStyle">
+        <item name="android:fontFamily">@font/project_fonts</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/toolbar_text_color</item>
+    </style>
+
+
+
+    <style name="layoutsTextStyle">
+        <item name="android:fontFamily">@font/project_fonts</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+
+
+    <!--Cart window styles-->
+    <style name="mainCartStyle" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="toolbarStyle">@style/cartToolbarStyle</item>
+        <item name="android:textViewStyle">@style/cartMainTextStyle</item>
+        <item name="android:drawableTint">@color/payButtonIconColor</item>
+    </style>
+
+    <style name="cartToolbarStyle" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">@color/cartToolBarColor</item>
+        <item name="titleTextAppearance">@style/toolbarTextStyle</item>
+    </style>
+
+    <style name="cartMainTextStyle">
+        <item name="android:fontFamily">@font/project_fonts</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/cartMainTextColor</item>
+    </style>
+
+    <style name="imageStyle">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">2dp</item>
+    </style>
+
+    <!--Cart item style-->
+    <style name="mainItemCartStyle" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:textViewStyle">@style/cartMainTextStyle</item>
+    </style>
+
+
+    <!--Dialog window styles-->
+    <style name="dialogStyle" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="textInputStyle">@style/dialogInputsStyle</item>
+        <item name="textAppearanceSubtitle1">@style/dialogTextStyle</item>
+        <item name="buttonStyle">@style/dialogButtonStyle</item>
+    </style>
+
+    <style name="dialogInputsStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxBackgroundColor">@color/dialogBackgroundColor</item>
+        <item name="boxStrokeWidthFocused">2dp</item>
+        <item name="boxStrokeColor">@color/containerColor</item>
+        <item name="hintTextColor">@color/dialogHintColor</item>
+        <item name="expandedHintEnabled">false</item>
+    </style>
+
+    <style name="dialogTextStyle">
+        <item name="android:fontFamily">@font/project_fonts</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/dialogMainTextColor</item>
+    </style>
+
+    <style name="dialogButtonStyle">
+        <item name="backgroundColor">@color/dialogBackgroundColor</item>
+        <item name="android:fontFamily">@font/project_fonts</item>
+    </style>
+
+
+
+</resources>

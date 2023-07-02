@@ -1,10 +1,8 @@
 package otus.gpb.homework.data.network
 
 import android.util.Log
-import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
-import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 import otus.gpb.homework.domain.models.CartItem
 import retrofit2.Retrofit
@@ -21,8 +19,8 @@ class NetworkData {
 
         val api = retrofit.create(GetResponse::class.java)
 
-        runBlocking {
-            val res = async {
+        runBlocking(Dispatchers.IO){
+            val res = async{
                 for (i in startIndex..endIndex) {
 
                     list.add(api.getItemById(i))

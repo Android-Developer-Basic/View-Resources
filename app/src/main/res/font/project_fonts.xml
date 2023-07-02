@@ -7,9 +7,9 @@
         app:fontWeight="400"
         />
     <font
-        app:font="@font/roboto_italic"
-        app:fontStyle="italic"
-        app:fontWeight="400"
+        app:font="@font/roboto_regular"
+        app:fontWeight="500"
         />
+
 
 </font-family>
