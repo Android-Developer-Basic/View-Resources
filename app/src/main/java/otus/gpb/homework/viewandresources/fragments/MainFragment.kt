@@ -5,7 +5,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.view.isVisible
 import androidx.lifecycle.ViewModelProvider
 import otus.gpb.homework.viewandresources.RegisterDialog
 import otus.gpb.homework.viewandresources.databinding.FragmentMainBinding
@@ -27,12 +26,10 @@ class MainFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        changeViewsState(true)
         vm = ViewModelProvider(requireActivity())[MainViewModel::class.java]
         binding.apply {
             contactsButton.setOnClickListener { vm.setAction(MainViewModel.OPEN_CONTACTS) }
             cartButton.setOnClickListener {
-                changeViewsState(false)
                 vm.setAction(MainViewModel.OPEN_CART)
             }
             signinButton.setOnClickListener {
@@ -41,16 +38,5 @@ class MainFragment : Fragment() {
         }
 
     }
-
-    private fun changeViewsState(state: Boolean){
-        binding.apply {
-            contactsButton.isEnabled = state
-            cartButton.isEnabled = state
-            signinButton.isEnabled = state
-            downloadCartProgressBar.isVisible = !state
-        }
-    }
-
-
 
 }

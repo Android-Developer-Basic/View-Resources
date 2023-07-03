@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.activity.OnBackPressedCallback
+import androidx.core.view.isVisible
 import androidx.lifecycle.ViewModelProvider
 import otus.gpb.homework.viewandresources.CartAdapter
 import otus.gpb.homework.viewandresources.R
@@ -35,6 +36,7 @@ class Cart : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val activity = requireActivity()
         vm = ViewModelProvider(this)[CartViewModel::class.java]
+        binding.cartProgressBar.isVisible = true
         val cartAdapter = CartAdapter()
         binding.cartRV.adapter = cartAdapter
         vm.data.observe(viewLifecycleOwner){
@@ -47,7 +49,9 @@ class Cart : Fragment() {
 
             }
             cartAdapter.getOrder {order-> calculateTotalOrder(order) }
+            cartAdapter.notifyDataSetChanged()
         }
+
 
 
         mainVM = ViewModelProvider(activity)[MainViewModel::class.java]
@@ -68,6 +72,7 @@ class Cart : Fragment() {
             subtotalTV.text = String.format("%.2f", price)
             shippingTV.text = String.format("%.2f", SHIPPING)
             taxTV.text = String.format("%.2f", tax)
+            cartProgressBar.isVisible = false
         }
     }
 

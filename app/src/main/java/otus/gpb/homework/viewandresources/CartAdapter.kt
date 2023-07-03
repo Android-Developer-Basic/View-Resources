@@ -20,6 +20,7 @@ class CartAdapter:RecyclerView.Adapter<CartItemHolder>() {
     override fun onBindViewHolder(holder: CartItemHolder, position: Int) {
         val item = cartList[position]
         holder.bind(item)
+
     }
 
     fun setCartList(list:List<CartItem>){

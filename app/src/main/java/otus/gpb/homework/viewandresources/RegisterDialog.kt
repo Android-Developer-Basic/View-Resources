@@ -16,14 +16,9 @@ class RegisterDialog(
         binding = DialogSigninBinding.inflate(layoutInflater)
         setContentView(binding.root)
         val width = (context.resources.displayMetrics.widthPixels * 0.90).toInt()
-        val height = (context.resources.displayMetrics.heightPixels* 0.60).toInt()
+        val height = (context.resources.displayMetrics.heightPixels* 0.55).toInt()
         window?.setLayout(width, height)
         window?.setBackgroundDrawableResource(R.drawable.dialod_window_drawable)
-
-
     }
-
-
-
 
 }
