@@ -1,19 +1,20 @@
 package otus.gpb.homework.data.network
 
-import android.util.Log
+
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
+import kotlinx.coroutines.cancel
 import otus.gpb.homework.domain.models.CartItem
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import java.io.IOException
+
 
 
 
 class NetworkData {
 
-    suspend fun getDataFromNet(startIndex: Int, endIndex: Int): List<CartItem>{
+    suspend fun getDataFromNet(): List<CartItem>{
         val list = mutableListOf<CartItem>()
         val retrofit = Retrofit.Builder()
             .baseUrl(BASE_URL)
@@ -22,28 +23,21 @@ class NetworkData {
 
 
         val api = retrofit.create(GetResponse::class.java)
+        val scope = CoroutineScope(Dispatchers.IO)
 
-        CoroutineScope(Dispatchers.IO).async {
+        scope.async {
 
-
-            for (i in startIndex..endIndex) {
-
-                try {
-                    list.add(api.getItemById(i))
-                } catch (e: IOException) {
-                    return@async
-                }
-                Log.d("GetRes", list.toString())
-            }
+            val apiList = api.getListFromVercel()
+            apiList.map { list.add(it) }
 
         }.await()
+        scope.cancel()
         return list
-
-
     }
 
+
     companion object{
-        const val BASE_URL = "https://dummyjson.com"
+        const val BASE_URL = "https://testing-server-indol.vercel.app"
     }
 
 }

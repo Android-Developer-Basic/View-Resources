@@ -15,8 +15,8 @@ class CartItemHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
     @SuppressLint("SetTextI18n")
     fun bind(item: CartItem) = with(binding){
         itemName.text = item.title
-        itemPrice.text = String.format("%s, %.2f","US",item.price)
-        itemCaption.text = "Caption"
+        itemPrice.text = String.format("%s, %.2f","RUB",item.price)
+        itemCaption.text = item.description
         val imageView = itemImage
         val images = item.images
         getImage(images.last(), imageView)

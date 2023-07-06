@@ -5,6 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.cancel
 import kotlinx.coroutines.launch
 import otus.gpb.homework.data.CartRepositoryImpl
 import otus.gpb.homework.domain.models.CartItem
@@ -15,14 +16,22 @@ class CartViewModel: ViewModel() {
     private val cartRepository = CartRepositoryImpl
     private val mutableData = MutableLiveData<List<CartItem>>()
     val data get() = mutableData
+    private val scope = CoroutineScope(Dispatchers.Main)
 
     init {
 
-        CoroutineScope(Dispatchers.Main).launch {getData()}
+        getData()
     }
 
-    private suspend fun getData(){
-        mutableData.value = GetCartListUseCase(cartRepository).getCartList()
+    private fun getData(){
+        scope.launch {
+            mutableData.value = GetCartListUseCase(cartRepository).getCartList()
+        }
+    }
+
+    override fun onCleared() {
+        super.onCleared()
+        scope.cancel()
     }
 
 }
