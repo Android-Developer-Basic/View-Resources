@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="PrimaryColor" format="color"/>
+    <attr name="BackgroundColor" format="color"/>
+    <attr name="ShadeColor" format="color"/>
+    <attr name="SecondaryColor" format="color"/>
+    <attr name="IconsColor" format="color"/>
+    <attr name="MainColor" format="color"/>
+    <attr name="TopAppIconColor" format="color"/>
+    <attr name="Cart_Secondary_color" format="color"/>
+    <attr name="CartTV_mainColor" format="color"/>
+    <attr name="CartTV_Close_btn" format="color"/>
+    <attr name="Cart_LabelTV" format="color"/>
+    <attr name="Cart_btn_pay_ic" format="color"/>
+    <attr name="Dialog_PrimaryColor" format="color"/>
+    <attr name="Dialog_ResetTV" format="color"/>
+    <attr name="Dialog_ShadeColor" format="color"/>
+</resources>
