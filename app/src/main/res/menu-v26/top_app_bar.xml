@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search"
+        android:title="Search"
+        android:icon="@drawable/search_24dp"
+        android:iconTint="?attr/TopAppIconColor"
+        android:contentDescription="Search"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/More"
+        android:title="More"
+        android:icon="@drawable/dots_vertical"
+        android:iconTint="?attr/TopAppIconColor"
+        android:contentDescription="More"
+        app:showAsAction="ifRoom"/>
+
+</menu>
