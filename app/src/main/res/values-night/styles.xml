@@ -1,0 +1,9 @@
+<resources>
+    <style name="Theme.ViewResources.Button">
+        <!-- For filled buttons, your theme's colorPrimary provides the default background color of the component, and -->
+        <!--the text color is colorOnPrimary -->
+        <item name="colorPrimary">#4FB8FF</item>
+        <item name="colorOnPrimary">@color/black</item>
+
+    </style>
+</resources>

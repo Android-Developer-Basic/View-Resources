@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="text_color">#E0E0E0</color>
+    <color name="app_bar_icon_color">#888888</color>
+    <color name="background_color">#121212</color>
+    <color name="cart_button_color">#89ED5B</color>
+    <color name="button_icon_color">#121212</color>
+    <color name="cart_total_color">#FFD76F</color>
+    <color name="primary_color">#4FB8FF</color>
+    <color name="reset_button_color">#E0E0E0</color>
+
+</resources>

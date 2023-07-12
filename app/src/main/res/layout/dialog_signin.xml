@@ -1,6 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="280dp"
+    android:layout_height="312dp"
+    android:background="@color/background_color"
+    >
 
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/signInTextView"
+        style="@style/CartTextView"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/marginHorizontal"
+        android:text="@string/sign_in"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        style="@style/RegisterButton"
+        android:layout_marginEnd="8dp"
+        android:text="@string/register"
+        android:textColor="@color/primary_color"
+        app:layout_constraintBottom_toBottomOf="@+id/signInTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/signInTextView">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+
+    <LinearLayout
+        android:id="@+id/signContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginBasic"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signInTextView">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/marginHorizontal"
+            android:hint="@string/email"
+            app:expandedHintEnabled="false"
+            app:placeholderText="@string/email_hint">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="@dimen/marginHorizontal"
+            android:layout_marginTop="@dimen/marginBasic"
+            android:hint="@string/password"
+            app:expandedHintEnabled="false"
+            app:placeholderText="* * * * * *">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/marginHorizontal"
+            android:layout_marginTop="@dimen/marginBasic"
+            android:text="@string/reset_my_password"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/reset_button_color">
+
+
+        </com.google.android.material.textview.MaterialTextView>
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/SignInButton"
+        android:text="@string/sign_in"
+        app:layout_constraintTop_toBottomOf="@id/signContainer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="@dimen/marginHorizontal"
+        android:layout_marginTop="@dimen/marginBasic"
+        android:layout_marginBottom="@dimen/marginBasic"
+        >
+
+    </com.google.android.material.button.MaterialButton>
 </androidx.constraintlayout.widget.ConstraintLayout>

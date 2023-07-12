@@ -1,3 +1,41 @@
 <resources>
     <string name="app_name">View &amp; Resources</string>
+    <string name="name">Name</string>
+    <string name="phone_number">Phone number</string>
+    <string name="select">Select</string>
+
+
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="zipCode">Zip</string>
+    <string name="birthday">Birthday</string>
+    <string name="notes">Notes</string>
+    <string name="register">Register</string>
+    <string name="search">Search</string>
+    <string name="overflow">More</string>
+    <string name="items_in_your_cart">4 items in your cart</string>
+    <string name="your_order_total">Your order total</string>
+    <string name="sign_in">Sign in</string>
+    <string name="email">E-mail</string>
+    <string name="email_hint">e.g. john@gmail.com</string>
+    <string name="password">Password</string>
+    <string name="reset_my_password">Reset my password</string>
+    <string name="caption">Caption</string>
+    <string name="cake_price">$US,1.50</string>
+    <string name="cake_description">Picture of a cake</string>
+    <string name="on_the_top_text">On the top</string>
+    <string name="red_cross_to_cancel">Red cross to cancel</string>
+    <string name="forever_price">$US,4.50</string>
+    <string name="prototype_text">Prototype Kit</string>
+    <string name="prototype_price">$US,8.00</string>
+    <string name="vinyl_view">Forever Friends</string>
+    <string name="basket_and_coffee"><![CDATA[Basket & Coffee]]></string>
+    <string name="basket_price">$US,22.00</string>
+    <string name="pay_button">Pay now</string>
+    <string name="dividing_line">Dividing line</string>
+    <string name="subtotal_shipping_text">Subtotal \nShipping \nTax</string>
+    <string name="total_sum">41.24</string>
+    <string name="subtotal_shipping_sum">36.00\n2.00\n3.50</string>
+
 </resources>
