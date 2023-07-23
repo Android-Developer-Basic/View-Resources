@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="name">Name</string>
+    <string name="phone_number">Phone number</string>
+    <string name="mail">Email address</string>
+    <string name="e_mail">E-mail</string>
+    <string name="password">Password</string>
+    <string name="select">Select</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="zip">Zip</string>
+    <string name="birthday">Birthday</string>
+    <string name="notes">Notes</string>
+    <string name="register">REGISTER</string>
+    <string name="contacts">Contacts</string>
+    <string name="cart">Cart</string>
+    <string name="items_count_text">items in your cart</string>
+    <string name="your_order">Your order total</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="shipping">Shipping</string>
+    <string name="tax">Tax</string>
+    <string name="payButtonText">Pay now</string>
+    <string name="registrationTVText">Registration</string>
+    <string name="signButtonText">Sign in</string>
+    <string name="resetPasswordButtonText">Reset my password</string>
+
+    <string-array name="dropdownArray">
+       <item>Phone</item>
+        <item>Email</item>
+    </string-array>
+</resources>
