@@ -1,9 +1,442 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CartActivity">
+    tools:context=".CartActivity"
+    android:backgroundTint="?attr/BackgroundColor">
 
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:menu="@menu/cart_menu"
+            app:navigationIcon="@drawable/arrow_left_white"
+            app:title="Cart"
+            app:titleTextColor="?attr/MainColor"
+            style="@style/textFont20sp"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+        <TextView
+        android:id="@+id/top_counter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        android:layout_marginTop="@dimen/gap_medium"
+        android:layout_marginStart="@dimen/gap_medium"
+        android:layout_marginEnd="@dimen/gap_medium"
+        android:text="@string/_4_items_in_your_cart"
+        android:textColor="?attr/Cart_Secondary_color"
+        android:letterSpacing="0.02"
+        android:textSize="14sp"
+        android:fontFamily="@font/roboto"/>
+    <ScrollView
+        android:id="@+id/scroll_full_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120dp"
+        app:layout_constraintTop_toBottomOf="@+id/top_counter">
+    <LinearLayout
+        android:id="@+id/LL_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_counter">
+
+        <!--начало первого компонента-->
+
+        <RelativeLayout
+            android:id="@+id/RL_id"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:paddingStart="@dimen/gap_medium"
+            android:paddingTop="12dp"
+            android:paddingEnd="@dimen/gap_medium">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/IV_cake"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/cake">
+
+            </com.google.android.material.imageview.ShapeableImageView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/TV_fr1_1"
+                style="@style/textViewCart16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/IV_cake"
+                android:maxLines="1"
+                android:paddingStart="@dimen/gap_medium"
+                android:text="@string/on_the_top">
+
+            </com.google.android.material.textview.MaterialTextView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/TV_fr1_2"
+                style="@style/textViewCart12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TV_fr1_1"
+                android:layout_toEndOf="@+id/IV_cake"
+                android:gravity="right"
+                android:paddingStart="@dimen/gap_medium"
+                android:paddingTop="8dp"
+                android:text="@string/caption">
+
+            </com.google.android.material.textview.MaterialTextView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/TV_fr1_3"
+                style="@style/textViewCart16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:gravity="right"
+                android:maxLines="1"
+                android:text="@string/us_1_50" >
+            </com.google.android.material.textview.MaterialTextView>
+
+            <ImageButton
+                android:id="@+id/icon_fr1"
+                android:layout_width="@dimen/gap_large"
+                android:layout_height="@dimen/gap_large"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/TV_fr1_3"
+                android:backgroundTint="?attr/BackgroundColor"
+                android:paddingStart="@dimen/gap_medium"
+                android:paddingTop="@dimen/gap_medium"
+                android:paddingEnd="@dimen/gap_medium"
+                android:src="@drawable/close_24"
+                />
+
+        </RelativeLayout>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+        </com.google.android.material.divider.MaterialDivider>
+
+        <!--начало второго компонента-->
+
+        <RelativeLayout
+            android:id="@+id/RL_id2"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginTop="8dp"
+            android:paddingStart="@dimen/gap_medium"
+            android:paddingTop="12dp"
+            android:paddingEnd="@dimen/gap_medium">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/IV_muse"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/muse">
+
+            </com.google.android.material.imageview.ShapeableImageView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/TV_fr2_1"
+                style="@style/textViewCart16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/IV_muse"
+                android:paddingStart="16dp"
+                android:text="@string/forever_friends">
+
+            </com.google.android.material.textview.MaterialTextView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/TV_fr2_2"
+                style="@style/textViewCart12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TV_fr2_1"
+                android:layout_toEndOf="@+id/IV_muse"
+                android:gravity="right"
+                android:paddingStart="@dimen/gap_medium"
+                android:paddingTop="8dp"
+                android:text="@string/caption">
+
+            </com.google.android.material.textview.MaterialTextView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/TV_fr2_3"
+                style="@style/textViewCart16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:gravity="right"
+                android:text="@string/us_4_50">
+
+            </com.google.android.material.textview.MaterialTextView>
+
+            <ImageButton
+                android:id="@+id/icon_fr2"
+                android:layout_width="@dimen/gap_large"
+                android:layout_height="@dimen/gap_large"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/TV_fr2_3"
+                android:backgroundTint="?attr/BackgroundColor"
+                android:paddingStart="@dimen/gap_medium"
+                android:paddingTop="@dimen/gap_medium"
+                android:paddingEnd="@dimen/gap_medium"
+                android:src="@drawable/close_24"
+                />
+
+        </RelativeLayout>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+        </com.google.android.material.divider.MaterialDivider>
+
+        <!--начало третьего компонента-->
+
+
+        <RelativeLayout
+            android:id="@+id/RL_id3"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginTop="8dp"
+            android:paddingStart="@dimen/gap_medium"
+            android:paddingTop="12dp"
+            android:paddingEnd="@dimen/gap_medium">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/IV_clock"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/clock">
+
+            </com.google.android.material.imageview.ShapeableImageView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/TV_fr3_1"
+                style="@style/textViewCart16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/IV_clock"
+                android:paddingStart="@dimen/gap_medium"
+                android:text="@string/prototyping_kit">
+
+            </com.google.android.material.textview.MaterialTextView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/TV_fr3_2"
+                style="@style/textViewCart12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TV_fr3_1"
+                android:layout_toEndOf="@+id/IV_clock"
+                android:gravity="right"
+                android:paddingStart="@dimen/gap_medium"
+                android:paddingTop="8dp"
+                android:text="@string/caption">
+
+            </com.google.android.material.textview.MaterialTextView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/TV_fr3_3"
+                style="@style/textViewCart16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:gravity="right"
+                android:text="@string/us_8_00">
+            </com.google.android.material.textview.MaterialTextView>
+
+            <ImageButton
+                android:id="@+id/icon_fr3"
+                android:layout_width="@dimen/gap_large"
+                android:layout_height="@dimen/gap_large"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/TV_fr3_3"
+                android:backgroundTint="?attr/BackgroundColor"
+                android:paddingStart="@dimen/gap_medium"
+                android:paddingTop="@dimen/gap_medium"
+                android:paddingEnd="@dimen/gap_medium"
+                android:src="@drawable/close_24"
+                />
+
+        </RelativeLayout>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+        </com.google.android.material.divider.MaterialDivider>
+
+        <!--начало четвертого компонента-->
+
+        <RelativeLayout
+            android:id="@+id/RL_id4"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginTop="8dp"
+            android:paddingStart="@dimen/gap_medium"
+            android:paddingTop="12dp"
+            android:paddingEnd="@dimen/gap_medium">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/IV_plant"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/plant">
+
+            </com.google.android.material.imageview.ShapeableImageView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/TV_fr4_1"
+                style="@style/textViewCart16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/IV_plant"
+                android:paddingStart="@dimen/gap_medium"
+                android:text="@string/basket_coffee">
+
+            </com.google.android.material.textview.MaterialTextView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/TV_fr4_2"
+                style="@style/textViewCart12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TV_fr4_1"
+                android:layout_toEndOf="@+id/IV_plant"
+                android:gravity="right"
+                android:paddingTop="8dp"
+                android:text="@string/caption">
+
+            </com.google.android.material.textview.MaterialTextView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/TV_fr4_3"
+                style="@style/textViewCart16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:gravity="right"
+                android:text="@string/us_22_00">
+            </com.google.android.material.textview.MaterialTextView>
+
+            <ImageButton
+                android:id="@+id/icon_fr4"
+                android:layout_width="@dimen/gap_large"
+                android:layout_height="@dimen/gap_large"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/TV_fr4_3"
+                android:backgroundTint="?attr/BackgroundColor"
+                android:paddingStart="@dimen/gap_medium"
+                android:paddingTop="@dimen/gap_medium"
+                android:paddingEnd="@dimen/gap_medium"
+                android:src="@drawable/close_24"
+                />
+
+        </RelativeLayout>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+        </com.google.android.material.divider.MaterialDivider>
+
+    </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/gap_large"
+        app:layout_constraintBottom_toTopOf="@id/Label"
+        tools:layout_editor_absoluteX="0dp">
+
+    </com.google.android.material.divider.MaterialDivider>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/Label_expanded"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/gap_medium"
+        android:layout_marginBottom="@dimen/gap_medium"
+        android:text="@string/your_order_total"
+        style="@style/textFont20sp"
+        android:textColor="?attr/Cart_LabelTV">
+    </com.google.android.material.textview.MaterialTextView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/Value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/Label_expanded"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/gap_medium"
+        android:layout_marginBottom="@dimen/gap_medium"
+        android:text="@string/_41_24"
+        style="@style/textFont20sp"
+        android:textColor="?attr/Cart_LabelTV"
+        android:gravity="right">
+    </com.google.android.material.textview.MaterialTextView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/Label_expanded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/gap_medium"
+        android:layout_marginBottom="@dimen/gap_large"
+        android:gravity="left"
+        android:text="@string/subtotal_shipping_tax"
+        android:textSize="16sp"
+        android:textColor="?attr/CartTV_mainColor"
+        app:layout_constraintBottom_toTopOf="@+id/btn_pay"
+        app:layout_constraintStart_toStartOf="parent"        >
+
+    </com.google.android.material.textview.MaterialTextView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/Value_expanded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/btn_pay"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/gap_medium"
+        android:layout_marginBottom="@dimen/gap_large"
+        android:text="@string/result"
+        android:textColor="?attr/CartTV_mainColor"
+        android:textSize="16sp"
+        android:gravity="right">
+    </com.google.android.material.textview.MaterialTextView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_marginBottom="@dimen/gap_medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:cornerRadius="100dp"
+        android:text="@string/pay_now"
+        android:textSize="20sp"
+        android:letterSpacing="0.01"
+        android:textColor="?attr/BackgroundColor"
+        android:textAllCaps="false"
+        app:icon="@drawable/wallet"
+        app:iconTint="?attr/Cart_btn_pay_ic"
+        android:backgroundTint="?attr/Cart_Secondary_color">
+    </com.google.android.material.button.MaterialButton>
 </androidx.constraintlayout.widget.ConstraintLayout>
