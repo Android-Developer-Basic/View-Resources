@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="text">@color/white</color>
+    <color name="icons">@color/white</color>
+    <color name="bar_icons">#878888</color>
+    <color name="register_button">#4FB8FF</color>
+    <color name="pay_button">#87eb5b</color>
+    <color name="icon_delete">#888888</color>
+    <color name="cart_text">@color/white</color>
+</resources>

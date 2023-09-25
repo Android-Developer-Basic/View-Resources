@@ -7,4 +7,11 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="text">@color/black</color>
+    <color name="icons">@color/black</color>
+    <color name="bar_icons">@color/white</color>
+    <color name="cart_text">#263238</color>
+    <color name="register_button">#2ecc70</color>
+    <color name="pay_button">#263138</color>
+    <color name="icon_delete">#E74C3C</color>
 </resources>

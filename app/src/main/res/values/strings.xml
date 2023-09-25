@@ -1,3 +1,38 @@
 <resources>
     <string name="app_name">View &amp; Resources</string>
+    <string name="more">More</string>
+    <string name="check">Check</string>
+    <string name="search">Search</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone number</string>
+    <string name="select">Select</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="zip">Zip</string>
+    <string name="birthday">Birthday</string>
+    <string name="notes">Notes</string>
+    <string name="register">Register</string>
+
+    <string name="items_on_cart">4 items in your cart</string>
+    <string name="pay">Pay now</string>
+    <string name="result">36.00\n2.00\n3.50</string>
+    <string name="subtotal_shipping_tax">Subtotal \nShipping \nTax</string>
+    <string name="your_order_total">Your order total</string>
+    <string name="_41_24">41.24</string>
+    <string name="on_the_top">On the top</string>
+    <string name="caption">Caption</string>
+    <string name="us_1_50">$US,1.50</string>
+    <string name="forever_friends">Forever Friends</string>
+    <string name="us_4_50">$US, 4.50</string>
+    <string name="prototyping_kit">Prototyping Kit</string>
+    <string name="us_8_00">$US, 8.00</string>
+    <string name="us_22_00">$US, 22.00</string>
+    <string name="basket_coffee"><![CDATA[Basket & Coffee]]></string>
+
+
+    <string name="sign_in">Sign in</string>
+    <string name="mail">E-mail</string>
+    <string name="password">**********</string>
+    <string name="reset_password">Reset my password</string>
 </resources>
