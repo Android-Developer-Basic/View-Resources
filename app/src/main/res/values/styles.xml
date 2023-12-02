@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" >
+    <style name="Widget.App.Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="android:background">?attr/appBarColor</item>
+        <item name="navigationIconTint">?attr/appBarIconColor</item>
+        <item name="titleTextColor">?attr/appBarTitleColor</item>
+        <item name="titleTextAppearance">@style/TextAppearance.AppBar.TitleLarge</item>
+    </style>
+
+    <style name="Widget.App.TextInputLayout" parent="Widget.Material3.TextInputLayout.FilledBox">
+        <item name="shapeAppearance">@style/ShapeAppearance.TextInput.SmallComponent</item>
+        <item name="android:textColorHint">?attr/hintColor</item>
+        <item name="hintTextColor">?attr/hintColor</item>
+        <item name="boxBackgroundColor">?attr/boxBackgroundColor</item>
+        <item name="boxStrokeColor">?attr/boxUnderlineColor</item>
+        <item name="hintTextAppearance">@style/TextAppearance.TextInput.BodySmall</item>
+        <item name="endIconTint">?attr/boxTrailingIconColor</item>
+    </style>
+
+    <style name="Widget.App.DropdownLayout" parent="Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu">
+        <item name="shapeAppearance">@style/ShapeAppearance.TextInput.SmallComponent</item>
+        <item name="android:textColorHint">?attr/hintColor</item>
+        <item name="hintTextColor">?attr/hintColor</item>
+        <item name="boxBackgroundColor">?attr/boxBackgroundColor</item>
+        <item name="boxStrokeColor">?attr/boxUnderlineColor</item>
+        <item name="hintTextAppearance">@style/TextAppearance.TextInput.BodySmall</item>
+        <item name="endIconTint">?attr/boxTrailingIconColor</item>
+    </style>
+
+    <style name="ShapeAppearance.TextInput.SmallComponent" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">4dp</item>
+    </style>
+
+    <style name="Widget.Register.Button" parent="Widget.Material3.Button">
+        <item name="android:textAppearance">@style/TextAppearance.Register.Button</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.Register.SmallComponent</item>
+        <item name="backgroundTint">?attr/registerButtonColor</item>
+        <item name="android:textColor">?attr/registerButtonTextColor</item>
+    </style>
+
+    <style name="ShapeAppearance.Register.SmallComponent" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">4dp</item>
+    </style>
+
+
+    <!--    Typography-->
+    <style name="TextAppearance.AppBar.TitleLarge" parent="TextAppearance.Material3.TitleLarge">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+    <style name="TextAppearance.TextInput.BodySmall" parent="TextAppearance.Material3.BodySmall">
+        <item name="fontFamily">@font/roboto_regular</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+    <style name="TextAppearance.Register.Button" parent="TextAppearance.Material3.LabelLarge">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+</resources>

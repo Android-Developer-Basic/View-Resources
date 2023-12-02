@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="appBarColor" format="color"/>
+    <attr name="appBarIconColor" format="color"/>
+    <attr name="appBarTitleColor" format="color"/>
+    <attr name="hintColor" format="color"/>
+    <attr name="boxBackgroundColor" format="color"/>
+    <attr name="boxTrailingIconColor" format="color"/>
+    <attr name="boxUnderlineColor" format="color"/>
+    <attr name="registerButtonColor" format="color"/>
+    <attr name="registerButtonTextColor" format="color"/>
+</resources>
