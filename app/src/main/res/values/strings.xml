@@ -11,7 +11,7 @@
     <string name="contacts_zip_input_hint">Zip</string>
     <string name="contacts_birthday_input_hint">Birthday</string>
     <string name="contacts_notes_input_hint">Notes</string>
-    <string name="contacts_register">Register</string>
+    <string name="register">Register</string>
     <string name="contacts_title">Contacts</string>
     <string name="cart_title">Cart</string>
     <string name="cart_app_bar_favorites">Favorites</string>
@@ -22,6 +22,10 @@
     <string name="cart_shipping">Shipping</string>
     <string name="cart_tax">Tax</string>
     <string name="cart_pay_now">Pay now</string>
+    <string name="sign_in">Sign in</string>
+    <string name="alert_e_mail">E-mail</string>
+    <string name="alert_password">Password</string>
+    <string name="alert_reset_my_password">Reset my password</string>
     <plurals name="cart_items">
         <item quantity="one">%d item in your cart</item>
         <item quantity="other">%d items in your cart</item>

@@ -6,7 +6,7 @@
         <item name="appBarCartColor">@color/main</item>
         <item name="appBarIconColor">@color/grey_secondary</item>
         <item name="appBarTitleColor">@color/grey_primary</item>
-        <item name="hintColor">@color/grey_primary</item>
+        <item name="mainTextColor">@color/grey_primary</item>
         <item name="boxBackgroundColor">@color/grey_background</item>
         <item name="boxTrailingIconColor">@color/grey_secondary</item>
         <item name="underlineColor">@color/grey_primary</item>
@@ -19,5 +19,9 @@
         <item name="payButtonColor">@color/green</item>
         <item name="payButtonIconColor">@color/main</item>
         <item name="payButtonTextColor">@color/main</item>
+
+        <item name="alertButtonColor">@color/blue</item>
+        <item name="alertSignInButtonTextColor">@color/main</item>
+        <item name="alertResetPasswordButtonTextColor">@color/grey_primary</item>
     </style>
 </resources>

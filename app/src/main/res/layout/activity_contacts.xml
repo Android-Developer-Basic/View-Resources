@@ -54,9 +54,12 @@
                 app:endIconDrawable="@drawable/person_black_24dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    style="@style/Widget.App.TextInputEditText"
+                    android:textColor="?attr/mainTextColor"
                     android:id="@+id/contactsNameField"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"/>
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -88,9 +91,11 @@
                     app:endIconDrawable="@drawable/phone_black_24dp">
 
                     <com.google.android.material.textfield.TextInputEditText
+                        style="@style/Widget.App.TextInputEditText"
                         android:id="@+id/contactsPhoneField"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"/>
+                        android:layout_height="match_parent"
+                        android:textSize="16sp"/>
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -108,9 +113,11 @@
                     app:endIconMode="dropdown_menu">
 
                     <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                        style="@style/Widget.App.TextInputEditText"
                         android:id="@+id/contactsPhoneDropdownField"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"/>
+                        android:layout_height="match_parent"
+                        android:textSize="16sp"/>
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -132,9 +139,11 @@
                 app:endIconDrawable="@drawable/place_black_24dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    style="@style/Widget.App.TextInputEditText"
                     android:id="@+id/contactsAddressField"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"/>
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -164,9 +173,11 @@
                     app:layout_constraintStart_toStartOf="parent">
 
                     <com.google.android.material.textfield.TextInputEditText
+                        style="@style/Widget.App.TextInputEditText"
                         android:id="@+id/contactsCityField"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"/>
+                        android:layout_height="match_parent"
+                        android:textSize="16sp"/>
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -184,9 +195,11 @@
                     app:endIconMode="dropdown_menu">
 
                     <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                        style="@style/Widget.App.TextInputEditText"
                         android:id="@+id/contactsStateDropdownField"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"/>
+                        android:layout_height="match_parent"
+                        android:textSize="16sp"/>
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -203,9 +216,11 @@
                     app:layout_constraintStart_toStartOf="parent">
 
                     <com.google.android.material.textfield.TextInputEditText
+                        style="@style/Widget.App.TextInputEditText"
                         android:id="@+id/contactsZipField"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"/>
+                        android:layout_height="match_parent"
+                        android:textSize="16sp"/>
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -227,9 +242,11 @@
                 app:endIconDrawable="@drawable/event_black_24dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    style="@style/Widget.App.TextInputEditText"
                     android:id="@+id/contactsBirthdayField"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"/>
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -249,9 +266,11 @@
                 app:endIconDrawable="@drawable/mode_edit_black_24dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    style="@style/Widget.App.TextInputEditText"
                     android:id="@+id/contactsNotesField"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"/>
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -270,6 +289,7 @@
         app:layout_constraintStart_toStartOf="parent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/contacts_register"/>
+        android:text="@string/register"
+        android:textSize="14sp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
