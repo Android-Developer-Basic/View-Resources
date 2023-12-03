@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:android="http://schemas.android.com/apk/res/android" >
     <style name="Widget.App.Toolbar.Contacts" parent="Widget.Material3.Toolbar">
-        <item name="android:background">?attr/appBarColor</item>
+        <item name="android:background">?attr/appBarContactsColor</item>
         <item name="navigationIconTint">?attr/appBarIconColor</item>
         <item name="titleTextColor">?attr/appBarTitleColor</item>
         <item name="titleTextAppearance">@style/TextAppearance.AppBar.TitleLarge</item>
     </style>
 
     <style name="Widget.App.Toolbar.Cart" parent="Widget.Material3.Toolbar">
-        <item name="android:background">?attr/appBarAlternativeColor</item>
+        <item name="android:background">?attr/appBarCartColor</item>
         <item name="navigationIconTint">?attr/appBarIconColor</item>
         <item name="titleTextColor">?attr/appBarTitleColor</item>
         <item name="titleTextAppearance">@style/TextAppearance.AppBar.TitleLarge</item>

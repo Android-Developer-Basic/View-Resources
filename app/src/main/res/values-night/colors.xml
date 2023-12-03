@@ -1,22 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="background">#121212</color>
-
-    <color name="appBarBackground">#272727</color>
-    <color name="appBarAlternativeBackground">#121212</color>
-    <color name="appBarIcons">#888888</color>
-    <color name="appBarTitle">#E0E0E0</color>
-    <color name="hintText">#E0E0E0</color>
-    <color name="underline">#E0E0E0</color>
-    <color name="boxBackground">#272727</color>
-    <color name="boxTrailingIcon">#888888</color>
-    <color name="registerButton">#4FB8FF</color>
-    <color name="registerButtonText">#121212</color>
-
-    <color name="totalOrder">#FFD76F</color>
-    <color name="itemsInCart">#89ED5B</color>
-    <color name="cartItemDeleteButton">#888888</color>
-    <color name="payButton">#89ED5B</color>
-    <color name="payButtonIcon">#121212</color>
-    <color name="payButtonText">#121212</color>
+    <color name="main">#121212</color>
+    <color name="blue">#4FB8FF</color>
+    <color name="green">#89ED5B</color>
+    <color name="grey_primary">#E0E0E0</color>
+    <color name="grey_secondary">#888888</color>
+    <color name="grey_background">#272727</color>
 </resources>

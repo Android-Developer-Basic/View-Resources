@@ -1,23 +1,23 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <style name="Theme.ViewResources" parent="Theme.Material3.DayNight.NoActionBar">
-        <item name="backgroundColor">@color/background</item>
+        <item name="backgroundColor">@color/main</item>
 
-        <item name="appBarColor">@color/appBarBackground</item>
-        <item name="appBarAlternativeColor">@color/appBarAlternativeBackground</item>
-        <item name="appBarIconColor">@color/appBarIcons</item>
-        <item name="appBarTitleColor">@color/appBarTitle</item>
-        <item name="hintColor">@color/hintText</item>
-        <item name="boxBackgroundColor">@color/boxBackground</item>
-        <item name="boxTrailingIconColor">@color/boxTrailingIcon</item>
-        <item name="underlineColor">@color/underline</item>
-        <item name="registerButtonColor">@color/registerButton</item>
-        <item name="registerButtonTextColor">@color/registerButtonText</item>
+        <item name="appBarContactsColor">@color/blue</item>
+        <item name="appBarCartColor">@color/blue</item>
+        <item name="appBarIconColor">@color/main</item>
+        <item name="appBarTitleColor">@color/main</item>
+        <item name="hintColor">@color/grey_primary</item>
+        <item name="boxBackgroundColor">@color/grey_background</item>
+        <item name="boxTrailingIconColor">@color/grey_secondary</item>
+        <item name="underlineColor">@color/grey_primary</item>
+        <item name="registerButtonColor">@color/green</item>
+        <item name="registerButtonTextColor">@color/main</item>
 
-        <item name="totalOrderColor">@color/totalOrder</item>
-        <item name="itemsInCartColor">@color/itemsInCart</item>
-        <item name="cartItemDeleteButtonColor">@color/cartItemDeleteButton</item>
-        <item name="payButtonColor">@color/payButton</item>
-        <item name="payButtonIconColor">@color/payButtonIcon</item>
-        <item name="payButtonTextColor">@color/payButtonText</item>
+        <item name="totalOrderColor">@color/grey_primary</item>
+        <item name="itemsInCartColor">@color/grey_primary</item>
+        <item name="cartItemDeleteButtonColor">@color/red</item>
+        <item name="payButtonColor">@color/grey_primary</item>
+        <item name="payButtonIconColor">@color/grey_secondary</item>
+        <item name="payButtonTextColor">@color/main</item>
     </style>
 </resources>
