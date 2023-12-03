@@ -3,13 +3,18 @@
         <item name="backgroundColor">@color/background</item>
 
         <item name="appBarColor">@color/appBarBackground</item>
+        <item name="appBarAlternativeColor">@color/appBarAlternativeBackground</item>
         <item name="appBarIconColor">@color/appBarIcons</item>
         <item name="appBarTitleColor">@color/appBarTitle</item>
         <item name="hintColor">@color/hintText</item>
         <item name="boxBackgroundColor">@color/boxBackground</item>
         <item name="boxTrailingIconColor">@color/boxTrailingIcon</item>
-        <item name="boxUnderlineColor">@color/underline</item>
+        <item name="underlineColor">@color/underline</item>
         <item name="registerButtonColor">@color/registerButton</item>
         <item name="registerButtonTextColor">@color/registerButtonText</item>
+
+        <item name="totalOrderColor">@color/totalOrder</item>
+        <item name="itemsInCartColor">@color/itemsInCart</item>
+        <item name="cartItemDeleteButtonColor">@color/cartItemDeleteButton</item>
     </style>
 </resources>

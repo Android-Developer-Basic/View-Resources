@@ -3,6 +3,7 @@
     <color name="background">#FFFFFF</color>
 
     <color name="appBarBackground">#2980B9</color>
+    <color name="appBarAlternativeBackground">#2980B9</color>
     <color name="appBarIcons">#FFFFFF</color>
     <color name="appBarTitle">#FFFFFF</color>
     <color name="hintText">#273238</color>
@@ -11,4 +12,8 @@
     <color name="boxTrailingIcon">#979797</color>
     <color name="registerButton">#2ECC71</color>
     <color name="registerButtonText">#FFFFFF</color>
+
+    <color name="totalOrder">#273238</color>
+    <color name="itemsInCart">#273238</color>
+    <color name="cartItemDeleteButton">#E74C3C</color>
 </resources>

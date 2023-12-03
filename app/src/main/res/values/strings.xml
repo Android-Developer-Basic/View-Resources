@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">View &amp; Resources</string>
     <string name="contacts_app_bar_search">Search</string>
-    <string name="contacts_app_bar_more">More</string>
+    <string name="app_bar_more">More</string>
     <string name="contacts_name_input_hint">Name</string>
     <string name="contacts_phone_number_input_hint">Phone number</string>
     <string name="dropdown_placeholder_hint">Select</string>
@@ -12,4 +12,9 @@
     <string name="contacts_birthday_input_hint">Birthday</string>
     <string name="contacts_notes_input_hint">Notes</string>
     <string name="contacts_register">Register</string>
+    <string name="contacts_title">Contacts</string>
+    <string name="cart_title">Cart</string>
+    <string name="cart_app_bar_favorites">Favorites</string>
+    <string name="cart_total_order">Your order total</string>
+    <string name="cart_items">4 items in your cart</string>
 </resources>

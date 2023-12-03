@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:android="http://schemas.android.com/apk/res/android" >
-    <style name="Widget.App.Toolbar" parent="Widget.Material3.Toolbar">
+    <style name="Widget.App.Toolbar.Contacts" parent="Widget.Material3.Toolbar">
         <item name="android:background">?attr/appBarColor</item>
+        <item name="navigationIconTint">?attr/appBarIconColor</item>
+        <item name="titleTextColor">?attr/appBarTitleColor</item>
+        <item name="titleTextAppearance">@style/TextAppearance.AppBar.TitleLarge</item>
+    </style>
+
+    <style name="Widget.App.Toolbar.Cart" parent="Widget.Material3.Toolbar">
+        <item name="android:background">?attr/appBarAlternativeColor</item>
         <item name="navigationIconTint">?attr/appBarIconColor</item>
         <item name="titleTextColor">?attr/appBarTitleColor</item>
         <item name="titleTextAppearance">@style/TextAppearance.AppBar.TitleLarge</item>
@@ -12,7 +19,7 @@
         <item name="android:textColorHint">?attr/hintColor</item>
         <item name="hintTextColor">?attr/hintColor</item>
         <item name="boxBackgroundColor">?attr/boxBackgroundColor</item>
-        <item name="boxStrokeColor">?attr/boxUnderlineColor</item>
+        <item name="boxStrokeColor">?attr/underlineColor</item>
         <item name="hintTextAppearance">@style/TextAppearance.TextInput.BodySmall</item>
         <item name="endIconTint">?attr/boxTrailingIconColor</item>
     </style>
@@ -22,7 +29,7 @@
         <item name="android:textColorHint">?attr/hintColor</item>
         <item name="hintTextColor">?attr/hintColor</item>
         <item name="boxBackgroundColor">?attr/boxBackgroundColor</item>
-        <item name="boxStrokeColor">?attr/boxUnderlineColor</item>
+        <item name="boxStrokeColor">?attr/underlineColor</item>
         <item name="hintTextAppearance">@style/TextAppearance.TextInput.BodySmall</item>
         <item name="endIconTint">?attr/boxTrailingIconColor</item>
     </style>
@@ -45,6 +52,11 @@
     </style>
 
 
+    <style name="Widget.Cart.DeleteButton" parent="Widget.Material3.Button.IconButton">
+        <item name="iconTint">?attr/cartItemDeleteButtonColor</item>
+    </style>
+
+
     <!--    Typography-->
     <style name="TextAppearance.AppBar.TitleLarge" parent="TextAppearance.Material3.TitleLarge">
         <item name="fontFamily">@font/roboto_medium</item>
@@ -58,6 +70,27 @@
         <item name="fontFamily">@font/roboto_medium</item>
         <item name="android:fontFamily">@font/roboto_medium</item>
         <item name="textAllCaps">true</item>
+    </style>
+
+    <style name="TextAppearance.Cart.TotalOrder" parent="Widget.Material3.CheckedTextView">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textColor">?attr/totalOrderColor</item>
+    </style>
+    <style name="TextAppearance.Cart.ItemsInCart" parent="Widget.Material3.CheckedTextView">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textColor">?attr/itemsInCartColor</item>
+    </style>
+    <style name="TextAppearance.Cart.16sp" parent="Widget.Material3.CheckedTextView">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textColor">?attr/hintColor</item>
+    </style>
+    <style name="TextAppearance.Cart.12sp" parent="Widget.Material3.CheckedTextView">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textColor">?attr/hintColor</item>
     </style>
 
 </resources>

@@ -4,9 +4,9 @@
 
     <item
         android:id="@+id/contactsTopAppBarSearch"
-        android:icon="@drawable/search_black_24dp"
+        android:icon="@drawable/loyalty_black_24dp"
         app:showAsAction="ifRoom"
-        android:title="@string/contacts_app_bar_search" />
+        android:title="@string/cart_app_bar_favorites" />
 
     <item
         android:id="@+id/contactsTopAppBarMore"
