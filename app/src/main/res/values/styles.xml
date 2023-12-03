@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" >
+    <style name="Widget.App.Toolbar.Contacts" parent="Widget.Material3.Toolbar">
+        <item name="android:background">?attr/appBarContactsColor</item>
+        <item name="navigationIconTint">?attr/appBarIconColor</item>
+        <item name="titleTextColor">?attr/appBarTitleColor</item>
+        <item name="titleTextAppearance">@style/TextAppearance.AppBar.TitleLarge</item>
+    </style>
+
+    <style name="Widget.App.Toolbar.Cart" parent="Widget.Material3.Toolbar">
+        <item name="android:background">?attr/appBarCartColor</item>
+        <item name="navigationIconTint">?attr/appBarIconColor</item>
+        <item name="titleTextColor">?attr/appBarTitleColor</item>
+        <item name="titleTextAppearance">@style/TextAppearance.AppBar.TitleLarge</item>
+    </style>
+
+    <style name="Widget.App.TextInputLayout" parent="Widget.Material3.TextInputLayout.FilledBox">
+        <item name="shapeAppearance">@style/ShapeAppearance.TextInput.SmallComponent</item>
+        <item name="android:textColorHint">?attr/mainTextColor</item>
+        <item name="hintTextColor">?attr/mainTextColor</item>
+        <item name="boxBackgroundColor">?attr/boxBackgroundColor</item>
+        <item name="boxStrokeColor">?attr/underlineColor</item>
+        <item name="hintTextAppearance">@style/TextAppearance.TextInput.BodySmall</item>
+        <item name="endIconTint">?attr/boxTrailingIconColor</item>
+    </style>
+
+    <style name="Widget.App.TextInputEditText" parent="Widget.Material3.TextInputEditText.FilledBox">
+        <item name="android:textAppearance">@style/TextAppearance.TextInput.BodyLarge</item>
+        <item name="android:textColor">?attr/mainTextColor</item>
+    </style>
+
+    <style name="Widget.App.DropdownLayout" parent="Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu">
+        <item name="shapeAppearance">@style/ShapeAppearance.TextInput.SmallComponent</item>
+        <item name="android:textColorHint">?attr/mainTextColor</item>
+        <item name="hintTextColor">?attr/mainTextColor</item>
+        <item name="boxBackgroundColor">?attr/boxBackgroundColor</item>
+        <item name="boxStrokeColor">?attr/underlineColor</item>
+        <item name="hintTextAppearance">@style/TextAppearance.TextInput.BodySmall</item>
+        <item name="endIconTint">?attr/boxTrailingIconColor</item>
+    </style>
+
+    <style name="ShapeAppearance.TextInput.SmallComponent" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">4dp</item>
+    </style>
+
+    <style name="ShapeAppearance.Alert.SignIn" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">4dp</item>
+    </style>
+
+    <style name="Widget.Register.Button" parent="Widget.Material3.Button">
+        <item name="android:textAppearance">@style/TextAppearance.Register.Button</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.Register.SmallComponent</item>
+        <item name="backgroundTint">?attr/registerButtonColor</item>
+        <item name="android:textColor">?attr/registerButtonTextColor</item>
+    </style>
+
+    <style name="ShapeAppearance.Register.SmallComponent" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">4dp</item>
+    </style>
+
+    <style name="Widget.Cart.DeleteButton" parent="Widget.Material3.Button.IconButton">
+        <item name="iconTint">?attr/cartItemDeleteButtonColor</item>
+    </style>
+
+    <style name="Widget.PayNow.Button" parent="Widget.Material3.Button">
+        <item name="android:textAppearance">@style/TextAppearance.PayNow.Button</item>
+        <item name="backgroundTint">?attr/payButtonColor</item>
+        <item name="android:textColor">?attr/payButtonTextColor</item>
+        <item name="iconTint">?attr/payButtonIconColor</item>
+    </style>
+
+    <style name="Widget.Alert.RegisterButton" parent="Widget.Material3.Button.TextButton">
+        <item name="android:textAppearance">@style/TextAppearance.Alert.RegisterButton</item>
+        <item name="android:textColor">?attr/alertButtonColor</item>
+    </style>
+
+    <style name="Widget.Alert.ResetPasswordButton" parent="Widget.Material3.Button.TextButton">
+        <item name="android:textAppearance">@style/TextAppearance.Alert.ResetPasswordButton</item>
+        <item name="android:textColor">?attr/alertResetPasswordButtonTextColor</item>
+    </style>
+
+
+    <style name="Widget.Alert.TextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="shapeAppearance">@style/ShapeAppearance.TextInput.SmallComponent</item>
+        <item name="android:textColorHint">?attr/mainTextColor</item>
+        <item name="hintTextColor">?attr/mainTextColor</item>
+        <item name="boxStrokeColor">@color/text_input_box_stroke</item>
+        <item name="hintTextAppearance">@style/TextAppearance.TextInput.BodySmall</item>
+    </style>
+
+    <style name="Widget.Alert.TextInputEditText" parent="Widget.Material3.TextInputEditText.OutlinedBox">
+        <item name="android:textAppearance">@style/TextAppearance.TextInput.BodyLarge</item>
+        <item name="android:textColor">?attr/mainTextColor</item>
+    </style>
+
+    <style name="Widget.Alert.SignInButton" parent="Widget.Material3.Button">
+        <item name="android:textAppearance">@style/TextAppearance.Alert.SignInButton</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.Register.SmallComponent</item>
+        <item name="backgroundTint">?attr/alertButtonColor</item>
+        <item name="android:textColor">?attr/alertSignInButtonTextColor</item>
+    </style>
+
+    <style name="MaterialAlertDialog.SignIn" parent="MaterialAlertDialog.Material3">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.Alert.SignIn</item>
+    </style>
+
+
+    <!--    Typography-->
+    <style name="TextAppearance.AppBar.TitleLarge" parent="TextAppearance.Material3.TitleLarge">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+    <style name="TextAppearance.TextInput.BodySmall" parent="TextAppearance.Material3.BodySmall">
+        <item name="fontFamily">@font/roboto_regular</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+    <style name="TextAppearance.TextInput.BodyLarge" parent="TextAppearance.Material3.BodyLarge">
+        <item name="fontFamily">@font/roboto_regular</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+    <style name="TextAppearance.Register.Button" parent="TextAppearance.Material3.LabelLarge">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <style name="TextAppearance.Cart.TotalOrder" parent="Widget.Material3.CheckedTextView">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textColor">?attr/totalOrderColor</item>
+    </style>
+    <style name="TextAppearance.Cart.ItemsInCart" parent="Widget.Material3.CheckedTextView">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textColor">?attr/itemsInCartColor</item>
+    </style>
+    <style name="TextAppearance.Cart.16sp" parent="Widget.Material3.CheckedTextView">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textColor">?attr/mainTextColor</item>
+    </style>
+    <style name="TextAppearance.Cart.12sp" parent="Widget.Material3.CheckedTextView">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textColor">?attr/mainTextColor</item>
+    </style>
+    <style name="TextAppearance.PayNow.Button" parent="TextAppearance.Material3.LabelLarge">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="TextAppearance.Alert.SignIn" parent="Widget.Material3.CheckedTextView">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textColor">?attr/mainTextColor</item>
+    </style>
+    <style name="TextAppearance.Alert.RegisterButton" parent="TextAppearance.Material3.LabelLarge">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="textAllCaps">true</item>
+    </style>
+    <style name="TextAppearance.Alert.ResetPasswordButton" parent="TextAppearance.Material3.LabelLarge">
+        <item name="fontFamily">@font/roboto_regular</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+    <style name="TextAppearance.Alert.SignInButton" parent="TextAppearance.Material3.LabelLarge">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+</resources>

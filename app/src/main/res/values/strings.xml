@@ -1,3 +1,33 @@
 <resources>
     <string name="app_name">View &amp; Resources</string>
+    <string name="contacts_app_bar_search">Search</string>
+    <string name="app_bar_more">More</string>
+    <string name="contacts_name_input_hint">Name</string>
+    <string name="contacts_phone_number_input_hint">Phone number</string>
+    <string name="dropdown_placeholder_hint">Select</string>
+    <string name="contacts_address_input_hint">Address</string>
+    <string name="contacts_city_input_hint">City</string>
+    <string name="contacts_state_input_hint">State</string>
+    <string name="contacts_zip_input_hint">Zip</string>
+    <string name="contacts_birthday_input_hint">Birthday</string>
+    <string name="contacts_notes_input_hint">Notes</string>
+    <string name="register">Register</string>
+    <string name="contacts_title">Contacts</string>
+    <string name="cart_title">Cart</string>
+    <string name="cart_app_bar_favorites">Favorites</string>
+    <string name="cart_total_order">Your order total</string>
+    <string name="cart_item_price">$US, %.2f</string>
+    <string name="cart_order_price">%.2f</string>
+    <string name="cart_subtotal">Subtotal</string>
+    <string name="cart_shipping">Shipping</string>
+    <string name="cart_tax">Tax</string>
+    <string name="cart_pay_now">Pay now</string>
+    <string name="sign_in">Sign in</string>
+    <string name="alert_e_mail">E-mail</string>
+    <string name="alert_password">Password</string>
+    <string name="alert_reset_my_password">Reset my password</string>
+    <plurals name="cart_items">
+        <item quantity="one">%d item in your cart</item>
+        <item quantity="other">%d items in your cart</item>
+    </plurals>
 </resources>

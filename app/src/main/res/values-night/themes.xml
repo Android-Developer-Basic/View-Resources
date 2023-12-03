@@ -1,16 +1,27 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Theme.ViewResources" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-        <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_200</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@color/black</item>
-        <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_200</item>
-        <item name="colorOnSecondary">@color/black</item>
-        <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme here. -->
+    <style name="Theme.ViewResources" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="backgroundColor">@color/main</item>
+
+        <item name="appBarContactsColor">@color/grey_background</item>
+        <item name="appBarCartColor">@color/main</item>
+        <item name="appBarIconColor">@color/grey_secondary</item>
+        <item name="appBarTitleColor">@color/grey_primary</item>
+        <item name="mainTextColor">@color/grey_primary</item>
+        <item name="boxBackgroundColor">@color/grey_background</item>
+        <item name="boxTrailingIconColor">@color/grey_secondary</item>
+        <item name="underlineColor">@color/grey_primary</item>
+        <item name="registerButtonColor">@color/blue</item>
+        <item name="registerButtonTextColor">@color/main</item>
+
+        <item name="totalOrderColor">@color/yellow</item>
+        <item name="itemsInCartColor">@color/green</item>
+        <item name="cartItemDeleteButtonColor">@color/grey_secondary</item>
+        <item name="payButtonColor">@color/green</item>
+        <item name="payButtonIconColor">@color/main</item>
+        <item name="payButtonTextColor">@color/main</item>
+
+        <item name="alertButtonColor">@color/blue</item>
+        <item name="alertSignInButtonTextColor">@color/main</item>
+        <item name="alertResetPasswordButtonTextColor">@color/grey_primary</item>
     </style>
 </resources>
