@@ -16,5 +16,14 @@
     <string name="cart_title">Cart</string>
     <string name="cart_app_bar_favorites">Favorites</string>
     <string name="cart_total_order">Your order total</string>
-    <string name="cart_items">4 items in your cart</string>
+    <string name="cart_item_price">$US, %.2f</string>
+    <string name="cart_order_price">%.2f</string>
+    <string name="cart_subtotal">Subtotal</string>
+    <string name="cart_shipping">Shipping</string>
+    <string name="cart_tax">Tax</string>
+    <string name="cart_pay_now">Pay now</string>
+    <plurals name="cart_items">
+        <item quantity="one">%d item in your cart</item>
+        <item quantity="other">%d items in your cart</item>
+    </plurals>
 </resources>

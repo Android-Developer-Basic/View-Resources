@@ -16,4 +16,7 @@
     <color name="totalOrder">#FFD76F</color>
     <color name="itemsInCart">#89ED5B</color>
     <color name="cartItemDeleteButton">#888888</color>
+    <color name="payButton">#89ED5B</color>
+    <color name="payButtonIcon">#121212</color>
+    <color name="payButtonText">#121212</color>
 </resources>

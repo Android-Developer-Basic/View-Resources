@@ -51,9 +51,15 @@
         <item name="cornerSize">4dp</item>
     </style>
 
-
     <style name="Widget.Cart.DeleteButton" parent="Widget.Material3.Button.IconButton">
         <item name="iconTint">?attr/cartItemDeleteButtonColor</item>
+    </style>
+
+    <style name="Widget.PayNow.Button" parent="Widget.Material3.Button">
+        <item name="android:textAppearance">@style/TextAppearance.PayNow.Button</item>
+        <item name="backgroundTint">?attr/payButtonColor</item>
+        <item name="android:textColor">?attr/payButtonTextColor</item>
+        <item name="iconTint">?attr/payButtonIconColor</item>
     </style>
 
 
@@ -91,6 +97,10 @@
         <item name="android:textSize">12sp</item>
         <item name="android:fontFamily">@font/roboto_regular</item>
         <item name="android:textColor">?attr/hintColor</item>
+    </style>
+    <style name="TextAppearance.PayNow.Button" parent="TextAppearance.Material3.LabelLarge">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
     </style>
 
 </resources>

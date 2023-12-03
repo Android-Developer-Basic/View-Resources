@@ -16,5 +16,8 @@
         <item name="totalOrderColor">@color/totalOrder</item>
         <item name="itemsInCartColor">@color/itemsInCart</item>
         <item name="cartItemDeleteButtonColor">@color/cartItemDeleteButton</item>
+        <item name="payButtonColor">@color/payButton</item>
+        <item name="payButtonIconColor">@color/payButtonIcon</item>
+        <item name="payButtonTextColor">@color/payButtonText</item>
     </style>
 </resources>

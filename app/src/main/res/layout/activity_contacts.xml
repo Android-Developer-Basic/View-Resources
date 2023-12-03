@@ -259,7 +259,7 @@
 
     </ScrollView>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         style="@style/Widget.Register.Button"
         android:id="@+id/contactsRegisterButton"
         android:layout_marginTop="12dp"

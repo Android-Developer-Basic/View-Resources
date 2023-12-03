@@ -14,4 +14,7 @@
     <attr name="totalOrderColor" format="color"/>
     <attr name="itemsInCartColor" format="color"/>
     <attr name="cartItemDeleteButtonColor" format="color"/>
+    <attr name="payButtonColor" format="color"/>
+    <attr name="payButtonIconColor" format="color"/>
+    <attr name="payButtonTextColor" format="color"/>
 </resources>
