@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="blue">#FF4FB8FF</color>
+
+
+
+    <color name="contactBtnRegisterBack">@color/blue</color>
+    <color name="contactBtnRegisterText">@color/black</color>
+
+</resources>

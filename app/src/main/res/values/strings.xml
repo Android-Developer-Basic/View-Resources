@@ -1,3 +1,37 @@
 <resources>
     <string name="app_name">View &amp; Resources</string>
+    <string name="label_contacts">Contacts</string>
+    <string name="label_cart">Cart</string>
+    <string name="hint_field_name">Name</string>
+    <string name="hint_filed_phone">Phone number</string>
+    <string name="hint_field_select">Select</string>
+    <string name="hint_field_address">Address</string>
+    <string name="hint_field_city">City</string>
+    <string name="hint_field_state">State</string>
+    <string name="hint_field_zip">Zip</string>
+    <string name="hint_field_birthday">Birthday</string>
+    <string name="hint_field_notes">Notes</string>
+    <string name="button_register">Register</string>
+    <string-array name="select_list">
+        <item>RU</item>
+        <item>EU</item>
+        <item>CN</item>
+        <item>KZ</item>
+    </string-array>
+
+    <string name="button_pay">Pay now</string>
+    <string name="cart_order_total">You order total</string>
+    <string name="cart_order_subtotal">Subtotal</string>
+    <string name="cart_order_shipping">Shipping</string>
+    <string name="cart_order_tax">Tax</string>
+
+    <string name="signin_name">Sign in</string>
+    <string name="signin_register_button">Register</string>
+    <string name="signin_email_field">E-mail</string>
+    <string name="signin_password_field">Password</string>
+    <string name="signin_reset_password">Reset my password</string>
+    <string name="signin_button">Sign in</string>
+    <string name="loyalty">Loyalty</string>
+    <string name="menu">Menu</string>
+    <string name="cartCount">4 items in your cart</string>
 </resources>

@@ -7,4 +7,13 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="red">#FFFF0000</color>
+    <color name="blue">#FF2980B9</color>
+    <color name="blue_dark">#FF4FB8FF</color>
+    <color name="green">#FF89ED5B</color>
+    <color name="dark_grey">#FF272727</color>
+    <color name="dark_yellow">#FFFFD76F</color>
+
+    <color name="contactBtnRegisterBack">@color/green</color>
+    <color name="contactBtnRegisterText">@color/white</color>
 </resources>

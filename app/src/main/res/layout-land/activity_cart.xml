@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.Barrier
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="start"
+        app:constraint_referenced_ids="cartTotalMsg" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/cartCountItems"
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/cartCount"
+
+        android:textColor="?attr/colorCartTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/cartTotalMsg"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cartTotalSum"
+        style="@style/cartTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="11.22"
+        android:textColor="?attr/colorCartTotalMsg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cartCountItems" />
+
+    <TextView
+        android:id="@+id/cartTotalMsg"
+        style="@style/cartTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/cart_order_total"
+        android:textColor="?attr/colorCartTotalMsg"
+        app:layout_constraintEnd_toStartOf="@+id/cartTotalSum"
+        app:layout_constraintTop_toBottomOf="@+id/cartCountItems" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_carts"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cartTotalMsg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cartSubtotalMsg"
+        style="@style/cartTotalOther"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/cart_order_subtotal"
+        app:layout_constraintStart_toStartOf="@+id/cartTotalMsg"
+        app:layout_constraintTop_toBottomOf="@+id/cartTotalMsg" />
+
+    <TextView
+        android:id="@+id/cartTotalSub"
+        style="@style/cartTotalOther"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:text="11.22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cartTotalSum" />
+
+    <TextView
+        android:id="@+id/cartTotalShipMsg"
+        style="@style/cartTotalOther"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/cart_order_shipping"
+        app:layout_constraintStart_toStartOf="@+id/cartSubtotalMsg"
+        app:layout_constraintTop_toBottomOf="@+id/cartSubtotalMsg" />
+
+    <TextView
+        android:id="@+id/cartTotalShip"
+        style="@style/cartTotalOther"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="24dp"
+        android:text="12.22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cartTotalSub" />
+
+
+    <TextView
+        android:id="@+id/cartTotalTaxMsg"
+        style="@style/cartTotalOther"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/cart_order_tax"
+
+        app:layout_constraintStart_toStartOf="@+id/cartTotalShipMsg"
+        app:layout_constraintTop_toBottomOf="@+id/cartTotalShipMsg" />
+
+    <TextView
+        android:id="@+id/cartTotalTax"
+        style="@style/cartTotalOther"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="24dp"
+
+        android:text="12.22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cartTotalShip" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonCartPay"
+        style="@style/cartBtnStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:paddingLeft="26dp"
+        android:paddingTop="14dp"
+        android:paddingRight="26dp"
+        android:paddingBottom="14dp"
+        android:text="@string/button_pay"
+        app:backgroundTint="?attr/colorCartBtn"
+        app:icon="@drawable/ic_pay"
+        app:iconGravity="start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/cartTotalMsg" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/materialDivider"
+        style="@style/Widget.MaterialComponents.MaterialDivider"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/cartTotalMsg"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
