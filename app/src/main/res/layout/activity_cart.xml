@@ -7,6 +7,16 @@
     tools:context=".CartActivity">
 
 
+    <androidx.constraintlayout.utils.widget.MockView
+        android:id="@+id/mockView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:foreground="@drawable/android_cart"
+        android:foregroundGravity="fill_horizontal|fill_vertical"
+        android:visibility="invisible"
+        tools:ignore="MissingConstraints" />
+
     <androidx.constraintlayout.widget.Barrier
         android:id="@+id/barrierCarts"
         android:layout_width="wrap_content"
@@ -18,17 +28,17 @@
         android:id="@+id/rv_carts"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintBottom_toTopOf="@+id/layoutCartTotal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        app:layout_constraintTop_toBottomOf="@+id/cartCountItems" />
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/layoutCartTotal"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="170dp"
         android:layout_marginBottom="80dp"
         android:scrollbars="none"
         app:layout_constraintBottom_toBottomOf="parent">
@@ -37,7 +47,7 @@
             android:id="@+id/materialDivider"
             style="@style/Widget.MaterialComponents.MaterialDivider"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="1dp"
             app:layout_constraintBottom_toTopOf="parent" />
 
         <TextView
@@ -48,6 +58,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
             android:text="@string/cart_order_total"
+            android:textColor="?attr/colorCartTotalMsg"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -59,6 +70,7 @@
             android:layout_marginTop="24dp"
             android:layout_marginEnd="16dp"
             android:text="11.22"
+            android:textColor="?attr/colorCartTotalMsg"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -68,7 +80,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="20dp"
             android:text="@string/cart_order_subtotal"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cartTotalMsg" />
@@ -78,7 +90,7 @@
             style="@style/cartTotalOther"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="16dp"
             android:text="11.22"
             app:layout_constraintEnd_toEndOf="parent"
@@ -133,16 +145,35 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonCartPay"
-        style="@style/Widget.Material3.Button.UnelevatedButton"
+        style="@style/cartBtnStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
+        android:paddingLeft="26dp"
+        android:paddingTop="14dp"
+        android:paddingRight="26dp"
+        android:paddingBottom="14dp"
         android:text="@string/button_pay"
-        android:textSize="18sp"
+        app:backgroundTint="?attr/colorCartBtn"
         app:icon="@drawable/ic_pay"
         app:iconGravity="start"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/cartCountItems"
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="?attr/colorCartTextView"
+        android:text="@string/cartCount"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

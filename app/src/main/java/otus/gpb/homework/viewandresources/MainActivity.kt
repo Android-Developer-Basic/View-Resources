@@ -1,13 +1,11 @@
 package otus.gpb.homework.viewandresources
 
-import android.app.AlertDialog
 import android.app.Dialog
 import android.content.Intent
 import android.os.Bundle
 import android.util.DisplayMetrics
-import android.view.Gravity
+import android.view.WindowManager
 import android.widget.Button
-import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
@@ -28,9 +26,6 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.signin_button).setOnClickListener {
             MaterialAlertDialogBuilder(this)
-                .setPositiveButton(R.string.signin_button){ dialog,_ ->
-                    dialog.cancel()
-                }
                 .showSigninForm(R.layout.dialog_signin)
         }
     }
@@ -56,22 +51,23 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(dialog.context, "Reset OK", Toast.LENGTH_LONG).show()
         }
 
-        // center button SING IN
-        val positive = dialog.getButton(AlertDialog.BUTTON_POSITIVE)
-        val layoutParams = LinearLayout.LayoutParams(
-            LinearLayout.LayoutParams.MATCH_PARENT,
-            LinearLayout.LayoutParams.WRAP_CONTENT
-        )
-        //  layoutParams.weight = 1f
-        val metrics = resources.displayMetrics
-        // dp convert to pixel
-        val marginLR = (8 * (metrics.densityDpi.toFloat() / DisplayMetrics.DENSITY_DEFAULT)).toInt()
-        layoutParams.leftMargin = marginLR
-        layoutParams.rightMargin = marginLR
-        layoutParams.bottomMargin = marginLR
+        val signinBtn = dialog.findViewById<Button>(R.id.btn_signin)
+        signinBtn?.setOnClickListener{
+            dialog.cancel()
+        }
 
-        layoutParams.gravity = Gravity.CENTER
-        positive.layoutParams = layoutParams
+        // размер окна
+        val displayMetrics = DisplayMetrics()
+        windowManager.defaultDisplay.getMetrics(displayMetrics)
+        val displayWidth = displayMetrics.widthPixels
+        //val displayHeight = displayMetrics.heightPixels
+        val layoutParams = WindowManager.LayoutParams()
+        layoutParams.copyFrom(dialog?.window?.attributes)
+        val dialogWindowWidth = (displayWidth * 0.8f).toInt()
+        //val dialogWindowHeight = (displayHeight * 0.8f).toInt()
+        layoutParams.width = dialogWindowWidth
+        //layoutParams.height = dialogWindowHeight
+        dialog?.window?.attributes = layoutParams
 
         return dialog
     }

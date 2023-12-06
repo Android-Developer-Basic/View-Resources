@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="colorCartBtn" format="reference|color"/>
+    <attr name="colorContactBtn" format="reference|color"/>
+    <declare-styleable name="MyStyle">
+        <attr name="colorContactBtn2" format="reference"/>
+
+    </declare-styleable>
+</resources>

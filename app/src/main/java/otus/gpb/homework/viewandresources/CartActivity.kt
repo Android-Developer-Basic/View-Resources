@@ -1,5 +1,6 @@
 package otus.gpb.homework.viewandresources
 
+
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu

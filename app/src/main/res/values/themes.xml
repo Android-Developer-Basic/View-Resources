@@ -1,9 +1,14 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
+
+
+
+    <attr name="colorCartTextView" format="reference"/>
+    <attr name="colorCartTotalMsg" format="reference"/>
     <!-- Base application theme. -->
     <style name="Theme.ViewResources" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryVariant">@color/blue</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
@@ -12,12 +17,18 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="colorCartTextView">@color/black</item>
+        <item name="colorCartBtn">@color/black</item>
+        <item name="colorCartTotalMsg">@color/black</item>
+
         <item name="materialAlertDialogTheme">@style/AlertDialogMaterialTheme</item>
+
     </style>
 
+
     <style name="datepicker" parent="Theme.AppCompat.Light.Dialog">
-        <item name="colorAccent">@color/purple_500</item>
-        <item name="colorControlActivated">@color/purple_500</item>
+        <item name="colorAccent">?attr/colorPrimaryVariant</item>
+        <item name="colorControlActivated">?attr/colorPrimaryVariant</item>
         <item name="android:buttonBarNegativeButtonStyle">@style/datepicker.Button</item>
         <item name="android:buttonBarPositiveButtonStyle">@style/datepicker.Button</item>
     </style>
@@ -36,21 +47,47 @@
         <item name="android:width">180dp</item>
     </style>
 
+
     <style name="cartTotal">
         <item name="android:textSize">24sp</item>
         <item name="android:textStyle">bold</item>
         <item name="color">?attr/colorOnSecondary</item>
     </style>
 
+
     <style name="cartTotalOther">
         <item name="android:textSize">18sp</item>
         <item name="android:color">?attr/colorOnSecondary</item>
     </style>
 
+
+
+    <style name="cartBtnStyle" parent="Widget.MaterialComponents.Button">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Button</item>
+    </style>
+    <style name="ThemeOverlay.App.Button" parent="">
+<!--        <item name="colorPrimary">@color/black</item>-->
+        <item name="colorOnPrimary">@color/white</item>
+<!--        <item name="colorSurface">@color/green</item>-->
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">20sp</item>
+        <item name="shapeAppearanceOverlay">@style/MyShapeAppearance</item>
+    </style>
+    <style name="MyShapeAppearance">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">32dp</item>
+        <item name="cornerSizeBottomRight">32dp</item>
+        <item name="cornerSizeTopLeft">32dp</item>
+        <item name="cornerSizeBottomLeft">32dp</item>
+    </style>
+
+
     <style name="signinTitle">
         <item name="android:textSize">24sp</item>
         <item name="android:textStyle">bold</item>
     </style>
+
+
     <style name="signinRegister">
         <item name="android:textSize">16dp</item>
         <item name="android:color">?attr/colorPrimary</item>
