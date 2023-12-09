@@ -11,4 +11,7 @@
     <string name="birthday">Birthday</string>
     <string name="notes">Notes</string>
     <string name="register">Register</string>
+    <string name="open_cart">open cart</string>
+    <string name="show_sign_in_dialog">show sign in dialog</string>
+    <string name="open_contacts">open contacts</string>
 </resources>
