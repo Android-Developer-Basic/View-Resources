@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="appBarContactsColor" format="color"/>
+    <attr name="appBarIconColor" format="color"/>
+    <attr name="appBarTitleColor" format="color"/>
+
+    <attr name="registerButtonColor" format="color"/>
+    <attr name="registerButtonTextColor" format="color"/>
+
+    <attr name="contactsTextInputLayoutBoxBackgroundColor" format="color"/>
+    <attr name="contactsTextInputLayoutBoxStrokeColor" format="color"/>
+    <attr name="contactsTextInputLayoutEndIconTint" format="color"/>
+    <attr name="contactsTextInputLayoutEditTextColor" format="color"/>
+</resources>
