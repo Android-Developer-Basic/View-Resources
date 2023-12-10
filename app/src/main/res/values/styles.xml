@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <style name="Widget.App.Toolbar.Contacts" parent="Widget.Material3.Toolbar">
+        <item name="android:background">?attr/appBarContactsColor</item>
+        <item name="navigationIconTint">?attr/appBarIconColor</item>
+        <item name="titleTextColor">?attr/appBarTitleColor</item>
+        <item name="titleTextAppearance">@style/h6_headline</item>
+    </style>
+
     <!-- Typography -->
 
     <style name="h1_headline">

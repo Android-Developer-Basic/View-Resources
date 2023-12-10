@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="appBarContactsColor" format="color"/>
+    <attr name="appBarIconColor" format="color"/>
+    <attr name="appBarTitleColor" format="color"/>
+</resources>

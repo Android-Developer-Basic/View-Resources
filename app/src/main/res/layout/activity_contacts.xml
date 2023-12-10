@@ -6,4 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".ContactsActivity">
 
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/contactsTopAppBarLayout"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/contactsTopAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            app:title="@string/contacts_title"
+            app:navigationIcon="@drawable/arrow_left"
+            app:menu="@menu/contacts_app_bar"
+            style="@style/Widget.App.Toolbar.Contacts"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
