@@ -10,7 +10,7 @@
         <item name="colorSecondaryVariant">@color/Secondary</item>
         <item name="colorOnSecondary">@color/Main</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor">@color/Primary</item>
+        <item name="android:statusBarColor">@color/Background</item>
         <!-- Customize your theme here. -->
 
         <item name="appBarContactsColor">@color/Shade</item>
@@ -19,5 +19,10 @@
 
         <item name="registerButtonColor">@color/Primary</item>
         <item name="registerButtonTextColor">@color/Background</item>
+
+        <item name="contactsTextInputLayoutBoxBackgroundColor">@color/Shade</item>
+        <item name="contactsTextInputLayoutBoxStrokeColor">@color/Main</item>
+        <item name="contactsTextInputLayoutEndIconTint">@color/Icon</item>
+        <item name="contactsTextInputLayoutEditTextColor">@color/Main</item>
     </style>
 </resources>

@@ -6,4 +6,9 @@
 
     <attr name="registerButtonColor" format="color"/>
     <attr name="registerButtonTextColor" format="color"/>
+
+    <attr name="contactsTextInputLayoutBoxBackgroundColor" format="color"/>
+    <attr name="contactsTextInputLayoutBoxStrokeColor" format="color"/>
+    <attr name="contactsTextInputLayoutEndIconTint" format="color"/>
+    <attr name="contactsTextInputLayoutEditTextColor" format="color"/>
 </resources>

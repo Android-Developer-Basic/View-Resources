@@ -22,6 +22,17 @@
         <item name="cornerSize">4dp</item>
     </style>
 
+    <style name="Widget.MaterialComponents.TextInputLayout.FilledBox.Default">
+        <item name="boxBackgroundColor">?attr/contactsTextInputLayoutBoxBackgroundColor</item>
+        <item name="boxStrokeColor">?attr/contactsTextInputLayoutBoxStrokeColor</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="endIconTint">?attr/contactsTextInputLayoutEndIconTint</item>
+        <item name="hintTextAppearance">@style/roboto_medium.body_1</item>
+        <item name="hintTextColor">?attr/contactsTextInputLayoutEditTextColor</item>
+        <item name="boxCornerRadiusTopStart">4dp</item>
+        <item name="boxCornerRadiusTopEnd">4dp</item>
+    </style>
+
     <!-- Typography -->
 
     <style name="roboto_medium">

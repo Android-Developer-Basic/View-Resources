@@ -26,6 +26,231 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingStart="16dp"
+        android:paddingTop="24dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonContactsRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contactsTopAppBarLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textFieldContactsName"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Default"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/contacts_name"
+            app:boxBackgroundMode="filled"
+            app:endIconDrawable="@drawable/account"
+            app:endIconMode="custom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textEditContactsName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutContactsPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textFieldContactsName">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textFieldContactsPhoneNumber"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Default"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="0.4"
+                android:hint="@string/contacts_phone_number"
+                app:boxBackgroundMode="filled"
+                app:endIconDrawable="@drawable/phone"
+                app:endIconMode="custom">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textEditContactsPhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textFieldContactsPhoneNumberSelect"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Default"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:hint="@string/contacts_select"
+                app:boxBackgroundMode="filled"
+                app:endIconDrawable="@drawable/menu_down"
+                app:endIconMode="custom">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textEditContactsPhoneNumberSelect"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textFieldContactsAddress"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Default"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:hint="@string/contacts_address"
+            app:boxBackgroundMode="filled"
+            app:endIconDrawable="@drawable/map_marker"
+            app:endIconMode="custom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutContactsPhoneNumber">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textEditContactsAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutContactsAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textFieldContactsAddress">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textFieldContactsCity"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Default"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/contacts_city"
+                app:boxBackgroundMode="filled"
+                app:endIconMode="custom"
+                app:layout_constraintEnd_toStartOf="@+id/textFieldContactsState"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textEditContactsCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textFieldContactsState"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Default"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:hint="@string/contacts_state"
+                app:boxBackgroundMode="filled"
+                app:endIconDrawable="@drawable/menu_down"
+                app:endIconMode="custom"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textFieldContactsZip"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textFieldContactsCity"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textEditContactsState"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textFieldContactsZip"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Default"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/contacts_zip"
+                app:boxBackgroundMode="filled"
+                app:endIconMode="custom"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textFieldContactsState"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textEditContactsZip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textFieldContactsBirthday"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Default"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:hint="@string/contacts_birthday"
+            app:boxBackgroundMode="filled"
+            app:endIconDrawable="@drawable/calendar_outline"
+            app:endIconMode="custom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutContactsAddress">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textEditContactsBirthday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textFieldContactsNotes"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Default"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:hint="@string/contacts_notes"
+            app:boxBackgroundMode="filled"
+            app:endIconDrawable="@drawable/pencil"
+            app:endIconMode="custom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textFieldContactsBirthday">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textEditContactsNotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
     <Button
         android:id="@+id/buttonContactsRegister"
         style="@style/Widget.AppCompat.Button.Register"
