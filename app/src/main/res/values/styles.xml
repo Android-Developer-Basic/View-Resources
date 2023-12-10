@@ -5,89 +5,99 @@
         <item name="android:background">?attr/appBarContactsColor</item>
         <item name="navigationIconTint">?attr/appBarIconColor</item>
         <item name="titleTextColor">?attr/appBarTitleColor</item>
-        <item name="titleTextAppearance">@style/h6_headline</item>
+        <item name="titleTextAppearance">@style/roboto_medium.h6_headline</item>
+    </style>
+
+    <style name="Widget.AppCompat.Button.Register">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="backgroundTint">?attr/registerButtonColor</item>
+        <item name="android:textColor">?attr/registerButtonTextColor</item>
+        <item name="android:textAppearance">@style/roboto_medium.txt_medium.all_caps</item>
+        <item name="android:padding">12dp</item>
+        <item name="elevation">8dp</item>
+        <item name="cornerSize">4dp</item>
     </style>
 
     <!-- Typography -->
 
-    <style name="h1_headline">
+    <style name="roboto_medium">
+        <item name="fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="roboto_medium.h1_headline">
         <item name="android:textSize">96sp</item>
         <item name="android:letterSpacing">-0.02</item>
         <item name="lineHeight">112sp</item>
-        <item name="fontFamily">@font/roboto</item>
     </style>
 
-    <style name="h2_headline">
+    <style name="roboto_medium.h2_headline">
         <item name="android:textSize">60sp</item>
         <item name="lineHeight">70sp</item>
-        <item name="fontFamily">@font/roboto</item>
     </style>
 
-    <style name="h3_headline">
+    <style name="roboto_medium.h3_headline">
         <item name="android:textSize">48sp</item>
         <item name="lineHeight">56sp</item>
-        <item name="fontFamily">@font/roboto</item>
     </style>
 
-    <style name="h4_headline">
+    <style name="roboto_medium.h4_headline">
         <item name="android:textSize">34sp</item>
         <item name="lineHeight">40sp</item>
-        <item name="fontFamily">@font/roboto</item>
         <item name="android:letterSpacing">0.01</item>
     </style>
 
-    <style name="h5_headline">
+    <style name="roboto_medium.h5_headline">
         <item name="android:textSize">24sp</item>
         <item name="lineHeight">28sp</item>
-        <item name="fontFamily">@font/roboto</item>
     </style>
 
-    <style name="h6_headline">
+    <style name="roboto_medium.h6_headline">
         <item name="android:textSize">20sp</item>
         <item name="lineHeight">28sp</item>
-        <item name="fontFamily">@font/roboto</item>
         <item name="android:letterSpacing">0.01</item>
     </style>
 
-    <style name="body_1">
+    <style name="roboto_medium.body_1">
         <item name="android:textSize">16sp</item>
         <item name="lineHeight">24sp</item>
-        <item name="fontFamily">@font/roboto</item>
         <item name="android:letterSpacing">0.03</item>
     </style>
 
-    <style name="subtitle_2">
+    <style name="roboto_medium.subtitle_2">
         <item name="android:textSize">14sp</item>
         <item name="lineHeight">24sp</item>
-        <item name="fontFamily">@font/roboto</item>
         <item name="android:letterSpacing">0.01</item>
     </style>
 
-    <style name="txt_medium">
+    <style name="roboto_medium.txt_medium">
         <item name="android:textSize">14sp</item>
         <item name="lineHeight">16sp</item>
-        <item name="fontFamily">@font/roboto</item>
         <item name="android:letterSpacing">0.05</item>
     </style>
 
-    <style name="body_2">
+    <style name="roboto_medium.txt_medium.all_caps">
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <style name="roboto_medium.body_2">
         <item name="android:textSize">14sp</item>
         <item name="lineHeight">20sp</item>
-        <item name="fontFamily">@font/roboto</item>
         <item name="android:letterSpacing">0.02</item>
     </style>
 
-    <style name="caption">
+    <style name="roboto_medium.caption">
         <item name="android:textSize">12sp</item>
         <item name="lineHeight">16sp</item>
-        <item name="fontFamily">@font/roboto</item>
         <item name="android:letterSpacing">0.02</item>
     </style>
 
-    <style name="overline">
+    <style name="roboto_medium.overline">
         <item name="android:textSize">10sp</item>
         <item name="lineHeight">16sp</item>
-        <item name="fontFamily">@font/roboto</item>
         <item name="android:letterSpacing">0.15</item>
     </style>
 </resources>

@@ -16,5 +16,8 @@
         <item name="appBarContactsColor">@color/Primary</item>
         <item name="appBarIconColor">@color/Background</item>
         <item name="appBarTitleColor">@color/Background</item>
+
+        <item name="registerButtonColor">@color/Secondary</item>
+        <item name="registerButtonTextColor">@color/Background</item>
     </style>
 </resources>
