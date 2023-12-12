@@ -10,10 +10,14 @@
     <string name="contacts_zip">Zip</string>
     <string name="contacts_birthday">Birthday</string>
     <string name="contacts_notes">Notes</string>
-    <string name="contacts_register">Register</string>
+    <string name="register">Register</string>
     <string name="contacts_app_bar_search">Search</string>
     <string name="app_bar_more">More</string>
     <string name="open_cart">open cart</string>
     <string name="show_sign_in_dialog">show sign in dialog</string>
     <string name="open_contacts">open contacts</string>
+    <string name="sign_in">Sign in</string>
+    <string name="email">E-mail</string>
+    <string name="password">Password</string>
+    <string name="reset_my_password">Reset my password</string>
 </resources>
