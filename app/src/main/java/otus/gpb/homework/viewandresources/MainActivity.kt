@@ -6,10 +6,18 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
-class MainActivity : AppCompatActivity() {
+class MainActivity: AppCompatActivity(R.layout.activity_main) {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        findViewById<Button>(R.id.xml_view_button).setOnClickListener {
+            startActivity(Intent(this, MainXMLActivity::class.java))
+        }
+    }
+}
+class MainXMLActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main_xml)
         findViewById<Button>(R.id.contacts_button).setOnClickListener {
             startActivity(Intent(this, ContactsActivity::class.java))
         }

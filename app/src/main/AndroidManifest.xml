@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="otus.gpb.homework.viewandresources">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <application
         android:allowBackup="true"
@@ -21,6 +20,9 @@
             android:name=".ContactsActivity"
             android:label="Contacts"
             android:exported="false" />
+        <activity android:name=".MainXMLActivity"
+            android:label="MainXMLActivity"
+            android:exported="false"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">
