@@ -24,5 +24,13 @@
         <item name="contactsTextInputLayoutBoxStrokeColor">@color/EditStrokeColor</item>
         <item name="contactsTextInputLayoutEndIconTint">@color/Icon</item>
         <item name="contactsTextInputLayoutEditTextColor">@color/Main</item>
+
+        <item name="signInTitleTextColor">@color/Main</item>
+        <item name="signInRegisterTextColor">@color/ResetPassword</item>
+        <item name="signInBntColor">@color/Primary</item>
+        <item name="signInBntTextColor">@color/Background</item>
+        <item name="signInTextInputLayoutBoxBackgroundColor">@color/Background</item>
+        <item name="signInTextInputLayoutBoxStrokeColor">@color/EditStrokeColor</item>
+        <item name="signInTextInputLayoutColor">@color/Main</item>
     </style>
 </resources>

@@ -11,4 +11,14 @@
     <attr name="contactsTextInputLayoutBoxStrokeColor" format="color"/>
     <attr name="contactsTextInputLayoutEndIconTint" format="color"/>
     <attr name="contactsTextInputLayoutEditTextColor" format="color"/>
+
+    <attr name="signInTitleTextColor" format="color"/>
+    <attr name="signInRegisterTextColor" format="color"/>
+    <attr name="signInBntColor" format="color"/>
+    <attr name="signInBntTextColor" format="color"/>
+
+    <attr name="signInTextInputLayoutBoxBackgroundColor" format="color"/>
+    <attr name="signInTextInputLayoutBoxStrokeColor" format="color"/>
+    <attr name="signInTextInputLayoutColor" format="color"/>
+
 </resources>

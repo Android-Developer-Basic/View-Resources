@@ -20,4 +20,5 @@
     <string name="email">E-mail</string>
     <string name="password">Password</string>
     <string name="reset_my_password">Reset my password</string>
+    <string name="email_test">e.g. john@gmail.com</string>
 </resources>
