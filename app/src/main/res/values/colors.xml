@@ -2,6 +2,7 @@
 <resources>
     <color name="Background">#FFFFFFFF</color>
     <color name="EditStrokeColor">#61263238</color>
+    <color name="ResetPassword">@color/Primary</color>
     <color name="Main">#FF263238</color>
     <color name="Accent">#FFE74C3C</color>
     <color name="Primary">#FF2980B9</color>
