@@ -21,7 +21,7 @@
         <item name="registerButtonTextColor">@color/Background</item>
 
         <item name="contactsTextInputLayoutBoxBackgroundColor">@color/Shade</item>
-        <item name="contactsTextInputLayoutBoxStrokeColor">@color/Main</item>
+        <item name="contactsTextInputLayoutBoxStrokeColor">@color/EditStrokeColor</item>
         <item name="contactsTextInputLayoutEndIconTint">@color/Icon</item>
         <item name="contactsTextInputLayoutEditTextColor">@color/Main</item>
     </style>

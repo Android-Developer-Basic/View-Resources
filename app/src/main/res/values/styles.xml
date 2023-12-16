@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <style name="Widget.App.Toolbar.Contacts" parent="Widget.Material3.Toolbar">
         <item name="android:background">?attr/appBarContactsColor</item>
@@ -25,18 +27,28 @@
     <style name="Widget.MaterialComponents.TextInputLayout.FilledBox.Default">
         <item name="boxBackgroundColor">?attr/contactsTextInputLayoutBoxBackgroundColor</item>
         <item name="boxStrokeColor">?attr/contactsTextInputLayoutBoxStrokeColor</item>
-        <item name="boxStrokeWidth">2dp</item>
+        <item name="boxStrokeWidth">1dp</item>
         <item name="endIconTint">?attr/contactsTextInputLayoutEndIconTint</item>
-        <item name="hintTextAppearance">@style/roboto_medium.body_1</item>
-        <item name="hintTextColor">?attr/contactsTextInputLayoutEditTextColor</item>
-        <item name="boxCornerRadiusTopStart">4dp</item>
-        <item name="boxCornerRadiusTopEnd">4dp</item>
+        <item name="android:textColorHint">?attr/contactsTextInputLayoutEditTextColor</item>
+        <item name="hintTextAppearance">@style/roboto_bold.caption</item>
+        <item name="android:textAppearance">@style/roboto_bold.body_1</item>
+    </style>
+    
+    <style name="Widget.MaterialComponents.TextInputEditText.FilledBox.Default">
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
     </style>
 
     <!-- Typography -->
 
     <style name="roboto_medium">
         <item name="fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="roboto_bold">
+        <item name="fontFamily">@font/roboto_bold</item>
     </style>
 
     <style name="roboto_medium.h1_headline">
@@ -78,6 +90,12 @@
         <item name="android:letterSpacing">0.03</item>
     </style>
 
+    <style name="roboto_bold.body_1">
+        <item name="android:textSize">16sp</item>
+        <item name="lineHeight">24sp</item>
+        <item name="android:letterSpacing">0.03</item>
+    </style>
+
     <style name="roboto_medium.subtitle_2">
         <item name="android:textSize">14sp</item>
         <item name="lineHeight">24sp</item>
@@ -94,6 +112,16 @@
         <item name="textAllCaps">true</item>
     </style>
 
+    <style name="roboto_bold.txt_medium">
+        <item name="android:textSize">14sp</item>
+        <item name="lineHeight">16sp</item>
+        <item name="android:letterSpacing">0.05</item>
+    </style>
+
+    <style name="roboto_bold.txt_medium.all_caps">
+        <item name="textAllCaps">true</item>
+    </style>
+
     <style name="roboto_medium.body_2">
         <item name="android:textSize">14sp</item>
         <item name="lineHeight">20sp</item>
@@ -101,6 +129,12 @@
     </style>
 
     <style name="roboto_medium.caption">
+        <item name="android:textSize">12sp</item>
+        <item name="lineHeight">16sp</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+
+    <style name="roboto_bold.caption">
         <item name="android:textSize">12sp</item>
         <item name="lineHeight">16sp</item>
         <item name="android:letterSpacing">0.02</item>
