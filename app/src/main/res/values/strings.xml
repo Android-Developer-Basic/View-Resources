@@ -21,4 +21,6 @@
     <string name="password">Password</string>
     <string name="reset_my_password">Reset my password</string>
     <string name="email_test">e.g. john@gmail.com</string>
+    <string name="cart_title">Cart</string>
+    <string name="cart_app_bar_tag_heart">Tag heart</string>
 </resources>
