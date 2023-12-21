@@ -47,6 +47,149 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutAllInfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/buttonPayNow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:id="@+id/layoutOrderTotal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/layoutSubTotal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/textViewOrderTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/cart_your_order_total"
+                    android:textAlignment="viewStart"
+                    style="@style/Widget.AppCompat.TextView.OrderTotal"/>
+
+                <TextView
+                    android:id="@+id/textViewOrderTotalPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/cart_example_order_total_price"
+                    android:textAlignment="textEnd"
+                    style="@style/Widget.AppCompat.TextView.OrderTotal"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutSubTotal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/layoutShipping"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layoutOrderTotal">
+
+                <TextView
+                    android:id="@+id/textViewSubTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/cart_subtotal"
+                    android:textAlignment="viewStart"
+                    style="@style/Widget.AppCompat.TextView.CartInfo"/>
+
+                <TextView
+                    android:id="@+id/textViewSubTotalPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/cart_subtotal_example_price"
+                    android:textAlignment="textEnd"
+                    style="@style/Widget.AppCompat.TextView.CartInfo"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutShipping"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/layoutTax"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layoutSubTotal">
+
+                <TextView
+                    android:id="@+id/textViewShipping"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/cart_shipping"
+                    android:textAlignment="viewStart"
+                    style="@style/Widget.AppCompat.TextView.CartInfo"/>
+
+                <TextView
+                    android:id="@+id/textViewShippingPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/cart_shipping_example_price"
+                    android:textAlignment="textEnd"
+                    style="@style/Widget.AppCompat.TextView.CartInfo"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutTax"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layoutShipping">
+
+                <TextView
+                    android:id="@+id/textViewTax"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/cart_tax"
+                    android:textAlignment="viewStart"
+                    style="@style/Widget.AppCompat.TextView.CartInfo"/>
+
+                <TextView
+                    android:id="@+id/textViewTaxPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/cart_tax_example_price"
+                    android:textAlignment="textEnd"
+                    style="@style/Widget.AppCompat.TextView.CartInfo"/>
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

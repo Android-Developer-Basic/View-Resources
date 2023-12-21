@@ -36,5 +36,7 @@
         <item name="cartButtonPayNow">@color/Secondary</item>
         <item name="cartButtonPayNowIconTint">@color/Background</item>
         <item name="cartButtonPayNowTextColor">@color/Background</item>
+        <item name="cartTextOrderTotalColor">@color/Tretiary</item>
+        <item name="cartTextInfoColor">@color/Main</item>
     </style>
 </resources>

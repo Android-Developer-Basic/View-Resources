@@ -86,6 +86,16 @@
         <item name="android:textAppearance">@style/roboto_medium.h6_headline</item>
     </style>
 
+    <style name="Widget.AppCompat.TextView.OrderTotal">
+        <item name="android:textAppearance">@style/roboto_bold.h6_headline</item>
+        <item name="android:textColor">?attr/cartTextOrderTotalColor</item>
+    </style>
+
+    <style name="Widget.AppCompat.TextView.CartInfo">
+        <item name="android:textAppearance">@style/roboto_medium.body_1</item>
+        <item name="android:textColor">?attr/cartTextInfoColor</item>
+    </style>
+
     <!-- Typography -->
 
     <style name="roboto_medium">

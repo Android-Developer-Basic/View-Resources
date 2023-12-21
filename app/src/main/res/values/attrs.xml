@@ -24,4 +24,6 @@
     <attr name="cartButtonPayNow" format="color"/>
     <attr name="cartButtonPayNowIconTint" format="color"/>
     <attr name="cartButtonPayNowTextColor" format="color"/>
+    <attr name="cartTextOrderTotalColor" format="color"/>
+    <attr name="cartTextInfoColor" format="color"/>
 </resources>
