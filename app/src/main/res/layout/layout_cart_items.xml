@@ -78,6 +78,7 @@
                 android:layout_width="22dp"
                 android:layout_height="22dp"
                 android:gravity="center_vertical"
+                android:contentDescription="cart Item Delete"
                 app:icon="@drawable/close" />
 
         </LinearLayout>
