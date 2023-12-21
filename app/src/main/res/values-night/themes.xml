@@ -32,5 +32,9 @@
         <item name="signInTextInputLayoutBoxBackgroundColor">@color/Background</item>
         <item name="signInTextInputLayoutBoxStrokeColor">@color/Icon</item>
         <item name="signInTextInputLayoutColor">@color/Main</item>
+
+        <item name="cartButtonPayNow">@color/Secondary</item>
+        <item name="cartButtonPayNowIconTint">@color/Background</item>
+        <item name="cartButtonPayNowTextColor">@color/Background</item>
     </style>
 </resources>

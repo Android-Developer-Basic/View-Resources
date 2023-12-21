@@ -77,6 +77,15 @@
         <item name="android:textColor">?attr/signInTextInputLayoutColor</item>
     </style>
 
+    <style name="Widget.Material3.Button.PayNow">
+        <item name="android:padding">16dp</item>
+        <item name="elevation">8dp</item>
+        <item name="iconTint">?attr/cartButtonPayNowIconTint</item>
+        <item name="backgroundTint">?attr/cartButtonPayNow</item>
+        <item name="android:textColor">?attr/cartButtonPayNowTextColor</item>
+        <item name="android:textAppearance">@style/roboto_medium.h6_headline</item>
+    </style>
+
     <!-- Typography -->
 
     <style name="roboto_medium">
