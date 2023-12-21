@@ -96,6 +96,11 @@
         <item name="android:textColor">?attr/cartTextInfoColor</item>
     </style>
 
+    <style name="Widget.AppCompat.TextView.CartCounting">
+        <item name="android:textAppearance">@style/roboto_medium.body_2</item>
+        <item name="android:textColor">?attr/cartTextCountingColor</item>
+    </style>
+
     <!-- Typography -->
 
     <style name="roboto_medium">

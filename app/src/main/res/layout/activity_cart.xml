@@ -28,9 +28,25 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
+    <TextView
+        android:id="@+id/textViewCounting"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/cart_items_counting"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contactsTopAppBarLayout"
+        style="@style/Widget.AppCompat.TextView.CartCounting"/>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="0dp"
-        android:layout_height="500dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -40,7 +56,6 @@
             style="@style/Widget.Material3.Button.PayNow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
             android:text="@string/cart_pay_now"
             app:icon="@drawable/wallet"
             app:iconPadding="16dp"
@@ -52,8 +67,6 @@
             android:id="@+id/layoutAllInfo"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
             app:layout_constraintBottom_toTopOf="@+id/buttonPayNow"
             app:layout_constraintEnd_toEndOf="parent"
@@ -74,21 +87,21 @@
 
                 <TextView
                     android:id="@+id/textViewOrderTotal"
+                    style="@style/Widget.AppCompat.TextView.OrderTotal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/cart_your_order_total"
-                    android:textAlignment="viewStart"
-                    style="@style/Widget.AppCompat.TextView.OrderTotal"/>
+                    android:textAlignment="viewStart" />
 
                 <TextView
                     android:id="@+id/textViewOrderTotalPrice"
+                    style="@style/Widget.AppCompat.TextView.OrderTotal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/cart_example_order_total_price"
-                    android:textAlignment="textEnd"
-                    style="@style/Widget.AppCompat.TextView.OrderTotal"/>
+                    android:textAlignment="textEnd" />
 
             </LinearLayout>
 
@@ -106,21 +119,21 @@
 
                 <TextView
                     android:id="@+id/textViewSubTotal"
+                    style="@style/Widget.AppCompat.TextView.CartInfo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/cart_subtotal"
-                    android:textAlignment="viewStart"
-                    style="@style/Widget.AppCompat.TextView.CartInfo"/>
+                    android:textAlignment="viewStart" />
 
                 <TextView
                     android:id="@+id/textViewSubTotalPrice"
+                    style="@style/Widget.AppCompat.TextView.CartInfo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/cart_subtotal_example_price"
-                    android:textAlignment="textEnd"
-                    style="@style/Widget.AppCompat.TextView.CartInfo"/>
+                    android:textAlignment="textEnd" />
 
             </LinearLayout>
 
@@ -140,21 +153,21 @@
 
                 <TextView
                     android:id="@+id/textViewShipping"
+                    style="@style/Widget.AppCompat.TextView.CartInfo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/cart_shipping"
-                    android:textAlignment="viewStart"
-                    style="@style/Widget.AppCompat.TextView.CartInfo"/>
+                    android:textAlignment="viewStart" />
 
                 <TextView
                     android:id="@+id/textViewShippingPrice"
+                    style="@style/Widget.AppCompat.TextView.CartInfo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/cart_shipping_example_price"
-                    android:textAlignment="textEnd"
-                    style="@style/Widget.AppCompat.TextView.CartInfo"/>
+                    android:textAlignment="textEnd" />
 
             </LinearLayout>
 
@@ -172,21 +185,21 @@
 
                 <TextView
                     android:id="@+id/textViewTax"
+                    style="@style/Widget.AppCompat.TextView.CartInfo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/cart_tax"
-                    android:textAlignment="viewStart"
-                    style="@style/Widget.AppCompat.TextView.CartInfo"/>
+                    android:textAlignment="viewStart" />
 
                 <TextView
                     android:id="@+id/textViewTaxPrice"
+                    style="@style/Widget.AppCompat.TextView.CartInfo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/cart_tax_example_price"
-                    android:textAlignment="textEnd"
-                    style="@style/Widget.AppCompat.TextView.CartInfo"/>
+                    android:textAlignment="textEnd" />
 
             </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>

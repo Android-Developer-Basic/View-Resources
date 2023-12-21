@@ -38,5 +38,6 @@
         <item name="cartButtonPayNowTextColor">@color/Background</item>
         <item name="cartTextOrderTotalColor">@color/Tretiary</item>
         <item name="cartTextInfoColor">@color/Main</item>
+        <item name="cartTextCountingColor">@color/Secondary</item>
     </style>
 </resources>
