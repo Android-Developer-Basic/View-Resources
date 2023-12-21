@@ -39,5 +39,7 @@
         <item name="cartTextOrderTotalColor">@color/Tretiary</item>
         <item name="cartTextInfoColor">@color/Main</item>
         <item name="cartTextCountingColor">@color/Secondary</item>
+        <item name="cartTextItemColor">@color/Main</item>
+        <item name="cartItemDeleteButtonColor">@color/Icon</item>
     </style>
 </resources>

@@ -27,4 +27,6 @@
     <attr name="cartTextOrderTotalColor" format="color"/>
     <attr name="cartTextInfoColor" format="color"/>
     <attr name="cartTextCountingColor" format="color"/>
+    <attr name="cartTextItemColor" format="color"/>
+    <attr name="cartItemDeleteButtonColor" format="color"/>
 </resources>
