@@ -29,4 +29,6 @@
     <attr name="cartTextCountingColor" format="color"/>
     <attr name="cartTextItemColor" format="color"/>
     <attr name="cartItemDeleteButtonColor" format="color"/>
+
+    <attr name="divider_color" format="color"/>
 </resources>

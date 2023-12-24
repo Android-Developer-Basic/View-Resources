@@ -41,5 +41,7 @@
         <item name="cartTextCountingColor">@color/Secondary</item>
         <item name="cartTextItemColor">@color/Main</item>
         <item name="cartItemDeleteButtonColor">@color/Icon</item>
+
+        <item name="divider_color">@color/Main</item>
     </style>
 </resources>
