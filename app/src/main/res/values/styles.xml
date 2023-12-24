@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" >
+    <style name="Widget.AppCompat.Toolbar.Contacts" parent="Widget.Material3.Toolbar">
+        <item name="android:background">?attr/appBarContactsColor</item>
+        <item name="navigationIconTint">?attr/appBarIconColor</item>
+        <item name="titleTextColor">?attr/appBarTitleColor</item>
+        <item name="titleTextAppearance">@style/TextAppearance.AppBar.TitleLarge</item>
+    </style>
+
+    <style name="TextAppearance.AppBar.TitleLarge" parent="TextAppearance.Material3.TitleLarge">
+        <item name="fontFamily">@font/i@font/roboto_medium</item>
+    <item name="android:fontFamily">@font/inter_medium</item>
+    </style>
+
+</resources>
