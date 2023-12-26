@@ -23,7 +23,7 @@
             app:title="@string/contacts_title"
             app:navigationIcon="@drawable/arrow_left"
             app:menu="@menu/contacts_app_bar"
-            style="@style/Widget.App.Toolbar.Contacts"/>
+            style="@style/Widget.App.Toolbar.Default"/>
 
     </com.google.android.material.appbar.AppBarLayout>
 

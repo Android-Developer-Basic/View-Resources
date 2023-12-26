@@ -4,10 +4,10 @@
 
     <item
         android:id="@+id/contactsTopAppBarSearch"
-        android:icon="@drawable/magnify"
-        app:showAsAction="ifRoom"
+        android:icon="@drawable/tag_heart"
+        android:title="@string/cart_app_bar_tag_heart"
         android:iconTint="?attr/appBarIconColor"
-        android:title="@string/contacts_app_bar_search" />
+        app:showAsAction="ifRoom"/>
 
     <item
         android:id="@+id/contactsTopAppBarMore"

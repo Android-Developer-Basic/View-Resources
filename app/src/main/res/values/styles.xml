@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <style name="Widget.App.Toolbar.Contacts" parent="Widget.Material3.Toolbar">
+    <style name="Widget.App.Toolbar.Default" parent="Widget.Material3.Toolbar">
         <item name="android:background">?attr/appBarContactsColor</item>
         <item name="navigationIconTint">?attr/appBarIconColor</item>
         <item name="titleTextColor">?attr/appBarTitleColor</item>
@@ -75,6 +75,50 @@
         <item name="hintTextAppearance">@style/roboto_medium.caption</item>
         <item name="android:textAppearance">@style/roboto_medium.body_1</item>
         <item name="android:textColor">?attr/signInTextInputLayoutColor</item>
+    </style>
+
+    <style name="Widget.Material3.Button.PayNow">
+        <item name="android:padding">16dp</item>
+        <item name="elevation">8dp</item>
+        <item name="iconTint">?attr/cartButtonPayNowIconTint</item>
+        <item name="backgroundTint">?attr/cartButtonPayNow</item>
+        <item name="android:textColor">?attr/cartButtonPayNowTextColor</item>
+        <item name="android:textAppearance">@style/roboto_medium.h6_headline</item>
+    </style>
+
+    <style name="Widget.AppCompat.TextView.OrderTotal">
+        <item name="android:textAppearance">@style/roboto_bold.h6_headline</item>
+        <item name="android:textColor">?attr/cartTextOrderTotalColor</item>
+    </style>
+
+    <style name="Widget.AppCompat.TextView.CartInfo">
+        <item name="android:textAppearance">@style/roboto_medium.body_1</item>
+        <item name="android:textColor">?attr/cartTextInfoColor</item>
+    </style>
+
+    <style name="Widget.AppCompat.TextView.CartCounting">
+        <item name="android:textAppearance">@style/roboto_medium.body_2</item>
+        <item name="android:textColor">?attr/cartTextCountingColor</item>
+    </style>
+
+    <style name="RoundedSquare">
+        <item name="cornerSize">10%</item>
+    </style>
+
+    <style name="Widget.AppCompat.TextView.CartItemTitle">
+        <item name="android:textAppearance">@style/roboto_medium.body_1</item>
+        <item name="android:textColor">?attr/cartTextItemColor</item>
+    </style>
+
+    <style name="Widget.AppCompat.TextView.CartItemCaption">
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:textAppearance">@style/roboto_medium.caption</item>
+        <item name="android:textColor">?attr/cartTextItemColor</item>
+    </style>
+
+    <style name="Widget.Material3.Button.IconButton.CartDeleteButton">
+        <item name="android:padding">0dp</item>
+        <item name="iconTint">?attr/cartItemDeleteButtonColor</item>
     </style>
 
     <!-- Typography -->
