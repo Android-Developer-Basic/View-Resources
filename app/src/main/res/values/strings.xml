@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">View &amp; Resources</string>
+    <string name="contacts">Contacts</string>
+    <string name="cart">Cart</string>
+    <string name="dialog">Sign in</string>
+    <string name="cart_title_1">On the top</string>
+    <string name="cart_title_2">Forever Friends</string>
+    <string name="cart_title_3">Prototyping Kit</string>
+    <string name="cart_title_4">Basket $ Coffee</string>
+    <string name="cart_caption">Caption</string>
+    <string name="cart_subtotal">Subtotal</string>
+    <string name="cart_shipping">Shipping</string>
+    <string name="cart_tax">Tax</string>
+    <string name="sign_text">Sign in</string>
+    <string name="sign_reg">REGISTER</string>
+    <string name="sign_email">E-mail</string>
+    <string name="sign_login">e.g. john@gmail.com</string>
+    <string name="sign_password">Password</string>
+    <string name="sign_password_field">******</string>
+    <string name="sign_reset">Reset my password</string>
+
 </resources>
