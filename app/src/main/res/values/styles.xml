@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <style name="TextAppearance.AppCompat.TextBody">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">?attr/textFillColor</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="TextAppearance.AppCompat.TextBody.H1">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="TextAppearance.AppCompat.TextBody.H2">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">?attr/textFillColor</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="TextAppearance.AppCompat.TextBody.H3">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">?attr/textFillColor</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="TextAppearance.AppCompat.TextBody.H4">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">?attr/colorTertiary</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="TextAppearance.AppCompat.TextBody.H5">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/background_title</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.TextBody.H6">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">?attr/colorPrimarySurface</item>
+        <item name="android:gravity">end</item>
+    </style>
+
+    <style name="RegButton">
+        <item name="backgroundTint">?attr/colorButtonNormal</item>
+    </style>
+
+</resources>
