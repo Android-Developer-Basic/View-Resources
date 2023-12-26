@@ -83,9 +83,9 @@
             android:gravity="center_vertical">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/im_cupcake"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/im_cake"
                 android:layout_marginStart="16dp"
                 android:background="@drawable/shape_rounded_images"/>
 
@@ -143,7 +143,7 @@
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        android:src="@drawable/im_close"/>
+                        android:src="@drawable/ic_close"/>
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -157,9 +157,9 @@
             android:gravity="center_vertical">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/im_disc"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/im_disks"
                 android:layout_marginStart="16dp"
                 android:background="@drawable/shape_rounded_images"/>
 
@@ -217,7 +217,7 @@
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        android:src="@drawable/im_close"/>
+                        android:src="@drawable/ic_close"/>
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -231,8 +231,8 @@
             android:gravity="center_vertical">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
                 android:src="@drawable/im_clock"
                 android:layout_marginStart="16dp"
                 android:background="@drawable/shape_rounded_images"/>
@@ -291,7 +291,7 @@
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        android:src="@drawable/im_close"/>
+                        android:src="@drawable/ic_close"/>
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -305,8 +305,8 @@
             android:gravity="center_vertical">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
                 android:src="@drawable/im_cactus"
                 android:layout_marginStart="16dp"
                 android:background="@drawable/shape_rounded_images"/>
@@ -365,7 +365,7 @@
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        android:src="@drawable/im_close"/>
+                        android:src="@drawable/ic_close"/>
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
