@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/search_svg"
+        app:showAsAction="ifRoom"
+        android:title="@string/search_contact" />
+    <item
+        android:id="@+id/more"
+        android:icon="@drawable/more_svg"
+        android:title="@string/more_contact"
+        app:showAsAction="always" />
+</menu>
