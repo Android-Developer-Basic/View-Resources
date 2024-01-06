@@ -200,7 +200,7 @@
             android:inputType="text"/>
     </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/sign_in_btn"
         style="@style/ActivityContactsRegisterBtn"
         android:layout_width="0dp"
@@ -208,6 +208,7 @@
         android:layout_marginBottom="@dimen/gap_large"
         android:layout_marginHorizontal="@dimen/gap_large"
         android:text="@string/register_btn_txt"
+        app:cornerRadius="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent" />

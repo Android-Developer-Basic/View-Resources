@@ -79,7 +79,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password_input" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/sign_in_btn"
         style="@style/ActivitySignInBtn"
         android:layout_width="0dp"
@@ -87,6 +87,7 @@
         android:layout_marginHorizontal="@dimen/gap_large"
         android:layout_marginTop="@dimen/gap_large"
         android:text="@string/sign_in_btn_txt"
+        app:cornerRadius="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/reset_password" />

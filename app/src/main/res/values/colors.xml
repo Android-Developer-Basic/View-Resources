@@ -13,6 +13,8 @@
     <color name="pale_green">#708c2e</color>
     <color name="yellow">#f7f714</color>
     <color name="light_green">#c1fa07</color>
+    <color name="dark_green">#4CAF50</color>
     <color name="grey">#60F4EFF4</color>
     <color name="blue">#07defa</color>
+    <color name="dark_blue">#2196F3</color>
 </resources>
