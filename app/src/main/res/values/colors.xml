@@ -10,11 +10,13 @@
     <color name="sign_in">#263238</color>
     <color name="register">#2980B9</color>
     <color name="red">#FFB50513</color>
-    <color name="pale_green">#708c2e</color>
+    <color name="pale_green">#89ED5B</color>
     <color name="yellow">#f7f714</color>
     <color name="light_green">#c1fa07</color>
     <color name="dark_green">#4CAF50</color>
     <color name="grey">#60F4EFF4</color>
     <color name="blue">#07defa</color>
     <color name="dark_blue">#2196F3</color>
+    <color name="pale_yellow">#FFD76F</color>
+    <color name="signin_dark">#4FB8FF</color>
 </resources>
