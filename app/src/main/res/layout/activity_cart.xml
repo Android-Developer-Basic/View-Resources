@@ -52,7 +52,7 @@
                 style="@style/ActivityCardStyle"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/cart_items_container"
+                app:layout_constraintTop_toTopOf="@+id/cart_items_container"
                 app:picture="@drawable/ic_baseline_close_24"
                 app:price="US$, 1.50"
                 app:title="On the top" />
