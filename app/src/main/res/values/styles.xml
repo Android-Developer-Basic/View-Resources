@@ -1,15 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:android="http://schemas.android.com/apk/res/android" >
-    <style name="Widget.AppCompat.Toolbar.Contacts" parent="Widget.Material3.Toolbar">
-        <item name="android:background">?attr/appBarContactsColor</item>
-        <item name="navigationIconTint">?attr/appBarIconColor</item>
-        <item name="titleTextColor">?attr/appBarTitleColor</item>
-        <item name="titleTextAppearance">@style/TextAppearance.AppBar.TitleLarge</item>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="cartImageView">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">70dp</item>
     </style>
-
-    <style name="TextAppearance.AppBar.TitleLarge" parent="TextAppearance.Material3.TitleLarge">
-        <item name="fontFamily">@font/i@font/roboto_medium</item>
-    <item name="android:fontFamily">@font/inter_medium</item>
+    <style name="cartTextViewTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">?attr/cartTextColor</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:paddingLeft">15dp</item>
     </style>
-
+    <style name="cartTextViewDescription">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">?attr/cartTextColor</item>
+        <item name="android:text">@string/cart_description</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingTop">10dp</item>
+    </style>
+    <style name="cartPrice">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">?attr/cartTextColor</item>
+        <item name="android:text">"$US, "</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="cartPriceValue">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">?attr/cartTextColor</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="crossImage">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:src">@drawable/close</item>
+        <item name="android:paddingTop">10dp</item>
+    </style>
+    <style name="totalOrder">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">?attr/totalOrderColor</item>
+    </style>
+    <style name="totalOrderPosition">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">?attr/cartTextColor</item>
+    </style>
 </resources>

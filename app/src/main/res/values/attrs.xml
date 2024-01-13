@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <attr name="appBarContactsColor" format="color"/>
-    <attr name="appBarIconColor" format="color"/>
-    <attr name="appBarTitleColor" format="color"/>
+    <attr name="menuIconColor" format="color"/>
+    <attr name="crossIconColor" format="color"/>
+    <attr name="cartTextColor" format="color"/>
+    <attr name="cartTitleColor" format="color"/>
+    <attr name="dotLine" format="color"/>
+    <attr name="totalOrderColor" format="color"/>
+    <attr name="walletColor" format="color"/>
+    <attr name="alertTextColor" format="color"/>
+    <attr name="registerTextColor" format="color"/>
+    <attr name="resetPasswordTextColor" format="color"/>
 </resources>
