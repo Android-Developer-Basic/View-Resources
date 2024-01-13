@@ -6,4 +6,334 @@
     android:layout_height="match_parent"
     tools:context=".CartActivity">
 
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/cartTopAppBarLayout"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/cartTopAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            app:title="Cart"
+            app:menu="@menu/card_bar"
+            app:navigationIconTint="@color/white"
+            app:titleTextColor="@color/white" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/cart_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cart_title"
+        android:textColor="?attr/cartTitleColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cartTopAppBarLayout"
+        tools:ignore="MissingConstraints"
+        android:layout_margin="16dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/cart_title"
+        tools:ignore="MissingConstraints"
+        android:layout_margin="16dp">
+
+        <ImageView
+            android:id="@+id/cake_image"
+            style="@style/cartImageView"
+            android:src="@drawable/cake"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/cake_title"
+            style="@style/cartTextViewTitle"
+            android:text="@string/cake_title"
+            app:layout_constraintStart_toEndOf="@id/cake_image"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/cake_description"
+            style="@style/cartTextViewDescription"
+            app:layout_constraintStart_toEndOf="@id/cake_image"
+            app:layout_constraintTop_toBottomOf="@id/cake_title"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/price"
+            style="@style/cartPrice"
+            app:layout_constraintEnd_toStartOf="@+id/cart_price_value" />
+
+        <TextView
+            android:id="@+id/cart_price_value"
+            style="@style/cartPriceValue"
+            android:text="@string/value_1_50"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/cross_button"
+            style="@style/crossImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cake_title" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+        tools:ignore="MissingConstraints"
+        android:layout_margin="16dp">
+
+        <ImageView
+            android:id="@+id/cd_image"
+            style="@style/cartImageView"
+            android:src="@drawable/cd"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/cd_title"
+            style="@style/cartTextViewTitle"
+            android:text="@string/cd_title"
+            app:layout_constraintStart_toEndOf="@id/cd_image"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/cd_description"
+            style="@style/cartTextViewDescription"
+            app:layout_constraintStart_toEndOf="@id/cd_image"
+            app:layout_constraintTop_toBottomOf="@id/cd_title"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/priceCd"
+            style="@style/cartPrice"
+            app:layout_constraintEnd_toStartOf="@+id/cart_price_value_cd" />
+
+        <TextView
+            android:id="@+id/cart_price_value_cd"
+            style="@style/cartPriceValue"
+            android:text="@string/value_4_50"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/cross_button_cd"
+            style="@style/crossImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cd_title" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
+        tools:ignore="MissingConstraints"
+        android:layout_margin="16dp">
+
+        <ImageView
+            android:id="@+id/clock_image"
+            style="@style/cartImageView"
+            android:src="@drawable/clock"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/clock_title"
+            style="@style/cartTextViewTitle"
+            android:text="@string/clock_title"
+            app:layout_constraintStart_toEndOf="@id/clock_image"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/clock_description"
+            style="@style/cartTextViewDescription"
+            app:layout_constraintStart_toEndOf="@id/clock_image"
+            app:layout_constraintTop_toBottomOf="@id/clock_title"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/price_clock"
+            style="@style/cartPrice"
+            app:layout_constraintEnd_toStartOf="@+id/cart_price_value_clock" />
+
+        <TextView
+            android:id="@+id/cart_price_value_clock"
+            style="@style/cartPriceValue"
+            android:text="@string/value_8_00"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/cross_button_clock"
+            style="@style/crossImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/clock_title" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4"
+        tools:ignore="MissingConstraints"
+        android:layout_margin="16dp">
+
+        <ImageView
+            android:id="@+id/coffee_image"
+            style="@style/cartImageView"
+            android:src="@drawable/coffee"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/coffee_title"
+            style="@style/cartTextViewTitle"
+            android:text="@string/coffee_title"
+            app:layout_constraintStart_toEndOf="@id/coffee_image"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/coffee_description"
+            style="@style/cartTextViewDescription"
+            app:layout_constraintStart_toEndOf="@id/coffee_image"
+            app:layout_constraintTop_toBottomOf="@id/coffee_title"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/price_clock_coffee"
+            style="@style/cartPrice"
+            app:layout_constraintEnd_toStartOf="@+id/cart_price_value_coffee" />
+
+        <TextView
+            android:id="@+id/cart_price_value_coffee"
+            style="@style/cartPriceValue"
+            android:text="@string/value_22_00"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/cross_button_coffee"
+            style="@style/crossImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/coffee_title" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/dotter_line"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/dotter_line"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout5"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="16dp"/>
+
+    <TextView
+        android:id="@+id/total_title"
+        style="@style/totalOrder"
+        android:text="@string/your_order_total"
+        app:layout_constraintTop_toBottomOf="@+id/dotter_line"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/total_value"
+        style="@style/totalOrder"
+        android:text="@string/total_41_24"
+        app:layout_constraintTop_toBottomOf="@+id/dotter_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/subtotal"
+        style="@style/totalOrderPosition"
+        android:layout_marginTop="10dp"
+        android:text="@string/subtotal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/total_title"
+        tools:ignore="MissingConstraints"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/subtotal_value"
+        style="@style/totalOrderPosition"
+        android:layout_marginTop="10dp"
+        android:text="@string/subtotal_36_00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/total_title"
+        tools:ignore="MissingConstraints"
+        android:layout_marginEnd="16dp"/>
+
+    <TextView
+        android:id="@+id/shipping"
+        style="@style/totalOrderPosition"
+        android:text="@string/shipping"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subtotal"
+        tools:ignore="MissingConstraints"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/sipping_value"
+        style="@style/totalOrderPosition"
+        android:text="@string/shipping_2_00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subtotal_value"
+        tools:ignore="MissingConstraints"
+        android:layout_marginEnd="16dp"/>
+
+    <TextView
+        android:id="@+id/tax"
+        style="@style/totalOrderPosition"
+        android:text="@string/tax"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shipping"
+        tools:ignore="MissingConstraints"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/tax_value"
+        style="@style/totalOrderPosition"
+        android:text="@string/tax_3_50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sipping_value"
+        tools:ignore="MissingConstraints"
+        android:layout_marginEnd="16dp"/>
+
+    <Button
+        android:id="@+id/pay"
+        style="@style/payButton"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:icon="@drawable/wallet"
+        app:iconTint="?attr/walletColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/shape"
+        android:text="@string/pay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        android:layout_margin="16dp"/>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
