@@ -4,6 +4,7 @@ import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.os.PersistableBundle
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
@@ -11,6 +12,7 @@ import android.widget.Button
 import android.widget.Spinner
 import android.widget.Toast
 import android.widget.Switch
+import androidx.annotation.LayoutRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.datastore.core.DataStore
 import androidx.datastore.core.Serializer
@@ -18,37 +20,74 @@ import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.preferencesDataStore
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
+import kotlinx.serialization.Serializable
+import kotlinx.serialization.json.Json
+import kotlinx.serialization.decodeFromString
+import kotlinx.serialization.encodeToString
 
-val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "settings")
 enum class Themes {
     SYSTEM, LIGHT, DARK
 }
 
+@Serializable
 data class UserPreferencesStorage (var theme:Themes = Themes.SYSTEM)
 
 object UserPreferences {
-    private val preferences = UserPreferencesStorage()
+    private const val USER_PREFERENCES= "UserPrefs"
+    private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "settings.dat")
+    private var preferences = UserPreferencesStorage()
+    init {
+        load()
+    }
     fun setTheme(newTheme: Themes) {
         preferences.theme=newTheme
     }
     fun getTheme() = preferences.theme
 
     fun store() {
-        //TODO
+        val json=Json.encodeToString(preferences)
+        Context.dataStore.edit { settings ->
+            settings[USER_PREFERENCES] = json
+        }
     }
 
     private fun load() {
-
+        preferences=Json.decodeFromString<UserPreferencesStorage>(json)
     }
 }
 
-class MainActivity: AppCompatActivity(R.layout.activity_main) {
-
-    val preferences=UserPreferences
+open class ActivityHelper(contentLayoutId:Int=0): AppCompatActivity(contentLayoutId) {
+    private val preferences=UserPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
         loadTheme()
         super.onCreate(savedInstanceState)
+    }
+
+    private fun loadTheme() {
+        when (preferences.getTheme()) {
+            Themes.DARK -> setTheme(R.style.Theme_ThemeSwitcher_Dark)
+            Themes.LIGHT -> setTheme(R.style.Theme_ThemeSwitcher_Light)
+        }
+    }
+
+   open fun switchTheme(newTheme:Themes) {
+        if (preferences.getTheme() == newTheme ) {
+            return
+        }
+        preferences.setTheme(newTheme)
+        preferences.store()
+        recreate()
+    }
+
+   open fun currentTheme()=preferences.getTheme()
+}
+
+class MainActivity: ActivityHelper(R.layout.activity_main) {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
         findViewById<Button>(R.id.xml_view_button).setOnClickListener {
             startActivity(Intent(this, MainXMLActivity::class.java))
         }
@@ -77,7 +116,7 @@ class MainActivity: AppCompatActivity(R.layout.activity_main) {
                         switchTheme(Themes.SYSTEM)
                     }
                 }
-                when(preferences.getTheme()) {
+                when (currentTheme()) {
                     Themes.LIGHT -> setSelection(1)
                     Themes.DARK -> setSelection(2)
                     else -> setSelection(0)
@@ -85,22 +124,8 @@ class MainActivity: AppCompatActivity(R.layout.activity_main) {
             }
         }
     }
-
-    private fun loadTheme() {
-        when (preferences.getTheme()) {
-            Themes.DARK -> setTheme(R.style.Theme_ThemeSwitcher_Dark)
-            Themes.LIGHT -> setTheme(R.style.Theme_ThemeSwitcher_Light)
-        }
-    }
-
-    private fun switchTheme(newTheme:Themes) {
-        if (preferences.getTheme() == newTheme ) {
-            return
-        }
-        preferences.setTheme(newTheme)
-        recreate()
-    }
-
+    override fun switchTheme(newTheme: Themes)=super.switchTheme(newTheme)
+    override fun currentTheme()=super.currentTheme()
 }
 
 
@@ -119,7 +144,7 @@ class MainActivity: AppCompatActivity(R.layout.activity_main) {
 
          }*/
 
-class MainXMLActivity : AppCompatActivity() {
+class MainXMLActivity : ActivityHelper() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_xml)
