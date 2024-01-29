@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">View &amp; Resources</string>
     <string name="open_xml_view">Open XML View</string>
+    <string name="input_name">Name</string>
+    <string-array name="themes">
+        <item>System</item>
+        <item>Light</item>
+        <item>Dark</item>
+    </string-array>
 </resources>
