@@ -130,7 +130,11 @@ open class ActivityHelper(contentLayoutId:Int=0): AppCompatActivity(contentLayou
 
     fun currentScreen() = preferences.getCurrentScreen()
     fun switchCurrentScreen(newScreen:Screens) {
+        if (preferences.getCurrentScreen() == newScreen ) {
+            return
+        }
         preferences.setCurrentScreen(newScreen)
+        preferences.store(this)
     }
 }
 
@@ -183,14 +187,17 @@ class MainActivity: ActivityHelper(R.layout.activity_main) {
 class MainXMLActivity : ActivityHelper() {
 
     private fun showContacts() {
+        switchCurrentScreen(Screens.CONTACTS)
         startActivity(Intent(this, ContactsActivity::class.java))
     }
 
     private fun showCart() {
+        switchCurrentScreen(Screens.CART)
         startActivity(Intent(this, CartActivity::class.java))
     }
 
     private fun showDialog() {
+        switchCurrentScreen(Screens.DIALOG)
         MaterialAlertDialogBuilder(this)
             .setView(R.layout.dialog_signin)
             .show()
@@ -198,13 +205,13 @@ class MainXMLActivity : ActivityHelper() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main_xml)
         when (currentScreen()) {
             Screens.CONTACTS -> startActivity(Intent(this, ContactsActivity::class.java))
             Screens.CART -> startActivity(Intent(this, CartActivity::class.java))
             Screens.DIALOG -> showDialog()
-            else ->
+            else -> {}
         }
-        setContentView(R.layout.activity_main_xml)
         findViewById<Button>(R.id.contacts_button).setOnClickListener {
             showContacts()
         }
