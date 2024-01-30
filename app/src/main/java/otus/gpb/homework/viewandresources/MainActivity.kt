@@ -1,10 +1,13 @@
 package otus.gpb.homework.viewandresources
 
+import android.annotation.SuppressLint
 import android.app.Activity
+import android.app.Application
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.os.PersistableBundle
+import android.util.Log
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
@@ -18,8 +21,16 @@ import androidx.datastore.core.DataStore
 import androidx.datastore.core.Serializer
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.core.edit
+import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.datastore.preferences.preferencesDataStore
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
+import kotlinx.coroutines.cancel
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.collect
+import kotlinx.coroutines.flow.firstOrNull
+import kotlinx.coroutines.flow.map
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.decodeFromString
@@ -29,37 +40,71 @@ enum class Themes {
     SYSTEM, LIGHT, DARK
 }
 
+enum class Screens {
+    NONE, CONTACTS, CART, DIALOG
+}
+
 @Serializable
-data class UserPreferencesStorage (var theme:Themes = Themes.SYSTEM)
+data class UserPreferencesStorage (var theme:Themes = Themes.SYSTEM, var screen:Screens=Screens.NONE)
 
 object UserPreferences {
-    private const val USER_PREFERENCES= "UserPrefs"
+
+    private val tag = "UserPreferences"
+    private val preferencesTag= stringPreferencesKey("JSON_user_prefs")
     private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "settings.dat")
     private var preferences = UserPreferencesStorage()
-    init {
+    /*init {
         load()
-    }
+    }*/
     fun setTheme(newTheme: Themes) {
         preferences.theme=newTheme
     }
     fun getTheme() = preferences.theme
 
-    fun store() {
+    fun setCurrentScreen(currentScreen: Screens) {
+        preferences.screen=currentScreen
+    }
+
+    fun getCurrentScreen() = preferences.screen
+
+    fun store(context: Context) {
         val json=Json.encodeToString(preferences)
-        Context.dataStore.edit { settings ->
-            settings[USER_PREFERENCES] = json
+        runBlocking {
+            launch {
+                context.dataStore.edit { settings ->
+                    settings[preferencesTag] = json
+                }
+            }
         }
     }
 
-    private fun load() {
-        preferences=Json.decodeFromString<UserPreferencesStorage>(json)
+    fun load(context: Context) {
+        //val context: Context = MainApplicationInstance().getApplicationInstance()
+        runBlocking {
+            val json: Flow<String> = context.dataStore.data
+                .map { settings ->
+                    // No type safety.
+                    settings[preferencesTag] ?: ""
+                }
+            json.firstOrNull().also {
+                try {
+                    if (it!=null) {
+                        preferences = Json.decodeFromString<UserPreferencesStorage>(it)
+                    }
+                } catch (e: Exception) {
+                    Log.d(tag, e.message.toString())
+                }
+            }
+        }
     }
 }
 
 open class ActivityHelper(contentLayoutId:Int=0): AppCompatActivity(contentLayoutId) {
+
     private val preferences=UserPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        preferences.load(this)
         loadTheme()
         super.onCreate(savedInstanceState)
     }
@@ -68,6 +113,7 @@ open class ActivityHelper(contentLayoutId:Int=0): AppCompatActivity(contentLayou
         when (preferences.getTheme()) {
             Themes.DARK -> setTheme(R.style.Theme_ThemeSwitcher_Dark)
             Themes.LIGHT -> setTheme(R.style.Theme_ThemeSwitcher_Light)
+            else -> setTheme(R.style.Theme_ViewResources)
         }
     }
 
@@ -76,11 +122,16 @@ open class ActivityHelper(contentLayoutId:Int=0): AppCompatActivity(contentLayou
             return
         }
         preferences.setTheme(newTheme)
-        preferences.store()
+        preferences.store(this)
         recreate()
     }
 
-   open fun currentTheme()=preferences.getTheme()
+    open fun currentTheme()=preferences.getTheme()
+
+    fun currentScreen() = preferences.getCurrentScreen()
+    fun switchCurrentScreen(newScreen:Screens) {
+        preferences.setCurrentScreen(newScreen)
+    }
 }
 
 class MainActivity: ActivityHelper(R.layout.activity_main) {
@@ -126,40 +177,44 @@ class MainActivity: ActivityHelper(R.layout.activity_main) {
     }
     override fun switchTheme(newTheme: Themes)=super.switchTheme(newTheme)
     override fun currentTheme()=super.currentTheme()
+
 }
 
-
-        /* suspend private fun saveTheme(isDarkTheme: Boolean) {
-             dataStore.edit { settings ->
-                 settings[this.PREF_IS_DARK_THEME] = isDarkTheme
-             }
-         }
-
-         private fun loadTheme(): Boolean {
-             val exampleCounterFlow: Flow<Int> = context.dataStore.data
-                 .map { preferences ->
-                     // No type safety.
-                     preferences[EXAMPLE_COUNTER] ?: 0
-                 }
-
-         }*/
-
 class MainXMLActivity : ActivityHelper() {
+
+    private fun showContacts() {
+        startActivity(Intent(this, ContactsActivity::class.java))
+    }
+
+    private fun showCart() {
+        startActivity(Intent(this, CartActivity::class.java))
+    }
+
+    private fun showDialog() {
+        MaterialAlertDialogBuilder(this)
+            .setView(R.layout.dialog_signin)
+            .show()
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        when (currentScreen()) {
+            Screens.CONTACTS -> startActivity(Intent(this, ContactsActivity::class.java))
+            Screens.CART -> startActivity(Intent(this, CartActivity::class.java))
+            Screens.DIALOG -> showDialog()
+            else ->
+        }
         setContentView(R.layout.activity_main_xml)
         findViewById<Button>(R.id.contacts_button).setOnClickListener {
-            startActivity(Intent(this, ContactsActivity::class.java))
+            showContacts()
         }
 
         findViewById<Button>(R.id.cart_button).setOnClickListener {
-            startActivity(Intent(this, CartActivity::class.java))
+            showCart()
         }
 
         findViewById<Button>(R.id.signin_button).setOnClickListener {
-            MaterialAlertDialogBuilder(this)
-                .setView(R.layout.dialog_signin)
-                .show()
+            showDialog()
         }
     }
 }
