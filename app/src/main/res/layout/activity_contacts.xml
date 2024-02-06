@@ -6,9 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".ContactsActivity">
 
-    <include layout="@layout/titlebar"/>
-
-
     <com.google.android.material.textfield.TextInputLayout
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
