@@ -12,11 +12,13 @@ class ContactsActivity : ActivityHelper() {
         setContentView(R.layout.activity_contacts)
 
         // showing the back button in action bar
+        setSupportActionBar(findViewById(R.id.toolbar))
+
         val actionBar = supportActionBar
         requireNotNull(actionBar==null)
         actionBar!!.setDisplayHomeAsUpEnabled(true)
-        //actionBar.setDisplayUseLogoEnabled(true)
-        //actionBar.setDisplayShowHomeEnabled(true)
+        actionBar.setDisplayUseLogoEnabled(true)
+        actionBar.setDisplayShowHomeEnabled(true)
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
