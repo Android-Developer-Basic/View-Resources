@@ -65,7 +65,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/CartItemCaption"
+                android:id="@+id/textViewCartItemCaption"
                 style="@style/Widget.AppCompat.TextView.CartItemCaption"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
