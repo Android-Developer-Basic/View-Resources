@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="Background">#FF121212</color>
-    <color name="EditStrokeColor">#29E0E0E0</color>
-    <color name="ResetPassword">#B8E0E0E0</color>
     <color name="Main">#FFE0E0E0</color>
     <color name="Accent">#FFF47265</color>
     <color name="Primary">#FF4FB8FF</color>

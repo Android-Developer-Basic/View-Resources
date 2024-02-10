@@ -63,7 +63,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             android:hint="@string/email"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.SigIn">
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.SignIn">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/textEditEmailAddress"
@@ -84,7 +84,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textFieldEmailAddress"
             android:hint="@string/password"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.SigIn">
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.SignIn">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/textEditPassword"

@@ -14,6 +14,7 @@
 
     <attr name="signInTitleTextColor" format="color"/>
     <attr name="signInRegisterTextColor" format="color"/>
+    <attr name="signInResetTextColor" format="color"/>
     <attr name="signInBntColor" format="color"/>
     <attr name="signInBntTextColor" format="color"/>
 
