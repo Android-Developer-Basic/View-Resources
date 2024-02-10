@@ -1,16 +1,47 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.ViewResources" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.ViewResources" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_200</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorPrimary">@color/Primary</item>
+        <item name="colorPrimaryVariant">@color/Primary</item>
+        <!--<item name="colorOnPrimary">@color/Background</item>-->
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_200</item>
-        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorSecondary">@color/Secondary</item>
+        <item name="colorSecondaryVariant">@color/Secondary</item>
+        <item name="colorOnSecondary">@color/Main</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor">@color/Background</item>
         <!-- Customize your theme here. -->
+
+        <item name="appBarContactsColor">@color/Shade</item>
+        <item name="appBarIconColor">@color/Icon</item>
+        <item name="appBarTitleColor">@color/Main</item>
+
+        <item name="registerButtonColor">@color/Primary</item>
+        <item name="registerButtonTextColor">@color/Background</item>
+
+        <item name="contactsTextInputLayoutBoxBackgroundColor">@color/Shade</item>
+        <item name="contactsTextInputLayoutEndIconTint">@color/Icon</item>
+        <item name="contactsTextInputLayoutEditTextColor">@color/Main</item>
+
+        <item name="signInTitleTextColor">@color/Main</item>
+        <item name="signInRegisterTextColor">@color/Primary</item>
+        <item name="signInResetTextColor">@color/Main</item>
+        <item name="signInBntColor">@color/Primary</item>
+        <item name="signInBntTextColor">@color/Background</item>
+        <item name="signInTextInputLayoutBoxBackgroundColor">@color/Background</item>
+        <item name="signInTextInputLayoutBoxStrokeColor">@color/Icon</item>
+        <item name="signInTextInputLayoutColor">@color/Main</item>
+
+        <item name="cartButtonPayNow">@color/Secondary</item>
+        <item name="cartButtonPayNowIconTint">@color/Background</item>
+        <item name="cartButtonPayNowTextColor">@color/Background</item>
+        <item name="cartTextOrderTotalColor">@color/Tretiary</item>
+        <item name="cartTextInfoColor">@color/Main</item>
+        <item name="cartTextCountingColor">@color/Secondary</item>
+        <item name="cartTextItemColor">@color/Main</item>
+        <item name="cartItemDeleteButtonColor">@color/Icon</item>
+
+        <item name="divider_color">@color/Main</item>
     </style>
 </resources>

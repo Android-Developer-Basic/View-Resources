@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="appBarContactsColor" format="color"/>
+    <attr name="appBarIconColor" format="color"/>
+    <attr name="appBarTitleColor" format="color"/>
+
+    <attr name="registerButtonColor" format="color"/>
+    <attr name="registerButtonTextColor" format="color"/>
+
+    <attr name="contactsTextInputLayoutBoxBackgroundColor" format="color"/>
+    <attr name="contactsTextInputLayoutBoxStrokeColor" format="color"/>
+    <attr name="contactsTextInputLayoutEndIconTint" format="color"/>
+    <attr name="contactsTextInputLayoutEditTextColor" format="color"/>
+
+    <attr name="signInTitleTextColor" format="color"/>
+    <attr name="signInRegisterTextColor" format="color"/>
+    <attr name="signInResetTextColor" format="color"/>
+    <attr name="signInBntColor" format="color"/>
+    <attr name="signInBntTextColor" format="color"/>
+
+    <attr name="signInTextInputLayoutBoxBackgroundColor" format="color"/>
+    <attr name="signInTextInputLayoutBoxStrokeColor" format="color"/>
+    <attr name="signInTextInputLayoutColor" format="color"/>
+
+    <attr name="cartButtonPayNow" format="color"/>
+    <attr name="cartButtonPayNowIconTint" format="color"/>
+    <attr name="cartButtonPayNowTextColor" format="color"/>
+    <attr name="cartTextOrderTotalColor" format="color"/>
+    <attr name="cartTextInfoColor" format="color"/>
+    <attr name="cartTextCountingColor" format="color"/>
+    <attr name="cartTextItemColor" format="color"/>
+    <attr name="cartItemDeleteButtonColor" format="color"/>
+
+    <attr name="divider_color" format="color"/>
+</resources>
