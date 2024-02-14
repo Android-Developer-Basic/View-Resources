@@ -5,12 +5,14 @@ import android.app.Activity
 import android.app.Application
 import android.content.Context
 import android.content.Intent
+import android.os.Build
 import android.os.Bundle
 import android.os.PersistableBundle
 import android.util.Log
 import android.view.MenuItem
 import android.view.View
 import android.widget.AdapterView
+import android.widget.AdapterView.OnItemSelectedListener
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
 import android.widget.Button
@@ -18,7 +20,9 @@ import android.widget.Spinner
 import android.widget.Toast
 import android.widget.Switch
 import androidx.annotation.LayoutRes
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.ListPopupWindow
 import androidx.datastore.core.DataStore
 import androidx.datastore.core.Serializer
 import androidx.datastore.preferences.core.Preferences
@@ -166,6 +170,7 @@ open class ActivityHelper(contentLayoutId:Int=0): AppCompatActivity(contentLayou
 
 class MainActivity: ActivityHelper(R.layout.activity_main) {
 
+    @RequiresApi(Build.VERSION_CODES.Q)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -186,7 +191,15 @@ class MainActivity: ActivityHelper(R.layout.activity_main) {
                 android.R.layout.simple_dropdown_item_1line
             ).also { adapter ->
                 this.setAdapter(adapter)
-                this.onItemClickListener=object: AutoCompleteTextView
+                this.inputMethodMode = android.widget.ListPopupWindow.INPUT_METHOD_NOT_NEEDED
+                this.onItemClickListener = AdapterView.OnItemClickListener { parent, view, pos, id ->
+                    val t= parent.getItemIdAtPosition(pos)
+                    when (pos) {
+                        1 -> switchTheme(Themes.LIGHT)
+                        2 -> switchTheme(Themes.DARK)
+                        else -> switchTheme(Themes.SYSTEM)
+                    }
+                }
    /*             this.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
                     override fun onItemSelected(parent: AdapterView<*>, view: View?, pos: Int, id: Long) {
                         // An item is selected. You can retrieve the selected item using
@@ -216,6 +229,7 @@ class MainActivity: ActivityHelper(R.layout.activity_main) {
 
     override fun switchMode(newMode: Modes)=super.switchMode(newMode)
 }
+
 
 class MainXMLActivity : ActivityHelper() {
 
