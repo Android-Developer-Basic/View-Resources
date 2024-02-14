@@ -2,21 +2,13 @@
     <style name="Theme.ViewResources" parent="Theme.ThemeSwitcher.Light"/>
 
     <style name="ActionBarStyle" parent="Widget.AppCompat.ActionBar.Solid">
-        <item name="android:titleTextStyle">@style/AppTheme.Toolbar.TitleText</item>
-        <item name="titleTextStyle">@style/AppTheme.Toolbar.TitleText</item>
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:textColorPrimary">?attr/colorOnPrimary</item>
+        <item name="android:homeAsUpIndicator">@drawable/arrow_left</item>
     </style>
 
-    <style name="AppTheme.Toolbar.TitleText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
-        <item name="android:textSize">40sp</item>
-        <item name="android:textColorPrimary">@color/red</item>
-        <item name="android:color">@color/red</item>
-        <item name="android:textColorSecondary">@color/red</item>
-        <item name="android:actionMenuTextColor">@color/red</item>
-        <item name="android:text">@color/red</item>
-    </style>
-
-    <!-- Light Theme -->
-    <style name="Theme.ThemeSwitcher.Light" parent="Theme.AppCompat.Light.NoActionBar">
+       <!-- Light Theme -->
+    <style name="Theme.ThemeSwitcher.Light" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your light theme here -->
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/light_primary</item>
@@ -27,15 +19,13 @@
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
-<!--         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item> -->
-        <!-- Customize your theme here. -->
         <item name="colorOnActionBar">?attr/colorOnPrimary</item>
-
-
+        <item name="buttonStyle">@style/MainButtons</item>
+        <item name="actionButtonStyle">@style/MainButtons</item>
     </style>
 
     <!-- Dark Theme -->
-    <style name="Theme.ThemeSwitcher.Dark" parent="Theme.AppCompat.DayNight.NoActionBar">
+    <style name="Theme.ThemeSwitcher.Dark" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Customize your dark theme here -->
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_200</item>
@@ -46,8 +36,13 @@
         <item name="colorSecondaryVariant">@color/teal_200</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
-<!--        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item> -->
-        <!-- Customize your theme here. -->
         <item name="colorOnActionBar">@color/light_primary</item>
+        <item name="buttonStyle">@style/MainButtons</item>
+    </style>
+
+    <style name="MainButtons" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">@color/red</item>
+        <item name="android:background">@color/red</item>
+        <item name="android:textColor">@color/red</item>
     </style>
 </resources>

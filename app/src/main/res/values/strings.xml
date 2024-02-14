@@ -2,8 +2,22 @@
     <string name="app_name">View &amp; Resources</string>
     <string name="open_xml_view">Open XML View</string>
     <string name="input_name">Name</string>
+    <string name="input_phone">Phone number</string>
+    <string name="input_address">Address</string>
     <string name="menu">Меню</string>
     <string name="search">Поиск</string>
+    <string name="input_select">Select</string>
+    <string name="input_city">City</string>
+    <string name="input_state">State</string>
+    <string name="input_zip">Zip</string>
+    <string name="input_birthday">Birthday</string>
+    <string name="input_notes">Notes</string>
+    <string name="button_register">Register</string>
+    <string name="button_open_cart">Open Cart</string>
+    <string name="button_sign_in">Show Sign In Dialog</string>
+    <string name="button_open_xml">Open XML View</string>
+    <string name="select_theme">Theme</string>
+    <string name="button_open_contacts">Open Contacts</string>
     <string-array name="themes">
         <item>System</item>
         <item>Light</item>

@@ -8,9 +8,11 @@ import android.content.Intent
 import android.os.Bundle
 import android.os.PersistableBundle
 import android.util.Log
+import android.view.MenuItem
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
+import android.widget.AutoCompleteTextView
 import android.widget.Button
 import android.widget.Spinner
 import android.widget.Toast
@@ -44,8 +46,16 @@ enum class Screens {
     NONE, CONTACTS, CART, DIALOG
 }
 
+enum class Modes {
+    NONE, XML, COMPOSER
+}
+
 @Serializable
-data class UserPreferencesStorage (var theme:Themes = Themes.SYSTEM, var screen:Screens=Screens.NONE)
+data class UserPreferencesStorage (
+    var theme:Themes = Themes.SYSTEM,
+    var screen:Screens=Screens.NONE,
+    var mode:Modes=Modes.NONE
+)
 
 object UserPreferences {
 
@@ -60,6 +70,11 @@ object UserPreferences {
         preferences.theme=newTheme
     }
     fun getTheme() = preferences.theme
+
+    fun setMode(newMode: Modes) {
+        preferences.mode=newMode
+    }
+    fun getMode() = preferences.mode
 
     fun setCurrentScreen(currentScreen: Screens) {
         preferences.screen=currentScreen
@@ -126,6 +141,17 @@ open class ActivityHelper(contentLayoutId:Int=0): AppCompatActivity(contentLayou
         recreate()
     }
 
+    open fun currentMode()=preferences.getMode()
+
+    open fun switchMode(newMode: Modes) {
+        if (preferences.getMode() ==  newMode) {
+            return
+        }
+        preferences.setMode(newMode)
+        preferences.store(this)
+    }
+
+
     open fun currentTheme()=preferences.getTheme()
 
     fun currentScreen() = preferences.getCurrentScreen()
@@ -144,20 +170,24 @@ class MainActivity: ActivityHelper(R.layout.activity_main) {
         super.onCreate(savedInstanceState)
 
         findViewById<Button>(R.id.xml_view_button).setOnClickListener {
+            switchMode(Modes.XML)
             startActivity(Intent(this, MainXMLActivity::class.java))
         }
 
-        findViewById<Spinner>(R.id.theme_selector).apply {
+        when (currentMode()) {
+            Modes.XML -> startActivity(Intent(this, MainXMLActivity::class.java))
+            else -> {}
+        }
+
+        findViewById<AutoCompleteTextView>(R.id.theme_selector).apply {
             ArrayAdapter.createFromResource(
                 context,
                 R.array.themes,
-                android.R.layout.simple_spinner_item
+                android.R.layout.simple_dropdown_item_1line
             ).also { adapter ->
-                // Specify the layout to use when the list of choices appears.
-                adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-                // Apply the adapter to the spinner.
-                this.adapter = adapter
-                this.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+                this.setAdapter(adapter)
+                this.onItemClickListener=object: AutoCompleteTextView
+   /*             this.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
                     override fun onItemSelected(parent: AdapterView<*>, view: View?, pos: Int, id: Long) {
                         // An item is selected. You can retrieve the selected item using
                         when (pos) {
@@ -170,18 +200,21 @@ class MainActivity: ActivityHelper(R.layout.activity_main) {
                     override fun onNothingSelected(parent: AdapterView<*>) {
                         switchTheme(Themes.SYSTEM)
                     }
-                }
-                when (currentTheme()) {
-                    Themes.LIGHT -> setSelection(1)
-                    Themes.DARK -> setSelection(2)
-                    else -> setSelection(0)
-                }
+                }*/
+                /*when (currentTheme()) {
+                    Themes.LIGHT -> setText(resources.getStringArray(R.array.themes).get(1))
+                    Themes.DARK -> setText(resources.getStringArray(R.array.themes).get(2))
+                    else -> setText(resources.getStringArray(R.array.themes).get(0))
+                }*/
             }
         }
     }
     override fun switchTheme(newTheme: Themes)=super.switchTheme(newTheme)
     override fun currentTheme()=super.currentTheme()
 
+    override fun currentMode()=super.currentMode()
+
+    override fun switchMode(newMode: Modes)=super.switchMode(newMode)
 }
 
 class MainXMLActivity : ActivityHelper() {
@@ -206,6 +239,13 @@ class MainXMLActivity : ActivityHelper() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_xml)
+        setSupportActionBar(findViewById(R.id.toolbar))
+
+        val actionBar = supportActionBar
+        requireNotNull(actionBar==null)
+        actionBar!!.setDisplayHomeAsUpEnabled(true)
+        actionBar.setDisplayShowHomeEnabled(true)
+
         when (currentScreen()) {
             Screens.CONTACTS -> startActivity(Intent(this, ContactsActivity::class.java))
             Screens.CART -> startActivity(Intent(this, CartActivity::class.java))
@@ -223,5 +263,15 @@ class MainXMLActivity : ActivityHelper() {
         findViewById<Button>(R.id.signin_button).setOnClickListener {
             showDialog()
         }
+
+    }
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            android.R.id.home -> {
+                switchMode(Modes.NONE)
+                finish()
+            }
+        }
+        return super.onOptionsItemSelected(item)
     }
 }
