@@ -2,8 +2,8 @@
     <style name="Theme.ViewResources" parent="Theme.ThemeSwitcher.Light"/>
 
     <style name="ActionBarStyle" parent="Widget.AppCompat.ActionBar.Solid">
-        <item name="android:background">?attr/colorPrimary</item>
-        <item name="android:textColorPrimary">?attr/colorOnPrimary</item>
+        <item name="android:background">?attr/colorActionBar</item>
+        <item name="android:textColorPrimary">?attr/colorOnActionBarTitle</item>
         <item name="android:homeAsUpIndicator">@drawable/arrow_left</item>
     </style>
 
@@ -18,10 +18,13 @@
         <item name="colorSecondary">@color/teal_200</item>
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
-        <!-- Status bar color. -->
-        <item name="colorOnActionBar">?attr/colorOnPrimary</item>
-        <item name="buttonStyle">@style/MainButtons</item>
-        <item name="actionButtonStyle">@style/MainButtons</item>
+
+        <item name="colorOnActionBar">@color/white</item>
+        <item name="colorActionBar">@color/light_primary</item>
+        <item name="colorOnActionBarTitle">@color/white</item>
+
+        <item name="colorActiveButton">@color/light_green</item>
+        <item name="colorOnActiveButton">@color/white</item>
     </style>
 
     <!-- Dark Theme -->
@@ -35,14 +38,18 @@
         <item name="colorSecondary">@color/teal_200</item>
         <item name="colorSecondaryVariant">@color/teal_200</item>
         <item name="colorOnSecondary">@color/black</item>
-        <!-- Status bar color. -->
-        <item name="colorOnActionBar">@color/light_primary</item>
-        <item name="buttonStyle">@style/MainButtons</item>
+
+        <item name="colorOnActionBar">@color/light_grey</item>
+        <item name="colorOnActionBarTitle">@color/white</item>
+        <item name="colorActionBar">@color/dark_grey</item>
+
+        <item name="colorActiveButton">@color/light_blue</item>
+        <item name="colorOnActiveButton">@color/black</item>
     </style>
 
-    <style name="MainButtons" parent="Widget.MaterialComponents.Button">
-        <item name="android:backgroundTint">@color/red</item>
-        <item name="android:background">@color/red</item>
-        <item name="android:textColor">@color/red</item>
+    <style name="MainButtonsStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">?attr/colorActiveButton</item>
+        <item name="android:textColor">?attr/colorOnActiveButton</item>
+        <item name="android:minHeight">60dp</item>
     </style>
 </resources>

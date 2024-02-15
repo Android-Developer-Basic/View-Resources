@@ -6,8 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".ContactsActivity">
 
-
-
     <androidx.appcompat.widget.Toolbar
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -237,6 +235,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/button_register"
+        style="@style/MainButtonsStyle"
         />
 
 

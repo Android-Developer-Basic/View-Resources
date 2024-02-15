@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <attr name="colorOnActionBar" format="reference" />
+    <attr name="colorActiveButton" format="reference" />
+    <attr name="colorOnActiveButton" format="reference" />
+    <attr name="colorActionBar" format="reference" />
+    <attr name="colorOnActionBarTitle" format="reference" />
 </resources>

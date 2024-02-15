@@ -18,6 +18,7 @@
     <string name="button_open_xml">Open XML View</string>
     <string name="select_theme">Theme</string>
     <string name="button_open_contacts">Open Contacts</string>
+    <string name="tag">В закладки</string>
     <string-array name="themes">
         <item>System</item>
         <item>Light</item>

@@ -17,16 +17,14 @@
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginTop="20dp"
-        android:inputType="text"
         android:hint="@string/select_theme"
-        app:endIconMode="custom"
-        app:endIconDrawable="@drawable/menu_down"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
         >
         <AutoCompleteTextView
             android:id="@+id/theme_selector"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:completionThreshold="0"
+            android:inputType="none"
             />
     </com.google.android.material.textfield.TextInputLayout>
 

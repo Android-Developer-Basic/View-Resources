@@ -1,46 +1,34 @@
 package otus.gpb.homework.viewandresources
 
-import android.annotation.SuppressLint
-import android.app.Activity
-import android.app.Application
 import android.content.Context
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.util.Log
 import android.view.MenuItem
-import android.view.View
 import android.widget.AdapterView
-import android.widget.AdapterView.OnItemSelectedListener
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
 import android.widget.Button
-import android.widget.Spinner
-import android.widget.Toast
-import android.widget.Switch
+import android.widget.Filter
+import androidx.annotation.ArrayRes
 import androidx.annotation.LayoutRes
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.ListPopupWindow
 import androidx.datastore.core.DataStore
-import androidx.datastore.core.Serializer
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.datastore.preferences.preferencesDataStore
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import kotlinx.coroutines.cancel
 import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.firstOrNull
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 import kotlinx.serialization.Serializable
-import kotlinx.serialization.json.Json
-import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.encodeToString
+import kotlinx.serialization.json.Json
 
 enum class Themes {
     SYSTEM, LIGHT, DARK
@@ -168,6 +156,43 @@ open class ActivityHelper(contentLayoutId:Int=0): AppCompatActivity(contentLayou
     }
 }
 
+class FArrayAdapter<T>(
+    context: Context?, textViewResourceId: Int,
+    objects: List<T>
+) : ArrayAdapter<T>(context!!, textViewResourceId, objects) {
+    private var filter:Filter = NoFilter()
+    var items: List<T> = objects
+    override fun getFilter(): Filter {
+        return filter
+    }
+    fun setFiltering(on: Boolean) {
+        filter= if (on) super.getFilter() else NoFilter()
+    }
+
+    private inner class NoFilter : Filter() {
+        override fun performFiltering(arg0: CharSequence): FilterResults {
+            val result = FilterResults()
+            result.values = items
+            result.count = items.size
+            return result
+        }
+
+        override fun publishResults(arg0: CharSequence, arg1: FilterResults) {
+            notifyDataSetChanged()
+        }
+    }
+
+    companion object {
+        fun createFromResource(
+            context: Context,
+            @ArrayRes textArrayResId: Int, @LayoutRes textViewResId: Int
+        ): FArrayAdapter<CharSequence?> {
+            val strings = context.resources.getTextArray(textArrayResId)
+            return FArrayAdapter(context, textViewResId, listOf(*strings))
+        }
+    }
+}
+
 class MainActivity: ActivityHelper(R.layout.activity_main) {
 
     @RequiresApi(Build.VERSION_CODES.Q)
@@ -185,40 +210,25 @@ class MainActivity: ActivityHelper(R.layout.activity_main) {
         }
 
         findViewById<AutoCompleteTextView>(R.id.theme_selector).apply {
-            ArrayAdapter.createFromResource(
+            FArrayAdapter.createFromResource(
                 context,
                 R.array.themes,
-                android.R.layout.simple_spinner_dropdown_item
+                R.layout.drop_down_item
             ).also { adapter ->
+                adapter.setFiltering(false)
                 this.setAdapter(adapter)
-                this.inputMethodMode = android.widget.ListPopupWindow.INPUT_METHOD_NOT_NEEDED
                 this.onItemClickListener = AdapterView.OnItemClickListener { parent, view, pos, id ->
-                    val t= parent.getItemIdAtPosition(pos)
                     when (pos) {
                         1 -> switchTheme(Themes.LIGHT)
                         2 -> switchTheme(Themes.DARK)
                         else -> switchTheme(Themes.SYSTEM)
                     }
                 }
-   /*             this.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
-                    override fun onItemSelected(parent: AdapterView<*>, view: View?, pos: Int, id: Long) {
-                        // An item is selected. You can retrieve the selected item using
-                        when (pos) {
-                            1 -> switchTheme(Themes.LIGHT)
-                            2 -> switchTheme(Themes.DARK)
-                            else -> switchTheme(Themes.SYSTEM)
-                        }
-                    }
-
-                    override fun onNothingSelected(parent: AdapterView<*>) {
-                        switchTheme(Themes.SYSTEM)
-                    }
-                }*/
-                /*when (currentTheme()) {
+               when (currentTheme()) {
                     Themes.LIGHT -> setText(resources.getStringArray(R.array.themes).get(1))
                     Themes.DARK -> setText(resources.getStringArray(R.array.themes).get(2))
                     else -> setText(resources.getStringArray(R.array.themes).get(0))
-                }*/
+                }
             }
         }
     }
@@ -228,6 +238,11 @@ class MainActivity: ActivityHelper(R.layout.activity_main) {
     override fun currentMode()=super.currentMode()
 
     override fun switchMode(newMode: Modes)=super.switchMode(newMode)
+
+    override fun onRestart() {
+        super.onRestart()
+        switchMode(Modes.NONE)
+    }
 }
 
 
@@ -261,8 +276,8 @@ class MainXMLActivity : ActivityHelper() {
         actionBar.setDisplayShowHomeEnabled(true)
 
         when (currentScreen()) {
-            Screens.CONTACTS -> startActivity(Intent(this, ContactsActivity::class.java))
-            Screens.CART -> startActivity(Intent(this, CartActivity::class.java))
+            Screens.CONTACTS -> showContacts()
+            Screens.CART -> showCart()
             Screens.DIALOG -> showDialog()
             else -> {}
         }
@@ -282,10 +297,14 @@ class MainXMLActivity : ActivityHelper() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             android.R.id.home -> {
-                switchMode(Modes.NONE)
                 finish()
             }
         }
         return super.onOptionsItemSelected(item)
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+        switchCurrentScreen(Screens.NONE)
     }
 }
