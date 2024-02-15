@@ -188,7 +188,7 @@ class MainActivity: ActivityHelper(R.layout.activity_main) {
             ArrayAdapter.createFromResource(
                 context,
                 R.array.themes,
-                android.R.layout.simple_dropdown_item_1line
+                android.R.layout.simple_spinner_dropdown_item
             ).also { adapter ->
                 this.setAdapter(adapter)
                 this.inputMethodMode = android.widget.ListPopupWindow.INPUT_METHOD_NOT_NEEDED
