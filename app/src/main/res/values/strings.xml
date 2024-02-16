@@ -19,9 +19,20 @@
     <string name="select_theme">Theme</string>
     <string name="button_open_contacts">Open Contacts</string>
     <string name="tag">В закладки</string>
+    <string name="cart_order_total_text">Your order total</string>
+    <string name="cart_order_subtotal_text">Subtotal</string>
+    <string name="cart_order_shipping_text">Shipping</string>
+    <string name="cart_order_tax_text">Tax</string>
+    <string name="button_pay">Pay now</string>
     <string-array name="themes">
         <item>System</item>
         <item>Light</item>
         <item>Dark</item>
     </string-array>
+
+    <plurals name="cart_items_count">
+        <item quantity="zero">No items in your cart</item>
+        <item quantity="one">%1$d item in your cart</item>
+        <item quantity="other">%1$d items in your cart</item>
+    </plurals>
 </resources>

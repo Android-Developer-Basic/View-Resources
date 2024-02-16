@@ -13,4 +13,8 @@
     <color name="light_blue">#4FB7FE</color>
     <color name="dark_grey">#262726</color>
     <color name="light_grey">#878787</color>
+    <color name="lighter_grey">#979797</color>
+    <color name="gunmetal">#263138</color>
+    <color name="kiwi">#88ec5a</color>
+    <color name="crayola">#feda6f</color>
 </resources>
