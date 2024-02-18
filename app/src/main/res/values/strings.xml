@@ -24,6 +24,12 @@
     <string name="cart_order_shipping_text">Shipping</string>
     <string name="cart_order_tax_text">Tax</string>
     <string name="button_pay">Pay now</string>
+    <string name="signin_title">Sign in</string>
+    <string name="signin_email">E-mail</string>
+    <string name="signin_password">Password</string>
+    <string name="signin_register">Register</string>
+    <string name="signin_reset">Reset my password</string>
+    <string name="button_signin">Sign in</string>
     <string-array name="themes">
         <item>System</item>
         <item>Light</item>

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".CartActivity">
 
-   <!-- <androidx.appcompat.widget.Toolbar
+   <androidx.appcompat.widget.Toolbar
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -29,22 +29,23 @@
         android:layout_marginTop="20dp"
         android:text="Items count text"
         android:textAppearance="@style/OrderCountItemsTextStyle"
-        /> -->
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="101dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:visibility="visible"
         />
 
-  <!--  <ImageView
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cart_list"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:layout_constraintTop_toBottomOf="@id/cart_count"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/cart_line"
+            android:visibility="visible"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            />
+
+   <ImageView
         android:id="@+id/cart_line"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -131,7 +132,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:text="@string/cart_order_shipping_text"
-        android:textAppearance="@android:style/TextAppearance.Material.Title"
+        android:textAppearance="@style/OrderInfoTextStyle"
         />
 
     <com.google.android.material.textview.MaterialTextView
@@ -145,7 +146,7 @@
         android:layout_marginRight="16dp"
         android:gravity="right"
         android:text="0000.00$"
-        android:textAppearance="@android:style/TextAppearance.Material.Title"
+        android:textAppearance="@style/OrderInfoTextStyle"
         />
 
     <com.google.android.material.textview.MaterialTextView
@@ -158,7 +159,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:text="@string/cart_order_tax_text"
-        android:textAppearance="@android:style/TextAppearance.Material.Title"
+        android:textAppearance="@style/OrderInfoTextStyle"
         />
 
     <com.google.android.material.textview.MaterialTextView
@@ -172,7 +173,7 @@
         android:layout_marginRight="16dp"
         android:gravity="right"
         android:text="0000.00$"
-        android:textAppearance="@android:style/TextAppearance.Material.Title"
+        android:textAppearance="@style/OrderInfoTextStyle"
         />
     <Button
         app:layout_constraintBottom_toBottomOf="parent"
@@ -186,7 +187,7 @@
         android:text="@string/button_pay"
         style="@style/PayButtonsStyle"
         app:icon="@drawable/wallet"
-        /> -->
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

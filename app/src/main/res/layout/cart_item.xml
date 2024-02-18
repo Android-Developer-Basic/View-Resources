@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="16dp"
     tools:context=".CartItem">
     >
 
@@ -30,9 +32,9 @@
         app:layout_constraintTop_toTopOf="parent"
         android:id="@+id/cart_item_image"
         android:orientation="vertical"
-        android:layout_width="0dp"
+        android:layout_width="50dp"
         android:layout_height="50dp"
-        android:src="@drawable/item_01"
+        android:src="@drawable/item_02"
         android:layout_marginLeft="0dp"
         android:layout_marginRight="0dp"/>
 
@@ -43,7 +45,9 @@
         android:id="@+id/cart_item_title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Title"/>
+        android:text="Title"
+        android:textAppearance="@style/OrderInfoTextStyle"
+        />
 
     <com.google.android.material.textview.MaterialTextView
         app:layout_constraintStart_toStartOf="@id/title_guideline"
@@ -52,7 +56,9 @@
         android:id="@+id/cart_item_caption"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Caption"/>
+        android:text="Caption"
+        android:textAppearance="@style/OrderItemsCaptionTextStyle"
+        />
 
     <com.google.android.material.textview.MaterialTextView
         app:layout_constraintStart_toStartOf="@id/price_guideline"
@@ -63,7 +69,9 @@
         android:layout_height="wrap_content"
         android:layout_weight="3"
         android:id="@+id/cart_item_price"
-        android:text="0.00"/>
+        android:text="0.00"
+        android:textAppearance="@style/OrderInfoTextStyle"
+        />
 
     <ImageView
         android:layout_width="wrap_content"

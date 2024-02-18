@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
         <style name="Theme.ViewResources" parent="Theme.ThemeSwitcher.Dark"/>
+        <style name="Theme.ViewResources.Dialogue" parent="Theme.ThemeSwitcher.Dialogue.Dark"/>
 </resources>

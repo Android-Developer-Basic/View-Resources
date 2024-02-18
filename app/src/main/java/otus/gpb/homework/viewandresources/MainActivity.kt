@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.util.Log
+import android.view.ContextThemeWrapper
 import android.view.MenuItem
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
@@ -260,7 +261,12 @@ class MainXMLActivity : ActivityHelper() {
 
     private fun showDialog() {
         switchCurrentScreen(Screens.DIALOG)
-        MaterialAlertDialogBuilder(this)
+        val theme=when (currentTheme()) {
+            Themes.LIGHT -> R.style.Theme_ThemeSwitcher_Dialogue_Light
+            Themes.DARK -> R.style.Theme_ThemeSwitcher_Dialogue_Dark
+            else -> {0}
+        }
+        MaterialAlertDialogBuilder(this,theme)
             .setView(R.layout.dialog_signin)
             .show()
     }

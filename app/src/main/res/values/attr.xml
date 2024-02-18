@@ -12,4 +12,13 @@
 
     <attr name="colorOrderCountItems" format="reference" />
     <attr name="colorOrderSum" format="reference" />
+
+    <attr name="colorButtonRemoveItem" format="reference" />
+    <attr name="colorOrderInfo" format="reference" />
+
+    <attr name="colorSignInTitle" format="reference" />
+    <attr name="colorSignInRegister" format="reference" />
+    <attr name="colorSignInReset" format="reference" />
+    <attr name="colorSignInButton" format="reference" />
+    <attr name="colorOnSignInButton" format="reference" />
 </resources>

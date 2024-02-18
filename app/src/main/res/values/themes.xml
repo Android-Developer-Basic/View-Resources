@@ -1,10 +1,29 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <style name="Theme.ViewResources" parent="Theme.ThemeSwitcher.Light"/>
+    <style name="Theme.ViewResources.Dialogue" parent="Theme.ThemeSwitcher.Dialogue.Light"/>
 
     <style name="ActionBarStyle" parent="Widget.AppCompat.ActionBar.Solid">
         <item name="android:background">?attr/colorActionBar</item>
         <item name="android:textColorPrimary">?attr/colorOnActionBarTitle</item>
         <item name="android:homeAsUpIndicator">@drawable/arrow_left</item>
+    </style>
+
+    <style name="Theme.ThemeSwitcher.Dialogue.Light"  parent="Theme.Material3.Light.Dialog.Alert">
+        <item name="android:background">@color/white</item>
+        <item name="colorSignInTitle">@color/black</item>
+        <item name="colorSignInRegister">@color/light_primary</item>
+        <item name="colorSignInReset">@color/light_primary</item>
+        <item name="colorSignInButton">@color/light_primary</item>
+        <item name="colorOnSignInButton">@color/white</item>
+    </style>
+
+    <style name="Theme.ThemeSwitcher.Dialogue.Dark"  parent="Theme.Material3.Dark.Dialog.Alert">
+        <item name="android:background">@color/chinese_black</item>
+        <item name="colorSignInTitle">@color/white</item>
+        <item name="colorSignInRegister">@color/light_blue</item>
+        <item name="colorSignInReset">@color/light_grey</item>
+        <item name="colorSignInButton">@color/light_blue</item>
+        <item name="colorOnSignInButton">@color/black</item>
     </style>
 
        <!-- Light Theme -->
@@ -32,6 +51,11 @@
 
         <item name="colorOrderCountItems">@color/black</item>
         <item name="colorOrderSum">@color/black</item>
+
+        <item name="colorButtonRemoveItem">@color/red</item>
+        <item name="colorOrderInfo">@color/black</item>
+
+        <item name="android:windowBackground">@color/white</item>
     </style>
 
     <!-- Dark Theme -->
@@ -59,6 +83,12 @@
 
         <item name="colorOrderCountItems">@color/kiwi</item>
         <item name="colorOrderSum">@color/crayola</item>
+
+        <item name="colorButtonRemoveItem">@color/light_grey</item>
+        <item name="colorOrderInfo">@color/light_grey</item>
+
+        <item name="android:windowBackground">@color/chinese_black</item>
+
     </style>
 
     <style name="MainButtonsStyle" parent="Widget.MaterialComponents.Button">
@@ -74,11 +104,17 @@
 
     <style name="OrderInfoTextStyle" parent="@android:style/TextAppearance.Material.Title">
         <item name="android:textStyle">normal</item>
+        <item name="android:textColor">?attr/colorOrderInfo</item>
     </style>
 
     <style name="OrderCountItemsTextStyle" parent="@android:style/TextAppearance.Material.Medium">
         <item name="android:textStyle">normal</item>
         <item name="android:textColor">?attr/colorOrderCountItems</item>
+    </style>
+
+    <style name="OrderItemsCaptionTextStyle" parent="@android:style/TextAppearance.Material.Caption">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">?attr/colorOrderInfo</item>
     </style>
 
     <style name="PayButtonsStyle" parent="Widget.MaterialComponents.Button">
@@ -92,4 +128,25 @@
         <item name="android:textScaleX">0.9</item>
         <item name="iconTint">?attr/colorOnPayButtonIcon</item>
     </style>
+
+    <style name="SignTitleStyle" parent="@android:style/TextAppearance.Material.Title">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">?attr/colorSignInTitle</item>
+    </style>
+    <style name="SignRegisterStyle" parent="@android:style/TextAppearance.Material.Small">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">?attr/colorSignInRegister</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="SignResetStyle" parent="@android:style/TextAppearance.Material.Body1">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">?attr/colorSignInReset</item>
+    </style>
+    <style name="SignSigninButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">?attr/colorSignInButton</item>
+        <item name="android:textColor">?attr/colorOnSignInButton</item>
+        <item name="android:minHeight">60dp</item>
+        <item name="cornerRadius">1pt</item>
+    </style>
+
 </resources>
