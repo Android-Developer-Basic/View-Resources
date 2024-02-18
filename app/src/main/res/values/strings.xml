@@ -30,6 +30,7 @@
     <string name="signin_register">Register</string>
     <string name="signin_reset">Reset my password</string>
     <string name="button_signin">Sign in</string>
+    <string name="button_open_composer">Open Composer View</string>
     <string-array name="themes">
         <item>System</item>
         <item>Light</item>
