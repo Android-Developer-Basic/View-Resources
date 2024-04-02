@@ -41,10 +41,10 @@ class MainActivity: ActivityHelper(R.layout.activity_main) {
             switchMode(Modes.XML)
             startActivity(Intent(this, MainXMLActivity::class.java))
         }
-        findViewById<Button>(R.id.composer_view_button).setOnClickListener {
+        /*findViewById<Button>(R.id.composer_view_button).setOnClickListener {
             switchMode(Modes.COMPOSER)
             startActivity(Intent(this, MainComposerActivity::class.java))
-        }
+        }*/
 
         when (currentMode()) {
             Modes.XML -> startActivity(Intent(this, MainXMLActivity::class.java))
