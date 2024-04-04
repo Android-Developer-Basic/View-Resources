@@ -24,7 +24,7 @@
             android:label="MainXMLActivity"
             android:exported="false"/>
         <activity android:name=".MainComposerActivity"
-            android:label="MainXMLActivity"
+            android:label="MainComposerActivity"
             android:exported="false"/>
         <activity
             android:name=".MainActivity"

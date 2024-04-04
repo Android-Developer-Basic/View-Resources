@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Button
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
+import com.google.android.material.textview.MaterialTextView
 
 class MainXMLActivity : ActivityHelper() {
 
@@ -23,11 +24,12 @@ class MainXMLActivity : ActivityHelper() {
         val theme=when (currentTheme()) {
             Themes.LIGHT -> R.style.Theme_ThemeSwitcher_Dialogue_Light
             Themes.DARK -> R.style.Theme_ThemeSwitcher_Dialogue_Dark
-            else -> {0}
+            else -> {R.style.Theme_ViewResources_Dialogue}
         }
-        MaterialAlertDialogBuilder(this,theme)
+        MaterialAlertDialogBuilder(this, theme)
             .setView(R.layout.dialog_signin)
             .show()
+
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {

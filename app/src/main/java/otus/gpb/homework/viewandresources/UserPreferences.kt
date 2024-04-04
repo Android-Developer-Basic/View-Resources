@@ -52,7 +52,7 @@ object UserPreferences {
     fun setMode(newMode: Modes) {
         preferences.mode=newMode
     }
-    fun getMode() = preferences.mode
+    fun getMode() = Modes.XML
 
     fun setCurrentScreen(currentScreen: Screens) {
         preferences.screen=currentScreen
@@ -88,6 +88,7 @@ object UserPreferences {
                     Log.d(tag, e.message.toString())
                 }
             }
+            preferences.mode=Modes.XML
         }
     }
 }

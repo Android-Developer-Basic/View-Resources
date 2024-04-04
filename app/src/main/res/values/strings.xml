@@ -14,7 +14,7 @@
     <string name="input_notes">Notes</string>
     <string name="button_register">Register</string>
     <string name="button_open_cart">Open Cart</string>
-    <string name="button_sign_in">Show Sign In Dialog</string>
+    <string name="button_open_signin">Show Sign In Dialog</string>
     <string name="button_open_xml">Open XML View</string>
     <string name="select_theme">Theme</string>
     <string name="button_open_contacts">Open Contacts</string>
