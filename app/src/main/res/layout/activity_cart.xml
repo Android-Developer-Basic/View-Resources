@@ -40,6 +40,7 @@
         />
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cart_list_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:minHeight="64dp"
@@ -64,10 +65,9 @@
         android:id="@+id/cart_line"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cart_list_container"
         android:layout_width="match_parent"
         android:layout_height="5dp"
-        android:layout_marginTop="-250dp"
         android:src="@drawable/dotted_line"
         android:layerType="software" />
 
@@ -191,7 +191,7 @@
         android:textAppearance="@style/OrderInfoTextStyle"
         />
     <Button
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cart_order_tax_sum"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginLeft="16dp"
