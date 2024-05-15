@@ -1,16 +1,22 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.ViewResources" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.ViewResources" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_200</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorPrimary">@color/gray_main</item>
+        <item name="colorPrimaryVariant">@color/grayIconsNight</item>
+        <item name="colorOnPrimary">@color/grayTextNight</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorSecondary">@color/GrayBckNight</item>
+        <item name="colorSecondaryVariant">@color/blueButtonNight</item>
         <item name="colorOnSecondary">@color/black</item>
+
+        <!-- Text colors. -->
+        <item name="android:textColorHint">@color/blackTextDay</item>
+        <item name="topBarIconTint">@color/white</item>
+        <item name="navigationIconTint">@color/white</item>
+
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/black</item>
         <!-- Customize your theme here. -->
     </style>
 </resources>
