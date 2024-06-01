@@ -6,350 +6,360 @@
     android:layout_height="match_parent"
     tools:context=".CartActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="?attr/cartTitleColor"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:text="@string/cart_sub_title"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:id="@+id/imageView1"
-                style="@style/cartImageView"
-                android:layout_gravity="start|center_vertical"
-                android:layout_marginTop="12dp"
-                android:layout_marginBottom="12dp"
-                android:layout_weight="0"
-                app:srcCompat="@android:drawable/ic_menu_my_calendar" />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="12dp"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textView2"
-                    style="@style/cartTextViewTitle"
-                    android:text="@string/on_the_top" />
-
-                <TextView
-                    android:id="@+id/textView3"
-                    style="@style/cartTextViewDescription"
-                    android:text="@string/caption" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginTop="12dp"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textView4"
-                    style="@style/cartPrice"
-                    android:text="@string/us_1_50"
-                    android:textAlignment="textEnd" />
-
-                <ImageView
-                    android:id="@+id/imageView2"
-                    style="@style/crossImage"
-                    android:layout_gravity="end" />
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:id="@+id/imageView3"
-                style="@style/cartImageView"
-                android:layout_gravity="start|center_vertical"
-                android:layout_marginTop="12dp"
-                android:layout_marginBottom="12dp"
-                android:layout_weight="0"
-                app:srcCompat="@android:drawable/ic_menu_my_calendar" />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="12dp"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textView6"
-                    style="@style/cartTextViewTitle"
-                    android:text="@string/forever_friends" />
-
-                <TextView
-                    android:id="@+id/textView7"
-                    style="@style/cartTextViewDescription"
-                    android:text="@string/caption" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginTop="12dp"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textView8"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="right|center_horizontal"
-                    android:text="@string/us_1_50"
-                    android:textAlignment="textEnd" />
-
-                <ImageView
-                    android:id="@+id/imageView6"
-                    style="@style/crossImage"
-                    android:layout_gravity="end" />
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:id="@+id/imageView4"
-                style="@style/cartImageView"
-                android:layout_gravity="start|center_vertical"
-                android:layout_marginTop="12dp"
-                android:layout_marginBottom="12dp"
-                android:layout_weight="0"
-                app:srcCompat="@android:drawable/ic_menu_my_calendar" />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="12dp"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textView9"
-                    style="@style/cartTextViewTitle"
-                    android:text="@string/prototyping_kit" />
-
-                <TextView
-                    android:id="@+id/textView10"
-                    style="@style/cartTextViewDescription"
-                    android:text="@string/caption" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginTop="12dp"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textView11"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="right|center_horizontal"
-                    android:text="@string/us_1_50"
-                    android:textAlignment="textEnd" />
-
-                <ImageView
-                    android:id="@+id/imageView8"
-                    style="@style/crossImage"
-                    android:layout_gravity="end" />
-            </LinearLayout>
-        </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/pay"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:id="@+id/imageView"
-                style="@style/cartImageView"
-                android:layout_gravity="start|center_vertical"
-                android:layout_marginTop="12dp"
-                android:layout_marginBottom="12dp"
-                android:layout_weight="0"
-                app:srcCompat="@android:drawable/ic_menu_my_calendar" />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="12dp"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textView12"
-                    style="@style/cartTextViewTitle"
-                    android:text="@string/basket_coffee" />
-
-                <TextView
-                    android:id="@+id/textView13"
-                    style="@style/cartTextViewDescription"
-                    android:text="@string/caption" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginTop="12dp"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textView14"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="right|center_horizontal"
-                    android:text="@string/us_1_50"
-                    android:textAlignment="textEnd" />
-
-                <ImageView
-                    android:id="@+id/imageView22"
-                    style="@style/crossImage"
-                    android:layout_gravity="end" />
-            </LinearLayout>
-        </LinearLayout>
-
-        <ImageView
-            android:id="@+id/imageView23"
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:layout_marginTop="52dp"
-            app:srcCompat="@drawable/dot_line" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
             android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView5"
-                    style="@style/totalOrder"
-                    android:layout_weight="1"
-                    android:text="@string/your_order_total"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/textView15"
-                    style="@style/totalOrder"
-                    android:layout_weight="1"
-                    android:text="@string/price"
-                    android:textAlignment="textEnd"
-                    android:textStyle="bold" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="16dp"
-                android:layout_weight="1"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView35"
-                    style="@style/totalOrderPosition"
-                    android:layout_weight="1"
-                    android:text="@string/subtotal" />
-
-                <TextView
-                    android:id="@+id/textView36"
-                    style="@style/totalOrderPosition"
-                    android:layout_weight="1"
-                    android:text="@string/price"
-                    android:textAlignment="textEnd" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView45"
-                    style="@style/totalOrderPosition"
-                    android:layout_weight="1"
-                    android:text="@string/shipping" />
-
-                <TextView
-                    android:id="@+id/textView46"
-                    style="@style/totalOrderPosition"
-                    android:layout_weight="1"
-                    android:text="@string/price"
-                    android:textAlignment="textEnd" />
-            </LinearLayout>
-
-            <LinearLayout
+            <TextView
+                android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/cart_sub_title"
+                android:textColor="?attr/cartTitleColor" />
 
-                <TextView
-                    android:id="@+id/textView55"
-                    style="@style/totalOrderPosition"
-                    android:layout_weight="1"
-                    android:text="@string/tax" />
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/textView56"
-                    style="@style/totalOrderPosition"
-                    android:layout_weight="1"
-                    android:text="@string/price"
-                    android:textAlignment="textEnd" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        style="@style/cartImageView"
+                        android:layout_gravity="start|center_vertical"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_weight="0"
+                        app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            style="@style/cartTextViewTitle"
+                            android:text="@string/on_the_top" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            style="@style/cartTextViewDescription"
+                            android:text="@string/caption" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="12dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            style="@style/cartPrice"
+                            android:text="@string/us_1_50"
+                            android:textAlignment="textEnd" />
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            style="@style/crossImage"
+                            android:layout_gravity="end" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        style="@style/cartImageView"
+                        android:layout_gravity="start|center_vertical"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_weight="0"
+                        app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            style="@style/cartTextViewTitle"
+                            android:text="@string/forever_friends" />
+
+                        <TextView
+                            android:id="@+id/textView7"
+                            style="@style/cartTextViewDescription"
+                            android:text="@string/caption" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="12dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_horizontal"
+                            android:text="@string/us_1_50"
+                            android:textAlignment="textEnd" />
+
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            style="@style/crossImage"
+                            android:layout_gravity="end" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        style="@style/cartImageView"
+                        android:layout_gravity="start|center_vertical"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_weight="0"
+                        app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            style="@style/cartTextViewTitle"
+                            android:text="@string/prototyping_kit" />
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            style="@style/cartTextViewDescription"
+                            android:text="@string/caption" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="12dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_horizontal"
+                            android:text="@string/us_1_50"
+                            android:textAlignment="textEnd" />
+
+                        <ImageView
+                            android:id="@+id/imageView8"
+                            style="@style/crossImage"
+                            android:layout_gravity="end" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        style="@style/cartImageView"
+                        android:layout_gravity="start|center_vertical"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_weight="0"
+                        app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            style="@style/cartTextViewTitle"
+                            android:text="@string/basket_coffee" />
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            style="@style/cartTextViewDescription"
+                            android:text="@string/caption" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="12dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_horizontal"
+                            android:text="@string/us_1_50"
+                            android:textAlignment="textEnd" />
+
+                        <ImageView
+                            android:id="@+id/imageView22"
+                            style="@style/crossImage"
+                            android:layout_gravity="end" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView23"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="52dp"
+                    app:srcCompat="@drawable/dot_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            style="@style/totalOrder"
+                            android:layout_weight="1"
+                            android:text="@string/your_order_total"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView15"
+                            style="@style/totalOrder"
+                            android:layout_weight="1"
+                            android:text="@string/price"
+                            android:textAlignment="textEnd"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="16dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView35"
+                            style="@style/totalOrderPosition"
+                            android:layout_weight="1"
+                            android:text="@string/subtotal" />
+
+                        <TextView
+                            android:id="@+id/textView36"
+                            style="@style/totalOrderPosition"
+                            android:layout_weight="1"
+                            android:text="@string/price"
+                            android:textAlignment="textEnd" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView45"
+                            style="@style/totalOrderPosition"
+                            android:layout_weight="1"
+                            android:text="@string/shipping" />
+
+                        <TextView
+                            android:id="@+id/textView46"
+                            style="@style/totalOrderPosition"
+                            android:layout_weight="1"
+                            android:text="@string/price"
+                            android:textAlignment="textEnd" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView55"
+                            style="@style/totalOrderPosition"
+                            android:layout_weight="1"
+                            android:text="@string/tax" />
+
+                        <TextView
+                            android:id="@+id/textView56"
+                            style="@style/totalOrderPosition"
+                            android:layout_weight="1"
+                            android:text="@string/price"
+                            android:textAlignment="textEnd" />
+                    </LinearLayout>
+
+                </LinearLayout>
             </LinearLayout>
-
         </LinearLayout>
-    </LinearLayout>
+    </ScrollView>
 
     <Button
         android:id="@+id/pay"
         style="@style/payButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="154dp"
+        android:layout_height="56dp"
         android:layout_margin="16dp"
         android:background="@drawable/shape"
         android:text="@string/pay_now"

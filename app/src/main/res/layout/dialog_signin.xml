@@ -21,9 +21,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
-        android:background="@null"
+        style="@style/Widget.AppCompat.Button.Borderless"
         android:text="@string/register"
-        android:textColor="#2980B9"
+        android:textColor="?attr/registerTextColor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -40,7 +40,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="53dp"
             android:text="@string/email" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -57,7 +57,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="53dp"
             android:inputType="textPassword"
             android:text="@string/password" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -66,10 +66,11 @@
         android:id="@+id/reset_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/reset_my_password"
-        app:layout_constraintEnd_toEndOf="parent"
         android:paddingTop="15dp"
+        android:text="@string/reset_my_password"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout2"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
+        android:textColor="?attr/resetPasswordTextColor"
         tools:ignore="MissingConstraints" />
 
     <Button
