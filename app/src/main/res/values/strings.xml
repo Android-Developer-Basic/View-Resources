@@ -27,4 +27,5 @@
     <string name="prototyping_kit">Prototyping Kit</string>
     <string name="basket_coffee"><![CDATA[Basket & Coffee]]></string>
     <string name="subtotal">Subtotal</string>
+    <string name="pay_now">Pay now</string>
 </resources>
