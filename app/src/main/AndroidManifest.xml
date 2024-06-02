@@ -18,11 +18,11 @@
             android:label="Cart"
             android:exported="false" />
         <activity
-            android:name=".ContactsActivity"
+            android:name=".MainActivity"
             android:label="Contacts"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ContactsActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

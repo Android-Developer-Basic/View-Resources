@@ -6,4 +6,98 @@
     android:layout_height="match_parent"
     tools:context=".ContactsActivity">
 
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="@color/white"
+        app:title="Contracts"
+        app:titleMarginStart="30dp"
+        app:navigationIcon="@drawable/arrow_back"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editTextText"
+        style="@style/Theme.ViewResources"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Name"
+        android:inputType="text"
+
+        app:endIconDrawable="@drawable/account"
+        app:endIconMode="custom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name"
+            style="@style/Theme.ViewResources"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        style="@style/Theme.ViewResources"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:hint="Phone number"
+        android:inputType="text"
+        app:endIconDrawable="@drawable/phone"
+
+        app:endIconMode="custom"
+        app:layout_constraintStart_toStartOf="@+id/editTextText"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/Theme.ViewResources"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+
+        android:id="@+id/textInputLayout3"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu"
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:hint="Select"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/textInputLayout2"
+        app:layout_constraintEnd_toEndOf="@+id/editTextText"
+        app:layout_constraintStart_toEndOf="@+id/textInputLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText"
+        app:endIconDrawable="@drawable/phone"
+
+        app:endIconMode="custom">
+
+        <AutoCompleteTextView
+            style="@style/Theme.ViewResources"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:paddingVertical="16dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            app:simpleItems="@array/array_for_dropdown1" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
