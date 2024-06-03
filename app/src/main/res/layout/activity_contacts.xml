@@ -64,35 +64,28 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
+
     <com.google.android.material.textfield.TextInputLayout
-
-
-        android:id="@+id/textInputLayout3"
-        style="@style/Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu"
-
-        android:layout_width="0dp"
+        android:id="@+id/menu5"
+        style="@style/Theme.ViewResources"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="500dp"
         android:hint="Select"
-        android:inputType="text"
-        app:layout_constraintBottom_toBottomOf="@+id/textInputLayout2"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText"
-        app:layout_constraintStart_toEndOf="@+id/textInputLayout2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText"
+        app:layout_constraintTop_toTopOf="parent"
         app:endIconDrawable="@drawable/phone"
-
         app:endIconMode="custom">
 
+
+
         <AutoCompleteTextView
-            style="@style/Theme.ViewResources"
+            android:id="@+id/autocomplete5"
+            app:simpleItems="@array/array_for_dropdown1"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="none"
-            android:paddingVertical="16dp"
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp"
-            app:simpleItems="@array/array_for_dropdown1" />
+            android:inputType="text"
+            />
 
     </com.google.android.material.textfield.TextInputLayout>
 
