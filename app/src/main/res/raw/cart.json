@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "title":"On the top",
+      "caption": "Caption",
+      "icon": "item_01.jpg",
+      "price": 1.5
+    },
+    {
+      "title":"Forever friends",
+      "caption": "Caption",
+      "icon": "item_02.jpg",
+      "price": 4.5
+    },
+    {
+      "title":"Prototyping Kit",
+      "caption": "Caption",
+      "icon": "item_03.jpg",
+      "price": 8
+    },
+    {
+      "title":"Basket & Coffee",
+      "caption": "Caption",
+      "icon": "item_04.jpg",
+      "price": 22
+    }
+  ]
+}

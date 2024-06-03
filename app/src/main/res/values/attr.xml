@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="colorOnActionBar" format="reference" />
+    <attr name="colorActiveButton" format="reference" />
+    <attr name="colorOnActiveButton" format="reference" />
+    <attr name="colorActionBar" format="reference" />
+    <attr name="colorOnActionBarTitle" format="reference" />
+
+    <attr name="colorPayButton" format="reference" />
+    <attr name="colorOnPayButton" format="reference" />
+    <attr name="colorOnPayButtonIcon" format="reference" />
+
+    <attr name="colorOrderCountItems" format="reference" />
+    <attr name="colorOrderSum" format="reference" />
+
+    <attr name="colorButtonRemoveItem" format="reference" />
+    <attr name="colorOrderInfo" format="reference" />
+
+    <attr name="colorSignInTitle" format="reference" />
+    <attr name="colorSignInRegister" format="reference" />
+    <attr name="colorSignInReset" format="reference" />
+    <attr name="colorSignInButton" format="reference" />
+    <attr name="colorOnSignInButton" format="reference" />
+</resources>

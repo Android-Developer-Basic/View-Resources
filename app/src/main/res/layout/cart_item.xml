@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="16dp"
+    tools:context=".CartItem">
+    >
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/title_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/price_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.7"
+        />
+
+
+    <ImageView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/title_guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/cart_item_image"
+        android:orientation="vertical"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/item_02"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        app:layout_constraintStart_toStartOf="@id/title_guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/price_guideline"
+        android:id="@+id/cart_item_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textAppearance="@style/OrderInfoTextStyle"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        app:layout_constraintStart_toStartOf="@id/title_guideline"
+        app:layout_constraintTop_toBottomOf="@id/cart_item_title"
+        app:layout_constraintEnd_toStartOf="@id/price_guideline"
+        android:id="@+id/cart_item_caption"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Caption"
+        android:textAppearance="@style/OrderItemsCaptionTextStyle"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        app:layout_constraintStart_toStartOf="@id/price_guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="0dp"
+        android:gravity="right"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:id="@+id/cart_item_price"
+        android:text="0.00"
+        android:textAppearance="@style/OrderInfoTextStyle"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/close"
+        app:layout_constraintEnd_toEndOf="@id/cart_item_price"
+        app:layout_constraintTop_toBottomOf="@id/cart_item_price" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

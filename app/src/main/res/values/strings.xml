@@ -1,3 +1,45 @@
 <resources>
     <string name="app_name">View &amp; Resources</string>
+    <string name="open_xml_view">Open XML View</string>
+    <string name="input_name">Name</string>
+    <string name="input_phone">Phone number</string>
+    <string name="input_address">Address</string>
+    <string name="menu">Меню</string>
+    <string name="search">Поиск</string>
+    <string name="input_select">Select</string>
+    <string name="input_city">City</string>
+    <string name="input_state">State</string>
+    <string name="input_zip">Zip</string>
+    <string name="input_birthday">Birthday</string>
+    <string name="input_notes">Notes</string>
+    <string name="button_register">Register</string>
+    <string name="button_open_cart">Open Cart</string>
+    <string name="button_open_signin">Show Sign In Dialog</string>
+    <string name="button_open_xml">Open XML View</string>
+    <string name="select_theme">Theme</string>
+    <string name="button_open_contacts">Open Contacts</string>
+    <string name="tag">В закладки</string>
+    <string name="cart_order_total_text">Your order total</string>
+    <string name="cart_order_subtotal_text">Subtotal</string>
+    <string name="cart_order_shipping_text">Shipping</string>
+    <string name="cart_order_tax_text">Tax</string>
+    <string name="button_pay">Pay now</string>
+    <string name="signin_title">Sign in</string>
+    <string name="signin_email">E-mail</string>
+    <string name="signin_password">Password</string>
+    <string name="signin_register">Register</string>
+    <string name="signin_reset">Reset my password</string>
+    <string name="button_signin">Sign in</string>
+    <string name="button_open_composer">Open Composer View</string>
+    <string-array name="themes">
+        <item>System</item>
+        <item>Light</item>
+        <item>Dark</item>
+    </string-array>
+
+    <plurals name="cart_items_count">
+        <item quantity="zero">No items in your cart</item>
+        <item quantity="one">%1$d item in your cart</item>
+        <item quantity="other">%1$d items in your cart</item>
+    </plurals>
 </resources>
