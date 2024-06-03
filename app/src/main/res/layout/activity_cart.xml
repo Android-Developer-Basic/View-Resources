@@ -6,4 +6,150 @@
     android:layout_height="match_parent"
     tools:context=".CartActivity">
 
+    <TextView
+        android:id="@+id/items_count"
+        style="@style/MyLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="4 items in your cart"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <otus.gpb.homework.viewandresources.CartItem
+        android:id="@+id/item1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="16dp"
+        app:cart_item_caption="Caption"
+        app:cart_item_image="@drawable/item1"
+        app:cart_item_name="On the top"
+        app:cart_item_price="1.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/items_count" />
+
+    <otus.gpb.homework.viewandresources.CartItem
+        android:id="@+id/item2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="16dp"
+        app:cart_item_caption="Caption"
+        app:cart_item_image="@drawable/item2"
+        app:cart_item_name="Forever Friends"
+        app:cart_item_price="4.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item1" />
+
+    <otus.gpb.homework.viewandresources.CartItem
+        android:id="@+id/item3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="16dp"
+        app:cart_item_caption="Caption"
+        app:cart_item_image="@drawable/item3"
+        app:cart_item_name="Prototyping Kit"
+        app:cart_item_price="8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item2" />
+
+    <otus.gpb.homework.viewandresources.CartItem
+        android:id="@+id/item4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="16dp"
+        app:cart_item_caption="Caption"
+        app:cart_item_image="@drawable/item4"
+        app:cart_item_name="Basket &amp; Coffee"
+        app:cart_item_price="22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item3" />
+
+    <Button
+        android:id="@+id/pay"
+        style="@style/Widget.Material3.Button.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="?attr/payButtonColor"
+        android:text="Pay now"
+        android:textAppearance="@style/MyLabel.Head"
+        android:textColor="?attr/colorOnPrimary"
+        app:icon="@drawable/credit_card_chip_outline"
+        app:iconTint="?attr/iconColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <otus.gpb.homework.viewandresources.CartItem
+        android:id="@+id/subtotal3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:paddingHorizontal="16dp"
+        app:cart_item_name="Tax"
+        app:cart_item_price="3.5"
+        app:cart_item_type="subtotal"
+        app:layout_constraintBottom_toTopOf="@id/pay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <otus.gpb.homework.viewandresources.CartItem
+        android:id="@+id/subtotal2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="16dp"
+        app:cart_item_name="Shipping"
+        app:cart_item_price="2"
+        app:cart_item_type="subtotal"
+        app:layout_constraintBottom_toTopOf="@id/subtotal3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <otus.gpb.homework.viewandresources.CartItem
+        android:id="@+id/subtotal1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="16dp"
+        app:cart_item_name="Subtotal"
+        app:cart_item_price="36"
+        app:cart_item_type="subtotal"
+        app:layout_constraintBottom_toTopOf="@id/subtotal2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <otus.gpb.homework.viewandresources.CartItem
+        android:id="@+id/total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="24dp"
+        android:paddingHorizontal="16dp"
+        app:cart_item_name="Shipping"
+        app:cart_item_price="41.24"
+        app:cart_item_type="total"
+        app:layout_constraintBottom_toTopOf="@id/subtotal1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="24dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="?attr/mainColor"
+        app:layout_constraintBottom_toTopOf="@id/total"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

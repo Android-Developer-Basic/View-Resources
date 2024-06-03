@@ -12,5 +12,12 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="mainColor">@color/dark_blue_gray</item>
+        <item name="iconColor">@color/gray</item>
+        <item name="shadeColor">@color/light_gray_94</item>
+        <item name="buttonColor">?attr/colorSecondary</item>
+        <item name="bordersColor">?attr/shadeColor</item>
+        <item name="closeIconColor">@color/red_accent</item>
+        <item name="payButtonColor">?attr/mainColor</item>
     </style>
 </resources>
