@@ -23,7 +23,7 @@
         android:id="@+id/editTextText"
         style="@style/Theme.ViewResources"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="54dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
@@ -47,7 +47,7 @@
         android:id="@+id/textInputLayout2"
         style="@style/Theme.ViewResources"
         android:layout_width="240dp"
-        android:layout_height="wrap_content"
+        android:layout_height="54dp"
         android:layout_marginTop="24dp"
         android:hint="Phone number"
         android:inputType="text"
@@ -66,22 +66,53 @@
 
 
     <com.google.android.material.textfield.TextInputLayout
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-        android:layout_width="240dp"
-        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="500dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:boxStrokeColor="@color/icon_color"
+        app:hintTextColor="@color/icon_color"
+        app:layout_constraintEnd_toEndOf="@+id/editTextText"
+        app:layout_constraintStart_toEndOf="@+id/textInputLayout2"
+        app:layout_constraintTop_toTopOf="@+id/textInputLayout2">
+
         <AutoCompleteTextView
             android:id="@+id/autoComplete2"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:inputType="none"
+            android:padding="16dp"
+
             android:text="Select"
 
-            />
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/icon_color" />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editTextText5"
+        style="@style/Theme.ViewResources"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Address"
+        android:inputType="text"
+        app:endIconDrawable="@drawable/map_marker"
+        app:endIconMode="custom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/address"
+            style="@style/Theme.ViewResources"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
 
 
 
