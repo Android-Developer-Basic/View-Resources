@@ -1,20 +1,31 @@
 package otus.gpb.homework.viewandresources
 
+
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.ArrayAdapter
+import android.widget.AutoCompleteTextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
-
+import androidx.core.content.ContentProviderCompat.requireContext
 
 
 class ContactsActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_contacts)
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
 
+        val items = resources.getStringArray(R.array.array_for_dropdown1)
+        val adapter = ArrayAdapter(
+            this,
+            R.layout.list_popup_window_item, items
+        )
+        val autoComplete2 = findViewById<AutoCompleteTextView>(R.id.autoComplete2)
+        autoComplete2.setAdapter(adapter)
 
 
 

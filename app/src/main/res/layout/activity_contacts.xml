@@ -66,28 +66,23 @@
 
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/menu5"
-        style="@style/Theme.ViewResources"
-        android:layout_width="match_parent"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="240dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="500dp"
-        android:hint="Select"
-        app:layout_constraintTop_toTopOf="parent"
-        app:endIconDrawable="@drawable/phone"
-        app:endIconMode="custom">
-
-
-
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
         <AutoCompleteTextView
-            android:id="@+id/autocomplete5"
-            app:simpleItems="@array/array_for_dropdown1"
-
+            android:id="@+id/autoComplete2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="text"
-            />
+            android:layout_height="match_parent"
+            android:inputType="none"
+            android:text="Select"
 
+            />
     </com.google.android.material.textfield.TextInputLayout>
+
 
 
 
