@@ -11,11 +11,15 @@
     <color name="backgroundBlack">#121212</color>
     <color name="white">#FFFFFFFF</color>
     <color name="lightGrayBckDay">#F0F0F0</color>
+    <color name="Green">#89ED5B</color>
     <color name="GrayBckNight">#272727</color>
     <color name="blackTextDay">#263238</color>
+    <color name="orangeText">#FFD76F</color>
     <color name="grayTextNight">#E0E0E0</color>
     <color name="grayIconsDay">#979797</color>
     <color name="grayIconsNight">#888888</color>
     <color name="greenButtonDay">#2ECC71</color>
     <color name="blueButtonNight">#4FB8FF</color>
+    <color name="red">#E74C3C</color>
+    <color name="mtrl_textinput_default_box_stroke_color">#F0F0F0</color>
 </resources>

@@ -7,14 +7,14 @@
 
     <style name="InputTextBox">
         <item name="android:layout_marginTop">24dp</item>
-        <item name="android:layout_marginRight">16dp</item>
-        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
         <item name="android:paddingTop">15dp</item>
         <item name="android:paddingBottom">15dp</item>
         <item name="android:paddingRight">16dp</item>
         <item name="android:paddingLeft">16dp</item>
-
-        <item name="android:background">?attr/colorSecondary</item>
+        <item name="drawableTint">?attr/IconTint</item>
+        <item name="android:background">?attr/editTextBackground</item>
         <item name="android:layout_height">54dp</item>
     </style>
 

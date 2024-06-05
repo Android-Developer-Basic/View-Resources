@@ -12,10 +12,28 @@
 
         <!-- Text colors. -->
         <item name="android:textColorHint">@color/blackTextDay</item>
+        <item name="textMainCartActivity">@color/blackTextDay </item>
+        <item name="mainText">@color/blackTextDay</item>
+        <item name="totalText">@color/blackTextDay</item>
+        <item name="textButtonRegister">@color/blue_main</item>
+        <!-- Top bar colors. -->
+
+        <item name="tobBarNightCart">@color/blue_main</item>
         <item name="topBarIconTint">@color/white</item>
         <item name="navigationIconTint">@color/white</item>
+        <item name="titleTextColor">@color/white</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/blue_main</item>
+        <!-- Other -->
+        <item name="editTextBackground">@color/lightGrayBckDay</item>
+        <item name="buttonBottomSignIn">@color/blue_main</item>
+
+        <item name="textReset">@color/blue_main</item>
+        <item name="CancelImage">@color/red</item>
+        <item name="ButtonPayDrawTint">@color/grayIconsDay</item>
+        <item name="IconTint">@color/grayIconsDay</item>
+        <item name="ButtonRegisterBackground">@color/greenButtonDay</item>
+        <item name="ButtonPayBackground">@color/blackTextDay</item>
         <!-- Customize your theme here. -->
     </style>
 </resources>

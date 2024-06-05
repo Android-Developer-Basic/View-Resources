@@ -2,5 +2,19 @@
 <resources>
     <declare-styleable name="CustomView">
         <attr name="topBarIconTint" format="color" />
+        <attr name="IconTint" format="color"/>
+        <attr name="BackgroundEditText" format="color" />
+        <attr name="ButtonRegisterBackground" format="color" />
+        <attr name="ButtonPayBackground" format="color" />
+        <attr name="ButtonPayDrawTint" format="color" />
+        <attr name="textMainCartActivity" format="color" />
+        <attr name="tobBarNightCart" format="color" />
+        <attr name="CancelImage" format="color" />
+        <attr name="mainText" format="color" />
+        <attr name="totalText" format="color" />
+        <attr name="buttonSignIn" format="color" />
+        <attr name="textReset" format="color" />
+        <attr name="textButtonRegister" format="color" />
+        <attr name="buttonBottomSignIn" format="color" />
     </declare-styleable>
 </resources>
