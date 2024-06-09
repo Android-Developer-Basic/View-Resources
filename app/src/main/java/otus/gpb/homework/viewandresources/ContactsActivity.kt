@@ -27,6 +27,14 @@ class ContactsActivity : AppCompatActivity() {
         val autoComplete2 = findViewById<AutoCompleteTextView>(R.id.autoComplete2)
         autoComplete2.setAdapter(adapter)
 
+        val items2 = resources.getStringArray(R.array.array_for_dropdown2)
+        val adapter2 = ArrayAdapter(
+            this,
+            R.layout.list_popup_window_item, items2
+        )
+        val autoComplete3 = findViewById<AutoCompleteTextView>(R.id.autoComplete3)
+        autoComplete3.setAdapter(adapter2)
+
 
 
 
