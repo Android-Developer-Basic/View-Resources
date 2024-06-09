@@ -237,6 +237,10 @@
 
     <Button
         android:id="@+id/register"
+        style="@style/Theme.ViewResources"
+        android:textAllCaps="true"
+        android:textSize="14sp"
+        android:backgroundTint="@color/button_color"
         android:layout_width="match_parent"
         android:text="Register"
         android:layout_marginHorizontal="16dp"
