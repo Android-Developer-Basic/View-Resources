@@ -14,9 +14,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:titleTextColor="@color/white"
-        app:title="Contracts"
+        app:title="Cart"
         app:titleMarginStart="30dp"
-        app:navigationIcon="@drawable/arrow_left"
-        />
+        app:navigationIcon="@drawable/arrow_left"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

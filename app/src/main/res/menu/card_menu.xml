@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="tag_heart"
+        android:id="@+id/tag_heart"
+        android:icon="@drawable/tag_heart"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:title="dots_menu"
+        android:id="@+id/dots_menu"
+        android:icon="@drawable/dots_vertical"
+        app:showAsAction="ifRoom"
+        />
+</menu>
