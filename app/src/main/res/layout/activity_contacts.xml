@@ -16,7 +16,7 @@
         app:titleTextColor="@color/white"
         app:title="Contracts"
         app:titleMarginStart="30dp"
-        app:navigationIcon="@drawable/arrow_back"
+        app:navigationIcon="@drawable/arrow_left"
         />
 
     <com.google.android.material.textfield.TextInputLayout
