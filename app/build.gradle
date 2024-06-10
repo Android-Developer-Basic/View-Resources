@@ -5,6 +5,9 @@ plugins {
 
 android {
     compileSdk 33
+    buildFeatures {
+        viewBinding true
+    }
 
     defaultConfig {
         applicationId "otus.gpb.homework.viewandresources"

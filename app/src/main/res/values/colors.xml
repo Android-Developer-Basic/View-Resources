@@ -11,5 +11,6 @@
     <color name="icon_color">#FF979797</color>
     <color name="textview_background_color">#FFf0f0f0</color>
     <color name="button_color">#FF2ECC71</color>
+    <color name="red">#FFE74C3C</color>
 
 </resources>
