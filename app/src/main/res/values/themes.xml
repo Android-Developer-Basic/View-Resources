@@ -14,10 +14,19 @@
         <!-- Customize your theme here. -->
         <item name="mainColor">@color/dark_blue_gray</item>
         <item name="iconColor">@color/gray</item>
+        <item name="payIconColor">@color/gray</item>
         <item name="shadeColor">@color/light_gray_94</item>
-        <item name="buttonColor">?attr/colorSecondary</item>
+        <item name="buttonColor">@color/light_green</item>
         <item name="bordersColor">?attr/shadeColor</item>
         <item name="closeIconColor">@color/red_accent</item>
         <item name="payButtonColor">?attr/mainColor</item>
+        <item name="contractAppBarColor">@color/blue</item>
+        <item name="contractAppBarTextColor">@color/white</item>
+        <item name="cartAppBarColor">@color/blue</item>
+        <item name="cartAppBarTextColor">@color/white</item>
+        <item name="accentColor1">?attr/mainColor</item>
+        <item name="accentColor2">?attr/mainColor</item>
+        <item name="signinButtonColor">@color/blue</item>
+        <item name="signinButtonColor2">@color/blue</item>
     </style>
 </resources>

@@ -74,8 +74,10 @@ class CartItem @JvmOverloads constructor(
                 binding.close.visibility = GONE
             }
 
-            if (itemType == CartItemType.TOTAL)
-                binding.name.setTextAppearance(R.style.MyLabel_Head)
+            if (itemType == CartItemType.TOTAL) {
+                binding.name.setTextAppearance(R.style.MyLabel_HeadAccent)
+                binding.price.setTextAppearance(R.style.MyLabel_HeadAccent)
+            }
 
         }
     }

@@ -14,4 +14,12 @@
     <color name="gray">#979797</color>
     <color name="gray_88">#888888</color>
     <color name="red_accent">#E74C3C</color>
+    <color name="light_green">#2ECC71</color>
+    <color name="light_green2">#89ED5B</color>
+    <color name="yellow">#FFD76F</color>
+    <color name="light_blue">#4FB8FF</color>
+    <color name="blue">#2980B9</color>
+    <color name="dark_dark_gray">#121212</color>
+
+
 </resources>

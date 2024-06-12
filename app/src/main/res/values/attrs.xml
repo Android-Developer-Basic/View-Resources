@@ -3,10 +3,19 @@
     <attr name="mainColor" format="color" />
     <attr name="shadeColor" format="color" />
     <attr name="iconColor" format="color" />
+    <attr name="payIconColor" format="color" />
     <attr name="buttonColor" format="color" />
     <attr name="bordersColor" format="color" />
     <attr name="closeIconColor" format="color" />
     <attr name="payButtonColor" format="color" />
+    <attr name="contractAppBarColor" format="color" />
+    <attr name="contractAppBarTextColor" format="color" />
+    <attr name="cartAppBarColor" format="color" />
+    <attr name="cartAppBarTextColor" format="color" />
+    <attr name="accentColor1" format="color" />
+    <attr name="accentColor2" format="color" />
+    <attr name="signinButtonColor" format="color" />
+    <attr name="signinButtonColor2" format="color" />
 
     <declare-styleable name="CartItem">
         <attr name="cart_item_name" format="string"/>
