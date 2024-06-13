@@ -28,118 +28,142 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <EditText
-        android:id="@+id/nameEditText"
-        style="@style/InputTextBox"
+    <ScrollView
         android:layout_width="match_parent"
-        android:autofillHints=""
-        android:drawableEnd="@drawable/baseline_person_24"
-        android:drawableTint="?attr/IconTint"
-        android:hint="@string/name"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/appBar" />
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/buttonReg"
+        app:layout_constraintTop_toBottomOf="@+id/appBar">
 
-    <EditText
-        android:id="@+id/phoneEditText"
-        style="@style/InputTextBox"
-        android:layout_width="0dp"
-        android:drawableTint="?attr/IconTint"
-        android:autofillHints=""
-        android:drawableEnd="@drawable/baseline_phone_24"
-        android:hint="@string/phone_number"
-        android:inputType="phone"
-        app:layout_constraintEnd_toStartOf="@+id/selectEditText"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/nameEditText" />
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appBar">
 
-    <EditText
-        android:id="@+id/selectEditText"
-        style="@style/InputTextBox"
-        android:layout_width="110dp"
-        android:layout_marginEnd="16dp"
-        android:autofillHints=""
-        android:drawableEnd="@drawable/baseline_arrow_drop_down_24"
-        android:hint="@string/select"
-        android:inputType="date"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/nameEditText" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
-    <EditText
-        android:id="@+id/addressEditText"
-        style="@style/InputTextBox"
-        android:layout_width="match_parent"
-        android:autofillHints=""
-        android:drawableEnd="@drawable/baseline_location_pin_24"
-        android:hint="@string/address"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/selectEditText" />
+                <EditText
+                    android:id="@+id/nameEditText"
+                    style="@style/InputTextBox"
+                    android:layout_width="match_parent"
+                    android:autofillHints=""
+                    android:drawableEnd="@drawable/baseline_person_24"
+                    android:drawableTint="?attr/IconTint"
+                    android:hint="@string/name"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/cityEditText"
-        style="@style/InputTextBox"
-        android:layout_width="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="0dp"
-        android:autofillHints=""
+                <EditText
+                    android:id="@+id/phoneEditText"
+                    style="@style/InputTextBox"
+                    android:layout_width="0dp"
+                    android:autofillHints=""
+                    android:drawableEnd="@drawable/baseline_phone_24"
+                    android:drawableTint="?attr/IconTint"
+                    android:hint="@string/phone_number"
+                    android:inputType="phone"
+                    app:layout_constraintEnd_toStartOf="@+id/selectEditText"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/nameEditText" />
 
-        android:hint="@string/city"
-        android:inputType="textShortMessage"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/stateEditText"
-        app:layout_constraintTop_toBottomOf="@+id/addressEditText" />
+                <EditText
+                    android:id="@+id/selectEditText"
+                    style="@style/InputTextBox"
+                    android:layout_width="110dp"
+                    android:layout_marginEnd="16dp"
+                    android:autofillHints=""
+                    android:drawableEnd="@drawable/baseline_arrow_drop_down_24"
+                    android:hint="@string/select"
+                    android:inputType="date"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/nameEditText" />
 
-    <EditText
-        android:id="@+id/stateEditText"
-        style="@style/InputTextBox"
-        android:layout_width="0dp"
-        android:autofillHints=""
-        android:drawableEnd="@drawable/baseline_arrow_drop_down_24"
-        android:hint="@string/state"
-        android:inputType="date"
-        android:layout_marginEnd="0dp"
-        app:layout_constraintEnd_toStartOf="@id/zipEditText"
-        app:layout_constraintStart_toEndOf="@id/cityEditText"
-        app:layout_constraintTop_toBottomOf="@+id/addressEditText" />
+                <EditText
+                    android:id="@+id/addressEditText"
+                    style="@style/InputTextBox"
+                    android:layout_width="match_parent"
+                    android:autofillHints=""
+                    android:drawableEnd="@drawable/baseline_location_pin_24"
+                    android:hint="@string/address"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/selectEditText" />
 
-    <EditText
-        android:id="@+id/zipEditText"
-        style="@style/InputTextBox"
-        android:layout_width="0dp"
-        android:layout_marginEnd="16dp"
-        android:autofillHints=""
-        app:layout_constraintStart_toEndOf="@id/stateEditText"
-        android:hint="@string/zip"
-        android:inputType="textShortMessage"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addressEditText" />
+                <EditText
+                    android:id="@+id/cityEditText"
+                    style="@style/InputTextBox"
+                    android:layout_width="0dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="0dp"
+                    android:autofillHints=""
 
-    <EditText
-        android:id="@+id/birthdateEditText"
-        style="@style/InputTextBox"
-        android:layout_width="match_parent"
-        android:autofillHints=""
-        android:drawableEnd="@drawable/baseline_edit_calendar_24"
-        android:hint="@string/birthday"
-        android:inputType="date"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/stateEditText" />
+                    android:hint="@string/city"
+                    android:inputType="textShortMessage"
+                    app:layout_constraintEnd_toStartOf="@id/stateEditText"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/addressEditText" />
 
-    <EditText
-        android:id="@+id/notesEditText"
-        style="@style/InputTextBox"
-        android:layout_width="match_parent"
-        android:autofillHints=""
-        android:drawableEnd="@drawable/baseline_edit_24"
-        android:hint="@string/notes"
-        android:inputType="textShortMessage"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/birthdateEditText" />
+                <EditText
+                    android:id="@+id/stateEditText"
+                    style="@style/InputTextBox"
+                    android:layout_width="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:autofillHints=""
+                    android:drawableEnd="@drawable/baseline_arrow_drop_down_24"
+                    android:hint="@string/state"
+                    android:inputType="date"
+                    app:layout_constraintEnd_toStartOf="@id/zipEditText"
+                    app:layout_constraintStart_toEndOf="@id/cityEditText"
+                    app:layout_constraintTop_toBottomOf="@+id/addressEditText" />
+
+                <EditText
+                    android:id="@+id/zipEditText"
+                    style="@style/InputTextBox"
+                    android:layout_width="0dp"
+                    android:layout_marginEnd="16dp"
+                    android:autofillHints=""
+                    android:hint="@string/zip"
+                    android:inputType="textShortMessage"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/stateEditText"
+                    app:layout_constraintTop_toBottomOf="@+id/addressEditText" />
+
+                <EditText
+                    android:id="@+id/birthdateEditText"
+                    style="@style/InputTextBox"
+                    android:layout_width="match_parent"
+                    android:autofillHints=""
+                    android:drawableEnd="@drawable/baseline_edit_calendar_24"
+                    android:hint="@string/birthday"
+                    android:inputType="date"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/stateEditText" />
+
+                <EditText
+                    android:id="@+id/notesEditText"
+                    style="@style/InputTextBox"
+                    android:layout_width="match_parent"
+                    android:autofillHints=""
+                    android:drawableEnd="@drawable/baseline_edit_24"
+                    android:hint="@string/notes"
+                    android:inputType="textShortMessage"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/birthdateEditText" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </HorizontalScrollView>
+
+    </ScrollView>
 
     <Button
         android:layout_width="match_parent"
@@ -147,7 +171,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-
+        android:id="@+id/buttonReg"
         android:backgroundTint="?attr/ButtonRegisterBackground"
         android:text="@string/register"
         android:textColor="?attr/colorOnSecondary"
