@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="h_margin">16dp</dimen>
+    <dimen name="v_margin">24dp</dimen>
+    <dimen name="v_dlg_margin">16dp</dimen>
+    <dimen name="h_dlg_margin">24dp</dimen>
+</resources>

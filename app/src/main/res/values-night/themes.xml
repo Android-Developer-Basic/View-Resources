@@ -12,5 +12,22 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="backgroundColor">@color/dark_dark_gray</item>
+        <item name="mainColor">@color/light_gray_88</item>
+        <item name="iconColor">@color/gray_88</item>
+        <item name="payIconColor">@color/dark_dark_gray</item>
+        <item name="shadeColor">@color/dark_gray</item>
+        <item name="buttonColor">@color/light_blue</item>
+        <item name="bordersColor">?attr/iconColor</item>
+        <item name="closeIconColor">?attr/iconColor</item>
+        <item name="payButtonColor">@color/light_green2</item>
+        <item name="contractAppBarColor">?attr/shadeColor</item>
+        <item name="contractAppBarTextColor">?attr/mainColor</item>
+        <item name="cartAppBarColor">?attr/backgroundColor</item>
+        <item name="cartAppBarTextColor">?attr/mainColor</item>
+        <item name="accentColor1">@color/light_green2</item>
+        <item name="accentColor2">@color/yellow</item>
+        <item name="signinButtonColor">@color/light_blue</item>
+        <item name="signinButtonColor2">?attr/mainColor</item>
     </style>
 </resources>

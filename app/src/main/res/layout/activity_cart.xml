@@ -1,9 +1,155 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".CartActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/topAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="?attr/cartAppBarColor"
+        app:menu="@menu/cart_menu"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        app:navigationIconTint="?attr/cartAppBarTextColor"
+        app:title="Cart"
+        app:titleTextAppearance="@style/AppBarTitle"
+        app:titleTextColor="?attr/cartAppBarTextColor" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/items_count"
+                style="@style/MyLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:text="4 items in your cart"
+                android:textColor="?attr/accentColor1"
+                android:textSize="14sp" />
+
+            <otus.gpb.homework.viewandresources.CartItem
+                android:id="@+id/item1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="12dp"
+                app:cart_item_caption="Caption"
+                app:cart_item_image="@drawable/item1"
+                app:cart_item_name="On the top"
+                app:cart_item_price="1.5" />
+
+            <otus.gpb.homework.viewandresources.CartItem
+                android:id="@+id/item2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="12dp"
+                app:cart_item_caption="Caption"
+                app:cart_item_image="@drawable/item2"
+                app:cart_item_name="Forever Friends"
+                app:cart_item_price="4.5" />
+
+            <otus.gpb.homework.viewandresources.CartItem
+                android:id="@+id/item3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="12dp"
+                app:cart_item_caption="Caption"
+                app:cart_item_image="@drawable/item3"
+                app:cart_item_name="Prototyping Kit"
+                app:cart_item_price="8" />
+
+            <otus.gpb.homework.viewandresources.CartItem
+                android:id="@+id/item4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="12dp"
+                app:cart_item_caption="Caption"
+                app:cart_item_image="@drawable/item4"
+                app:cart_item_name="Basket &amp; Coffee"
+                app:cart_item_price="22" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="44dp"
+                android:background="?android:attr/listDivider"
+                android:backgroundTint="?attr/mainColor" />
+
+            <otus.gpb.homework.viewandresources.CartItem
+                android:id="@+id/total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="16dp"
+                android:paddingHorizontal="16dp"
+                app:cart_item_name="Your order total"
+                app:cart_item_price="41.24"
+                app:cart_item_type="total" />
+
+            <otus.gpb.homework.viewandresources.CartItem
+                android:id="@+id/subtotal1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="16dp"
+                app:cart_item_name="Subtotal"
+                app:cart_item_price="36"
+                app:cart_item_type="subtotal" />
+
+            <otus.gpb.homework.viewandresources.CartItem
+                android:id="@+id/subtotal2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="16dp"
+                app:cart_item_name="Shipping"
+                app:cart_item_price="2"
+                app:cart_item_type="subtotal" />
+
+            <otus.gpb.homework.viewandresources.CartItem
+                android:id="@+id/subtotal3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="16dp"
+                app:cart_item_name="Tax"
+                app:cart_item_price="3.5"
+                app:cart_item_type="subtotal" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/pay"
+        style="@style/Widget.Material3.Button.Icon"
+        android:layout_width="154dp"
+        android:layout_height="56dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="?attr/payButtonColor"
+        android:text="Pay now"
+        android:textAppearance="@style/MyLabel.Head"
+        android:textColor="?attr/colorOnPrimary"
+        app:icon="@drawable/credit_card_chip_outline"
+        app:iconTint="?attr/payIconColor" />
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="mainColor" format="color" />
+    <attr name="shadeColor" format="color" />
+    <attr name="iconColor" format="color" />
+    <attr name="payIconColor" format="color" />
+    <attr name="buttonColor" format="color" />
+    <attr name="bordersColor" format="color" />
+    <attr name="closeIconColor" format="color" />
+    <attr name="payButtonColor" format="color" />
+    <attr name="contractAppBarColor" format="color" />
+    <attr name="contractAppBarTextColor" format="color" />
+    <attr name="cartAppBarColor" format="color" />
+    <attr name="cartAppBarTextColor" format="color" />
+    <attr name="accentColor1" format="color" />
+    <attr name="accentColor2" format="color" />
+    <attr name="signinButtonColor" format="color" />
+    <attr name="signinButtonColor2" format="color" />
+
+    <declare-styleable name="CartItem">
+        <attr name="cart_item_name" format="string"/>
+        <attr name="cart_item_caption" format="string"/>
+        <attr name="cart_item_price" format="float"/>
+        <attr name="cart_item_image" format="reference"/>
+        <attr name="cart_item_type" format="enum">
+            <enum name="item" value="0"/>
+            <enum name="total" value="1"/>
+            <enum name="subtotal" value="2"/>
+        </attr>
+    </declare-styleable>
+
+</resources>
