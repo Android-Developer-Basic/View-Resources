@@ -10,12 +10,13 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/main_color"
+        android:background="@color/Contracts_background_color"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:titleTextColor="@color/white"
+        app:titleTextColor="@color/Contracts_text_color"
         app:title="Contracts"
         app:titleMarginStart="30dp"
+        app:navigationIconTint="@color/Contracts_actionbar_icon_color"
         app:navigationIcon="@drawable/arrow_left"
         />
 

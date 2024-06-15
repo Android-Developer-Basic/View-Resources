@@ -22,4 +22,10 @@
 
     <color name="Reset_my_password">#FFE0E0E0</color>
 
+    <color name="Contracts_background_color">#FF272727</color>
+
+    <color name="Contracts_text_color">#FFE0E0E0</color>
+
+    <color name="Contracts_actionbar_icon_color">#FF888888</color>
+
 </resources>
