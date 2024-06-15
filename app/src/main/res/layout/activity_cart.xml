@@ -47,7 +47,7 @@
             android:layout_height="wrap_content"
             app:Description="Caption"
             app:ImageRes="@drawable/pie"
-            app:Price="$US,1.50"
+            app:Price="$US, 1.50"
             app:staffName="On the top" />
 
         <otus.gpb.homework.viewandresources.components.CartSnippet
@@ -55,7 +55,7 @@
             android:layout_height="wrap_content"
             app:Description="Caption"
             app:ImageRes="@drawable/disk"
-            app:Price="$US,4.50"
+            app:Price="$US, 4.50"
             app:staffName="Forever Friends" />
 
         <otus.gpb.homework.viewandresources.components.CartSnippet
@@ -63,7 +63,7 @@
             android:layout_height="wrap_content"
             app:Description="Caption"
             app:ImageRes="@drawable/clock"
-            app:Price="$US,8.00"
+            app:Price="$US, 8.00"
             app:staffName="Prototyping Kit" />
 
         <otus.gpb.homework.viewandresources.components.CartSnippet
@@ -71,7 +71,7 @@
             android:layout_height="wrap_content"
             app:Description="Caption"
             app:ImageRes="@drawable/cactus"
-            app:Price="$US,22.00"
+            app:Price="$US, 22.00"
             app:staffName="Basket &amp; coffee" />
 
 

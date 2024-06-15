@@ -122,6 +122,7 @@
         <Button
             android:id="@+id/register"
             style="@style/Theme.ViewResources"
+            android:textColor="@color/cart_pay_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="16dp"
