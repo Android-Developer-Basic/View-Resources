@@ -13,7 +13,7 @@
         android:background="@color/Contracts_background_color"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:titleTextColor="@color/Contracts_text_color"
+        app:titleTextColor="@color/Contracts_actionbar_text"
         app:title="Contracts"
         app:titleMarginStart="30dp"
         app:navigationIconTint="@color/Contracts_actionbar_icon_color"
