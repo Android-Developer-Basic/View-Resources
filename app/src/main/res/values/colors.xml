@@ -15,4 +15,8 @@
     <color name="red">#FFE74C3C</color>
     <color name="alert_background">#FFFFFFFF</color>
 
+    <color name="alert_main_text">#FF000000</color>
+
+    <color name="alert_stroke_color">#FFE0E0E0</color>
+
 </resources>
