@@ -10,8 +10,15 @@
     <color name="icon_color">#FF979797</color>
     <color name="textview_background_color">#FFf0f0f0</color>
     <color name="button_color">#FF2ECC71</color>
+
     <color name="button_pay_now">#FF263238</color>
     <color name="red">#FFE74C3C</color>
+
+
+    <color name="yellow">#FFD76F</color>
+
+    <color name="grey">#FFE74C3C</color>
+
     <color name="alert_background">#FFFFFFFF</color>
 
     <color name="alert_main_text">#FF000000</color>
@@ -32,6 +39,18 @@
     <color name="Contracts_actionbar_icon_color">#FFFFFFFF</color>
 
     <color name="Contracts_register_btn">#FF2ECC71</color>
+
+    <color name="cart_action_bar_background">#FF2980B9</color>
+
+    <color name="cart_items_in_your_cart">#FF263238</color>
+
+    <color name="cart_close_icon">@color/red</color>
+
+    <color name="cart_your_total">#FF263238</color>
+
+    <color name="cart_pay_icon">#FF979797</color>
+
+    <color name="cart_pay_text">#FFFFFFFF</color>
 
 
 

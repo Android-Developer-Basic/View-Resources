@@ -16,6 +16,11 @@
 
         <item name="hintTextColor">@color/black</item>
 
+        <item name="android:textColor">@color/Contracts_text_color</item>
+
+
+
+
         <item name="boxStrokeColor">@color/icon_color</item>
         <item name="fontFamily">@font/roboto</item>
         <item name="android:textSize">16sp</item>

@@ -10,10 +10,10 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/main_color"
+        android:background="@color/cart_action_bar_background"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:titleTextColor="@color/white"
+        app:titleTextColor="@color/Contracts_actionbar_text"
         app:title="Cart"
         app:titleMarginStart="30dp"
         app:navigationIcon="@drawable/arrow_left"/>
@@ -23,6 +23,7 @@
     <TextView
         android:id="@+id/textView"
         style="@style/Theme.ViewResources"
+        android:textColor="@color/cart_items_in_your_cart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -80,6 +81,7 @@
         android:id="@+id/orderText"
         style="@style/Theme.ViewResources"
         android:textStyle="bold"
+        android:textColor="@color/cart_your_total"
         android:textSize="20sp"
         android:text="Your order total"
         android:layout_width="wrap_content"
@@ -94,6 +96,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
+        android:textColor="@color/cart_your_total"
         android:text="41.24"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -128,6 +131,7 @@
     <Button
         android:id="@+id/register"
         style="@style/Theme.ViewResources"
+        android:textColor="@color/cart_pay_text"
         android:textSize="14sp"
         android:backgroundTint="@color/button_pay_now"
         app:cornerRadius="1000dp"
@@ -141,7 +145,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:iconTint="@color/icon_color"
+        app:iconTint="@color/cart_pay_icon"
         app:icon="@drawable/wallet"/>
 
 
