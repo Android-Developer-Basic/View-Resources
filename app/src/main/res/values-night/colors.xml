@@ -28,4 +28,6 @@
 
     <color name="Contracts_actionbar_icon_color">#FF888888</color>
 
+    <color name="Contracts_register_btn">#FF4FB8FF</color>
+
 </resources>

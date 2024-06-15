@@ -97,7 +97,7 @@
 
             android:text="Select"
 
-            android:textColor="@color/black"
+            android:textColor="@color/Contracts_text_color"
             android:textColorHighlight="@color/icon_color" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -167,7 +167,7 @@
                 android:inputType="none"
                 android:padding="16dp"
                 android:text="State"
-                android:textColor="@color/black"
+                android:textColor="@color/Contracts_text_color"
                 android:textColorHighlight="@color/icon_color" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -242,9 +242,10 @@
         style="@style/Theme.ViewResources"
         android:textAllCaps="true"
         android:textSize="14sp"
-        android:backgroundTint="@color/button_color"
+        android:backgroundTint="@color/Contracts_register_btn"
         android:layout_width="match_parent"
         android:text="Register"
+        android:textStyle="bold"
         android:layout_marginHorizontal="16dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"

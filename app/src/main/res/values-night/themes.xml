@@ -11,7 +11,8 @@
         <item name="colorOnSecondary">@color/black</item>
 
         <item name="background">@color/textview_background_color</item>
-        <item name="android:textColorHint">@color/black</item>
+
+        <item name="android:textColorHint">@color/Contracts_text_color</item>
 
         <item name="hintTextColor">@color/Contracts_text_color</item>
 

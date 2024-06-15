@@ -24,9 +24,11 @@
 
     <color name="Contracts_background_color">#FF2980B9</color>
 
-    <color name="Contracts_text_color">#FFFFFFFF</color>
+    <color name="Contracts_text_color">#FF263238</color>
 
     <color name="Contracts_actionbar_icon_color">#FFFFFFFF</color>
+
+    <color name="Contracts_register_btn">#FF2ECC71</color>
 
 
 
