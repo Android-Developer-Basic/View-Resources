@@ -79,7 +79,7 @@
     <TextView
         android:id="@+id/orderText"
         style="@style/Theme.ViewResources"
-        android:textFontWeight="500"
+        android:textStyle="bold"
         android:textSize="20sp"
         android:text="Your order total"
         android:layout_width="wrap_content"
@@ -88,6 +88,44 @@
         android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+    <TextView
+        style="@style/Theme.ViewResources"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="41.24"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/orderText" />
+
+    <TextView
+        style="@style/Theme.ViewResources"
+        android:lineHeight="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Subtotal\nShipping\nTax"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orderText" />
+
+    <TextView
+        style="@style/Theme.ViewResources"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:lineHeight="24dp"
+        android:text="36.00\n2.00\n3.50"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orderText" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
