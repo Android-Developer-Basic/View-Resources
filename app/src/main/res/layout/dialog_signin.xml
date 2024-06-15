@@ -107,7 +107,7 @@
             android:fontFamily="@font/roboto"
             android:padding="0dp"
             android:text="Reset my password"
-            android:textColor="@color/main_color"
+            android:textColor="@color/Reset_my_password"
             android:textSize="12sp" />
     </LinearLayout>
 

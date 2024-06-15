@@ -7,7 +7,6 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="main_color">#FF2980B9</color>
     <color name="icon_color">#FF979797</color>
     <color name="textview_background_color">#FFf0f0f0</color>
     <color name="button_color">#FF2ECC71</color>
@@ -18,5 +17,9 @@
     <color name="alert_main_text">#FFFFFFFF</color>
 
     <color name="alert_stroke_color">#FFE0E0E0</color>
+
+    <color name="main_color">#FF4FB8FF</color>
+
+    <color name="Reset_my_password">#FFE0E0E0</color>
 
 </resources>
