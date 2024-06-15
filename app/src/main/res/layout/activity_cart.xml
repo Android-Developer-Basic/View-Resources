@@ -33,8 +33,9 @@
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
     <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="798dp"
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,10 +43,51 @@
 
         <otus.gpb.homework.viewandresources.components.CartSnippet
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            app:Description="Caption"
+            app:ImageRes="@drawable/pie"
+            app:Price="$US,1.50"
+            app:staffName="On the top" />
+
+        <otus.gpb.homework.viewandresources.components.CartSnippet
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:Description="Caption"
+            app:ImageRes="@drawable/disk"
+            app:Price="$US,4.50"
+            app:staffName="Forever Friends" />
+
+        <otus.gpb.homework.viewandresources.components.CartSnippet
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:Description="Caption"
+            app:ImageRes="@drawable/clock"
+            app:Price="$US,8.00"
+            app:staffName="Prototyping Kit" />
+
+        <otus.gpb.homework.viewandresources.components.CartSnippet
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:Description="Caption"
+            app:ImageRes="@drawable/cactus"
+            app:Price="$US,22.00"
+            app:staffName="Basket &amp; coffee" />
 
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/orderText"
+        style="@style/Theme.ViewResources"
+        android:textFontWeight="500"
+        android:textSize="20sp"
+        android:text="Your order total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

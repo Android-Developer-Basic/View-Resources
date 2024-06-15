@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Имя атрибута стиля компонента в теме -->
+    <attr name="like_dislike_panelStyle" format="reference"/>
+
+    <!-- Собственные атрибуты для компонента -->
+    <declare-styleable name="CartSnippet">
+        <attr name="staffName" format="string"/>
+        <attr name="ImageRes" format="reference"/>
+        <attr name="Description" format="string"/>
+        <attr name="Price" format="string"/>
+    </declare-styleable>
+</resources>
