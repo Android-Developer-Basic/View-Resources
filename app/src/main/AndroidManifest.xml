@@ -17,6 +17,12 @@
             android:name=".CartActivity"
             android:label="Cart"
             android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="Contacts"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,10 +30,6 @@
             </intent-filter>
 
         </activity>
-        <activity
-            android:name=".MainActivity"
-            android:label="Contacts"
-            android:exported="false" />
         <activity
             android:name=".ContactsActivity"
             android:exported="true">
