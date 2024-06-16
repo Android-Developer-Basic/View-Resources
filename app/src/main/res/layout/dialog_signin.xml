@@ -56,7 +56,7 @@
             android:inputType="text"
 
             android:textColorHint="@color/alert_main_text"
-            app:boxStrokeColor="@color/alert_stroke_color"
+            app:boxStrokeColor="@color/stroke_color_selector"
             app:hintTextColor="@color/alert_main_text"
 
             tools:layout_editor_absoluteX="16dp">
@@ -82,7 +82,7 @@
             android:hint="Password"
             android:inputType="text"
             android:textColorHint="@color/alert_main_text"
-            app:boxStrokeColor="@color/alert_stroke_color"
+            app:boxStrokeColor="@color/stroke_color_selector"
             app:hintTextColor="@color/alert_main_text"
             tools:layout_editor_absoluteX="16dp">
 

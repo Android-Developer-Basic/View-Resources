@@ -22,7 +22,7 @@
 
     <color name="alert_main_text">#FFFFFFFF</color>
 
-    <color name="alert_stroke_color">#FFE0E0E0</color>
+    <color name="alert_stroke_color">#FF888888</color>
 
     <color name="main_color">#FF4FB8FF</color>
 
