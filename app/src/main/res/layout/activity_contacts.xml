@@ -1,184 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ContactsActivity">
 
-    <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/toolbar"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/Contracts_background_color"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:titleTextColor="@color/Contracts_actionbar_text"
-        app:title="Contacts"
-        app:titleMarginStart="30dp"
-        app:navigationIconTint="@color/Contracts_actionbar_icon_color"
-        app:navigationIcon="@drawable/arrow_left"
-        />
+        android:paddingBottom="26dp">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-
-    </ScrollView>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/editTextText"
-        style="@style/Theme.ViewResources"
-        android:layout_width="0dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
-        android:hint="Name"
-        android:inputType="text"
-
-        app:endIconDrawable="@drawable/account"
-        app:endIconMode="custom"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/name"
-            style="@style/Theme.ViewResources"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout2"
-        style="@style/Theme.ViewResources"
-        android:layout_width="192dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="24dp"
-        android:hint="Phone number"
-        app:endIconDrawable="@drawable/phone"
-        app:endIconMode="custom"
-        app:layout_constraintStart_toStartOf="@+id/editTextText"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:inputType="number"
-            style="@style/Theme.ViewResources"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout"
-        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
-        android:layout_width="0dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="16dp"
-        app:boxStrokeColor="@color/icon_color"
-        app:hintTextColor="@color/icon_color"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText"
-        app:layout_constraintStart_toEndOf="@+id/textInputLayout2"
-        app:layout_constraintTop_toTopOf="@+id/textInputLayout2">
-
-        <AutoCompleteTextView
-            android:id="@+id/autoComplete2"
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="none"
-            android:padding="16dp"
+            android:background="@color/Contracts_background_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:titleTextColor="@color/Contracts_actionbar_text"
+            app:title="Contacts"
+            app:titleMarginStart="30dp"
+            app:navigationIconTint="@color/Contracts_actionbar_icon_color"
+            app:navigationIcon="@drawable/arrow_left" />
 
-            android:text="Select"
-
-            android:textColor="@color/Contracts_text_color"
-            android:textColorHighlight="@color/icon_color" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/editTextText5"
-        style="@style/Theme.ViewResources"
-        android:layout_width="0dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:hint="Address"
-        android:inputType="text"
-        app:endIconDrawable="@drawable/map_marker"
-        app:endIconMode="custom"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/address"
-            style="@style/Theme.ViewResources"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="54dp"
-        android:layout_marginTop="24dp"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText5">
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/city"
-            style="@style/Theme.ViewResources"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_weight="1"
-            android:hint="City"
-            android:inputType="text">
-
-            <com.google.android.material.textfield.TextInputEditText
-                style="@style/Theme.ViewResources"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:maxLines="1" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-
-            android:id="@+id/textInputLayout3"
-            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginEnd="16dp"
-            android:layout_weight="1.5"
-            app:boxStrokeColor="@color/icon_color"
-            app:hintTextColor="@color/icon_color">
-
-            <AutoCompleteTextView
-                android:id="@+id/autoComplete3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="none"
-                android:padding="16dp"
-                android:text="State"
-                android:textColor="@color/Contracts_text_color"
-                android:textColorHighlight="@color/icon_color" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/zip"
+            android:id="@+id/editTextText"
             style="@style/Theme.ViewResources"
             android:layout_width="0dp"
             android:layout_height="54dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
             android:layout_marginEnd="16dp"
-            android:layout_weight="1"
-            android:hint="Zip"
-            android:inputType="text">
+            android:hint="Name"
+            android:inputType="text"
+
+            app:endIconDrawable="@drawable/account"
+            app:endIconMode="custom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name"
+                style="@style/Theme.ViewResources"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout2"
+            style="@style/Theme.ViewResources"
+            android:layout_width="192dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="24dp"
+            android:hint="Phone number"
+            app:endIconDrawable="@drawable/phone"
+            app:endIconMode="custom"
+            app:layout_constraintStart_toStartOf="@+id/editTextText"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:inputType="number"
                 style="@style/Theme.ViewResources"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
@@ -186,71 +73,195 @@
         </com.google.android.material.textfield.TextInputLayout>
 
 
-    </LinearLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="0dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="16dp"
+            app:boxStrokeColor="@color/icon_color"
+            app:hintTextColor="@color/icon_color"
+            app:layout_constraintEnd_toEndOf="@+id/editTextText"
+            app:layout_constraintStart_toEndOf="@+id/textInputLayout2"
+            app:layout_constraintTop_toTopOf="@+id/textInputLayout2">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/Birthday"
-        style="@style/Theme.ViewResources"
-        android:layout_width="0dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="24dp"
-        android:hint="Birthday"
+            <AutoCompleteTextView
+                android:id="@+id/autoComplete2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:padding="16dp"
 
-        app:endIconDrawable="@drawable/calendar"
+                android:text="Select"
 
-        app:endIconMode="custom"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText5"
-        app:layout_constraintStart_toStartOf="@+id/editTextText5"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+                android:textColor="@color/Contracts_text_color"
+                android:textColorHighlight="@color/icon_color" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:inputType="date"
-            android:id="@+id/birthday"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/editTextText5"
+            style="@style/Theme.ViewResources"
+            android:layout_width="0dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:hint="Address"
+            android:inputType="text"
+            app:endIconDrawable="@drawable/map_marker"
+            app:endIconMode="custom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/address"
+                style="@style/Theme.ViewResources"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText5">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/city"
+                style="@style/Theme.ViewResources"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="1"
+                android:hint="City"
+                android:inputType="text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/Theme.ViewResources"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:id="@+id/textInputLayout3"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="1.5"
+                app:boxStrokeColor="@color/icon_color"
+                app:hintTextColor="@color/icon_color">
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoComplete3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"
+                    android:padding="16dp"
+                    android:text="State"
+                    android:textColor="@color/Contracts_text_color"
+                    android:textColorHighlight="@color/icon_color" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/zip"
+                style="@style/Theme.ViewResources"
+                android:layout_width="0dp"
+                android:layout_height="54dp"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="1"
+                android:hint="Zip"
+                android:inputType="text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/Theme.ViewResources"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Birthday"
+            style="@style/Theme.ViewResources"
+            android:layout_width="0dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="24dp"
+            android:hint="Birthday"
+
+            app:endIconDrawable="@drawable/calendar"
+
+            app:endIconMode="custom"
+            app:layout_constraintEnd_toEndOf="@+id/editTextText5"
+            app:layout_constraintStart_toStartOf="@+id/editTextText5"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:inputType="date"
+                android:id="@+id/birthday"
+                style="@style/Theme.ViewResources"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/notes"
+            style="@style/Theme.ViewResources"
+            android:layout_width="0dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="24dp"
+            android:hint="Notes"
+            android:inputType="text"
+            app:endIconDrawable="@drawable/pencil"
+            app:endIconMode="custom"
+            app:layout_constraintEnd_toEndOf="@+id/Birthday"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/Birthday"
+            app:layout_constraintTop_toBottomOf="@+id/Birthday">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/notes2"
+                style="@style/Theme.ViewResources"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/register"
             style="@style/Theme.ViewResources"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
 
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/notes"
-        style="@style/Theme.ViewResources"
-        android:layout_width="0dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="24dp"
-        android:hint="Notes"
-        android:inputType="text"
-        app:endIconDrawable="@drawable/pencil"
-        app:endIconMode="custom"
-        app:layout_constraintEnd_toEndOf="@+id/Birthday"
-        app:layout_constraintStart_toStartOf="@+id/Birthday"
-        app:layout_constraintTop_toBottomOf="@+id/Birthday">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/notes2"
-            style="@style/Theme.ViewResources"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <Button
-        android:id="@+id/register"
-        style="@style/Theme.ViewResources"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="@color/Contracts_register_btn"
-        android:text="Register"
-        android:textAllCaps="true"
-        android:textAppearance="@style/Theme.ViewResources"
-        android:textColor="@color/cart_pay_text"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/notes" />
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/Contracts_register_btn"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="Register"
+            android:textAllCaps="true"
+            android:textAppearance="@style/Theme.ViewResources"
+            android:textColor="@color/cart_pay_text"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/notes"
+            tools:layout_editor_absoluteX="16dp" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</ScrollView>
