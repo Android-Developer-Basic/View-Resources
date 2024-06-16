@@ -1,9 +1,165 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CartActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="26dp">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cart_action_bar_background"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:titleTextColor="@color/Contracts_actionbar_text"
+            app:title="Cart"
+            app:titleMarginStart="30dp"
+            app:navigationIcon="@drawable/arrow_left"/>
+
+
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/Theme.ViewResources"
+            android:textColor="@color/cart_items_in_your_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="4 items in your cart"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+
+            <otus.gpb.homework.viewandresources.components.CartSnippet
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:Description="Caption"
+                app:ImageRes="@drawable/pie"
+                app:Price="$US, 1.50"
+                app:staffName="On the top" />
+
+            <otus.gpb.homework.viewandresources.components.CartSnippet
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:Description="Caption"
+                app:ImageRes="@drawable/disk"
+                app:Price="$US, 4.50"
+                app:staffName="Forever Friends" />
+
+            <otus.gpb.homework.viewandresources.components.CartSnippet
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:Description="Caption"
+                app:ImageRes="@drawable/clock"
+                app:Price="$US, 8.00"
+                app:staffName="Prototyping Kit" />
+
+            <otus.gpb.homework.viewandresources.components.CartSnippet
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:Description="Caption"
+                app:ImageRes="@drawable/cactus"
+                app:Price="$US, 22.00"
+                app:staffName="Basket &amp; coffee" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/orderText"
+            style="@style/Theme.ViewResources"
+            android:textStyle="bold"
+            android:textColor="@color/cart_your_total"
+            android:textSize="20sp"
+            android:text="Your order total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+        <TextView
+            style="@style/Theme.ViewResources"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/cart_your_total"
+            android:text="41.24"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/orderText" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/Theme.ViewResources"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:lineHeight="24dp"
+            android:text="Subtotal\nShipping\nTax"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/orderText" />
+
+        <TextView
+            style="@style/Theme.ViewResources"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:lineHeight="24dp"
+            android:text="36.00\n2.00\n3.50"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/orderText" />
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="154dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="56dp"
+            android:backgroundTint="@color/button_pay_now"
+            android:backgroundTintMode="screen"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="Pay now"
+            android:textAppearance="@style/Theme.ViewResources"
+            android:textColor="@color/cart_pay_text"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:cornerRadius="100dp"
+            app:icon="@drawable/wallet"
+            app:iconPadding="11dp"
+            app:iconTint="@color/cart_pay_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</ScrollView>

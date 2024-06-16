@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="icon_color">@color/grey_1</color>
+    <color name="textview_background_color">@color/white_1</color>
+    <color name="button_color">@color/green</color>
+    <color name="button_pay_now">@color/green_1</color>
+    <color name="alert_background">@color/black_1</color>
+    <color name="alert_main_text">@color/white</color>
+    <color name="alert_stroke_color">@color/grey</color>
+    <color name="main_color">@color/lazyr_1</color>
+    <color name="Reset_my_password">@color/white_2</color>
+    <color name="Contracts_background_color">#FF272727</color>
+    <color name="Contracts_text_color">@color/white_2</color>
+    <color name="Contracts_actionbar_text">@color/white_2</color>
+    <color name="Contracts_actionbar_icon_color">@color/grey</color>
+    <color name="Contracts_register_btn">@color/lazyr_1</color>
+    <color name="cart_action_bar_background">@color/black_1</color>
+    <color name="cart_items_in_your_cart">@color/green_1</color>
+    <color name="cart_close_icon">@color/grey</color>
+    <color name="cart_your_total">@color/yellow</color>
+    <color name="cart_pay_icon">@color/black_1</color>
+    <color name="cart_pay_text">@color/black_1</color>
+
+</resources>

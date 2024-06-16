@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="array_for_dropdown1">
+        <item>"+7"</item>
+        <item>"+375"</item>
+        <item>"+374"</item>
+        <item>"+996"</item>
+        <item>"+998"</item>
+    </array>
+
+    <array name="array_for_dropdown2">
+        <item>Alaska</item>
+        <item>Tehas</item>
+        <item>Washington</item>
+        <item>Ohaio</item>
+    </array>
+
+</resources>
