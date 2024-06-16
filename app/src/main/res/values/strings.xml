@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">View &amp; Resources</string>
+    <string name="search">search</string>
+    <string name="more">more</string>
+    <string name="name">Name</string>
+    <string name="phone_number">Phone number</string>
+    <string name="select">Select</string>
+    <string name="address">Address</string>
+    <string name="state">State</string>
+    <string name="city">City</string>
+    <string name="zip">Zip</string>
+    <string name="birthday">Birthday</string>
+    <string name="notes">Notes</string>
+    <string name="register">REGISTER</string>
+    <string name="ticket">ticket</string>
+    <string name="_4_items_in_your_cart">4 items in your cart</string>
+    <string name="e_mail">E-mail</string>
+    <string name="e_g_john_gmail_com">e.g.john@gmail.com</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="reset_my_password">Reset my password</string>
+    <string name="password">Password</string>
+    <string name="register2">REGISTER</string>
+    <string name="sign_in2">Sign in</string>
 </resources>

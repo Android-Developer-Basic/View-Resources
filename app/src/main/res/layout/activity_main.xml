@@ -13,6 +13,7 @@
         android:text="open cart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="?attr/buttonBottomSignIn"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -20,6 +21,7 @@
         android:id="@+id/signin_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="?attr/buttonBottomSignIn"
         android:text="show sign in dialog"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,6 +31,7 @@
         android:id="@+id/contacts_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="?attr/buttonBottomSignIn"
         android:text="open contacts"
         app:layout_constraintBottom_toTopOf="@+id/cart_button"
         app:layout_constraintEnd_toEndOf="parent"

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/ticket"
+        android:icon="@drawable/baseline_sticky_note_2_24"
+        android:title="@string/ticket"
+        app:iconTint="?attr/topBarIconTint"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/more"
+        app:iconTint="?attr/topBarIconTint"
+        android:icon="@drawable/baseline_more_vert_24"
+        android:title="@string/more"
+        app:showAsAction="ifRoom" />
+
+</menu>
