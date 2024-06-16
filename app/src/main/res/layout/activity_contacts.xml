@@ -20,6 +20,13 @@
         app:navigationIcon="@drawable/arrow_left"
         />
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </ScrollView>
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/editTextText"
         style="@style/Theme.ViewResources"
@@ -44,15 +51,6 @@
             android:layout_height="wrap_content" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="match_parent"
-        android:layout_height="54dp"
-        android:layout_marginTop="24dp"
-        android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText5">
-
-    </LinearLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout2"
@@ -239,20 +237,20 @@
     <Button
         android:id="@+id/register"
         style="@style/Theme.ViewResources"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/Contracts_register_btn"
+        android:text="Register"
+        android:textAllCaps="true"
         android:textAppearance="@style/Theme.ViewResources"
         android:textColor="@color/cart_pay_text"
-        android:textAllCaps="true"
         android:textSize="14sp"
-        android:backgroundTint="@color/Contracts_register_btn"
-        android:layout_width="match_parent"
         android:textStyle="bold"
-        android:text="Register"
-        android:layout_marginHorizontal="16dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notes" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
