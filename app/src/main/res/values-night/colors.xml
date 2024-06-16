@@ -1,53 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="icon_color">#FF979797</color>
-    <color name="textview_background_color">#FFf0f0f0</color>
-    <color name="button_color">#FF2ECC71</color>
-
-    <color name="button_pay_now">#FF89ED5B</color>
-
-    <color name="red">#FFE74C3C</color>
-
-
-    <color name="grey">#FF888888</color>
-
-    <color name="alert_background">#FF121212</color>
-
-    <color name="alert_main_text">#FFFFFFFF</color>
-
-    <color name="alert_stroke_color">#FF888888</color>
-
-    <color name="main_color">#FF4FB8FF</color>
-
-    <color name="Reset_my_password">#FFE0E0E0</color>
-
+    <color name="icon_color">@color/grey_1</color>
+    <color name="textview_background_color">@color/white_1</color>
+    <color name="button_color">@color/green</color>
+    <color name="button_pay_now">@color/green_1</color>
+    <color name="alert_background">@color/black_1</color>
+    <color name="alert_main_text">@color/white</color>
+    <color name="alert_stroke_color">@color/grey</color>
+    <color name="main_color">@color/lazyr_1</color>
+    <color name="Reset_my_password">@color/white_2</color>
     <color name="Contracts_background_color">#FF272727</color>
-
-    <color name="Contracts_text_color">#FFE0E0E0</color>
-
-    <color name="Contracts_actionbar_text">#FFE0E0E0</color>
-
+    <color name="Contracts_text_color">@color/white_2</color>
+    <color name="Contracts_actionbar_text">@color/white_2</color>
     <color name="Contracts_actionbar_icon_color">@color/grey</color>
-
-    <color name="Contracts_register_btn">#FF4FB8FF</color>
-
-    <color name="cart_action_bar_background">#FF121212</color>
-
-    <color name="cart_items_in_your_cart">#FF89ED5B</color>
-
+    <color name="Contracts_register_btn">@color/lazyr_1</color>
+    <color name="cart_action_bar_background">@color/black_1</color>
+    <color name="cart_items_in_your_cart">@color/green_1</color>
     <color name="cart_close_icon">@color/grey</color>
-
     <color name="cart_your_total">@color/yellow</color>
-
-    <color name="cart_pay_icon">#FF121212</color>
-
-    <color name="cart_pay_text">#FF121212</color>
+    <color name="cart_pay_icon">@color/black_1</color>
+    <color name="cart_pay_text">@color/black_1</color>
 
 </resources>
