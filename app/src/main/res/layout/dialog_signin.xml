@@ -9,6 +9,7 @@
     <TextView
         android:id="@+id/orderText"
         style="@style/Theme.ViewResources"
+        android:textAppearance="@style/Theme.ViewResources"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -121,6 +122,7 @@
         <Button
             android:id="@+id/register"
             style="@style/Theme.ViewResources"
+            android:textAppearance="@style/Theme.ViewResources"
             android:textColor="@color/cart_pay_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
