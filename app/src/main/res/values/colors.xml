@@ -7,4 +7,17 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="arrow_back">@color/white</color>
+    <color name="toolbar_contacts">#2980B9</color>
+    <color name="toolbar_nav">#FFFFFFFF</color>
+    <color name="button_color">#2ECC71</color>
+    <color name="cards_text_top">#49454F</color>
+    <color name="deleat">#E74C3C</color>
+    <color name="buttonCard">#263238</color>
+    <color name="text_color_card">#49454F</color>
+    <color name="walet_card">#979797</color>
+    <color name="text_pay">@color/white</color>
+    <color name="signIn">#2980B9</color>
+    <color name="blue_figma">#2980B9</color>
+    <color name="backgroundTint_singin">@color/white</color>
 </resources>
