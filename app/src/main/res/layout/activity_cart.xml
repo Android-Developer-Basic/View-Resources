@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CartActivity">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="26dp">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelinel_start_cart"
@@ -40,7 +44,8 @@
             android:minHeight="?attr/actionBarSize"
             app:menu="@menu/toolbar_card"
             app:navigationIcon="@drawable/baseline_arrow_back_16"
-            app:title="Card"
+            app:title="Cart"
+            android:fontFamily="@font/roboto"
             app:titleTextColor="@color/white" />
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -53,6 +58,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="8dp"
         android:text="4 iteams in your cart"
+        android:fontFamily="@font/roboto"
         android:textColor="@color/cards_text_top"
         app:layout_constraintBottom_toTopOf="@+id/recyclerView"
         app:layout_constraintEnd_toStartOf="@+id/guideline_end_cart"
@@ -90,6 +96,7 @@
         android:layout_marginEnd="96dp"
         android:layout_marginBottom="16dp"
         android:text="Your order total"
+        android:fontFamily="@font/roboto"
         android:textColor="@color/text_color_card"
         android:textStyle="bold"
         android:textSize="20sp"
@@ -106,6 +113,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="96dp"
         android:text="Subtotal"
+        android:fontFamily="@font/roboto"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guidelinel_start_cart"
@@ -118,6 +126,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="96dp"
         android:text="Shipping"
+        android:fontFamily="@font/roboto"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guidelinel_start_cart"
@@ -130,6 +139,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="96dp"
         android:text="Tax"
+        android:fontFamily="@font/roboto"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -145,8 +155,9 @@
         android:layout_marginBottom="16dp"
         android:backgroundTint="@color/buttonCard"
         android:text="Pay now"
+        android:fontFamily="@font/roboto"
         android:textSize="20sp"
-        android:textColor="@color/white"
+        android:textColor="@color/pay"
         android:drawableLeft="@drawable/balance_wallet_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline_end_cart"
@@ -162,6 +173,7 @@
         android:layout_marginTop="24dp"
         android:layout_marginBottom="16dp"
         android:text="41.24"
+        android:fontFamily="@font/roboto"
         android:textColor="@color/text_color_card"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -179,6 +191,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:text="36.00"
+        android:fontFamily="@font/roboto"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.62"
@@ -191,6 +204,7 @@
         android:layout_height="wrap_content"
         android:gravity="end"
         android:text="2.00"
+        android:fontFamily="@font/roboto"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/p_3.50"
         app:layout_constraintEnd_toEndOf="@+id/p_36.00"
@@ -204,11 +218,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="3.50"
+        android:fontFamily="@font/roboto"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="@+id/p_2.00"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/textViewTax"
         app:layout_constraintTop_toBottomOf="@+id/p_2.00" />
+        
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

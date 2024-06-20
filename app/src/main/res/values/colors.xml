@@ -20,4 +20,9 @@
     <color name="signIn">#2980B9</color>
     <color name="blue_figma">#2980B9</color>
     <color name="backgroundTint_singin">@color/white</color>
+    <color name="input_contact">#EFEFF0</color>
+    <color name="pay">@color/white</color>
+    <color name="signin_text">@color/white</color>
+    <color name="signin_text_color">#263238</color>
+    <color name="signin_back">@color/white</color>
 </resources>

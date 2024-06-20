@@ -18,10 +18,10 @@ class CartActivity : AppCompatActivity() {
         recyclerView.layoutManager = layoutManager
 
         val dataList = listOf(
-            Item("Item 1: On the top\nCaption", R.drawable.pie, "$ US,1.50"),
-            Item("Item 2: Forever Friends\nCaption", R.drawable.disk, "$ US,4.50"),
-            Item("Item 3: Prototyping Kit\nCaption", R.drawable.clock, "$ US,8.00"),
-            Item("Item 4: Basket & Coffee\nCaption", R.drawable.cactus,"$ US,22.00")
+            Item("On the top\nCaption", R.drawable.pie, "$ US,1.50"),
+            Item("Forever Friends\nCaption", R.drawable.disk, "$ US,4.50"),
+            Item("Prototyping Kit\nCaption", R.drawable.clock, "$ US,8.00"),
+            Item("Basket & Coffee\nCaption", R.drawable.cactus,"$ US,22.00")
         )
 
         adapter = RecyclerCard(dataList)
