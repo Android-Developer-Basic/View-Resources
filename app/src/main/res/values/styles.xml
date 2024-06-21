@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="RoundedCorners">
-        <item name="cornerFamily">cut</item>
+        <item name="cornerFamily">rounded</item>
         <item name="cornerSize">4dp</item>
     </style>
     <style name="RoundedMaterialButton" parent="Widget.MaterialComponents.Button">
         <item name="shapeAppearanceOverlay">@style/RoundedCorners</item>
     </style>
     <style name="CustomLinearLayout">
-        <item name="cornerSize">4dp</item>
+        <item name="android:radius">4dp</item>
         <item name="cornerFamily">cut</item>
     </style>
     <style name="ToolbarStyle" parent="Widget.MaterialComponents.Toolbar.Primary">
