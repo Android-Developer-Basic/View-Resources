@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="RoundedCorners">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">4dp</item>
+    </style>
+    <style name="RoundedMaterialButton" parent="Widget.MaterialComponents.Button">
+        <item name="shapeAppearanceOverlay">@style/RoundedCorners</item>
+    </style>
+    <style name="CustomLinearLayout">
+        <item name="android:radius">4dp</item>
+        <item name="cornerFamily">cut</item>
+    </style>
+    <style name="ToolbarStyle" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="titleTextAppearance">@style/ToolbarTitleText</item>
+    </style>
+
+    <style name="ToolbarTitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">20sp</item> <!-- Укажите нужный размер текста -->
+    </style>
+    <style name="CustomTextInputStyle" parent="Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="textInputFilledStyle">@style/Widget.Material3.TextInputLayout.FilledBox</item>
+    </style>
+</resources>

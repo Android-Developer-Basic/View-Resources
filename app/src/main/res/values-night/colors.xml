@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="toolbar_contacts">#272727</color>
+    <color name="text_color">#E0E0E0</color>
+    <color name="button_color">#4FB8FF</color>
+    <color name="text_small_button_color">#b8e0e0e0</color>
+    <color name="toolbar_nav">#888888</color>
+    <color name="cards_text_top">#89ED5B</color>
+    <color name="arrow_back">#888888</color>
+    <color name="deleat">#888888</color>
+    <color name="buttonCard">#89ED5B</color>
+    <color name="text_color_card">#FFD76F</color>
+    <color name="walet_card">#121212</color>
+    <color name="text_pay">#121212</color>
+    <color name="signIn">#a7a7a7</color>
+    <color name="backgroundTint_singin">#121212</color>
+    <color name="input_contact">#272727</color>
+    <color name="pay">#121212</color>
+    <color name="signin_text">#121212</color>
+    <color name="signin_text_color">#E0E0E0</color>
+    <color name="signin_back">#121212</color>
+</resources>
