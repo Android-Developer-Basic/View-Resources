@@ -1,10 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="head">#2980B9</color>
+    <color name="toolbar_contacts">@color/head</color>
+    <color name="arrow_back">@color/white</color>
+    <color name="toolbar_search">@color/white</color>
+    <color name="toolbar_actions">@color/white</color>
+    <color name="text_field_contact">#F0F0F0</color>
+    <color name="text_color_hint">#263238</color>
+    <color name="button_register">#2ECC71</color>
+    <color name="toolbar_cart">@color/head</color>
+    <color name="sale">@color/white</color>
+    <color name="text_color_cart">#263238</color>
+    <color name="cart_item_count">#49454F</color>
+    <color name="delete">#E74C3C</color>
+    <color name="text_color_total">#49454F</color>
+    <color name="button_pay_now">#263238</color>
+    <color name="wallet">#979797</color>
+    <color name="text_pay_now">@color/white</color>
+    <color name="reset_password">@color/head</color>
+    <color name="register_sign_in">@color/head</color>
+    <color name="background_register"></color>
+    <color name="sign_in">#263238</color>
+    <color name="input_contact">#EFEFF0</color>
+    <color name="sign_in_text_color">#263238</color>
+    <color name="button_color_sign_in">@color/head</color>
+    <color name="text_button_sing_in">@color/white</color>
 </resources>

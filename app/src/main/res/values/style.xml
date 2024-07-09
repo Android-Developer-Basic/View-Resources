@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ButtonRegister">
+        <item name="backgroundTint">@color/button_register</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="ButtonPayNow" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/button_pay_now</item>
+        <item name="android:textColor">@color/text_pay_now</item>
+        <item name="drawableTint">@color/wallet</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="ButtonRegisterSignIn">
+        <item name="android:textColor">@color/register_sign_in</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:backgroundTint">#00FFFFFF</item>
+    </style>
+
+    <style name="ButtonSignIn">
+        <item name="backgroundTint">@color/button_color_sign_in</item>
+        <item name="android:textColor">@color/text_button_sing_in</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextFieldContacts">
+        <item name="android:textColorHint">@color/text_color_hint</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>
