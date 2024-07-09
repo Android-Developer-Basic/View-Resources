@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <color name="toolbar_contacts">#272727</color>
+        <color name="arrow_back">#888888</color>
+        <color name="toolbar_search">#888888</color>
+        <color name="toolbar_actions">#888888</color>
+        <color name="text_field_contact">#272727</color>
+        <color name="text_color_hint">#E0E0E0</color>
+        <color name="button_register">#4FB8FF</color>
+        <color name="toolbar_cart">#121212</color>
+        <color name="text_color_cart">#E0E0E0</color>
+        <color name="cart_item_count">#89ED5B</color>
+        <color name="sale">#888888</color>
+        <color name="delete">#888888</color>
+        <color name="button_pay_now">#89ED5B</color>
+        <color name="text_color_total">#FFD76F</color>
+        <color name="wallet">#121212</color>
+        <color name="text_pay_now">#121212</color>
+        <color name="reset_password">#a7a7a7</color>
+        <color name="register_sign_in">#4FB8FF</color>
+        <color name="sign_in">#E0E0E0</color>
+        <color name="text_button_sing_in">#121212</color>
+        <color name="input_contact">#272727</color>
+        <color name="sign_in_text_color">#E0E0E0</color>
+        <color name="button_color_sign_in">#4FB8FF</color>
+
+</resources>

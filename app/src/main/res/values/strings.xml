@@ -1,3 +1,42 @@
 <resources>
     <string name="app_name">View &amp; Resources</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone number</string>
+    <string name="select">Select</string>
+    <string name="Address">Address</string>
+    <string name="City">City</string>
+    <string name="Birthday">Birthday</string>
+    <string name="Notes">Notes</string>
+    <string name="city">City</string>
+    <string name="e_mail">e-mail</string>
+    <string name="password">password</string>
+    <string name="zip">Zip</string>
+    <string name="register">Register</string>
+    <string name="state">State</string>
+    <string name="item_count">4 items in your cart</string>
+    <string name="total">Your order total</string>
+    <string name="pay_now">Pay now</string>
+    <string name="price">Price</string>
+    <string name="more">more</string>
+    <string name="sale">sale</string>
+    <string name="more_vert">more_vert</string>
+    <string name="search">search</string>
+    <string name="register_signin">REGISTER</string>
+    <string name="e_mail_sign_in">e-mail</string>
+    <string name="e_g_john_gmail_com">e.g.john@gmail.com</string>
+    <string name="reset_my_password">Reset my password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="show_sign_in_dialog">show sign in dialog</string>
+    <string name="open_contacts">open contacts</string>
+    <string name="open_cart">open cart</string>
+    <string-array name="selectArray">
+        <item>mobile</item>
+        <item>work</item>
+    </string-array>
+    <string-array name="selectState">
+        <item>CA</item>
+        <item>NY</item>
+        <item>OH</item>
+    </string-array>
+
 </resources>

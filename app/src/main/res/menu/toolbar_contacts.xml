@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search_toolbar"
+        android:icon="@drawable/search"
+        android:title="@string/search"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/more_vert_toolbar"
+        android:icon="@drawable/more_vert_24"
+        android:title="@string/more_vert"
+        app:showAsAction="ifRoom" />
+</menu>
