@@ -1,16 +1,36 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
-    <style name="Theme.ViewResources" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.ViewResources" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorOnBackground">@color/colorOnBackground</item>
+        <item name="colorAccent">@color/colorAccent</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_700</item>
-        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <!-- Tertiary brand color. -->
+        <item name="colorTertiary">@color/colorTertiary</item>
+        <!-- Text colors. -->
+        <item name="mainText">@color/mainText</item>
+        <item name="cartItemsText">@color/mainText</item>
+        <item name="orderTotalText">@color/mainText</item>
+        <!-- Top bar colors. -->
+        <item name="toolbarCartBackground">@color/colorPrimary</item>
+        <item name="toolbarContactsBackground">@color/colorPrimary</item>
+        <item name="toolbarTitle">@color/white</item>
+        <item name="toolbarIconTint">@color/white</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+        <!-- Other -->
         <!-- Customize your theme here. -->
+        <item name="buttonRegisterBackground">@color/colorSecondary</item>
+        <item name="buttonResetText">@color/colorPrimary</item>
+        <item name="buttonSignInText">@color/white</item>
+        <item name="buttonPay">@color/mainText</item>
+        <item name="crossIconTint">@color/colorAccent</item>
+        <item name="walletIconTint">@color/iconTint</item>
+        <item name="itemsInCartText">@color/mainText</item>
+        <item name="inputEditTextBackground">@color/shaded</item>
+        <item name="inputEditTextTint">@color/iconTint</item>
+        <item name="inputEditTextUnderline">@color/editTextUnderline</item>
     </style>
 </resources>

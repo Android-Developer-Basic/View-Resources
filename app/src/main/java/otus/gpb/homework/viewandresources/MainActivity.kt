@@ -1,10 +1,11 @@
 package otus.gpb.homework.viewandresources
 
+import android.app.AlertDialog
 import android.content.Intent
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,9 +20,10 @@ class MainActivity : AppCompatActivity() {
         }
 
         findViewById<Button>(R.id.signin_button).setOnClickListener {
-            MaterialAlertDialogBuilder(this)
-                .setView(R.layout.dialog_signin)
-                .show()
+            val contentView = LayoutInflater.from(this)
+                .inflate(R.layout.dialog_signin, null, false)
+
+            AlertDialog.Builder(this, R.style.Dialog).setView(contentView).show()
         }
     }
 }
