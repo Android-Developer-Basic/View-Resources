@@ -4,6 +4,157 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ContactsActivity">
+    android:background="?attr/colorOnBackground"
+    tools:context=".ContactsActivity"
+    tools:viewBindingIgnore="true">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/toolbarContactsBackground"
+        android:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/toolbar_contacts"
+        app:navigationIcon="@drawable/arrow_left"
+        app:title="@string/contacts_title"
+        app:titleTextColor="?attr/toolbarTitle" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <EditText
+            android:id="@+id/nameEditText"
+            style="@style/InputTextBox"
+            android:autofillHints=""
+            android:drawableEnd="@drawable/account"
+            android:drawableTint="?attr/inputEditTextTint"
+            android:hint="@string/name"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/phoneEditText"
+            style="@style/InputTextBox"
+            android:layout_width="0dp"
+            android:autofillHints=""
+            android:drawableEnd="@drawable/phone"
+            android:drawableTint="?attr/inputEditTextTint"
+            android:hint="@string/phone_number"
+            android:inputType="phone"
+            app:layout_constraintEnd_toStartOf="@+id/selectEditText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nameEditText" />
+
+        <EditText
+            android:id="@+id/selectEditText"
+            style="@style/InputTextBox"
+            android:layout_width="110dp"
+            android:autofillHints=""
+            android:drawableEnd="@drawable/arrow_dropdown"
+            android:drawableTint="?attr/inputEditTextTint"
+            android:hint="@string/select"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nameEditText" />
+
+        <EditText
+            android:id="@+id/addressEditText"
+            style="@style/InputTextBox"
+            android:autofillHints=""
+            android:drawableEnd="@drawable/map_marker"
+            android:drawableTint="?attr/inputEditTextTint"
+            android:hint="@string/address"
+            android:inputType="textPostalAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/selectEditText" />
+
+        <EditText
+            android:id="@+id/cityEditText"
+            style="@style/InputTextBox"
+            android:layout_width="0dp"
+            android:layout_marginEnd="0dp"
+            android:autofillHints=""
+            android:hint="@string/city"
+            android:inputType="textShortMessage"
+            app:layout_constraintEnd_toStartOf="@id/stateEditText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addressEditText" />
+
+        <EditText
+            android:id="@+id/stateEditText"
+            style="@style/InputTextBox"
+            android:layout_width="0dp"
+            android:layout_marginEnd="0dp"
+            android:autofillHints=""
+            android:drawableEnd="@drawable/arrow_dropdown"
+            android:drawableTint="?attr/inputEditTextTint"
+            android:hint="@string/state"
+            android:inputType="text"
+            app:layout_constraintEnd_toStartOf="@id/zipEditText"
+            app:layout_constraintStart_toEndOf="@id/cityEditText"
+            app:layout_constraintTop_toBottomOf="@+id/addressEditText" />
+
+        <EditText
+            android:id="@+id/zipEditText"
+            style="@style/InputTextBox"
+            android:layout_width="0dp"
+            android:autofillHints=""
+            android:hint="@string/zip"
+            android:inputType="textShortMessage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/stateEditText"
+            app:layout_constraintTop_toBottomOf="@+id/addressEditText" />
+
+        <EditText
+            android:id="@+id/birthdateEditText"
+            style="@style/InputTextBox"
+            android:autofillHints=""
+            android:drawableEnd="@drawable/calendar"
+            android:drawableTint="?attr/inputEditTextTint"
+            android:hint="@string/birthday"
+            android:inputType="date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/stateEditText" />
+
+        <EditText
+            android:id="@+id/notesEditText"
+            style="@style/InputTextBox"
+            android:autofillHints=""
+            android:drawableEnd="@drawable/edit"
+            android:drawableTint="?attr/inputEditTextTint"
+            android:hint="@string/notes"
+            android:inputType="textLongMessage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/birthdateEditText" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/register"
+        android:textAllCaps="true"
+        android:textColor="?attr/colorOnBackground"
+        app:backgroundTint="?attr/buttonRegisterBackground"
+        app:cornerRadius="4dp"
+        app:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

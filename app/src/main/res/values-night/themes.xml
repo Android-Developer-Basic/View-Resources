@@ -1,16 +1,36 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
-    <style name="Theme.ViewResources" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.ViewResources" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_200</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorPrimary">@color/colorPrimaryNight</item>
+        <item name="colorOnBackground">@color/colorOnBackgroundNight</item>
+        <item name="colorAccent">@color/colorAccentNight</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_200</item>
-        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorSecondary">@color/colorSecondaryNight</item>
+        <!-- Tertiary brand color. -->
+        <item name="colorTertiary">@color/colorTertiaryNight</item>
+        <!-- Text colors. -->
+        <item name="mainText">@color/mainTextNight</item>
+        <item name="cartItemsText">@color/colorSecondaryNight</item>
+        <item name="orderTotalText">@color/colorTertiaryNight</item>
+        <!-- Top bar colors. -->
+        <item name="toolbarCartBackground">@color/colorOnBackgroundNight</item>
+        <item name="toolbarContactsBackground">@color/shadedNight</item>
+        <item name="toolbarTitle">@color/mainTextNight</item>
+        <item name="toolbarIconTint">@color/iconTintNight</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor">@color/colorOnBackgroundNight</item>
+        <!-- Other -->
         <!-- Customize your theme here. -->
+        <item name="buttonRegisterBackground">@color/colorPrimaryNight</item>
+        <item name="buttonResetText">@color/mainTextNight</item>
+        <item name="buttonSignInText">@color/colorOnBackgroundNight</item>
+        <item name="buttonPay">@color/colorSecondaryNight</item>
+        <item name="crossIconTint">@color/iconTintNight</item>
+        <item name="walletIconTint">@color/colorOnBackgroundNight</item>
+        <item name="itemsInCartText">@color/colorSecondaryNight</item>
+        <item name="inputEditTextBackground">@color/shadedNight</item>
+        <item name="inputEditTextTint">@color/iconTintNight</item>
+        <item name="inputEditTextUnderline">@color/editTextUnderlineNight</item>
     </style>
 </resources>

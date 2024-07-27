@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="InputTextBox">
+        <item name="android:layout_height">56dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:background">@drawable/input_box_background</item>
+        <item name="android:textColorHint">?attr/mainText</item>
+    </style>
+
+    <style name="Dialog" parent="android:ThemeOverlay.Material.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+</resources>

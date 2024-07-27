@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomView">
+        <attr name="toolbarCartBackground" format="color" />
+        <attr name="toolbarContactsBackground" format="color" />
+        <attr name="toolbarTitle" format="color" />
+        <attr name="toolbarIconTint" format="color" />
+
+        <attr name="mainText" format="color" />
+        <attr name="cartItemsText" format="color" />
+        <attr name="orderTotalText" format="color" />
+
+        <attr name="buttonRegisterBackground" format="color" />
+        <attr name="buttonResetText" format="color" />
+        <attr name="buttonSignInText" format="color" />
+        <attr name="buttonPay" format="color" />
+        <attr name="crossIconTint" format="color" />
+        <attr name="walletIconTint" format="color" />
+        <attr name="itemsInCartText" format="color" />
+        <attr name="inputEditTextBackground" format="color" />
+        <attr name="inputEditTextTint" format="color" />
+        <attr name="inputEditTextUnderline" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="Item">
+        <attr name="itemImage" format="reference" />
+        <attr name="itemName" format="string" />
+        <attr name="itemDescription" format="string" />
+        <attr name="itemPrice" format="string" />
+    </declare-styleable>
+</resources>

@@ -4,6 +4,241 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CartActivity">
+    android:background="?attr/colorOnBackground"
+    tools:context=".CartActivity"
+    tools:viewBindingIgnore="true">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/toolbarCartBackground"
+        android:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/toolbar_cart"
+        app:navigationIcon="@drawable/arrow_left"
+        app:title="@string/cart_title"
+        app:titleTextColor="?attr/toolbarTitle" />
+
+    <TextView
+        android:id="@+id/itemsInCart"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/cart_sub_title"
+        android:textColor="?attr/itemsInCartText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/buttonPay"
+        app:layout_constraintTop_toBottomOf="@id/itemsInCart">
+
+        <LinearLayout
+            android:id="@+id/items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <otus.gpb.homework.viewandresources.Item
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:itemDescription="@string/caption"
+                app:itemImage="@drawable/cupcake"
+                app:itemName="@string/on_the_top"
+                app:itemPrice="$US, 1.50" />
+
+            <otus.gpb.homework.viewandresources.Item
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:itemDescription="@string/caption"
+                app:itemImage="@drawable/vinyls"
+                app:itemName="@string/forever_friends"
+                app:itemPrice="$US, 4.50" />
+
+            <otus.gpb.homework.viewandresources.Item
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:itemDescription="@string/caption"
+                app:itemImage="@drawable/alarm_clock"
+                app:itemName="@string/prototyping_kit"
+                app:itemPrice="$US, 8.00" />
+
+            <otus.gpb.homework.viewandresources.Item
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:itemDescription="@string/caption"
+                app:itemImage="@drawable/cactus"
+                app:itemName="@string/basket_and_coffee"
+                app:itemPrice="$US, 22.00" />
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="96dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            android:backgroundTint="?attr/mainText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/totalText"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/your_order_total"
+            android:textColor="?attr/orderTotalText"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/totalSum"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider" />
+
+        <TextView
+            android:id="@+id/totalSum"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:text="41.24"
+            android:textColor="?attr/orderTotalText"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/totalText"
+            app:layout_constraintTop_toBottomOf="@id/divider" />
+
+        <TextView
+            android:id="@+id/subtotalText"
+            android:layout_width="248dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/subtotal"
+            android:textColor="?attr/mainText"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/subtotalSum"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/totalText" />
+
+        <TextView
+            android:id="@+id/subtotalSum"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="36.00"
+            android:textAlignment="textEnd"
+            android:textColor="?attr/mainText"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/subtotalText"
+            app:layout_constraintTop_toBottomOf="@id/totalText" />
+
+        <TextView
+            android:id="@+id/shippingText"
+            android:layout_width="248dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/shipping"
+            android:textColor="?attr/mainText"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/shippingSum"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/subtotalText" />
+
+        <TextView
+            android:id="@+id/shippingSum"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="2.00"
+            android:textAlignment="textEnd"
+            android:textColor="?attr/mainText"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/shippingText"
+            app:layout_constraintTop_toBottomOf="@id/subtotalText" />
+
+        <TextView
+            android:id="@+id/taxText"
+            android:layout_width="248dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/tax"
+            android:textColor="?attr/mainText"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/taxSum"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/shippingText" />
+
+        <TextView
+            android:id="@+id/taxSum"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="3.50"
+            android:textAlignment="textEnd"
+            android:textColor="?attr/mainText"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/taxText"
+            app:layout_constraintTop_toBottomOf="@id/shippingText" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonPay"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:layout_width="154dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/pay_now"
+        android:textColor="?attr/colorOnBackground"
+        android:textSize="20sp"
+        app:backgroundTint="?attr/buttonPay"
+        app:elevation="2dp"
+        app:icon="@drawable/wallet"
+        app:iconTint="?attr/walletIconTint"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
