@@ -7,4 +7,15 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="gray">#4E5052</color>
+    <color name="lightGray">#979797</color>
+    <color name="buttonRegister">#2ECC71</color>
+    <color name="Text_lightBlack">#263238</color>
+    <color name="Text_lightBlue">#2980B9</color>
+    <color name="mainBackground">#121212</color>
+    <color name="RED">#C31B1B</color>
+    <color name="TotalName">#263238</color>
+    <color name="ResetMyPass">#2980B9</color>
+
+
 </resources>

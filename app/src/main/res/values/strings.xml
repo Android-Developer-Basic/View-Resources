@@ -1,3 +1,44 @@
 <resources>
     <string name="app_name">View &amp; Resources</string>
+    <string name="textfield_label">Name</string>
+    <string name="textfield_PhoneNumber">Phone Number</string>
+    <string name="textfield_Select">Select</string>
+    <string name="textfield_Address">Address</string>
+    <string name="textfield_City">City</string>
+    <string name="textfield_Zip">Zip</string>
+    <string name="textfield_State">State</string>
+    <string name="textfield_Birthday">Birthday</string>
+    <string name="textfield_Notes">Notes</string>
+    <string name="textButton_Register">REGISTER</string>
+    <string name="itemsInYourCart">4 items in your cart</string>
+
+    <string name="CakeTextUp">On the top</string>
+    <string name="PlatesTextUp">Forever Friends</string>
+    <string name="AlarmClockTextUp">Prototyping Kit</string>
+    <string name="СactusTextUp">Basket &amp; Coffee</string>
+    <string name="AllTextDown">Caption</string>
+    <string name="Price1">$US,1.50</string>
+    <string name="Price2">$US,4.50</string>
+    <string name="Price3">$US,8.00</string>
+    <string name="Price4">$US,22.00</string>
+
+    <string name="textfield_TotalMain">Your order total</string>
+    <string name="textfield_TotalPrice">41.24</string>
+    <string name="textfield_Subtotal">Subtotal</string>
+    <string name="textfield_Shipping">Shipping</string>
+    <string name="textfield_Tax">Tax</string>
+
+    <string name="bottomPrice1">36.00</string>
+    <string name="bottomPrice2">2.00</string>
+    <string name="bottomPrice3">3.50</string>
+
+    <string name="buttonText">Pay now</string>
+
+    <string name="singIn">Sing in</string>
+    <string name="Register">REGISTER</string>
+    <string name="emailText">E-mail</string>
+    <string name="passwordText">Password</string>
+    <string name="resetMyPassword">Reset my password</string>
+
+
 </resources>

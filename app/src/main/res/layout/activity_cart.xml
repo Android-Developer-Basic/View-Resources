@@ -6,4 +6,356 @@
     android:layout_height="match_parent"
     tools:context=".CartActivity">
 
+    <TextView
+        android:id="@+id/textViewItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/itemsInYourCart"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<!--    Первая карточка в cart-->
+
+    <ImageView
+        android:id="@+id/imageViewCake"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:srcCompat="@drawable/cake"
+        app:layout_constraintTop_toBottomOf="@+id/textViewItems"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewTopOfCake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/CakeTextUp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewCake"
+        app:layout_constraintTop_toBottomOf="@+id/textViewItems"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="16dp"
+        />
+
+    <TextView
+        android:id="@+id/textViewBottomOfCake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/AllTextDown"
+        app:layout_constraintStart_toEndOf="@+id/imageViewCake"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTopOfCake"
+        android:layout_marginLeft="16dp"
+        />
+
+    <TextView
+        android:id="@+id/textViewPriceOfCake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Price1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewItems"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="16dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageViewСrossOfCake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/icon_cross"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPriceOfCake"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="16dp"
+        />
+
+    <!--    Вторая карточка в cart-->
+
+    <ImageView
+        android:id="@+id/imageViewPlates"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:srcCompat="@drawable/plates"
+        app:layout_constraintTop_toBottomOf="@+id/textViewItems"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewTopOfPlates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/PlatesTextUp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewCake"
+        app:layout_constraintTop_toBottomOf="@+id/textViewItems"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="16dp"
+        />
+
+    <TextView
+        android:id="@+id/textViewBottomOfPlates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/AllTextDown"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPlates"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTopOfPlates"
+        android:layout_marginLeft="16dp"
+        />
+
+    <TextView
+        android:id="@+id/textViewPriceOfPlates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Price2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewItems"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="16dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageViewСrossOfPlates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/icon_cross"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPriceOfPlates"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="16dp"
+        />
+
+    <!--    Третья карточка в cart-->
+
+    <ImageView
+        android:id="@+id/imageViewAlarmClock"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:srcCompat="@drawable/alarm_clock"
+        app:layout_constraintTop_toBottomOf="@+id/textViewItems"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="184dp"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewTopOfAlarmClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/AlarmClockTextUp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewCake"
+        app:layout_constraintTop_toBottomOf="@+id/textViewItems"
+        android:layout_marginTop="184dp"
+        android:layout_marginLeft="16dp"
+        />
+
+    <TextView
+        android:id="@+id/textViewBottomOfAlarmClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/AllTextDown"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPlates"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTopOfAlarmClock"
+        android:layout_marginLeft="16dp"
+        />
+
+    <TextView
+        android:id="@+id/textViewPriceOfAlarmClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Price3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewItems"
+        android:layout_marginTop="184dp"
+        android:layout_marginRight="16dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageViewСrossOfAlarmClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/icon_cross"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPriceOfAlarmClock"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="16dp"
+        />
+
+    <!--    Четвертая карточка в cart-->
+
+    <ImageView
+        android:id="@+id/imageViewCactus"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:srcCompat="@drawable/cactus"
+        app:layout_constraintTop_toBottomOf="@+id/textViewItems"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="268dp"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewTopOfCactus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/СactusTextUp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewCake"
+        app:layout_constraintTop_toBottomOf="@+id/textViewItems"
+        android:layout_marginTop="268dp"
+        android:layout_marginLeft="16dp"
+        />
+
+    <TextView
+        android:id="@+id/textViewBottomOfCactus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/AllTextDown"
+        app:layout_constraintStart_toEndOf="@+id/imageViewCactus"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTopOfCactus"
+        android:layout_marginLeft="16dp"
+        />
+
+    <TextView
+        android:id="@+id/textViewPriceOfCactus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Price4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewItems"
+        android:layout_marginTop="268dp"
+        android:layout_marginRight="16dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageViewСrossOfCactus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/icon_cross"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPriceOfCactus"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="16dp"
+        />
+
+<!--    Разделитель-->
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="480dp"
+
+
+         />
+
+<!--    Большие прайсы-->
+
+    <TextView
+        android:id="@+id/textViewTotalName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/textfield_TotalMain"
+        android:textSize="20sp"
+        android:textColor="@color/TotalName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <TextView
+        android:id="@+id/textViewTotalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="16dp"
+        android:textSize="20sp"
+        android:text="@string/textfield_TotalPrice"
+        android:textColor="@color/TotalName"
+        />
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutFirst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="96dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTotalName">
+
+        <TextView
+            android:id="@+id/textViewSubtotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textfield_Subtotal" />
+
+        <TextView
+            android:id="@+id/textViewShipping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textfield_Shipping" />
+
+        <TextView
+            android:id="@+id/textViewTax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textfield_Tax" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTotalPrice"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/LinearLayoutFirst"
+        android:layout_marginLeft="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="0dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textViewBottomPrice1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bottomPrice1" />
+        <TextView
+            android:id="@+id/textViewBottomPrice2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bottomPrice2"
+            android:paddingLeft="8dp"/>
+        <TextView
+            android:id="@+id/textViewBottomPrice3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bottomPrice3"
+            android:paddingLeft="8dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:layout_width="154dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/Text_lightBlack"
+        android:text="@string/buttonText"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:cornerRadius="22dp"
+        app:elevation="2dp"
+        app:endIconDrawable="@drawable/icon_cross"
+        app:endIconMode="custom"
+        app:icon="@drawable/ic_wallet_24"
+        app:iconTint="@color/lightGray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
