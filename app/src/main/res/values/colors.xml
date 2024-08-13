@@ -1,10 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <color name="TopBar">#2980B9</color>
+    <color name="TopBarColor">#FFFFFFFF</color>
+    <color name="TopBarColorText">#FFFFFFFF</color>
+    <color name="backColor">#FFFFFFFF</color>
+    <color name="backColorTextField">#F0F0F0</color>
+    <color name="textColorSingIn">#263238</color>
+    <color name="textColorHint">#263238</color>
+
+    <!--    new-->
+
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="Text_lightBlack">#263238</color>
+    <color name="gray">#4E5052</color>
+    <color name="lightGray">#979797</color>
+    <color name="buttonRegister">#2ECC71</color>
+
+    <color name="Text_lightBlue">#2980B9</color>
+
+    <color name="mainBackground">#121212</color>
+    <color name="RED">#C31B1B</color>
+    <color name="TotalName">#263238</color>
+    <color name="ResetMyPass">#2980B9</color>
+
+
 </resources>
