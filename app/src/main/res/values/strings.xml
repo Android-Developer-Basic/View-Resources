@@ -1,4 +1,7 @@
 <resources>
+    <string name="topBar_Contacts">Contacts</string>
+    <string name="topBar_Cart">Cart</string>
+
     <string name="app_name">View &amp; Resources</string>
     <string name="textfield_label">Name</string>
     <string name="textfield_PhoneNumber">Phone Number</string>

@@ -4,7 +4,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backColor"
     tools:context=".ContactsActivity">
+
+    <!--    tool bar-->
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/topAppBarLayoutContacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBarContacts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/TopBar"
+            android:iconTint="@color/TopBarColor"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/Theme.ViewResources"
+            app:layout_anchor="@+id/appBarLayout"
+            app:layout_anchorGravity="center"
+            app:menu="@menu/top_app_bar"
+            app:navigationIcon="@drawable/arrow_left"
+            app:navigationIconTint="@color/TopBarColor"
+            app:title="@string/topBar_Contacts"
+            app:titleTextColor="@color/TopBarColorText" />
+
+        <!-- Note: A RecyclerView can also be used -->
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
     <!--    Name-->
 
@@ -13,18 +52,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
         android:layout_marginRight="16dp"
         android:hint="@string/textfield_label"
-        android:paddingTop="24dp"
+        android:textColorHint="@color/textColorHint"
         app:endIconDrawable="@drawable/account"
         app:endIconMode="custom"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/topAppBarLayoutContacts">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:background="@color/backColorTextField"
+            android:fontFamily="@font/roboto" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <!--    PhoneNumber-->
@@ -34,15 +76,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
         android:layout_marginRight="164dp"
         android:hint="@string/textfield_PhoneNumber"
-        android:paddingTop="24dp"
+        android:textColorHint="@color/textColorHint"
         app:endIconDrawable="@drawable/ic_phone_24"
         app:endIconMode="custom"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textFieldName">
+
         <com.google.android.material.textfield.TextInputEditText
+            android:background="@color/backColorTextField"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -55,17 +100,20 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="266dp"
         android:layout_marginRight="16dp"
-        android:paddingTop="24dp"
+        android:hint="@string/textfield_Select"
+        android:textColorHint="@color/textColorHint"
+        android:layout_marginTop="24dp"
         app:endIconDrawable="@drawable/menu_down"
         app:endIconMode="custom"
-        android:hint="@string/textfield_Select"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textFieldName">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:background="@color/backColorTextField"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
+
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -77,16 +125,17 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:paddingTop="24dp"
         android:hint="@string/textfield_Address"
-        app:endIconMode="custom"
+        android:textColorHint="@color/textColorHint"
+        android:layout_marginTop="24dp"
         app:endIconDrawable="@drawable/ic_baseline_location_on_24"
+        app:endIconMode="custom"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textFieldPhone"
-        >
+        app:layout_constraintTop_toBottomOf="@+id/textFieldPhone">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:background="@color/backColorTextField"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -97,15 +146,17 @@
         android:id="@+id/textFieldCity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/textfield_City"
-        android:paddingTop="24dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="292dp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:hint="@string/textfield_City"
+        android:textColorHint="@color/textColorHint"
+        android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textFieldAddress">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:background="@color/backColorTextField"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
@@ -120,7 +171,8 @@
         android:layout_marginLeft="136dp"
         android:layout_marginRight="130dp"
         android:hint="@string/textfield_State"
-        android:paddingTop="24dp"
+        android:textColorHint="@color/textColorHint"
+        android:layout_marginTop="24dp"
         app:endIconDrawable="@drawable/menu_down"
         app:endIconMode="custom"
         app:layout_constraintEnd_toEndOf="parent"
@@ -128,6 +180,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textFieldAddress">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:background="@color/backColorTextField"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
@@ -141,13 +194,15 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="298dp"
         android:layout_marginRight="16dp"
-        android:paddingTop="24dp"
         android:hint="@string/textfield_Zip"
+        android:textColorHint="@color/textColorHint"
+        android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textFieldAddress">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:background="@color/backColorTextField"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
@@ -161,16 +216,17 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:paddingTop="24dp"
         android:hint="@string/textfield_Birthday"
-        app:endIconMode="custom"
+        android:textColorHint="@color/textColorHint"
+        android:layout_marginTop="24dp"
         app:endIconDrawable="@drawable/calendar"
-        app:layout_constraintTop_toBottomOf="@+id/textfieldState"
+        app:endIconMode="custom"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        >
+        app:layout_constraintTop_toBottomOf="@+id/textfieldState">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:background="@color/backColorTextField"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
@@ -184,16 +240,17 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:paddingTop="24dp"
         android:hint="@string/textfield_Notes"
-        app:endIconMode="custom"
+        android:textColorHint="@color/textColorHint"
+        android:layout_marginTop="24dp"
         app:endIconDrawable="@drawable/ic_edit_24"
-        app:layout_constraintTop_toBottomOf="@+id/textFieldBirthday"
+        app:endIconMode="custom"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        >
+        app:layout_constraintTop_toBottomOf="@+id/textFieldBirthday">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:background="@color/backColorTextField"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
@@ -203,14 +260,14 @@
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/textButton_Register"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="16dp"
-        app:backgroundTint = "@color/buttonRegister"/>
+        android:text="@string/textButton_Register"
+        app:backgroundTint="@color/buttonRegister"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 

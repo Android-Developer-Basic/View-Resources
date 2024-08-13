@@ -4,19 +4,54 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backColor"
     tools:context=".CartActivity">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/topAppBarLayoutCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/topAppBarCart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/TopBar"
+                android:iconTint="@color/TopBarColor"
+                android:minHeight="?attr/actionBarSize"
+                app:menu="@menu/top_app_bar_cart"
+                app:navigationIcon="@drawable/arrow_left"
+                app:navigationIconTint="@color/TopBarColor"
+                app:title="@string/topBar_Cart"
+                app:titleTextColor="@color/TopBarColorText"
+                />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <!-- Note: A RecyclerView can also be used -->
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
     <TextView
         android:id="@+id/textViewItems"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/itemsInYourCart"
+        android:textColor="@color/Text_lightBlack"
         android:layout_marginTop="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/topAppBarLayoutCart" />
 
 <!--    Первая карточка в cart-->
 
@@ -344,7 +379,7 @@
         android:layout_marginBottom="16dp"
         android:backgroundTint="@color/Text_lightBlack"
         android:text="@string/buttonText"
-        android:textColor="@color/white"
+        android:textColor="@color/backColor"
         android:textSize="20sp"
         app:cornerRadius="22dp"
         app:elevation="2dp"

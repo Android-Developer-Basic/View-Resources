@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <color name="TopBar">#272727</color>
+    <color name="TopBarColor">#888888</color>
+    <color name="TopBarColorText">#FFFFFFFF</color>
+    <color name="backColor">#121212</color>
+    <color name="backColorTextField">#272727</color>
+    <color name="textColorSingIn">#E0E0E0</color>
+    <color name="textColorHint">#E0E0E0</color>
+    <color name="ResetMyPass">#E0E0E0</color>
+
+    <!--    new-->
+
     <color name="buttonRegister">#4FB8FF</color>
     <color name="Text_lightBlack">#89ED5B</color>
-    <color name="white">#121212</color>
     <color name="lightGray">#121212</color>
     <color name="TotalName">#FFD76F</color>
     <color name="Text_lightBlue">#2980B9</color>
-    <color name="ResetMyPass">#E0E0E0</color>
+
+
 
 
 </resources>

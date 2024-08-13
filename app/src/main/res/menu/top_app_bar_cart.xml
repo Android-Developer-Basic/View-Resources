@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/love_tag_svgrepo_com"
+        android:title="Two"
+        android:contentDescription="Description_Two"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/more"
+        android:title="Three"
+        android:contentDescription="Description_Three"
+
+        />
+</menu>
