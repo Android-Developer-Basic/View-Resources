@@ -1,3 +1,31 @@
 <resources>
     <string name="app_name">View &amp; Resources</string>
+    <string name="name">Name</string>
+    <string name="phone_number">Phone number</string>
+    <string name="select">Select</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="zip">Zip</string>
+    <string name="notes">Notes</string>
+    <string name="birthday">Birthday</string>
+    <string name="register">REGISTER</string>
+    <string name="cart_sub_title">4 items in your cart</string>
+    <string name="on_the_top">On the top</string>
+    <string name="caption">Caption</string>
+    <string name="forever_friends">Forever Friends</string>
+    <string name="us_1_50">$US,1.50</string>
+    <string name="your_order_total">Your order total</string>
+    <string name="price">41.24</string>
+    <string name="shipping">Shipping</string>
+    <string name="tax">Tax</string>
+    <string name="sign_in">Sign in</string>
+    <string name="e_mail">E-mail</string>
+    <string name="email">email</string>
+    <string name="password">Password</string>
+    <string name="reset_my_password">Reset my password</string>
+    <string name="prototyping_kit">Prototyping Kit</string>
+    <string name="basket_coffee"><![CDATA[Basket & Coffee]]></string>
+    <string name="subtotal">Subtotal</string>
+    <string name="pay_now">Pay now</string>
 </resources>
