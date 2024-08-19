@@ -28,4 +28,9 @@
     <string name="basket_coffee"><![CDATA[Basket & Coffee]]></string>
     <string name="subtotal">Subtotal</string>
     <string name="pay_now">Pay now</string>
+    <string name="contacts_title">Contacts</string>
+    <string name="contacts_app_bar_search">Search</string>
+    <string name="app_bar_more">More</string>
+    <string name="cart_app_bar_favorites">Cart</string>
+    <string name="cart_title">Cart</string>
 </resources>

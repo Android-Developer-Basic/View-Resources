@@ -6,14 +6,34 @@
     android:layout_height="match_parent"
     tools:context=".ContactsActivity">
 
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/contactsTopAppBarLayout"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/contactsTopAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            app:title="@string/contacts_title"
+            app:navigationIcon="@drawable/arrow_back_black_24dp"
+            app:menu="@menu/contacts_app_bar"
+            style="@style/toolBarContacts"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/filledButtonRegister"
+        app:layout_constraintBottom_toTopOf="@id/filledButtonRegister"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/contactsTopAppBarLayout">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -31,8 +51,7 @@
                     style="?attr/textInputFilledStyle"
                     android:layout_width="match_parent"
                     android:layout_height="53dp"
-                    android:hint="@string/name"
-                    />
+                    android:hint="@string/name" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <LinearLayout
@@ -44,9 +63,9 @@
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="wrap_content"
                     android:layout_height="53dp"
+                    android:layout_weight="3"
                     app:endIconDrawable="@drawable/call"
-                    app:endIconMode="custom"
-                    android:layout_weight="3">
+                    app:endIconMode="custom">
 
                     <com.google.android.material.textfield.TextInputEditText
                         style="?attr/textInputFilledStyle"
@@ -84,8 +103,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="53dp"
                     android:layout_marginTop="24dp"
-                    android:hint="@string/address"
-                    />
+                    android:hint="@string/address" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <LinearLayout

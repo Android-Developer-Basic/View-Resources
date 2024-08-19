@@ -10,4 +10,8 @@
     <attr name="alertTextColor" format="color"/>
     <attr name="registerTextColor" format="color"/>
     <attr name="resetPasswordTextColor" format="color"/>
+    <attr name="appBarContactsColor" format="color"/>
+    <attr name="appBarCartColor" format="color"/>
+    <attr name="appBarIconColor" format="color"/>
+    <attr name="appBarTitleColor" format="color"/>
 </resources>

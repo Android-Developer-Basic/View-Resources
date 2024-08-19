@@ -6,6 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".CartActivity">
 
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/contactsTopAppBarLayout"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/contactsTopAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            app:title="@string/cart_title"
+            app:navigationIcon="@drawable/arrow_back_black_24dp"
+            app:menu="@menu/cart_app_bar"
+            style="@style/toolBarContacts"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
