@@ -6,4 +6,191 @@
     android:layout_height="match_parent"
     tools:context=".CartActivity">
 
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/AppBarBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:menu="@menu/cart"
+            app:navigationIcon="@drawable/ic_baseline_arrow_white_24"
+            app:title="Cart"
+            app:titleTextColor="@color/white" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/total_items"
+        style="@style/ActivityCardStyle"
+        android:textColor="?ActivityCartTotalItemsTextColor"
+        android:text="4 items in your cart"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appBar" />
+
+    <ScrollView
+        android:id="@+id/scroll_view_container"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/total_items"
+        app:layout_constraintBottom_toTopOf="@id/cart_divider"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cart_items_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <otus.gpb.homework.viewandresources.views.OrderDetailsView
+                android:id="@+id/item1"
+                style="@style/ActivityCardStyle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/cart_items_container"
+                app:picture="@drawable/ic_baseline_close_24"
+                app:price="US$, 1.50"
+                app:title="On the top" />
+
+            <otus.gpb.homework.viewandresources.views.OrderDetailsView
+                android:id="@+id/item2"
+                style="@style/ActivityCardStyle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/item1"
+                app:picture="@drawable/ic_baseline_close_24"
+                app:price="US$, 4.50"
+                app:title="Forever Friends" />
+
+            <otus.gpb.homework.viewandresources.views.OrderDetailsView
+                android:id="@+id/item3"
+                style="@style/ActivityCardStyle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/item2"
+                app:picture="@drawable/ic_baseline_close_24"
+                app:price="US$, 8.00"
+                app:title="Prototyping kit" />
+
+            <otus.gpb.homework.viewandresources.views.OrderDetailsView
+                android:id="@+id/item4"
+                style="@style/ActivityCardStyle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/item3"
+                app:picture="@drawable/ic_baseline_close_24"
+                app:price="US$, 22.00"
+                app:iconColor="@color/red"
+                app:title="Basket &amp; Coffee" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/cart_divider"
+        style="@style/ActivityCardStyle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/total_field"
+        app:layout_constraintTop_toBottomOf="@id/scroll_view_container"
+        app:dividerThickness="1dp" />
+
+    <TextView
+        android:id="@+id/total_field"
+        style="@style/ActivityCardStyle"
+        android:textStyle="bold"
+        android:fontFamily="@font/roboto"
+        android:textSize="@dimen/text_size_large"
+        android:text="@string/your_order_total_txt"
+        android:textColor="?ActivityCartTotalSum"
+        app:layout_constraintBottom_toTopOf="@id/subtotal_field"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/total_value"
+        style="@style/ActivityCardStyle"
+        android:layout_marginBottom="@dimen/gap_large"
+        android:textSize="@dimen/text_size_large"
+        android:fontFamily="@font/roboto"
+        android:textStyle="bold"
+        android:textColor="?ActivityCartTotalSum"
+        android:text="55555"
+        app:layout_constraintBottom_toTopOf="@id/subtotal_value"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/subtotal_field"
+        android:layout_marginHorizontal="@dimen/gap_large"
+        android:textSize="@dimen/text_size_medium"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/subtotal_field"
+        app:layout_constraintBottom_toTopOf="@id/shipping_field"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/subtotal_value"
+        style="@style/BaseStyle"
+        android:layout_marginHorizontal="@dimen/gap_large"
+        android:textSize="@dimen/text_size_medium"
+        android:text="2222"
+        app:layout_constraintBottom_toTopOf="@id/shipping_value"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/shipping_field"
+        style="@style/BaseStyle"
+        android:layout_marginHorizontal="@dimen/gap_large"
+        android:textSize="@dimen/text_size_medium"
+        android:text="@string/shipping_field"
+        app:layout_constraintBottom_toTopOf="@id/tax_field"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/shipping_value"
+        style="@style/BaseStyle"
+        android:layout_marginHorizontal="@dimen/gap_large"
+        android:textSize="@dimen/text_size_medium"
+        android:text="3333"
+        app:layout_constraintBottom_toTopOf="@id/tax_value"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tax_field"
+        style="@style/BaseStyle"
+        android:layout_marginHorizontal="@dimen/gap_large"
+        android:layout_marginBottom="@dimen/gap_large"
+        android:textSize="@dimen/text_size_medium"
+        android:text="@string/tax_field"
+        app:layout_constraintBottom_toTopOf="@id/payment_btn"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tax_value"
+        style="@style/BaseStyle"
+        android:layout_marginHorizontal="@dimen/gap_large"
+        android:layout_marginBottom="@dimen/gap_large"
+        android:textSize="@dimen/text_size_medium"
+        android:text="11111"
+        app:layout_constraintBottom_toTopOf="@id/payment_btn"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/payment_btn"
+        style="@style/ActivityCartPayBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/gap_large"
+        app:icon="@drawable/ic_baseline_account_balance_wallet_24"
+        android:text="@string/pay_now_btn_txt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
