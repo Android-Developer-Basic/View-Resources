@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/magnify"
+        android:contentDescription="@string/magnify_icon_description"
+        android:icon="@drawable/magnify"
+        android:iconTint="@color/white"
+        android:title="@string/magnify_icon_description"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/more"
+        android:contentDescription="@string/more_icon_description"
+        android:icon="@drawable/dots_vertical"
+        android:iconTint="@color/white"
+        android:title="@string/more_icon_description"
+        app:showAsAction="ifRoom" />
+</menu>
