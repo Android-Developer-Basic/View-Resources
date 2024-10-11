@@ -33,7 +33,9 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/email"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
         android:hint="@string/email"
         android:paddingHorizontal="16dp"
         app:expandedHintEnabled="false"
@@ -53,6 +55,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/password"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/password"
         android:paddingHorizontal="16dp"
@@ -86,6 +89,7 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/sign_in"
         style="@style/RoundedMaterialButton"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="24dp"
         android:text="@string/sign_in"
