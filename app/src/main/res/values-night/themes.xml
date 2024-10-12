@@ -13,4 +13,23 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="top_text_style">
+        <item name="android:textColor">@color/top_text_color</item>
+    </style>
+
+    <style name="registerButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="backgroundTint">@color/blue</item>
+    </style>
+
+    <style name="OrderTotalTextStyle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/yellow</item>
+    </style>
+
+    <style name="Widget.Material3.Button.Icon.PayNowButton">
+        <item name="android:backgroundTint">@color/pay_button_dark_theme_color</item>
+        <item name="android:textSize">16sp</item>
+    </style>
 </resources>
