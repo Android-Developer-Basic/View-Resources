@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Theme.ViewResources">
+        <!-- Кастомный цвет -->
+        <attr name="colorDialogCaptionPrimary" format="color"/>
+        <attr name="colorDialogOutlineButtonPrimary" format="color"/>
+        <attr name="colorCartPrice" format="color"/>
+    </declare-styleable>
+</resources>

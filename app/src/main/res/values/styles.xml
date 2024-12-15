@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Title Large -->
+    <style name="TextAppearance.Material3.TitleLarge" parent="TextAppearance.Material3.DisplayMedium">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">?attr/colorDialogCaptionPrimary</item>
+        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:layout_marginBottom">24dp</item>
+    </style>
+
+    <!-- Body Medium -->
+    <style name="TextAppearance.Material3.BodyMedium" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="CustomButtonStyle" parent="Widget.Material3.Button">
+        <!-- Обводка кнопки -->
+        <item name="strokeColor">?attr/colorOutline</item>
+        <item name="strokeWidth">1dp</item>
+
+        <!-- Убираем заливку -->
+        <item name="backgroundTint">@android:color/transparent</item>
+
+        <!-- Настройка текста -->
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+
+        <!-- Ripple-эффект -->
+        <item name="rippleColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="CustomOutlineButtonStyle" parent="Widget.Material3.Button.OutlinedButton">
+        <!-- Настройка текста -->
+        <item name="android:textColor">?attr/colorDialogOutlineButtonPrimary</item>
+    </style>
+
+</resources>

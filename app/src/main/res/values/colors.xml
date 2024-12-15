@@ -7,4 +7,17 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="primary_light">#3E5F90</color>
+    <color name="primary_variant_light">#53709C</color>
+    <color name="on_primary_light">#E7E8EE</color>
+
+    <color name="cart_price_light">#6E5676</color>
+
+    <color name="primary_night">#A7C8FF</color>
+    <color name="primary_variant_night">#98A0B1</color>
+    <color name="on_primary_night">#282A2F</color>
+
+    <color name="cart_price_night">#DBBCE1</color>
+
 </resources>
