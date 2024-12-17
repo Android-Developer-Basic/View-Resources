@@ -377,11 +377,11 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:backgroundTint="@color/save_button_color"
+            android:backgroundTint="@color/blue_color"
             android:text="@string/place_order"
-            android:textColor="@color/save_button_text_color"
+            android:textColor="@color/blue_text_color"
             app:icon="@drawable/ic_emoticon_outline"
-            app:iconTint="@color/save_button_text_color" />
+            app:iconTint="@color/blue_text_color" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
