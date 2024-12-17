@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="icon_color">#FFFFFF</color>
+    <color name="black_or_white_theme_color">#FFFFFF</color>
     <color name="save_button_color">#A6C6FD</color>
     <color name="save_button_text_color">#04305E</color>
 </resources>

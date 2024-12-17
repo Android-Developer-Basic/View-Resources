@@ -20,7 +20,7 @@
             android:src="@drawable/ic_baseline_attach_file"
             app:menu="@menu/top_app_bar"
             app:navigationIcon="@drawable/ic_baseline_arrow_back"
-            app:navigationIconTint="@color/icon_color"
+            app:navigationIconTint="@color/black_or_white_theme_color"
             app:title="@string/ivan_petrov">
 
             <ImageButton
@@ -30,7 +30,7 @@
                 android:background="@null"
                 android:contentDescription="@string/attach_button"
                 android:src="@drawable/ic_baseline_attach_file"
-                app:tint="@color/icon_color" />
+                app:tint="@color/black_or_white_theme_color" />
         </com.google.android.material.appbar.MaterialToolbar>
     </com.google.android.material.appbar.AppBarLayout>
 
