@@ -8,4 +8,6 @@
     <color name="black">#FF000000</color>
     <color name="blue_button">#385582</color>
     <color name="icon_color">#FF000000</color>
+    <color name="save_button_color">#3E5E8F</color>
+    <color name="save_button_text_color">#FDFDFD</color>
 </resources>
