@@ -1,3 +1,29 @@
 <resources>
     <string name="app_name">View &amp; Resources</string>
+    <string name="one">one</string>
+    <string name="two">two</string>
+    <string name="attach_button">Attach Button</string>
+    <string name="name_hint">Name</string>
+    <string name="phone_hint">Phone</string>
+    <string name="select_hint">Select</string>
+    <string name="address_hint">Address</string>
+    <string name="city_hint">City</string>
+    <string name="country_hint">Country</string>
+    <string name="date_hint">Date</string>
+    <string name="notes_hint">Notes</string>
+    <string name="ivan_petrov">Ivan Petrov</string>
+    <string name="contacts_button_description">contacts button</string>
+    <string name="phone_button_description">phone button</string>
+    <string name="select_button_description">select button</string>
+    <string name="favourite_button_description">favourite button</string>
+    <string name="calendar_button_description">calendar button</string>
+    <string name="microphone_button_description">microphone button</string>
+    <string name="mobile">Mobile</string>
+    <string name="phone_number">+1(234)567-8900</string>
+    <string name="some_address">123, Lenin street, Apt.6</string>
+    <string name="tokyo">Tokyo</string>
+    <string name="australia">Australia</string>
+    <string name="birthday">Birthday</string>
+    <string name="loves_burgers_and_french_fries">Loves burgers and french fries</string>
+    <string name="save_button">Save</string>
 </resources>
