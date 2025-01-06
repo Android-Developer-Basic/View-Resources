@@ -7,4 +7,27 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="light_grayish_blue">#E1E2E9</color>
+    <color name="frost_black">#191C20</color>
+    <color name="steel_gray">#43474E</color>
+    <color name="ghost_white">#F9F9FF</color>
+    <color name="lavender">#E7E8EE</color>
+    <color name="surface_container_highest_dark">#33353A</color>
+    <color name="on_surface_variant_dark">#C4C6CF</color>
+    <color name="deep_cove">#04305F</color>
+    <color name="background_dark">#111318</color>
+    <color name="tertiary">#6E5676</color>
+    <color name="blue_ribbon">#3E5F90</color>
+    <color name="shadow_blue">#555F71</color>
+    <color name="dark_grayish_blue">#74777F</color>
+    <color name="surface_container_high_dark">#282A2F</color>
+    <color name="primary_dark">#A7C8FF</color>
+    <color name="outline_dark">#8E9199</color>
+    <color name="secondary_dark">#BDC7DC</color>
+    <string name="reset_password">Reset my password</string>
+    <string name="cancel">Cancel</string>
+
+
+
+
 </resources>

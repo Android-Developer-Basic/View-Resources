@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Attributes">
+        <attr name="colorSurfaceContainerHighest" format="color"/>
+        <attr name="colorOnSurface" format="color"/>
+        <attr name="colorOnSurfaceVariant" format="color"/>
+        <attr name="colorBackground" format="color"/>
+        <attr name="colorOnPrimary" format="color"/>
+        <attr name="colorSurfaceContainerHigh" format="color"/>
+        <attr name="surface_container_highest_dark" format="color"/>
+        <attr name="on_surface_dark" format="color"/>
+        <attr name="on_surface_variant_dark" format="color"/>
+        <attr name="background_dark" format="color"/>
+        <attr name="colorTertiary" format="color"/>
+        <attr name="colorPrimary" format="color"/>
+        <attr name="colorSecondary" format="color"/>
+        <attr name="colorOutline" format="color"/>
+        <attr name="surface_container_high_dark" format="color"/>
+        <attr name="primary_dark" format="color"/>
+        <attr name="outline_dark" format="color"/>
+        <attr name="secondary_dark" format="color"/>
+    </declare-styleable>
+
+</resources>

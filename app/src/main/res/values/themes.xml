@@ -1,8 +1,19 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="Base.Theme.ViewResources" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.ViewResources" parent="Theme.Material3.Light.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/blue_ribbon</item>
+        <item name="colorSecondary">@color/shadow_blue</item>
+        <item name="colorOutline">@color/dark_grayish_blue</item>
+        <item name="colorSurfaceContainerHighest">@color/light_grayish_blue</item>
+        <item name="colorOnSurface">@color/frost_black</item>
+        <item name="colorOnSurfaceVariant">@color/steel_gray</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorBackground">@color/ghost_white</item>
+        <item name="colorSurfaceContainerHigh">@color/lavender</item>
+        <item name="colorTertiary">@color/tertiary</item>
+        <item name="android:statusBarColor">?attr/colorBackground</item>
     </style>
 
     <style name="Theme.ViewResources" parent="Base.Theme.ViewResources" />

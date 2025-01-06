@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ContactsTextStyle">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="TextFieldStyle" parent="@style/Widget.Material3.TextInputLayout.FilledBox">
+
+        <item name="android:layout_marginTop">@dimen/defaultMargin</item>
+        <item name="android:layout_marginHorizontal">@dimen/defaultMargin</item>
+        <item name="android:textColorHint">?attr/colorOnSurfaceVariant</item>
+        <item name="boxBackgroundColor">?attr/colorSurfaceContainerHighest</item>
+        <item name="hintTextColor">?attr/colorOnSurfaceVariant</item>
+        <item name="cursorColor">?attr/colorOnSurfaceVariant</item>
+    </style>
+
+    <style name="DropdownStyle" parent="@style/Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu">
+        <item name="android:layout_marginTop">@dimen/defaultMargin</item>
+        <item name="android:layout_marginHorizontal">@dimen/defaultMargin</item>
+        <item name="boxBackgroundColor">?attr/colorSurfaceContainerHighest</item>
+        <item name="android:textAlignment">center</item>
+        <item name="dropDownBackgroundTint">?attr/colorSurfaceContainerHighest</item>
+        <item name="boxStrokeColor">?attr/colorOnSurfaceVariant</item>
+        <item name="endIconTint">?attr/colorOnSurfaceVariant</item>
+        <item name="hintTextColor">?attr/colorOnSurfaceVariant</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="android:layout_marginBottom">@dimen/defaultMargin</item>
+        <item name="android:layout_marginHorizontal">@dimen/defaultMargin</item>
+
+    </style>
+
+    <style name="CartItemPriceLargeText" parent="@style/TextAppearance.Material3.TitleLarge">
+        <item name="android:textColor">?attr/colorTertiary</item>
+    </style>
+
+    <style name="CartItemPriceMediumText" parent="@style/TextAppearance.Material3.TitleMedium">
+        <item name="android:textColor">?attr/colorTertiary</item>
+        <item name="android:layout_marginHorizontal">@dimen/standard</item>
+        <item name="android:paddingVertical">@dimen/oneQuarter</item>
+    </style>
+
+    <style name="CartItemBodyText" parent="@style/TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">?attr/colorOnSurfaceVariant</item>
+    </style>
+    
+    <style name="CartItemsCountText" parent="@style/TextAppearance.Material3.TitleMedium">
+        <item name="android:textColor">?attr/colorOnSurfaceVariant</item>
+    </style>
+
+    <style name="CartOrderBodyText" parent="@style/TextAppearance.Material3.TitleMedium">
+        <item name="android:layout_marginHorizontal">@dimen/standard</item>
+        <item name="android:paddingVertical">@dimen/oneQuarter</item>
+    </style>
+
+</resources>
