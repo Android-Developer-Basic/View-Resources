@@ -1,3 +1,38 @@
 <resources>
     <string name="app_name">View &amp; Resources</string>
+    <string name="profile_title">Profile</string>
+    <string name="login_title">Login</string>
+    <string name="login_name">Login</string>
+    <string name="password_name">Password</string>
+    <string name="reset_button">Reset my password</string>
+    <string name="login_button">Login</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="menu_contacts">Ivan Petrov</string>
+    <string name="contract_name">Name</string>
+    <string name="contract_phone">Phone</string>
+    <string name="contract_address">Address</string>
+    <string name="contract_city">City</string>
+    <string name="contract_country">Country</string>
+    <string name="contract_date">Date</string>
+    <string name="contract_notes">Notes</string>
+    <string name="contract_save">Save</string>
+    <string name="cart_place_order">Place order</string>
+    <string name="contract_link">Contacts</string>
+    <string name="main">Main</string>
+    <string name="clip">Clip</string>
+    <string name="menu_cart">Cart</string>
+    <string name="exit">Exit</string>
+    <string name="order_total">Order Total:</string>
+    <string name="subtotal">Subtotal:</string>
+    <string name="shipping">Shipping:</string>
+    <string name="tax">Tax:</string>
+    <string name="cart_title">List Item 1</string>
+    <string name="cart_category">Category</string>
+    <string name="cart_description">Supporting line text lorem ipsum dolor sit amet, consectetur.</string>
+
+    <string-array name="phones">
+        <item>Mobile</item>
+        <item>Home</item>
+        <item>Work</item>
+    </string-array>
 </resources>
