@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/layoutItem"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="TODO"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            android:src="@drawable/ic_shape_outline"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="80dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="List item 1"
+                android:fontFamily="@font/roboto"
+                android:layout_marginBottom="8dp"
+                android:textSize="22sp"
+                />
+
+            <TextView
+                android:id="@+id/textViewCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="Category"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textViewDescription"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Supporting line text lorem ipsum..."
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewPrice"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="35$"
+            style="@style/TextViewPrice"
+            android:gravity="center_horizontal"
+            android:fontFamily="@font/roboto"
+            android:textSize="22sp"
+            />
+
+    </LinearLayout>
+
+<!--    <com.google.android.material.divider.MaterialDivider-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/layoutItem"-->
+<!--        android:layout_marginTop="3dp"-->
+<!--        />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

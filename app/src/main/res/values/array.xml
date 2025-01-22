@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="simple_items">
+        <item>Mobile</item>
+        <item>Stationary</item>
+    </string-array>
+</resources>

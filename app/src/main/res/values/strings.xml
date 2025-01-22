@@ -1,3 +1,34 @@
 <resources>
     <string name="app_name">View &amp; Resources</string>
+    <string name="hint_name">Name</string>
+    <string name="example_name">Ivan Petrov</string>
+    <string name="hint_phone">Phone</string>
+    <string name="example_phone_number">+1(234)567-8900</string>
+    <string name="example_mobile">Mobile</string>
+    <string name="hint_select">Select</string>
+    <string name="save">Save</string>
+    <string name="hint_address">Address</string>
+    <string name="tokyo">Tokyo</string>
+    <string name="date">Date</string>
+    <string name="notes">Notes</string>
+    <string name="example_notes">Loves burgers and french fries</string>
+    <string name="address">Address</string>
+    <string name="example_address">123, Lenin street, Apt.6</string>
+    <string name="hint_city">City</string>
+    <string name="hint_country">Country</string>
+    <string name="japan">Japan</string>
+    <string name="example_birthday">Birthday</string>
+    <string name="cart">Cart</string>
+    <string name="example_cartItemsCount">4 items in your cart</string>
+    <string name="place_order">Place order</string>
+    <string name="subtotal">Subtotal:</string>
+    <string name="order_total">Order Total:</string>
+    <string name="shipping">Shipping:</string>
+    <string name="tax">Tax:</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="reset_my_password">Reset my password</string>
+    <string name="cancel">Cancel</string>
+
+
 </resources>
