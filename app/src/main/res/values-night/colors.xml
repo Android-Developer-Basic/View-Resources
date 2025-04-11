@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FFFFFFFF</color>
+    <color name="white">#FF000000</color>
+    <color name="primary">#04305F</color>
+    <color name="gray">#33353A</color>
+    <color name="gray_light">#43474E</color>
+    <color name="gray_dark">#8E9199</color>
+    <color name="price">#DBBCE1</color>
+    <color name="blue">#A7C8FF</color>
+    <color name="input_text">#E1E2E9</color>
+    <color name="secondary">#BDC7DC</color>
+    <color name="label_text">#C4C6CF</color>
+    <color name="image">#AFAFAF</color>
+    <color name="background_image">#EDEDED</color>
+</resources>

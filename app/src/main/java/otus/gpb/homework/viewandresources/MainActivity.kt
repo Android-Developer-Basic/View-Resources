@@ -1,5 +1,6 @@
 package otus.gpb.homework.viewandresources
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -22,6 +23,12 @@ class MainActivity : AppCompatActivity() {
             MaterialAlertDialogBuilder(this)
                 .setView(R.layout.dialog_signin)
                 .show()
+        }
+    }
+
+    companion object{
+        fun newIntent(context: Context): Intent {
+            return Intent(context, MainActivity::class.java)
         }
     }
 }

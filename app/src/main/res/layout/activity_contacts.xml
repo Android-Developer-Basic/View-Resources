@@ -4,6 +4,216 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".ContactsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/myToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:paddingTop="16dp"
+        android:background="@color/white"
+        app:titleTextColor="@color/black"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/myToolbar"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputName"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:hint="@string/name"
+                android:textColorHint="@color/label_text"
+                app:endIconDrawable="@drawable/account"
+                app:endIconMode="custom"
+                style="@style/Widget.Material3.TextInputLayout.FilledBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textInputEditTextName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="@string/ivan_petrov"
+                    android:textColor="@color/input_text"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutPhone"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:hint="@string/phone"
+                    android:textColorHint="@color/label_text"
+                    app:endIconMode="custom"
+                    app:endIconDrawable="@drawable/cellphone_check"
+                    style="@style/Widget.Material3.TextInputLayout.FilledBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/my_number_phone"
+                        android:textColor="@color/input_text"
+                        android:textSize="16sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:hint="@string/select"
+                    android:textColorHint="@color/label_text"
+                    app:endIconDrawable="@drawable/menu_down"
+                    android:layout_marginStart="14dp"
+                    app:endIconMode="custom"
+                    style="@style/Widget.Material3.TextInputLayout.FilledBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mobile"
+                        android:textColor="@color/input_text"
+                        android:textSize="16sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputAddress"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:hint="@string/address"
+                android:textColorHint="@color/label_text"
+                app:endIconCheckable="true"
+                app:endIconMode="custom"
+                app:endIconDrawable="@drawable/bookmark_outline"
+                style="@style/Widget.Material3.TextInputLayout.FilledBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/my_address"
+                    android:textColor="@color/input_text"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearLayoutCityCountry"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="14dp"
+                    android:hint="@string/city"
+                    android:textColorHint="@color/label_text"
+                    style="@style/Widget.Material3.TextInputLayout.FilledBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tokyo"
+                        android:textColor="@color/input_text"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="@string/country"
+                    android:textColorHint="@color/label_text"
+                    style="@style/Widget.Material3.TextInputLayout.FilledBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/australlia"
+                        android:textColor="@color/input_text"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputBirthday"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:hint="@string/date"
+                android:textColorHint="@color/label_text"
+                app:endIconCheckable="true"
+                app:endIconMode="custom"
+                app:endIconDrawable="@drawable/calendar_today"
+                style="@style/Widget.Material3.TextInputLayout.FilledBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/birthday"
+                    android:textColor="@color/input_text"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputNotes"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:hint="@string/notes"
+                android:textColorHint="@color/label_text"
+                app:endIconCheckable="true"
+                app:endIconMode="custom"
+                app:endIconDrawable="@drawable/microphone"
+                style="@style/Widget.Material3.TextInputLayout.FilledBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/my_note"
+                    android:textColor="@color/input_text"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        style="@style/Widget.Material3.Button"
+        android:id="@+id/button_save"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="@string/save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="7dp"
+        android:backgroundTint="@color/blue"
+        android:textColor="@color/white"
+        android:textAlignment="center"/>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
