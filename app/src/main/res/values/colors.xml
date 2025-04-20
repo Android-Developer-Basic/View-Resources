@@ -1,10 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="theme_light_background">#FFF9F9FF</color>
+    <color name="theme_dark_background">#FF111318</color>
+    <color name="theme_light_primary">#FF3E5F90</color>
+    <color name="theme_dark_primary">#FFA7C8FF</color>
+    <color name="theme_light_secondary">#FF555F71</color>
+    <color name="theme_dark_secondary">#FFBDC7DC</color>
+    <color name="theme_light_tertiary">#FF6E5676</color>
+    <color name="theme_dark_tertiary">#FFDBBCE1</color>
+    <color name="theme_light_on_primary">#FFFFFFFF</color>
+    <color name="theme_dark_on_primary">#FF04305F</color>
+    <color name="theme_light_surface">#FFF9F9FF</color>
+    <color name="theme_dark_surface">#FF111318</color>
+    <color name="theme_light_on_surface">#FF191C20</color>
+    <color name="theme_dark_on_surface">#FFE1E2E9</color>
+    <color name="theme_light_on_surface_variant">#FF43474E</color>
+    <color name="theme_dark_on_surface_variant">#FFC4C6CF</color>
+    <color name="theme_light_surface_container_high">#FFE7E8EE</color>
+    <color name="theme_dark_surface_container_high">#FF282A2F</color>
+    <color name="theme_light_surface_container_highest">#FFE1E2E9</color>
+    <color name="theme_dark_surface_container_highest">#FF33353A</color>
 </resources>

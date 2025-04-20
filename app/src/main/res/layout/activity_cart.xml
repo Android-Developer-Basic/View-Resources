@@ -2,8 +2,165 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    style="@style/CartLayoutBase"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CartActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        style="@style/AppToolbarStyle"
+        android:id="@+id/cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/top_app_bar_cart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/arrow_back_24px"
+        app:title="@string/cart_title" />
+
+    <TextView
+        style="@style/CartCountTextStyle"
+        android:id="@+id/itemCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/cart"
+        app:layout_constraintTop_toBottomOf="@id/cart"
+        android:padding="10dp"
+        android:text="@string/cart_contains_items">
+    </TextView>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/orderBottomSheetCoordinator"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/buttonPlaceOpder"
+        app:layout_constraintTop_toBottomOf="@id/itemCount">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/bottomSheetPeekHeight"
+            />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/orderBottomSheet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/CartBottomSheet"
+            >
+
+            <TextView
+                style="@style/CartTitleTextStyle"
+                android:id="@+id/orderTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="@string/cart_order_total"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                style="@style/CartAmountTextStyle"
+                android:id="@+id/orderTotalAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="@string/cart_order_total_amount"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                style="@style/CartAtlSubTextStyle"
+                android:id="@+id/orderSubtotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:paddingEnd="0dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="@string/cart_order_subtotal"
+                app:layout_constraintStart_toStartOf="@id/orderTotal"
+                app:layout_constraintTop_toBottomOf="@id/orderTotal"/>
+
+            <TextView
+                style="@style/CartSubAmountTextStyle"
+                android:id="@+id/orderSubtotalAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="0dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="@string/cart_order_subtotal_amount"
+                app:layout_constraintEnd_toEndOf="@id/orderTotalAmount"
+                app:layout_constraintTop_toBottomOf="@id/orderTotalAmount"/>
+
+            <TextView
+                style="@style/CartAtlSubTextStyle"
+                android:id="@+id/orderShipping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:paddingEnd="0dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="@string/cart_order_shipping"
+                app:layout_constraintStart_toStartOf="@id/orderSubtotal"
+                app:layout_constraintTop_toBottomOf="@id/orderSubtotal"/>
+
+            <TextView
+                style="@style/CartSubAmountTextStyle"
+                android:id="@+id/orderShippingAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="0dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="@string/cart_order_shipping_amount"
+                app:layout_constraintEnd_toEndOf="@id/orderSubtotalAmount"
+                app:layout_constraintTop_toBottomOf="@id/orderSubtotalAmount"/>
+
+            <TextView
+                style="@style/CartAtlSubTextStyle"
+                android:id="@+id/orderTax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:paddingEnd="0dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="@string/cart_order_tax"
+                app:layout_constraintStart_toStartOf="@id/orderShipping"
+                app:layout_constraintTop_toBottomOf="@id/orderShipping"/>
+
+            <TextView
+                style="@style/CartSubAmountTextStyle"
+                android:id="@+id/orderTaxAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="0dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="@string/cart_order_tax_amount"
+                app:layout_constraintEnd_toEndOf="@id/orderShippingAmount"
+                app:layout_constraintTop_toBottomOf="@id/orderShippingAmount"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <Button
+        style="@style/CartButtonStyle"
+        android:id="@+id/buttonPlaceOpder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/button_place_order"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

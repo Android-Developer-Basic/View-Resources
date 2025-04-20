@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textSizeHeadlineSmall">24sp</dimen>
+    <dimen name="textSizeTitleLarge">22sp</dimen>
+    <dimen name="textSizeTitleMedium">16sp</dimen>
+    <dimen name="textSizeBodyLarge">16sp</dimen>
+    <dimen name="textSizeBodyMedium">14sp</dimen>
+    <dimen name="textSizeLabelLarge">14sp</dimen>
+
+    <dimen name="bottomSheetPeekHeight">50sp</dimen>
+</resources>

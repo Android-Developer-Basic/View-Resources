@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/cabAttach"
+        android:icon="@drawable/attach_file_24px"
+        android:title="@string/cab_attach"
+        android:contentDescription="@string/cab_attach_description"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/cabMore"
+        android:icon="@drawable/more_vert_24px"
+        android:title="@string/cab_more"
+        android:contentDescription="@string/cab_more_description"
+        app:showAsAction="never" />
+</menu>

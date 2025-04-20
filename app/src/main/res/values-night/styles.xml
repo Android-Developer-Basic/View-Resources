@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MaterialAlertDialog.App" parent="MaterialAlertDialog.Material3">
+        <item name="shapeAppearanceOverlay">@null</item>
+        <item name="backgroundTint">@color/theme_dark_surface_container_high</item>
+    </style>
+
+    <style name="AppToolbarStyleBase" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@color/theme_dark_surface</item>
+        <item name="navigationIconTint">@color/theme_dark_on_surface</item>
+        <item name="titleTextColor">@color/theme_dark_on_surface</item>
+    </style>
+
+    <style name="TextInputStyleBase" parent="Widget.Material3.TextInputLayout.FilledBox">
+        <item name="boxBackgroundColor">@color/theme_dark_surface_container_highest</item>
+        <item name="endIconTint">@color/theme_dark_on_surface_variant</item>
+        <item name="android:textColorHint">@color/theme_dark_on_surface_variant</item>
+        <item name="android:textColor">@color/theme_dark_on_surface</item>
+    </style>
+
+    <style name="SelectItemStyleBase" parent="Widget.Material3.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu">
+        <item name="boxBackgroundColor">@color/theme_dark_surface_container_highest</item>
+        <item name="android:textColorHint">@color/theme_dark_on_surface_variant</item>
+        <item name="endIconTint">@color/theme_dark_on_surface_variant</item>
+    </style>
+
+    <style name="ContactsButtonStyleBase" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:textColor">@color/theme_dark_on_primary</item>
+        <item name="backgroundTint">@color/theme_dark_primary</item>
+    </style>
+
+    <style name="SigninTitleStyleBase">
+        <item name="android:textColor">@color/theme_dark_on_surface</item>
+    </style>
+
+    <style name="SigninTextButtonStyleBase" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/theme_dark_primary</item>
+    </style>
+
+    <style name="SigninButtonStyleBase" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:textColor">@color/theme_dark_primary</item>
+    </style>
+
+    <style name="SigninAltButtonStyleBase" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:textColor">@color/theme_dark_secondary</item>
+    </style>
+
+    <style name="CartTextStyleBase">
+        <item name="android:textColor">@color/theme_dark_on_surface</item>
+    </style>
+
+    <style name="CartAltTextStyleBase">
+        <item name="android:textColor">@color/theme_dark_on_surface_variant</item>
+    </style>
+
+    <style name="CartAmountTextStyleBase">
+        <item name="android:textColor">@color/theme_dark_tertiary</item>
+    </style>
+
+    <style name="CartButtonStyleBase" parent="ContactsButtonStyleBase">
+        <item name="iconTint">@color/theme_dark_on_primary</item>
+    </style>
+
+    <style name="CartLayoutBase">
+        <item name="android:background">@color/theme_dark_background</item>
+    </style>
+
+</resources>

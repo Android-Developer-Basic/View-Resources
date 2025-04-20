@@ -6,4 +6,241 @@
     android:layout_height="match_parent"
     tools:context=".ContactsActivity">
 
+    <com.google.android.material.appbar.MaterialToolbar
+        style="@style/AppToolbarStyle"
+        android:id="@+id/topAppBarContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/top_app_bar_contact"
+        app:navigationIcon="@drawable/arrow_back_24px"
+        app:title="@string/cab_title" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSave"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topAppBarContact">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/topAppBarContact">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/ContactsTextInputStyle"
+                    android:id="@+id/contactName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="@string/contact_name"
+                    app:endIconContentDescription="@string/contact_name_icon_description"
+                    app:endIconDrawable="@drawable/person_24px"
+                    app:endIconMode="custom"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/contactNameEdit"
+                        style="@style/ContactsTextInputStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto"
+                        android:inputType="textPersonName"
+                        android:maxLength="50"
+                        android:text="@string/cab_title" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/ContactsTextInputStyle"
+                    android:id="@+id/contactPhone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:hint="@string/contact_phone"
+                    app:endIconContentDescription="@string/contact_mobile_icon_description"
+                    app:endIconDrawable="@drawable/mobile_friendly_24px"
+                    app:endIconMode="custom"
+                    app:layout_constraintEnd_toStartOf="@+id/contactMethod"
+                    app:layout_constraintStart_toStartOf="@id/contactName"
+                    app:layout_constraintTop_toBottomOf="@id/contactName">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        style="@style/ContactsTextInputStyle"
+                        android:id="@+id/phoneNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:maxLength="20"
+                        android:text="@string/contact_phone_number" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/SelectItemStyle"
+                    android:id="@+id/contactMethod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/contactPhone"
+                    app:layout_constraintEnd_toEndOf="@id/contactName"
+                    app:layout_constraintTop_toBottomOf="@id/contactName">
+
+                    <AutoCompleteTextView
+                        style="@style/SelectItemStyle"
+                        android:id="@+id/contactMethodSelected"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/contact_method"
+                        android:inputType="none"
+                        app:simpleItems="@array/contact_method" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/ContactsTextInputStyle"
+                    android:id="@+id/contactAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="@string/contact_address"
+                    app:endIconContentDescription="@string/contact_address_icon_description"
+                    app:endIconDrawable="@drawable/bookmark_24px"
+                    app:endIconMode="custom"
+                    app:layout_constraintStart_toStartOf="@id/contactName"
+                    app:layout_constraintTop_toBottomOf="@id/contactPhone">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        style="@style/ContactsTextInputStyle"
+                        android:id="@+id/contactAddressEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPostalAddress"
+                        android:maxLength="50"
+                        android:text="@string/contact_address_string" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/ContactsTextInputStyle"
+                    android:id="@+id/contactCity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:hint="@string/contact_city"
+                    app:layout_constraintEnd_toStartOf="@+id/contactCountry"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toStartOf="@+id/contactAddress"
+                    app:layout_constraintTop_toBottomOf="@id/contactAddress">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        style="@style/ContactsTextInputStyle"
+                        android:id="@+id/city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapWords"
+                        android:maxLength="30"
+                        android:text="@string/contact_city_name" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/ContactsTextInputStyle"
+                    android:id="@+id/contactCountry"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="@string/contact_country"
+                    app:layout_constraintEnd_toEndOf="@+id/contactAddress"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toEndOf="@+id/contactCity"
+                    app:layout_constraintTop_toBottomOf="@id/contactAddress">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        style="@style/ContactsTextInputStyle"
+                        android:id="@+id/country"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapWords"
+                        android:maxLength="30"
+                        android:text="@string/contact_country_name" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/ContactsTextInputStyle"
+                    android:id="@+id/contactBirthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="@string/contact_birthday"
+                    app:endIconContentDescription="@string/contact_birthday_icon_description"
+                    app:endIconDrawable="@drawable/today_24px"
+                    app:endIconMode="custom"
+                    app:layout_constraintStart_toStartOf="@+id/contactCity"
+                    app:layout_constraintTop_toBottomOf="@+id/contactCity">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        style="@style/ContactsTextInputStyle"
+                        android:id="@+id/contactBirthdayEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="date"
+                        android:maxLength="10"
+                        android:text="@string/contact_birthday_string" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/ContactsTextInputStyle"
+                    android:id="@+id/contactNotes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="@string/contact_notes"
+                    app:endIconContentDescription="@string/contact_notes_icon_description"
+                    app:endIconDrawable="@drawable/mic_24px"
+                    app:endIconMode="custom"
+                    app:layout_constraintStart_toStartOf="@+id/contactBirthday"
+                    app:layout_constraintTop_toBottomOf="@+id/contactBirthday">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        style="@style/ContactsTextInputStyle"
+                        android:id="@+id/contactNotesEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contact_notes_string" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+    <Button
+        style="@style/ContactsButtonStyle"
+        android:id="@+id/buttonSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/button_save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

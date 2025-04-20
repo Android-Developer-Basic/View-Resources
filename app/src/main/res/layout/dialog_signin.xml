@@ -1,6 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
+
+    <TextView
+        style="@style/SigninTitleStyle"
+        android:id="@+id/loginTitle"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/ContactsTextInputStyle"
+        android:id="@+id/loginName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="@string/login_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loginTitle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/ContactsTextInputStyle"
+            android:id="@+id/loginNameEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLength="50"
+            android:text="@string/login_name" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/ContactsTextInputStyle"
+        android:id="@+id/loginPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="@string/login_password"
+        app:endIconContentDescription="@string/login_password_icon_description"
+        app:endIconDrawable="@drawable/sunny_24px"
+        app:endIconMode="custom"
+        app:layout_constraintStart_toStartOf="@id/loginName"
+        app:layout_constraintTop_toBottomOf="@id/loginName">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/ContactsTextInputStyle"
+            android:id="@+id/loginPasswordEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:maxLength="50"
+            android:text="@string/login_password" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        style="@style/SigninTextButtonStyle"
+        android:id="@+id/resetPasswordBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/login_reset_password"
+        app:layout_constraintEnd_toEndOf="@+id/loginPassword"
+        app:layout_constraintTop_toBottomOf="@+id/loginPassword" />
+
+    <Button
+        style="@style/SigninAltButtonStyle"
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/button_cancel"
+        app:layout_constraintEnd_toEndOf="@+id/resetPasswordBtn"
+        app:layout_constraintTop_toBottomOf="@id/resetPasswordBtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <Button
+        style="@style/SigninButtonStyle"
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/login_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cancelButton"
+        app:layout_constraintTop_toBottomOf="@id/resetPasswordBtn"
+        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

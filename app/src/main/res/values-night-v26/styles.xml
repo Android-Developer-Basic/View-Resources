@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppToolbarStyleBase.26" parent="AppToolbarStyleBase">
+        <item name="android:iconTint">@color/theme_dark_on_surface_variant</item>
+    </style>
+</resources>

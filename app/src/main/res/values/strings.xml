@@ -1,3 +1,55 @@
 <resources>
     <string name="app_name">View &amp; Resources</string>
+    <string name="login_title">Login</string>
+    <string name="login_name">ivanpetrov</string>
+    <string name="login_password">Password</string>
+    <string name="login_password_icon_description">Password</string>
+    <string name="login_reset_password">Reset my password</string>
+    <string name="cab_title">Ivan Petrov</string>
+    <string name="cab_attach">Attach</string>
+    <string name="cab_attach_description">Attach something</string>
+    <string name="cab_more">More</string>
+    <string name="cab_more_description">More actions</string>
+    <string name="contact_name">Name</string>
+    <string name="contact_name_icon_description">Name</string>
+    <string name="contact_phone">Phone</string>
+    <string name="contact_phone_number">+1(234)567–8900</string>
+    <string name="contact_mobile_icon_description">Mobile</string>
+    <string name="contact_method">Select</string>
+    <string name="contact_address">Address</string>
+    <string name="contact_address_icon_description">Address</string>
+    <string name="contact_address_string">123, Lenin street, Apt.6</string>
+    <string name="contact_city">City</string>
+    <string name="contact_city_name">Tokyo</string>
+    <string name="contact_country">Country</string>
+    <string name="contact_country_name">Australia</string>
+    <string name="contact_birthday">Birthday</string>
+    <string name="contact_birthday_icon_description">Birthday</string>
+    <string name="contact_birthday_string">31.12.1980</string>
+    <string name="contact_notes">Notes</string>
+    <string name="contact_notes_icon_description">Notes</string>
+    <string name="contact_notes_string">Loves burgers and french fries</string>
+    <string name="cart_title">Cart</string>
+    <string name="cart_close">Close</string>
+    <string name="cart_close_description">Close cart</string>
+    <string name="cart_contains_items">4 items in your cart</string>
+    <string name="cart_item_content_description">Cart item content</string>
+    <string name="cart_iten_category">Category</string>
+    <string name="cart_iten_category_string">Cart item Description</string>
+    <string name="cart_order_total">Order total:</string>
+    <string name="cart_order_total_amount">$175.50</string>
+    <string name="cart_order_subtotal">Subtotal:</string>
+    <string name="cart_order_subtotal_amount">$140</string>
+    <string name="cart_order_shipping">Shipping:</string>
+    <string name="cart_order_shipping_amount">$25</string>
+    <string name="cart_order_tax">Tax:</string>
+    <string name="cart_order_tax_amount">$10.50</string>
+    <string name="button_save">Save</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_place_order">Place order</string>
+
+    <array name="contact_method">
+        <item>Mobile</item>
+    </array>
+
 </resources>
