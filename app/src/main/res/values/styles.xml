@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="textInputLayout" parent="Widget.Material3.TextInputLayout.FilledBox">
+        <item name="hintTextColor">@color/on_surface_variant</item>
+        <item name="boxBackgroundColor">@color/on_surface_container</item>
+        <item name="hintTextAppearance">@style/TextAppearance.Label</item>
+        <item name="materialThemeOverlay">@style/materialThemeOverlayEditText</item>
+    </style>
+
+    <style name="materialThemeOverlayEditText">
+        <item name="colorPrimary">@color/on_surface_variant</item>
+        <item name="editTextStyle">@style/textInputEditText</item>
+    </style>
+
+    <style name="textInputEditText" parent="Widget.Material3.TextInputEditText.FilledBox">
+        <item name="android:textColor">@color/on_surface_variant</item>
+        <item name="android:textAppearance">@style/TextAppearance.Base</item>
+    </style>
+
+    <style name="dropDownLayout" parent="Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu">
+        <item name="android:textColorHint">@color/on_surface_variant</item>
+        <item name="hintTextColor">@color/on_surface_variant</item>
+        <item name="boxStrokeColor">@color/on_surface_variant</item>
+        <item name="boxBackgroundColor">@color/on_surface_container</item>
+        <item name="hintTextAppearance">@style/TextAppearance.Label</item>
+        <item name="materialThemeOverlay">@style/materialThemeOverlayAutoCompleteTextView</item>
+    </style>
+
+    <style name="materialThemeOverlayAutoCompleteTextView">
+        <item name="android:textColor">@color/on_primary</item>
+        <item name="autoCompleteTextViewStyle">@style/autoCompleteTextView</item>
+    </style>
+
+    <style name="autoCompleteTextView" parent="Widget.Material3.AutoCompleteTextView.FilledBox">
+        <item name="android:textAppearance">@style/TextAppearance.Base</item>
+        <item name="android:popupBackground">@color/primary</item>
+    </style>
+
+
+
+
+    <style name="customButton" parent="Widget.Material3.Button.IconButton.Filled">
+        <item name="backgroundTint">@color/primary</item>
+        <item name="android:textColor">@color/on_primary</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="iconPadding">8dp</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.SmallComponent</item>
+        <item name="android:textAppearance">@style/TextAppearance.Button</item>
+    </style>
+
+    <style name="ShapeAppearance.SmallComponent" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+    </style>
+
+
+</resources>

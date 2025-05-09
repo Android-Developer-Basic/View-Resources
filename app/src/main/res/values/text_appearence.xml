@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextAppearance.Label" parent="TextAppearance.Material3.LabelLarge">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="TextAppearance.Base" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textSize">16sp</item>
+        <item name="android:drawableTint">@color/on_surface</item>
+        <item name="android:drawablePadding">-4sp</item>
+        <item name="android:textColor">@color/on_surface</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="TextAppearance.Base.Value">
+        <item name="android:textColor">@color/tertiary</item>
+        <item name="android:drawableTint">@color/tertiary</item>
+    </style>
+
+    <style name="TextAppearance.Button" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingStart">80dp</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="TextAppearance.App.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:textSize">22sp</item>
+        <item name="android:drawableTint">@color/on_surface</item>
+        <item name="android:drawablePadding">-4sp</item>
+        <item name="android:textColor">@color/on_surface</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="TextAppearance.App.Subtitle1.Value">
+        <item name="android:textColor">@color/tertiary</item>
+        <item name="android:drawableTint">@color/tertiary</item>
+    </style>
+
+    <style name="TextAppearance.App.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/roboto_light</item>
+    </style>
+
+
+</resources>
