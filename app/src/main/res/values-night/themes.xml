@@ -1,7 +1,9 @@
 <resources>
     <!-- Base application theme. -->
     <style name="Base.Theme.ViewResources" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="textInputStyle">@style/Widget.Material3.TextInputLayout.FilledBox</item>
+
     </style>
+
+    <style name="Theme.ViewResources" parent="Base.Theme.ViewResources" />
 </resources>

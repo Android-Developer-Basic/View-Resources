@@ -6,4 +6,447 @@
     android:layout_height="match_parent"
     tools:context=".CartActivity">
 
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/topAppBarCart"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/cart_toolbar_menu"
+        app:navigationIcon="@drawable/ic_arrow_back_24"
+        app:title="@string/cart_title" />
+
+    <FrameLayout
+        android:id="@+id/totalBottomSheet"
+        android:layout_width="match_parent"
+        android:layout_height="216dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/totalBottomSheetLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/orderTotalLayout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/orderTotalTitle"
+                    style="@style/largeRobotoNonBold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/total_title" />
+
+                <TextView
+                    android:id="@+id/totalPrice"
+                    style="@style/largeRobotoNonBoldTertiary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="@string/total_price" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/subtotalTitle"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/orderTotalLayout">
+
+                <TextView
+                    android:id="@+id/subtotalText"
+                    style="@style/mediumRobotoNonBold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/subtotal_title" />
+
+                <TextView
+                    android:id="@+id/subtotalPrice"
+                    style="@style/midRobotoNonBoldTertiary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="@string/subtotal_price" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/shipping"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/subtotalTitle">
+
+                <TextView
+                    android:id="@+id/shippingTitle"
+                    style="@style/mediumRobotoNonBold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/shipping_title" />
+
+                <TextView
+                    android:id="@+id/shippingPrice"
+                    style="@style/midRobotoNonBoldTertiary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="@string/shipping_price" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tax"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/shipping">
+
+                <TextView
+                    android:id="@+id/taxTitle"
+                    style="@style/mediumRobotoNonBold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/tax_title" />
+
+                <TextView
+                    android:id="@+id/taxSum"
+                    style="@style/midRobotoNonBoldTertiary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="@string/tax_price" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/placeOrder"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/tax">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button"
+                    style="@style/ctaButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/place_order_button"
+                    app:icon="@drawable/ic_mood_24" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/totalBottomSheet"
+        app:layout_constraintTop_toBottomOf="@+id/topAppBarCart">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/frameLayout"
+                android:layout_width="240dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    style="@style/mediumRobotoBold"
+                    android:layout_width="218dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:text="@string/items_number" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/listItemOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+                <ImageView
+                    android:id="@+id/listItemImageCucumber"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:src="@drawable/cucumber" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="76dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/listItemCucumberHeadline"
+                        style="@style/largeRobotoNonBold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/list_item_cucumber" />
+
+                    <TextView
+                        android:id="@+id/listItemOneSupportingTextCucumber"
+                        style="@style/smallRobotoNonBold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/category_list_item_cucumber" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/PriceCucumber"
+                    style="@style/largeRobotoNonBoldTertiary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="24dp"
+                    android:text="@string/price" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/divider"
+                android:layout_width="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp" />
+
+            <LinearLayout
+                android:id="@+id/listItemTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+                <ImageView
+                    android:id="@+id/listItemImageTomato"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:src="@drawable/tomato" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="76dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/listItemTomatoHeadline"
+                        style="@style/largeRobotoNonBold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/list_item_tomato" />
+
+                    <TextView
+                        android:id="@+id/listItemOneSupportingTextTomato"
+                        style="@style/smallRobotoNonBold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/category_list_item_tomato" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/PriceTomato"
+                    style="@style/largeRobotoNonBoldTertiary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="24dp"
+                    android:text="@string/price" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/divider"
+                android:layout_width="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp" />
+
+            <LinearLayout
+                android:id="@+id/listItemThree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+                <ImageView
+                    android:id="@+id/listItemImageSausage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:src="@drawable/sausage" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="76dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/listItemSausageHeadline"
+                        style="@style/largeRobotoNonBold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/list_item_sausage" />
+
+                    <TextView
+                        android:id="@+id/listItemOneSupportingTextSausage"
+                        style="@style/smallRobotoNonBold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/category_list_item_sausage" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/PriceSausage"
+                    style="@style/largeRobotoNonBoldTertiary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="24dp"
+                    android:text="@string/price" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/divider"
+                android:layout_width="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp" />
+
+            <LinearLayout
+                android:id="@+id/listItemFour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+                <ImageView
+                    android:id="@+id/listItemImageKetchup"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:src="@drawable/ketchup" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="76dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/listItemKetchupHeadline"
+                        style="@style/largeRobotoNonBold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/list_item_ketchup" />
+
+                    <TextView
+                        android:id="@+id/listItemOneSupportingTextKetchup"
+                        style="@style/smallRobotoNonBold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/category_list_item_ketchup" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/PriceKetchup"
+                    style="@style/largeRobotoNonBoldTertiary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="24dp"
+                    android:text="@string/price" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/divider"
+                android:layout_width="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize" />
+        </LinearLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="divider" parent="Widget.Material3.MaterialDivider">
+        <item name="android:background">@color/outline_variant</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+
+</resources>
