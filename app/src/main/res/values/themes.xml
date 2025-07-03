@@ -2,8 +2,22 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.ViewResources" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!--<item name="colorPrimary">@color/white</item> -->
+        <item name="materialButtonStyle">@style/DefaultButtonStyle</item>
+     </style>
+    <style name="DefaultButtonStyle" parent="Widget.Material3.Button">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="backgroundTint">#3E5F90</item>
     </style>
-
-    <style name="Theme.ViewResources" parent="Base.Theme.ViewResources" />
-</resources>
+    <style name="DialogButtonStyle" parent="Widget.Material3.Button">
+        <item name="android:textColor">#3E5F90</item>
+        <item name="backgroundTint">@color/dlg_container</item>
+    </style>
+    <style name="DialogButtonStyle2" parent="Widget.Material3.Button.IconButton.Outlined">
+        <item name="android:textColor">#3E5F90</item>
+    </style>
+    <style name="DialogButtonStyle3" parent="Widget.Material3.Button.IconButton.Outlined">
+        <item name="android:textColor">@color/outline</item>
+    </style>
+     <style name="Theme.ViewResources" parent="Base.Theme.ViewResources" />
+ </resources>

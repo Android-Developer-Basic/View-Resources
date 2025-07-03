@@ -2,6 +2,19 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.ViewResources" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="materialButtonStyle">@style/DefaultButtonStyle</item>
     </style>
+    <style name="DefaultButtonStyle" parent="Widget.Material3.Button">
+        <item name="android:textColor">#04305F</item>
+        <item name="backgroundTint">#A7C8FF</item>
+    </style>
+    <style name="DialogButtonStyle" parent="Widget.Material3.Button">
+        <item name="android:textColor">#A7C8FF</item>
+        <item name="backgroundTint">@color/dlg_container</item>
+    </style>
+    <style name="DialogButtonStyle2" parent="Widget.Material3.Button.IconButton.Outlined">
+        <item name="android:textColor">#A7C8FF</item>
+    </style>
+    <color name="dlg_container">#282A2F</color>
+    <color name="outline">#BDC7DC</color>
 </resources>
