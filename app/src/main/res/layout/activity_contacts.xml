@@ -1,9 +1,234 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ContactsActivity">
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginTop="10dp">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/button_save"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/materialToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:minHeight="?attr/actionBarSize"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:menu="@menu/menu_toolbar"
+                app:navigationIcon="@drawable/baseline_arrow_back_24"
+                app:navigationIconTint="?attr/colorOnSurface"
+                app:title="Ivan Petrov"
+                app:titleTextAppearance="@style/Theme.TextView.FontRobotoRegular.22.TitleOnSurface">
+
+            </com.google.android.material.appbar.MaterialToolbar>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/filledTextName"
+                style="?attr/textInputFilledStyle"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:hint="@string/name"
+                app:endIconDrawable="@drawable/ic_person"
+                app:endIconMode="custom"
+                app:endIconTint="?attr/colorOnSurfaceVariant"
+                app:hintTextAppearance="@style/Theme.TextView.FontRobotoRegular.12.ColorOnSurfaceVariant"
+                app:layout_constraintTop_toBottomOf="@id/materialToolbar">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/fieldName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ivan_petrov"
+                    android:textAppearance="@style/Theme.TextView.FontRobotoRegular.16.ColorOnSurface" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/filledTextPhone"
+                style="?attr/textInputFilledStyle"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/phone"
+                android:minWidth="213dp"
+                app:endIconDrawable="@drawable/ic_mobile_friendly"
+                app:endIconMode="custom"
+                app:endIconTint="?attr/colorOnSurfaceVariant"
+                app:hintTextAppearance="@style/Theme.TextView.FontRobotoRegular.12.ColorOnSurfaceVariant"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/filledTextName">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/fieldPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/_7_960_000_0000"
+                    android:textAppearance="@style/Theme.TextView.FontRobotoRegular.16.ColorOnSurface" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/filledTextSelect"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/select"
+                app:hintTextAppearance="@style/Theme.TextView.FontRobotoRegular.12.ColorOnSurfaceVariant"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/filledTextPhone"
+                app:layout_constraintTop_toBottomOf="@+id/filledTextName">
+
+                <AutoCompleteTextView
+                    android:id="@+id/fieldSelect"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/Select_phone"
+                    android:text="@string/mobile"
+                    android:textAppearance="@style/Theme.TextView.FontRobotoRegular.16.ColorOnSurface" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/filledTextAddress"
+                style="?attr/textInputFilledStyle"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/address"
+                app:endIconDrawable="@drawable/ic_bookmark"
+                app:endIconMode="custom"
+                app:endIconTint="?attr/colorOnSurfaceVariant"
+                app:hintTextAppearance="@style/Theme.TextView.FontRobotoRegular.12.ColorOnSurfaceVariant"
+                app:layout_constraintTop_toBottomOf="@id/filledTextPhone">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/fieldNAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/street_text"
+                    android:textAppearance="@style/Theme.TextView.FontRobotoRegular.16.ColorOnSurface" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/filledTextCity"
+                style="?attr/textInputFilledStyle"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/city"
+                app:hintTextAppearance="@style/Theme.TextView.FontRobotoRegular.12.ColorOnSurfaceVariant"
+                app:layout_constraintEnd_toStartOf="@id/filledTextCountry"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/filledTextAddress">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/fieldCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/krasnodar"
+                    android:textAppearance="@style/Theme.TextView.FontRobotoRegular.16.ColorOnSurface" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/filledTextCountry"
+                style="?attr/textInputFilledStyle"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/country"
+                app:hintTextAppearance="@style/Theme.TextView.FontRobotoRegular.12.ColorOnSurfaceVariant"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/filledTextCity"
+                app:layout_constraintTop_toBottomOf="@id/filledTextAddress">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/fieldCountry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/russia"
+                    android:textAppearance="@style/Theme.TextView.FontRobotoRegular.16.ColorOnSurface" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/filledTextDate"
+                style="?attr/textInputFilledStyle"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/date"
+                app:endIconDrawable="@drawable/ic_today"
+                app:endIconMode="custom"
+                app:endIconTint="?attr/colorOnSurfaceVariant"
+                app:hintTextAppearance="@style/Theme.TextView.FontRobotoRegular.12.ColorOnSurfaceVariant"
+                app:layout_constraintTop_toBottomOf="@id/filledTextCity">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/fieldDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/birthday"
+                    android:textAppearance="@style/Theme.TextView.FontRobotoRegular.16.ColorOnSurface" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/filledTextNotes"
+                style="?attr/textInputFilledStyle"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/notes"
+                app:endIconDrawable="@drawable/ic_mic"
+                app:endIconMode="custom"
+                app:endIconTint="?attr/colorOnSurfaceVariant"
+                app:hintTextAppearance="@style/Theme.TextView.FontRobotoRegular.12.ColorOnSurfaceVariant"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/filledTextDate">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/fieldNotes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/notes_text"
+                    android:textAppearance="@style/Theme.TextView.FontRobotoRegular.16.ColorOnSurface" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:textAppearance="@style/Theme.TextView.FontRobotoMedium.14"
+        android:textColor="?attr/colorOnPrimary"
+        app:backgroundTint="?attr/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+

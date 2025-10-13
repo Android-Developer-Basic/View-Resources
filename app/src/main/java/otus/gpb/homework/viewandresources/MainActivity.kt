@@ -4,12 +4,16 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val toolbar = findViewById<MaterialToolbar>(R.id.materialToolbar)
+        setSupportActionBar(toolbar)
+
         findViewById<Button>(R.id.contacts_button).setOnClickListener {
             startActivity(Intent(this, ContactsActivity::class.java))
         }
