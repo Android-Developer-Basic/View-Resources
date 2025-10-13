@@ -1,0 +1,9 @@
+<resources>
+    <string name="dialog_title">Login</string>
+    <string name="dialog_login_button">Login</string>
+    <string name="dialog_canceled_button">Cancel</string>
+    <string name="login_hint">Login</string>
+    <string name="password_hint">Password</string>
+    <string name="reset_password">Reset my password</string>
+    <string name="content_description_icon_sun">Sun icon in password field</string>
+</resources>
