@@ -6,4 +6,151 @@
     android:layout_height="match_parent"
     tools:context=".CartActivity">
 
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/menu_toolbar_cart"
+        app:navigationIcon="@drawable/baseline_arrow_back_24"
+        app:navigationIconTint="?attr/colorOnSurface"
+        app:title="@string/cart_title"
+        app:titleTextAppearance="@style/Theme.TextView.FontRobotoRegular.22.TitleOnSurface">
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <TextView
+        android:id="@+id/filledTextCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/items_in_your_cart"
+        android:textColor="?attr/colorOnSurfaceVariant"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/materialToolbar" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@id/order_total"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/filledTextCounter"
+        tools:itemCount="4"
+        tools:listitem="@layout/text_row_item" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/order_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp"
+            android:layout_marginStart="16dp"
+            android:text="@string/order_total"
+            android:textAppearance="@style/Theme.TextView.FontRobotoRegular.22"
+            android:textColor="?attr/colorOnSurface"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/_175_50"
+            android:textAppearance="@style/Theme.TextView.FontRobotoRegular.22.Tertiary"
+            android:textColor="?attr/colorTertiary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/subtotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="4dp"
+            android:text="@string/subtotal"
+            android:textAppearance="@style/Theme.TextView.FontRobotoRegular.16.ColorOnSurface"
+            app:layout_constraintStart_toStartOf="@id/order"
+            app:layout_constraintTop_toBottomOf="@id/order" />
+
+        <TextView
+            android:id="@+id/subtotal_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="4dp"
+            android:text="@string/_140"
+            android:textAppearance="@style/Theme.TextView.FontRobotoMedium.16.Tertiary"
+            app:layout_constraintEnd_toEndOf="@id/total_price"
+            app:layout_constraintTop_toBottomOf="@id/total_price" />
+
+        <TextView
+            android:id="@+id/shipping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="4dp"
+            android:text="@string/shipping"
+            android:textAppearance="@style/Theme.TextView.FontRobotoRegular.16.ColorOnSurface"
+            app:layout_constraintStart_toStartOf="@id/order"
+            app:layout_constraintTop_toBottomOf="@id/subtotal" />
+
+        <TextView
+            android:id="@+id/shipping_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="4dp"
+            android:text="@string/_25"
+            android:textAppearance="@style/Theme.TextView.FontRobotoMedium.16.Tertiary"
+            app:layout_constraintEnd_toEndOf="@id/total_price"
+            app:layout_constraintTop_toBottomOf="@id/subtotal_price" />
+
+        <TextView
+            android:id="@+id/tax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="4dp"
+            android:text="@string/tax"
+            android:textAppearance="@style/Theme.TextView.FontRobotoRegular.16.ColorOnSurface"
+            app:layout_constraintStart_toStartOf="@id/order"
+            app:layout_constraintTop_toBottomOf="@id/shipping" />
+
+        <TextView
+            android:id="@+id/tax_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="4dp"
+            android:text="@string/_10_50"
+            android:textAppearance="@style/Theme.TextView.FontRobotoMedium.16.Tertiary"
+            app:layout_constraintEnd_toEndOf="@id/total_price"
+            app:layout_constraintTop_toBottomOf="@id/shipping_price" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:backgroundTint="?attr/colorPrimary"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/place_order"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="14sp"
+            app:icon="@drawable/cart_arrow_right"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tax" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
