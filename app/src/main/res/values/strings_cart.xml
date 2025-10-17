@@ -1,0 +1,5 @@
+<resources>
+    <string name="cart_title">Cart</string>
+    <string name="close_cart_content_description">Close cart</string>
+    <string name="close_title">close cart</string>
+</resources>
