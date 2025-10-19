@@ -1,9 +1,206 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ContactsActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Top App Bar with navigation and title -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            app:menu="@menu/top_app_bar"
+            app:navigationIcon="@drawable/arrow_left"
+            app:title="@string/full_name" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Main content area with padding -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <!-- Name input field with person icon -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textFieldName"
+            style="?attr/textInputFilledStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name_hint"
+            app:endIconContentDescription="@string/content_description_icon_people"
+            app:endIconDrawable="@drawable/icon_people"
+            app:endIconMode="custom">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:baselineAligned="true"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <!-- Phone number input with smartphone icon -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textFieldPhone1"
+                style="?attr/textInputFilledStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="2"
+                android:digits="+() 1234567890-"
+                android:hint="@string/phone_hint"
+                android:inputType="phone"
+                app:endIconContentDescription="@string/content_description_icon_people"
+                app:endIconDrawable="@drawable/smartphone"
+                app:endIconMode="custom">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Phone type selection with dropdown icon -->
+            <!-- doc https://github.com/cvs-health/android-view-accessibility-techniques/blob/main/doc/componenttypes/AutocompleteInputControls.md-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textFieldPhoneType"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:hint="@string/phone_type_hint"
+                android:textColorHint="?attr/colorOnSurface"
+                app:boxBackgroundColor="?attr/colorSurfaceContainerHighest"
+                app:endIconDrawable="@drawable/drop_down"
+                app:endIconMode="dropdown_menu"
+                app:endIconTint="?attr/colorOnSurface">
+
+                <AutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/content_description_autocomplete_text_view"
+                    android:inputType="none"
+                    app:simpleItems="@array/phone_type"
+                    tools:ignore="LabelFor" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <!-- Address input field with bookmark icon -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textFieldAddress"
+            style="?attr/textInputFilledStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/address_hint"
+            app:endIconContentDescription="@string/content_description_icon_address"
+            app:endIconDrawable="@drawable/bookmark"
+            app:endIconMode="custom">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- City and Country input fields -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:baselineAligned="true"
+            android:orientation="horizontal">
+
+            <!-- City input field -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textFieldCity"
+                style="?attr/textInputFilledStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:hint="@string/city_hint"
+                android:inputType="phone"
+                app:endIconMode="none">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Country input field -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textFieldCountry"
+                style="?attr/textInputFilledStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:hint="@string/country_hint"
+                app:endIconMode="none">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <!-- Date input field with calendar icon -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textFieldDate"
+            style="?attr/textInputFilledStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/date_hint"
+            app:endIconContentDescription="@string/content_description_icon_date"
+            app:endIconDrawable="@drawable/calendar"
+            app:endIconMode="custom">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:inputType="date" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Notes input field with mic icon -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textFieldNote"
+            style="?attr/textInputFilledStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/notes_hint"
+            app:endIconContentDescription="@string/content_description_icon_mic"
+            app:endIconDrawable="@drawable/mic"
+            app:endIconMode="custom">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

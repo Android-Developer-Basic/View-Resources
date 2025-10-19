@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="OutlinedButton.BaseBarButton" parent="Widget.Material3Expressive.Button">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="cornerRadius">0dp</item>
+        <item name="iconTint">?attr/defaultColor</item>
+        <item name="backgroundTint">@color/md_theme_background</item>
+        <item name="android:layout_marginStart">4dp</item>
+        <item name="android:layout_marginEnd">4dp</item>
+    </style>
+
+    <style name="MaterialAlertDialog.App" parent="MaterialAlertDialog.Material3" />
+
+    <style name="MaterialAlertDialog.App.Title.Text" parent="MaterialAlertDialog.Material3.Title.Text">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_height">64dp</item>
+    </style>
+
+    <style name="TextButton.App.ResetPassword" parent="Widget.Material3.Button.TextButton">
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+
+    <style name="OutlinedButton.BaseBarButton.BarButton" />
+
+    <style name="Footer.TextView.NavBar">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+    </style>
+
+    <style name="Footer.TextView.NavBar.Medium">
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Footer.TextView.NavBar.Large">
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Footer.TextView.NavBar.Large.Name">
+        <item name="android:layout_width">0dp</item>
+    </style>
+
+    <style name="Footer.TextView.NavBar.Large.Value">
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="Footer.TextView.NavBar.Medium.Name">
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="Footer.TextView.NavBar.Medium.Value">
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="Cart.AppBar">
+        <item name="iconTint">@color/md_theme_onBackground</item>
+    </style>
+
+</resources>

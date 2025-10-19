@@ -1,3 +1,32 @@
 <resources>
     <string name="app_name">View &amp; Resources</string>
+    <string name="arrow_left_button">arrow left button</string>
+    <string name="full_name">Ivan Petrov</string>
+    <string name="edit">edit</string>
+    <string name="content_description_search">description_search</string>
+    <string name="menu">Меню</string>
+    <string name="attache">attache</string>
+    <string name="cart">Корзина</string>
+    <string name="menu_button">Кнопка меню</string>
+    <string name="logout_description">выйти из аккаунта</string>
+    <string name="logout_title">Выйти</string>
+    <string name="attach_title">прикрепить</string>
+    <string name="attach_description">кнопка прикрепления файла</string>
+    <string name="name_hint">Name</string>
+    <string name="content_description_icon_people">Иконка профиля человека</string>
+    <string name="phone_hint">Phone</string>
+    <string name="phone_type_hint">Select</string>
+    <string name="content_description_autocomplete_text_view">Select phone type button</string>
+    <string name="address_hint">Address</string>
+    <string name="notes_hint">Notes</string>
+    <string name="content_description_icon_address">Иконка закладки в поле ввода адреса</string>
+    <string name="content_description_icon_date">Иконка календаря в поле ввода дня рождения</string>
+    <string name="content_description_icon_mic">Иконка микрофона в поле ввода заметок</string>
+    <string name="content_description_city">Введите город</string>
+    <string name="content_description_country">Введите страну</string>
+    <string name="city_hint">City</string>
+    <string name="country_hint">Country</string>
+    <string name="date_hint">Date</string>
+    <string name="data_picker_title">Select your Birthday</string>
+    <string name="shipping">Shipping</string>
 </resources>
