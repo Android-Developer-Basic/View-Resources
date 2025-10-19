@@ -8,12 +8,17 @@
 
     <!-- Top App Bar with navigation and title -->
     <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/cart_item_app_bar"
+        style="@style/Cart.AppBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/topAppBar"
+            style="@style/Cart.AppBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:minHeight="?attr/actionBarSize"
@@ -23,4 +28,103 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cart_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@+id/total_cart_layout"
+        app:layout_constraintTop_toBottomOf="@+id/cart_item_app_bar"
+        tools:itemCount="9"
+        tools:listitem="@layout/cart_item" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/total_cart_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/order_total"
+            style="@style/Footer.TextView.NavBar.Large.Name"
+            android:text="@string/order_total"
+            app:layout_constraintBottom_toTopOf="@+id/subtotal_value"
+            app:layout_constraintEnd_toStartOf="@+id/order_total_value"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/order_total_value"
+            style="@style/Footer.TextView.NavBar.Large.Value"
+            android:text="@string/default_total"
+            app:layout_constraintBaseline_toBaselineOf="@id/order_total"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/order_total"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/subtotal"
+            style="@style/Footer.TextView.NavBar.Medium.Name"
+            android:text="@string/subtotal"
+            app:layout_constraintBottom_toTopOf="@+id/shipping"
+            app:layout_constraintStart_toStartOf="@id/order_total"
+            app:layout_constraintTop_toBottomOf="@id/order_total" />
+
+        <TextView
+            android:id="@+id/subtotal_value"
+            style="@style/Footer.TextView.NavBar.Medium.Value"
+            android:text="@string/default_total"
+            app:layout_constraintBaseline_toBaselineOf="@id/subtotal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/order_total_value" />
+
+        <TextView
+            android:id="@+id/shipping"
+            style="@style/Footer.TextView.NavBar.Medium.Name"
+            android:text="@string/shipping"
+            app:layout_constraintBottom_toBottomOf="@id/tax"
+            app:layout_constraintStart_toStartOf="@id/subtotal"
+            app:layout_constraintTop_toBottomOf="@id/subtotal" />
+
+        <TextView
+            android:id="@+id/shipping_value"
+            style="@style/Footer.TextView.NavBar.Medium.Value"
+            android:text="@string/default_total"
+            app:layout_constraintBaseline_toBaselineOf="@id/shipping"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/subtotal_value" />
+
+        <TextView
+            android:id="@+id/tax"
+            style="@style/Footer.TextView.NavBar.Medium.Name"
+            android:text="@string/tax"
+            app:layout_constraintBottom_toTopOf="@id/place_order"
+            app:layout_constraintStart_toStartOf="@id/shipping"
+            app:layout_constraintTop_toBottomOf="@id/shipping" />
+
+        <TextView
+            android:id="@+id/tax_value"
+            style="@style/Footer.TextView.NavBar.Medium.Value"
+            android:text="@string/default_total"
+            app:layout_constraintBaseline_toBaselineOf="@id/tax"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shipping_value" />
+
+        <Button
+            android:id="@+id/place_order"
+            style="@style/Theme.Material3Expressive.DayNight.NoActionBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="60dp"
+            android:text="@string/place_order"
+            app:icon="@drawable/mood_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tax" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

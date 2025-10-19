@@ -2,4 +2,10 @@
     <string name="cart_title">Cart</string>
     <string name="close_cart_content_description">Close cart</string>
     <string name="close_title">close cart</string>
+    <string name="order_total">Order Total</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="default_total">$0</string>
+    <string name="tax">Tax</string>
+    <string name="place_order">Place Order</string>
+
 </resources>

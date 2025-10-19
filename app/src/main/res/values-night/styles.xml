@@ -2,5 +2,7 @@
 <resources>
 
     <style name="OutlinedButton.BaseBarButton.BarButton"/>
-
+    <style name="Cart.AppBar">
+        <item name="navigationIconTint">@color/md_theme_onBackground</item>
+    </style>
 </resources>

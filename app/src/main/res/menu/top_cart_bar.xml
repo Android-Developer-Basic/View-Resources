@@ -1,10 +1,12 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:style="http://schemas.android.com/tools">
 
     <item
         android:id="@+id/menu_close"
         android:contentDescription="@string/close_cart_content_description"
         android:icon="@drawable/close"
+        android:iconTint="@color/md_theme_onBackground"
         android:title="@string/close_title"
         app:showAsAction="ifRoom" />
 

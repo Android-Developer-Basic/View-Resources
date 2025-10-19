@@ -4,6 +4,7 @@
     <item
         android:id="@+id/menu_attach"
         android:icon="@drawable/paperclip"
+        android:iconTint="@color/md_theme_onBackground"
         android:title="@string/attach_title"
         android:contentDescription="@string/attach_description"
         app:showAsAction="ifRoom" />
