@@ -7,4 +7,16 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="sale">@color/black</color>
+    <color name="label_color">#43474E</color>
+    <color name="input_color">#191C20</color>
+    <color name="color_bk">@color/white</color>
+    <color name="icon_color">@color/black</color>
+    <color name="reset_password">#3E5F90</color>
+    <color name="button_color_Tint">#ECE6F0</color>
+    <color name="button_color_Text">#3E5F90</color>
+    <color name="toolbar_cart_bk">#F9F9FF</color>
+    <color name="price_text_color">#6E5676</color>
+    <color name="button_order">#3E5F90</color>
+    <color name="button_order_text">@color/white</color>
 </resources>

@@ -1,3 +1,41 @@
 <resources>
     <string name="app_name">View &amp; Resources</string>
+    <string name="sale">Sale</string>
+    <string name="more">More</string>
+    <string name="name">Name</string>
+    <string name="my_name">Ivan Petrov</string>
+    <string name="phone">Phone</string>
+    <string name="phone_num">+1(234)567-8900</string>
+    <string name="select">Select</string>
+    <string-array name="phoneTypeArray">
+        <item>Mobile</item>
+        <item>Work</item>
+    </string-array>
+    <string name="address">Address</string>
+    <string name="my_address">123, Lenin street, Apt.6</string>
+    <string name="city">City</string>
+    <string name="city_name">Tokyo</string>
+    <string name="country">Country</string>
+    <string name="country_name">Australia</string>
+    <string name="date">Date</string>
+    <string name="birthday">24.10.2025</string>
+    <string name="notes">Notes</string>
+    <string name="note">Loves burgers and french fries</string>
+    <string name="login">Login</string>
+    <string name="cancel">Cancel</string>
+    <string name="ivanpetrov">ivanpetrov</string>
+    <string name="password">Password</string>
+    <string name="reset_password">Reset my password</string>
+    <string name="cart">Cart</string>
+    <string name="item_count">4 items in your cart</string>
+    <string name="price_text">35$</string>
+    <string name="placeorder">Place order</string>
+    <string name="total">Order Total:</string>
+    <string name="subtotal">Subtotal:</string>
+    <string name="shipping">Shipping:</string>
+    <string name="tax">Tax:</string>
+    <string name="totalprice">$68.30</string>
+    <string name="subtotalprice">$32.80</string>
+    <string name="shippingprice">$25</string>
+    <string name="taxprice">$10.50</string>
 </resources>

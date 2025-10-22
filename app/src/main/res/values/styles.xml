@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ButtonStyle" parent="@style/Widget.Material3.Button.OutlinedButton">
+        <item name="backgroundTint">@color/button_color_Tint</item>
+        <item name="android:textColor">@color/button_color_Text</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="ButtonOrder" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/button_order</item>
+        <item name="android:textColor">@color/button_order_text</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>
