@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">View &amp; Resources</string>
+    <string name="user_name">Ivan Ivanov</string>
+    <string name="attachment">Attachments</string>
+    <string name="more">More actions</string>
+    <string name="name_label">Name</string>
+    <string name="phone_label">Phone</string>
+    <string name="phone_hint">+1(234)567–8900</string>
+    <string name="phone_type_label">Select</string>
+    <string name="address_label">Address</string>
+    <array name="phone_types">
+        <item>Mobile</item>
+        <item>Work</item>
+    </array>
+    <string name="contact_city_hint">City</string>
+    <string name="contact_country_hint">Country</string>
+    <string name="contact_date_hint">Date</string>
+    <string name="contact_notes_hint">Notes</string>
+    <string name="cart">Cart</string>
+    <string name="close">Close</string>
+    <string name="item_image_description">Item sample</string>
+    <string name="price">$%1$d</string>
+    <string name="reset_my_password">Reset my password</string>
 </resources>

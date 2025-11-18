@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/attachment"
+        android:icon="@drawable/paperclip"
+        android:title="@string/attachment"
+        android:contentDescription="@string/attachment"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/more"
+        android:icon="@drawable/dots_vertical"
+        android:title="@string/more"
+        android:contentDescription="@string/more"
+        app:showAsAction="never" />
+
+</menu>
