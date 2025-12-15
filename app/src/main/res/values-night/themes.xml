@@ -3,5 +3,8 @@
     <style name="Base.Theme.ViewResources" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="icons_color">@color/white</item>
+        <item name="background_color">@color/background_dark</item>
+        <item name="button_background_color">@color/button_background_dark</item>
     </style>
 </resources>

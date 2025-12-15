@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/background_color"
+    tools:context=".CartActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/cart_app_bar_menu"
+        app:navigationIcon="@drawable/arrow_left"
+        app:title="@string/cart" >
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <TextView
+        android:id="@+id/cartCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="0dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="@string/cart_items"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/materialToolbar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginVertical="10dp"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@id/cart_order"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cartCounter"
+        tools:itemCount="4"
+        tools:listitem="@layout/cart_item" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cart_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/cart_order_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp"
+            android:layout_marginStart="16dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="@string/cart_order_total"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/cart_price_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp"
+            android:layout_marginEnd="16dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="@string/USD_175_50"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/cart_subtotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="4dp"
+            android:text="@string/cart_subtotal"
+            app:layout_constraintStart_toStartOf="@id/cart_order_total"
+            app:layout_constraintTop_toBottomOf="@id/cart_order_total" />
+
+        <TextView
+            android:id="@+id/cart_subtotal_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="4dp"
+            android:text="@string/USD_140"
+            app:layout_constraintEnd_toEndOf="@id/cart_price_total"
+            app:layout_constraintTop_toBottomOf="@id/cart_price_total" />
+
+        <TextView
+            android:id="@+id/cart_shipping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="4dp"
+            android:text="@string/cart_shipping"
+            app:layout_constraintStart_toStartOf="@id/cart_order_total"
+            app:layout_constraintTop_toBottomOf="@id/cart_subtotal" />
+
+        <TextView
+            android:id="@+id/cart_shipping_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="4dp"
+            android:text="@string/USD_25"
+            app:layout_constraintEnd_toEndOf="@id/cart_price_total"
+            app:layout_constraintTop_toBottomOf="@id/cart_subtotal_price" />
+
+        <TextView
+            android:id="@+id/cart_tax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="4dp"
+            android:text="@string/cart_tax"
+            app:layout_constraintStart_toStartOf="@id/cart_order_total"
+            app:layout_constraintTop_toBottomOf="@id/cart_shipping" />
+
+        <TextView
+            android:id="@+id/cart_tax_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="4dp"
+            android:text="@string/USD_10_50"
+            app:layout_constraintEnd_toEndOf="@id/cart_price_total"
+            app:layout_constraintTop_toBottomOf="@id/cart_shipping_price" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/cart_button_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:text="@string/cart_save_order"
+            android:textSize="14sp"
+            app:icon="@drawable/cart_arrow_right"
+            android:backgroundTint="?attr/button_background_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cart_tax" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

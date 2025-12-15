@@ -4,16 +4,20 @@ plugins {
 }
 
 android {
-    compileSdk 35
+    compileSdk 36
     namespace = "otus.gpb.homework.viewandresources"
     defaultConfig {
         applicationId "otus.gpb.homework.viewandresources"
         minSdk 23
-        targetSdk 35
+        targetSdk 36
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildFeatures {
+        viewBinding = true
     }
 
     buildTypes {

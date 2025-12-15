@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/attachment"
+        android:icon="@drawable/paperclip"
+        android:title="@string/contact_attachment"
+        android:contentDescription="@string/contact_attachment"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/more"
+        android:icon="@drawable/dots_vertical"
+        android:title="@string/contact_more"
+        android:contentDescription="@string/contact_more"
+        app:showAsAction="never" />
+
+</menu>

@@ -1,3 +1,42 @@
 <resources>
     <string name="app_name">View &amp; Resources</string>
+    <string name="contact_user_name">Ivan Petrov</string>
+    <string name="contact_attachment">Attachments</string>
+    <string name="contact_more">More actions</string>
+    <string name="contact_name">Name</string>
+    <string name="contact_phone">Phone</string>
+    <string name="contact_phone_hint">+1(234)567-89-00</string>
+    <string name="contact_phone_type">Select</string>
+    <string name="contact_address">Address</string>
+    <array name="contact_phone_types">
+        <item>Mobile</item>
+        <item>Work</item>
+    </array>
+    <string name="contact_city">City</string>
+    <string name="contact_country">Country</string>
+    <string name="contact_date">Date</string>
+    <string name="contact_notes">Notes</string>
+    <string name="contact_save">Save</string>
+    <string name="cart">Cart</string>
+    <string name="cart_close">Close</string>
+    <string name="cart_items">%d items in your cart</string>
+    <string name="cart_order_total">Order Total:</string>
+    <string name="cart_subtotal">Subtotal:</string>
+    <string name="cart_shipping">Shipping:</string>
+    <string name="cart_tax">Tax:</string>
+    <string name="cart_save_order">Place order</string>
+    <string name="USD_175_50">$175.50</string>
+    <string name="USD_140">$140</string>
+    <string name="USD_25">$25</string>
+    <string name="USD_10_50">$10.50</string>
+    <string name="cart_item_headline">List Item %d</string>
+    <string name="cart_item_category">Category</string>
+    <string name="cart_item_description">Supporting line text lorem ipsum dolor sit amet, consectetur.</string>
+    <string name="cart_item_price">$35</string>
+    <string name="profile">Profile</string>
+    <string name="login">Login</string>
+    <string name="cancel">Cancel</string>
+    <string name="password">Password</string>
+    <string name="reset_password">Reset my password</string>
+
 </resources>
