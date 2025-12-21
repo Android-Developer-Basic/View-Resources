@@ -1,0 +1,107 @@
+<resources>
+
+    <style name="ShapeAppearanceOverlay.Circle" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="ContactFieldCard" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">0dp</item>
+        <item name="cardBackgroundColor">@android:color/transparent</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="cardElevation">0dp</item>
+    </style>
+
+    <style name="ContactFieldContent">
+        <item name="android:paddingStart">@dimen/contact_field_padding_horizontal</item>
+        <item name="android:paddingEnd">@dimen/contact_field_padding_horizontal</item>
+        <item name="android:paddingTop">@dimen/contact_field_padding_top</item>
+        <item name="android:paddingBottom">@dimen/contact_field_padding_bottom</item>
+    </style>
+
+    <style name="ContactFieldLabelText">
+        <item name="android:textAppearance">?attr/textAppearanceLabelMedium</item>
+        <item name="android:textColor">?attr/colorOnSurfaceVariant</item>
+    </style>
+
+    <style name="ContactFieldValueText">
+        <item name="android:textAppearance">?attr/textAppearanceBodyLarge</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+
+    <style name="ContactFieldIcon">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:tint">@color/contact_icon_tint</item>
+    </style>
+
+    <style name="CartItemContainer">
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+    </style>
+
+    <style name="CartItemTitleText" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:fontWeight">700</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">?attr/colorOnBackground</item>
+    </style>
+
+    <style name="CartItemCategoryText" parent="TextAppearance.Material3.LabelMedium">
+        <item name="android:textColor">?attr/colorOnSurfaceVariant</item>
+    </style>
+
+    <style name="CartItemSubtitleText" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+
+    <style name="CartItemPriceText" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textColor">@color/cart_price_color</item>
+    </style>
+
+    <style name="CartItemsCountText" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+
+    <style name="CartSummaryLabelText" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+
+    <style name="CartSummaryValueText" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+
+    <style name="CartOrderTotalValueText" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textColor">@color/cart_price_color</item>
+    </style>
+
+    <style name="LoginTextInputLayout"
+        parent="Widget.Material3.TextInputLayout.FilledBox">
+        <item name="boxBackgroundColor">@color/login_input_bg</item>
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">0dp</item>
+        <item name="boxCornerRadiusBottomEnd">0dp</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">1dp</item>
+    </style>
+
+    <style name="LoginPrimaryButton"
+        parent="Widget.Material3.Button.OutlinedButton">
+
+        <item name="android:textColor">@color/login_accent</item>
+        <item name="strokeColor">@color/login_accent</item>
+    </style>
+
+    <style name="LoginOutlinedButton" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:minWidth">88dp</item>
+        <item name="cornerRadius">20dp</item>
+    </style>
+
+    <style name="Toolbar.Login" parent="Widget.Material3.Toolbar">
+        <item name="titleTextColor">@color/toolbar_title_login</item>
+        <item name="android:titleTextColor">@color/toolbar_title_login</item>
+    </style>
+
+</resources>

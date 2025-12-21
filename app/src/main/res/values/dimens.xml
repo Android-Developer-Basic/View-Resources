@@ -1,0 +1,26 @@
+<resources>
+    <dimen name="contact_screen_padding_start">9dp</dimen>
+    <dimen name="contact_screen_padding_end">11dp</dimen>
+    <dimen name="contact_first_field_top">8dp</dimen>
+    <dimen name="contact_field_spacing">6dp</dimen>
+    <dimen name="contact_field_padding_horizontal">12dp</dimen>
+    <dimen name="contact_field_padding_top">8dp</dimen>
+    <dimen name="contact_field_padding_bottom">7dp</dimen>
+    <dimen name="contact_field_radius">4dp</dimen>
+    <dimen name="cart_item_image_size">80dp</dimen>
+    <dimen name="cart_item_padding_vertical">12dp</dimen>
+    <dimen name="cart_item_padding_start">16dp</dimen>
+    <dimen name="cart_item_text_start">16dp</dimen>
+    <dimen name="cart_item_space_title_category">8dp</dimen>
+    <dimen name="cart_item_price_margin_end">24dp</dimen>
+    <dimen name="cart_divider_margin_horizontal">16dp</dimen>
+    <dimen name="cart_divider_margin_top">12dp</dimen>
+    <dimen name="cart_items_count_margin">10dp</dimen>
+    <dimen name="cart_order_block_margin_top">16dp</dimen>
+    <dimen name="cart_order_block_margin_bottom">16dp</dimen>
+    <dimen name="cart_divider_height">1dp</dimen>
+    <dimen name="login_card_margin_start">40dp</dimen>
+    <dimen name="login_card_margin_end">41dp</dimen>
+    <dimen name="login_card_margin_top">246dp</dimen>
+    <dimen name="login_card_margin_bottom">329dp</dimen>
+</resources>

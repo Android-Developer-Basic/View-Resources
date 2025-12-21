@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="contact_background">#000000</color>
+    <color name="contact_field_background">#33353A</color>
+    <color name="contact_field_divider">#E1E2E9</color>
+    <color name="contact_button_bg">#A7C8FF</color>
+    <color name="contact_button_text">#04305F</color>
+    <color name="cart_price_color">#FFC7B8FF</color>
+    <color name="cart_divider_color">#33FFFFFF</color>
+    <color name="md_theme_dark_surface">#282A2F</color>
+    <color name="md_theme_dark_surfaceVariant">#2A2D34</color>
+    <color name="login_input_bg">#33353A</color>
+    <color name="toolbar_title_login">#C4C6CF</color>
+</resources>

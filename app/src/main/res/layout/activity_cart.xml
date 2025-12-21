@@ -2,8 +2,177 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootCartLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/contact_background"
+    android:paddingStart="@dimen/contact_screen_padding_start"
+    android:paddingEnd="@dimen/contact_screen_padding_end"
     tools:context=".CartActivity">
 
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/topAppBar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/menu_cart"
+        app:navigationIcon="@drawable/ic_arrow_back_24"
+        app:title="@string/cart_title"
+        app:titleCentered="false" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textItemsCount"
+        style="@style/CartItemsCountText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/cart_items_count_margin"
+        android:layout_marginTop="@dimen/cart_items_count_margin"
+        android:layout_marginEnd="@dimen/cart_items_count_margin"
+        android:layout_marginBottom="@dimen/cart_items_count_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topAppBar"
+        tools:text="4 items in your cart" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerCart"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:paddingTop="8dp"
+        android:paddingBottom="80dp"
+        app:layout_constraintBottom_toTopOf="@id/orderSummary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textItemsCount"
+        tools:listitem="@layout/item_cart" />
+
+    <LinearLayout
+        android:id="@+id/orderSummary"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/cart_order_block_margin_top"
+        android:layout_marginBottom="@dimen/cart_order_block_margin_bottom"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/btnPlaceOrder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textOrderTotalLabel"
+                style="@style/CartSummaryLabelText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/order_total" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textOrderTotalValue"
+                style="@style/CartOrderTotalValueText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_175_50" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/CartSummaryLabelText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="1"
+                android:text="@string/subtotal" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textSubtotal"
+                style="@style/CartSummaryValueText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="@string/_140" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/CartSummaryLabelText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="1"
+                android:text="@string/shipping" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textShipping"
+                style="@style/CartSummaryValueText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="@string/_25" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="4dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/CartSummaryLabelText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/tax" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textTax"
+                style="@style/CartSummaryValueText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_10_50" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnPlaceOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/contact_button_bg"
+        android:minWidth="139dp"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:text="@string/cart_place_order"
+        android:textAllCaps="false"
+        android:textColor="@color/contact_button_text"
+        app:icon="@drawable/ic_cart_smile"
+        app:iconGravity="textStart"
+        app:iconPadding="8dp"
+        app:iconTint="@color/contact_button_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
