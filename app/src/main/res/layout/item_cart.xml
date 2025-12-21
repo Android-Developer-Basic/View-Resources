@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/CartItemContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/cartImage"
+        android:layout_width="@dimen/cart_item_image_size"
+        android:layout_height="@dimen/cart_item_image_size"
+        android:layout_marginStart="@dimen/cart_item_padding_start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_cart_placeholder" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/cartTitle"
+        style="@style/CartItemTitleText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/cart_item_text_start"
+        android:text="@string/list_item_1"
+        app:layout_constraintEnd_toStartOf="@id/cartPrice"
+        app:layout_constraintStart_toEndOf="@id/cartImage"
+        app:layout_constraintTop_toTopOf="@id/cartImage" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/cartCategory"
+        style="@style/CartItemCategoryText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/cart_item_space_title_category"
+        android:text="@string/category"
+        app:layout_constraintEnd_toStartOf="@id/cartPrice"
+        app:layout_constraintStart_toStartOf="@id/cartTitle"
+        app:layout_constraintTop_toBottomOf="@id/cartTitle" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/cartSubtitle"
+        style="@style/CartItemSubtitleText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/supporting_line_text_lorem_ipsum"
+        app:layout_constraintEnd_toStartOf="@id/cartPrice"
+        app:layout_constraintStart_toStartOf="@id/cartTitle"
+        app:layout_constraintTop_toBottomOf="@id/cartCategory" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/cartPrice"
+        style="@style/CartItemPriceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="64dp"
+        android:text="@string/_35"
+        android:textStyle="normal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/cart_divider_height"
+        android:layout_marginStart="@dimen/cart_divider_margin_horizontal"
+        android:layout_marginTop="@dimen/cart_divider_margin_top"
+        android:layout_marginEnd="@dimen/cart_divider_margin_horizontal"
+        android:background="@color/cart_divider_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cartImage" />
+</androidx.constraintlayout.widget.ConstraintLayout>

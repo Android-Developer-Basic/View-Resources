@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">View &amp; Resources</string>
+    <string name="contact_name">Filipp Kirkorov</string>
+    <string name="action_attach">Attach</string>
+    <string name="action_more">More</string>
+    <string name="cart_title">Cart</string>
+    <string name="cart_place_order">Place order</string>
+    <string name="cart_items_count">%1$d items in your cart</string>
+    <string name="order_total">Order Total:</string>
+    <string name="_175_50">$175.50</string>
+    <string name="tax">Tax:</string>
+    <string name="_10_50">$10.50</string>
+    <string name="_25">$25</string>
+    <string name="shipping">Shipping:</string>
+    <string name="_140">$140</string>
+    <string name="subtotal">Subtotal:</string>
+    <string name="category">Category</string>
+    <string name="list_item_1">List item 1</string>
+    <string name="_35">$35</string>
+    <string name="supporting_line_text_lorem_ipsum">Supporting line text lorem ipsum…</string>
 </resources>

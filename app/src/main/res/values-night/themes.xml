@@ -1,7 +1,10 @@
 <resources>
-    <!-- Base application theme. -->
-    <style name="Base.Theme.ViewResources" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+
+    <style name="Theme.ViewAndResources" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="colorOnSurface">#C4C6CF</item>
+        <item name="colorOnBackground">#C4C6CF</item>
+        <color name="login_toolbar_content">#C4C6CF</color>
+
     </style>
 </resources>
