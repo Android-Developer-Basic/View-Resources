@@ -4,12 +4,12 @@ plugins {
 }
 
 android {
-    compileSdk 35
+    compileSdk 34
     namespace = "otus.gpb.homework.viewandresources"
     defaultConfig {
         applicationId "otus.gpb.homework.viewandresources"
         minSdk 23
-        targetSdk 35
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 
@@ -29,10 +29,13 @@ android {
     kotlinOptions {
         jvmTarget = '17'
     }
+    viewBinding {
+        enabled = true
+    }
 }
 
 dependencies {
-    implementation 'androidx.core:core-ktx:1.15.0'
+    implementation 'androidx.core:core-ktx:1.13.1'
     implementation 'androidx.appcompat:appcompat:1.7.0'
     implementation 'com.google.android.material:material:1.12.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.2.0'
