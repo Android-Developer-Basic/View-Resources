@@ -1,7 +1,16 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="Base.Theme.ViewResources" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.ViewResources" parent="Theme.Material3.Dark.NoActionBar">
         <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary">@color/dark_primary</item>
+        <item name="colorOnPrimary">@color/dark_on_primary</item>
+        <item name="colorOnSurfaceVariant">@color/dark_on_surface_variant</item>
+        <item name="colorOnSurface">@color/dark_on_surface</item>
+        <item name="color">@color/dark_on_surface</item>
+        <item name="colorTertiary">@color/dark_tertiary</item>
+
+
+
+
     </style>
 </resources>

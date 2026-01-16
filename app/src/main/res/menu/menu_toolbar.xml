@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item
+        android:id="@+id/clip"
+        android:icon="@drawable/clip"
+        android:title="@string/clip"
+        app:showAsAction="ifRoom"
+        android:iconTint="?attr/colorOnSurfaceVariant"
+        />
+
+    <item
+        android:id="@+id/more"
+        android:title="@string/more"
+        android:icon="@drawable/more_3_dots"
+        app:showAsAction="ifRoom"
+        android:iconTint="?attr/colorOnSurfaceVariant"
+        />
+
+</menu>
