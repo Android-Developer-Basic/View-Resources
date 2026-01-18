@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Button">parent="Widget.Material3.Button">
+        <item name="android:textColor">@color/button_text_night</item>
+        <item name="android:backgroundTint">@color/button_night</item>
+        <item name="android:fontFamily">Roboto</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAppearance">@style/TextAppearance.Material3.TitleMedium</item>
+    </style>
+
+    <style name="TextInputName">
+        <item name="android:fontFamily">Roboto</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="ResetPasswordStyle">
+        <item name="android:textColor">@color/button_night</item>
+    </style>
+
+    <style name="TextInputLogin">
+        <item name="android:fontFamily">Roboto</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="ButtonStyleLogin" parent="@style/Widget.Material3.Button.OutlinedButton">
+        <item name="android:backgroundTint">@color/button_bk_night</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/button_night</item>
+    </style>
+
+    <style name="ButtonStyleCancel" parent="@style/Widget.Material3.Button.OutlinedButton">
+        <item name="android:backgroundTint">@color/button_bk_night</item>
+        <item name="android:textColor">@color/button_cancel_text_night</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="ButtonPlaceOrder" parent="@style/Widget.Material3.Button.OutlinedButton">
+        <item name="backgroundTint">@color/button_night</item>
+        <item name="android:textColor">@color/button_text_night</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:drawableTint">@color/button_text_night</item>
+    </style>
+
+    <style name="text_input_name">
+        <item name="android:textColor">@color/text_input_name_night</item>
+    </style>
+
+    <style name="text_price">
+        <item name="android:textColor">@color/price_night</item>
+    </style>
+
+    <style name="RecyclerViewStyle">
+        <item name="backgroundTint">@color/black</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="RecyclerViewPriceStyle">
+        <item name="backgroundTint">@color/black</item>
+        <item name="android:textColor">@color/price_night</item>
+    </style>
+
+    <style name="ImageViewStyle">
+        <item name="itemIconTint">@color/white</item>
+    </style>
+
+    <style name="ToolbarStyle" parent="ThemeOverlay.MaterialComponents.Toolbar.Primary">
+        <item name="backgroundTint">@color/button_bk_night</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="itemIconTint">@color/white</item>
+    </style>
+</resources>

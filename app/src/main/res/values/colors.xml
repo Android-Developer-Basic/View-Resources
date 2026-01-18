@@ -7,4 +7,19 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="button">#3E5F90</color>
+    <color name="button_night">#A7C8FF</color>
+    <color name="button_text">#FFFFFF</color>
+    <color name="button_text_night">#04305F</color>
+    <color name="text_input_name">#191C20</color>
+    <color name="text_input_name_night">#E1E2E9</color>
+    <color name="reset_password">#3E5F90</color>
+    <color name="button_Cancel">#555F71</color>
+    <color name="button_Cancel_Tint">#ECE6F0</color>
+    <color name="button_bk_night">#282A2F</color>
+    <color name="button_cancel_text_night">#BDC7DC</color>
+    <color name="menu_cart_bk">#F9F9FF</color>
+    <color name="price_night">#DBBCE1</color>
+    <color name="price">#6E5676</color>
+
 </resources>
