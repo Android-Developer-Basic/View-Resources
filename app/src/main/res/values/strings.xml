@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">View &amp; Resources</string>
+    <string name="files">Files</string>
+    <string name="additional">Additional</string>
+    <string name="name_example">Ivan Petrov</string>
+    <string name="name_hint">Name</string>
+    <string name="phone_hint">Phone</string>
+    <string name="phone_example">+1(234)567-8900</string>
+    <string name="select_hint">Select</string>
+    <string name="phone_type_example">Mobile</string>
+    <string name="address_hint">Address</string>
+    <string name="address_example">123, Lenin street, Apt.6</string>
+    <string name="city_hint">City</string>
+    <string name="city_example">Tokyo</string>
+    <string name="country_hint">Country</string>
+    <string name="country_example">Australia</string>
+    <string name="date_hint">Date</string>
+    <string name="date_example">24.10.2025</string>
+    <string name="notes_hint">Notes</string>
+    <string name="notes_example">Loves burgers and french fries</string>
+    <string name="save_btn">Save</string>
 </resources>
