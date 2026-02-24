@@ -19,4 +19,22 @@
     <string name="notes_hint">Notes</string>
     <string name="notes_example">Loves burgers and french fries</string>
     <string name="save_btn">Save</string>
+    <string name="cart">Cart</string>
+    <string name="delete">Delete</string>
+    <string name="items_count_example">4 items in your cart</string>
+    <string name="order_total_title">Order Total:</string>
+    <string name="order_total_example">$175.50</string>
+    <string name="subtotal_title">Subtotal:</string>
+    <string name="subtotal_example">$140</string>
+    <string name="shipping_title">Shipping:</string>
+    <string name="shipping_example">$25</string>
+    <string name="tax_title">Tax:</string>
+    <string name="tax_example">$10.50</string>
+    <string name="place_order_btn">Place order</string>
+    <string name="item_title_example">List item 1</string>
+    <string name="item_title">List item %1$d</string>
+    <string name="item_price_example">$35</string>
+    <string name="item_category_example">Category</string>
+    <string name="item_description_example">Supporting line text lorem ipsum</string>
+    <string name="item_image_description">Item Image</string>
 </resources>
