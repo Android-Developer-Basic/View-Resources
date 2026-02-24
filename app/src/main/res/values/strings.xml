@@ -37,4 +37,10 @@
     <string name="item_category_example">Category</string>
     <string name="item_description_example">Supporting line text lorem ipsum</string>
     <string name="item_image_description">Item Image</string>
+    <string name="profile">Profile</string>
+    <string name="login">Login</string>
+    <string name="ivanpetrov_example">ivanpetrov</string>
+    <string name="password_hint">Password</string>
+    <string name="reset_my_password_warning">Reset my password</string>
+    <string name="cancel">Cancel</string>
 </resources>
