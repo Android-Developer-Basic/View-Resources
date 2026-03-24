@@ -1,3 +1,40 @@
 <resources>
     <string name="app_name">View &amp; Resources</string>
+    <string name="page_title">Ivan Petrov</string>
+    <string name="content_description_search">content_description_search</string>
+    <string name="content_description_favorite">Create string value resource \'content_description_favorite\'</string>
+    <string name="content_description_more">content_description_more</string>
+    <string name="more">more</string>
+    <string name="label">Name</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="country">Country</string>
+    <string name="date">Date</string>
+    <string name="notes">Notes</string>
+    <string name="save">Save</string>
+    <string name="select">Select</string>
+    <string name="phone">Phone</string>
+    <string name="phone_user">+1(234)567-8900</string>
+    <string name="select_user">Mobile</string>
+    <string name="address_user">123, Lenin street, Apt.6</string>
+    <string name="name_user">Ivan Petrov</string>
+    <string name="city_user">Tokyo</string>
+    <string name="country_user">Australia</string>
+    <string name="date_user">24.10.2025</string>
+    <string name="notes_user">Loves burgers and french fries</string>
+    <string name="login">Login</string>
+    <string name="login_user">ivanpetrov</string>
+    <string name="password">Password</string>
+    <string name="reset_password">Reset my password</string>
+    <string name="cancel">Cancel</string>
+    <string name="count_items"> items in your cart</string>
+    <string name="order_total">Order Total:</string>
+    <string name="subtotal">Subtotal:</string>
+    <string name="shipping">Shipping:</string>
+    <string name="tax">Tax:</string>
+    <string name="place_order">Place order</string>
+    <string name="price">35$</string>
+    <string name="category">Category</string>
+    <string name="description">Description</string>
+
 </resources>

@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/edit"
+        android:icon="@drawable/ic_paperclip"
+        android:contentDescription="@string/content_description_search"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/favorite"
+        android:contentDescription="@string/content_description_favorite"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/more"
+        android:contentDescription="@string/content_description_more"
+        app:showAsAction="never" />
+
+</menu>
